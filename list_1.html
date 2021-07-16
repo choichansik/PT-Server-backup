@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="theme-color" content="#190c2e">
+<title>FRAMEOUT</title>
+<link rel="shortcut icon" href="./gate/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="./gate/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="./gate/style.css"> 
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="./gate/template.js"></script>
+
+<script src="./gate/typed.js"></script>
+<script>
+$(function(){
+    $('#typed').typed({
+        stringsElement: $('.err_area .txt'),
+        typeSpeed: 50,
+        backDelay: 3200,
+        loop: true,
+        contentType: 'html', // or text
+        loopCount:true,
+        callback: function(){ foo(); },
+        resetCallback: function() { newTyped(); }
+    });
+});
+
+function newTyped(){ /* A new typed object */ }
+function foo(){ console.log("Callback"); }
+</script>
+<style>
+.err_area {position:fixed;left:50%;top:50%;width:1000px;height:284px;margin:-170px 0 0 -500px;text-align:center;z-index:10000;}
+.err_area .tit {color:#fff;font-size:200px;font-weight:900;line-height:200px;opacity:0.4;letter-spacing:-8px;}
+.err_area .info {margin-top:30px;color:#fff;font-size:30px;line-height:42px;opacity:0.8;}
+.cursor {position:absolute;left:0;top:0;z-index:1000;mix-blend-mode:saturation;}
+</style>
+</head>
+
+<body>
+<!-- wrap -->
+<div id="wrap" style="height:100vh;">
+    <!-- err_area -->
+    <div class="err_area">
+        <p class="tit">SORRY</p>
+        <p class="txt"><span>PT List 디렉토리 정리 및  주소 이전중 ....<br>새 주소가 필요하시면 퍼블리싱팀에 문의 부탁드립니다.</span></p>
+        <div class="info" id="typed"></div>
+    </div>
+    <!-- //err_area -->
+
+    <!-- cursor -->
+    <div class="cursor">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    <!-- //cursor -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

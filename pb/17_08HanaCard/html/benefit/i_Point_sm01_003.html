@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>포인트조회 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">혜택</a></span>
+			<span><a href="#">포인트</a></span>
+			<span><a href="#">제휴포인트</a></span>
+			<span>크로스마일</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">혜택</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>포인트</em>포인트 조회</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+
+					<!-- tab_ty -->
+					<nav class="tab_ty">
+						<ul>
+							<li><a href="#">하나카드 포인트</a></li>
+							<li><a href="#">하나BC카드 포인트</a></li>
+							<li class="on"><a href="#">SK I-Promise 포인트</a></li>
+							<li><a href="#">이패스교통적립내역</a></li>
+						</ul>
+					</nav>
+					<!--// tab_ty -->
+
+					<!-- search_area02 -->
+					<div class="search_area02">
+						<form>
+							<fieldset>
+							<legend>조회조건</legend>
+								<ul>
+									<li class="list">
+										<p class="tit">고객명</p>
+										<ul class="chk_box">
+											<li><input type="radio" id="user_ty" name="user_ty" checked><label for="user_ty">김하나(본인)</label></li>
+											<li><input type="radio" id="user_ty02" name="user_ty"><label for="user_ty02">김두리(가족)</label></li>
+										</ul>
+									</li>
+									<li class="list">
+										<p class="tit">기부기간</p>
+										<!-- month_area -->
+										<div class="month_area">
+											<input type="text" class="input_ty w140 select_month" title="시작월 입력 (예:0000-00-00)">
+											<span class="b_br">~</span>
+											<input type="text" class="input_ty w140 select_month" title="종료월 입력 (예:0000-00-00)">
+											<!-- ly_cal -->
+											<div class="ly_cal ty02">
+												<div class="ly_cal_year">
+													<a href="#" class="move_month prev_month" title="작년 보기"></a>
+													<span>2017년</span>
+													<a href="#" class="move_month next_month" title="내년 보기"></a>
+												</div>
+												<div class="ly_cal_mon">
+													<a href="#">1월</a>
+													<a href="#">2월</a>
+													<a href="#" class="on">3월</a>
+													<a href="#">4월</a>
+													<a href="#">5월</a>
+													<a href="#">6월</a>
+													<a href="#">7월</a>
+													<a href="#">8월</a>
+													<a href="#">9월</a>
+													<a href="#">10월</a>
+													<a href="#">11월</a>
+													<a href="#">12월</a>
+												</div>
+												<a href="#" class="btn_close"></a>
+											</div>
+											<!--// ly_cal -->
+											<ul class="radio_box02 btn">
+												<li><input type="radio" id="dateChk01_1" class="btn_direct" name="dateChk01"><label for="dateChk01_1">직접입력</label></li>
+												<li><input type="radio" id="dateChk01_2" name="dateChk01" checked><label for="dateChk01_2">1개월</label></li>
+												<li><input type="radio" id="dateChk01_3" name="dateChk01"><label for="dateChk01_3">3개월</label></li>
+												<li><input type="radio" id="dateChk01_4" name="dateChk01"><label for="dateChk01_4">6개월</label></li>
+												<li><input type="radio" id="dateChk01_5" name="dateChk01"><label for="dateChk01_5">1년</label></li>
+											</ul>
+										</div>
+										<!-- //month_area -->
+									</li>
+								</ul>
+								<!-- btn_area -->
+								<ul class="btn_area">
+									<li>
+										<a href="#" class="btn_m btn_ty02">조회</a>
+									</li>
+								</ul>
+								<!-- //btn_area -->
+							</fieldset>
+						</form>
+					</div>
+					<!-- //search_area02 -->
+
+					<!-- 카드 및 약정 정보 -->
+					<article class="cont">
+						<div class="table_head">
+							<h4 class="blind">카드 및 약정 정보</h4>
+							<ul class="right btn">
+								<li><a href="#" class="btn_print">인쇄</a></li>
+								<li><a href="#" class="btn_excel">엑셀 다운로드</a></li>
+							</ul>
+						</div>
+						<!-- table_ty -->
+						<div class="table_ty">
+							<table>
+								<caption>배송 정보</caption>
+								<colgroup>
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:77%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">발급일자</th>
+										<td class="left">2017.00.00</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">약정대상기간</th>
+										<td class="left">2017.00.00 ~ 2017.00.00</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">대상금액합계</th>
+										<td class="left">200,000 원</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">약정제공예정포인트</th>
+										<td class="left">0 원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //table_ty -->
+					</article>
+					<!-- //카드 및 약정 정보 -->
+
+					<!-- 포인트 조회 결과 -->
+					<article class="cont">
+						<h4 class="blind">포인트 조회 결과</h4>
+						<!-- table_ty -->
+						<div class="table_ty02 pd">
+							<table>
+								<caption>포인트 조회 결과</caption>
+								<colgroup>
+									<col span="1" style="width:11%;">
+									<col span="6" style="width:13%;">
+									<col span="1" style="width:11%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">결제일</th>
+										<th scope="col">정상결제금액<br>(일시불)</th>
+										<th scope="col">정상결제금액<br>(할부)</th>
+										<th scope="col">연체결제금액<br>(일시불)</th>
+										<th scope="col">연체결제금액<br>(할부)</th>
+										<th scope="col">결제취소금액</th>
+										<th scope="col">합계</th>
+										<th scope="col">약정처리일</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2017.01.17</td>
+										<td class="right">205,720</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right"><strong>205,720</strong></td>
+										<td>2017.02.02</td>
+									</tr>
+									<tr>
+										<td>2016.12.16</td>
+										<td class="right">205,720</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right"><strong>205,720</strong></td>
+										<td>2017.02.02</td>
+									</tr>
+									<tr>
+										<td>2016.11.16</td>
+										<td class="right">205,720</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right"><strong>205,720</strong></td>
+										<td>2017.02.02</td>
+									</tr>
+									<tr>
+										<td>2016.10.18</td>
+										<td class="right">205,720</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right">0</td>
+										<td class="right"><strong>205,720</strong></td>
+										<td>2017.02.02</td>
+									</tr>
+									<tr>
+										<td colspan="8" class="emp">조회결과가 없습니다.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- //table_ty -->
+						<a href="#" class="btn_more"><strong>더보기</strong></a>
+					</article>
+					<!-- //포인트 조회 결과 -->
+
+					<!-- 안내 -->
+					<article class="cont">
+						<h4 class="blind">SK I-Promise 포인트 안내</h4>
+						<!-- info_box -->
+						<dl class="info_box">
+							<dt><a href="#">SK I-Promise 포인트 안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">SK I-Promise란 국내 최초의 “OK캐쉬백 적금식 프로그램”으로서 가족들이 함께 포인트를 모아 사랑하는 아이에게 장학금으로 선물할 수 있습니다.</li>
+									<li class="blt1">SK I-Promise에 대한 혜택 및 자세한 내용은 해당 홈페이지에서 확인하시기 바랍니다. <a href="http://www.i-promise.co.kr" class="btn_xs btn_ty04" target="_blank" title="SK I-Promise 홈페이지 새창 열림">바로가기</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!-- //안내 -->
+
+					<!-- 자주찾는 메뉴 -->
+					<article class="cont">
+						<h4 class="blind">자주찾는 메뉴</h4>
+						<!-- useful_nav -->
+						<nav class="useful_nav">
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae05.png" alt="이용대금명세서 (아이콘)"></i>이용대금명세서</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae06.png" alt="결제예정금액 (아이콘)"></i>결제예정금액</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae12.png" alt="이용대금 결제 (아이콘)"></i>이용대금 결제</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae08.png" alt="해외승인내역 (아이콘)"></i>해외승인내역</a>
+						</nav>
+						<!-- //useful_nav -->
+					</article>
+					<!-- //자주찾는 메뉴 -->
+					
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">
+jQuery(function($){
+    $('#pop_card_comepare').popup({
+        autoopen: true,
+    });
+});
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+jQuery(function($){
+    $('.card_comepare .t2').addClass('bg'); //카테고리 추천일경우 table 열 class="bg"
+});
+</script>
+<!-- popup -->
+<section class="modal" id="pop_card_comepare">
+	<div class="modal_wrap card_comepare"><!-- 카드 비교하기 class="card_comepare" -->
+		<!-- modal_header -->
+		<div class="modal_header">
+			<h2>카드 비교하기</h2>
+		</div>
+		<!-- //modal_header -->
+
+		<!-- modal_body -->
+		<div class="modal_body" >
+			<!-- cont_scroll -->
+			<div class="cont_scroll vh">
+				<div class="content">
+					<div class="box">
+						<!-- scrollbar-outer -->
+						<div class="scrollbar-outer">
+							<!-- card_comepare_table -->
+							<div class="card_comepare_table">
+								<table>
+									<caption>카드 비교하기</caption>
+									<colgroup>
+										<col span="1" style="width:14.5%;">
+										<col span="3" style="width:28.5%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" rowspan="3" class="left">카드상품</th>
+											<td class="t1">
+												<p class="tit">SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</p>
+											</td>
+											<td class="t2">
+												<!-- card_title -->
+												<div class="card_title">
+													<ul class="ico">
+														<li class="c5">NEW</li>
+														<li class="c4">인기</li>
+														<li class="c2">이벤트</li>
+													</ul>
+
+												</div>
+												<!-- //card_title -->
+												<p class="tit">SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</p>
+											</td>
+											<td class="t3">
+												<p class="tit">하나멤버스 1Q #tag1카드 Red</p>
+											</td>
+										</tr>
+										<tr class="bn">
+											<td class="t1">
+												<div class="btn">
+													<a href="#" class="btn_s btn_ty04">상세보기</a>
+													<a href="#" class="btn_s btn_ty02">카드신청</a>
+												</div>
+											</td>
+											<td class="t2">
+												<div class="btn">
+													<a href="#" class="btn_s btn_ty04">상세보기</a>
+													<a href="#" class="btn_s btn_ty02">카드신청</a>
+												</div>
+											</td>
+											<td class="t3">
+												<div class="btn">
+													<a href="#" class="btn_s btn_ty04">상세보기</a>
+													<a href="#" class="btn_s btn_ty02">카드신청</a>
+												</div>
+											</td>
+										</tr>
+										<tr class="bn">
+											<td class="t1">
+												<div class="img"><img src="../../images/data/img_card01.png" alt=""></div><!-- 17.08.07 접근성 수정 -->
+											</td>
+											<td class="t2">
+												<div class="img"><img src="../../images/data/img_card02.png" alt=""></div>
+											</td>
+											<td class="t3">
+												<div class="img"><img src="../../images/data/img_card03.png" alt=""></div>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">연회비</th>
+											<td class="left t1">
+												<ul>
+													<li><strong>국내전용 9,000원</strong></li>
+													<li><strong>국내외겸용 17,000원</strong></li>
+												</ul>
+											</td>
+											<td class="left t2">
+												<ul>
+													<li><strong>국내전용 9,000원</strong></li>
+													<li><strong>국내외겸용 17,000원</strong></li>
+												</ul>
+											</td>
+											<td class="left t3">
+												<ul>
+													<li><strong>국내전용 9,000원</strong></li>
+													<li><strong>국내외겸용 17,000원</strong></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">기준실적</th>
+											<td class="left t1">
+												<ul>
+													<li>[이용금액 30만원이상]<br>7%적립(월적립한도 1만 하나머니)</li>
+													<li>[이용금액 60만원이상]<br>7%적립(월적립한도 2만 하나머니)</li>
+												</ul>
+											</td>
+											<td class="left t2">
+												<ul>
+													<li>[이용금액 30만원이상]<br>커피 50%적립, 동물병원 7% 적립</li>
+													<li>[이용금액 60만원이상]<br>뷰티 7%적립</li>
+												</ul>
+											</td>
+											<td class="left t3">
+												<ul>
+													<li>[이용금액 30만원이상]<br>7%적립(월적립한도 1만 하나머니)</li>
+													<li>[이용금액 60만원이상]<br>7%적립(월적립한도 2만 하나머니)</li>
+													<li>[이용금액 90만원이상]<br>10%적립(월적립한도 3만 하나머니)</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">브랜드</th>
+											<td class="left t1">VISA / Master</td>
+											<td class="left t2">국내전용 / Master</td>
+											<td class="left t3">국내전용 / Master</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">혜택제공 방법</th>
+											<td class="left t1">
+												<ul>
+													<li>항공사 마일리지 제공</li>
+												</ul>
+											</td>
+											<td class="left t2">
+												<ul>
+													<li>하나머니 적립</li>
+												</ul>
+											</td>
+											<td class="left t3">
+												<ul>
+													<li>하나머니 적립, 청구할인</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">주요혜택</th>
+											<td class="left t1">
+												<ul>
+													<li>택시비 10%할인</li>
+													<li>특급호텔 10% 현장 할인</li>
+													<li>H패션몰 20% 현장할인</li>
+												</ul>
+											</td>
+											<td class="left t2">
+												<ul>
+													<li>커피 50%적립</li>
+													<li>동물병원 7%적립</li>
+													<li>뷰티 7%적립</li>
+													<li>통신 7%적립</li>
+													<li>교통7%적립</li>
+													<li>영화 5천원 하나머니 적립</li>
+												</ul>
+											</td>
+											<td class="left t3">
+												<!-- 내용이 없을경우 빈공간 -->
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //card_comepare_table -->
+						</div>
+						<!-- //scrollbar-outer -->
+					</div>
+				</div>
+			</div>
+			<!-- //cont_scroll -->
+		</div>
+		<!-- //modal_body -->
+		<button class="pop_card_comepare_close btn_pop_close">팝업 닫기</button>
+	</div>
+</section>
+<!-- //popup -->
+</body>
+</html>

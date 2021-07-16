@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <title>원데이보험 시안 A타입</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <link rel="stylesheet" href="../common/swiper/dist/css/swiper.min.css">
+</head>
+<body>
+<div id="wrap">
+    <header>	
+        <img src="images/sub_header.png" alt="" />
+    </header>
+
+    <div class="container sub">	
+    <!-- Swiper JS -->
+        <section class="sub_01">
+            <div class="obj01"><img src="images/sub_sec01_3.png" alt="" /></div>
+            <div class="obj02"><img src="images/sub_sec01_4.png" alt="" /></div>
+            <div class="obj03"><img src="images/sub_sec01_2.png" alt="" /></div>
+        </section>
+        
+        <div class="sub_02">
+            <div class="ty01"><img src="images/sub_sec02_1.png" alt="" /></div>
+            <div class="ty02"><img src="images/sub_sec02_2.png" alt="" /></div>
+        </div>
+
+        <section class="sub_03">
+            <div class="ty01"><img src="images/sub_sec03_1.png" alt="" /></div>
+            <div class="ty02"><img src="images/sub_sec03_2.png" alt="" /></div>
+            <div class="ty03"><img src="images/sub_sec03_3.png" alt="" /></div>
+            <div class="ty04"><a href="index3.html" target="_blank"><img src="images/sub_sec04.png" alt="" /></a></div>
+        </section>
+        
+    </div>
+
+    
+</div><!-- #wrap -->
+    
+    
+<script src="./js/TweenMax.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script>
+$(window).scroll(function(){
+    var winTop = $(window).scrollTop();
+
+  if(winTop>0){
+      $('.btn_top').stop().fadeIn();
+  }else{
+      $('.btn_top').stop().fadeOut();
+  }
+    $('.btn_top').click(function(){
+        $('html,body').stop().animate({scrollTop:0},1000);
+        return false;
+    });
+    
+    
+    if($(window).scrollTop() + $(window).height() >= $('.sub_02 .ty01').offset().top ){											
+        $('.sub_02').addClass('active');
+    }
+    if($(window).scrollTop() + $(window).height() >= $('.sub_03').offset().top){			
+        $('.sub_03').addClass('active');
+    }
+});
+</script>
+</body>
+</html>

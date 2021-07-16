@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <title>THE A MALL MOBILE 시안</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="./css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" media="all">
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="./js/slickz.min.js"></script>
+    <link rel="stylesheet" href="../../common/swiper/dist/css/swiper.min.css">
+</head>
+<body>
+<div id="wrap">
+
+<header>	
+	<img src="images/header.png" alt="" />
+    <a href="../../theAmall/mobile/index.html" class="btn_01" target="_blank"></a>
+</header>
+
+<div class="container">	
+    
+<!-- Swiper JS -->
+<script src="../../common/swiper/dist/js/swiper.min.js"></script>
+    <section class="main_banner">
+        <div class="bnr01">
+            <div class="ph">
+                <img src="images/main_banner01.png" alt="" />
+            </div>
+            <div class="txt">
+                <img src="images/main_banner01_t.png" alt="" />
+            </div>
+        </div>
+        <div class="bnr02">
+            <div class="ph">
+                <img src="images/main_banner02.png" alt="" />
+            </div>
+            <div class="txt">
+                <img src="images/main_banner02_t.png" alt="" />
+            </div>
+        </div>
+        <div class="bnr03">
+            <img src="images/main_banner03.png" alt="" />
+        </div>
+    </section>
+    
+    <section class="main_01 effect_wrap">
+        <div class="cont_inner">
+            <p class="title">ENJOY YOUR LIFESTYLE</p>
+       <div class="mask_scroll">
+          <div class="swiper-scroll">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/main01_01.png"alt="" /></div>
+                <div class="swiper-slide"><img src="images/main01_02.png" alt="" /></div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+           </div>
+       </div>
+
+       <script>
+          var swiperScroll = new Swiper(".swiper-scroll", {
+            slidesPerView: 1,
+            spaceBetween : 20,
+            scrollbar: {
+              el: ".swiper-scrollbar",
+            },
+          });
+    </script>
+            
+        </div>
+    </section>
+    
+    <section class="main_02 effect_wrap">
+        <div class="cont_inner">
+            
+       <div class="mask_topic">
+          <div class="swiper-topic">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/main02_01.png"alt="" /></div>
+                <div class="swiper-slide"><img src="images/main02_02.png" alt="" /></div>
+                <div class="swiper-slide"><img src="images/main02_03.png" alt="" /></div>
+                <div class="swiper-slide"><img src="images/main02_04.png" alt="" /></div>
+                <div class="swiper-slide"><img src="images/main02_05.png" alt="" /></div>
+              </div>
+              <div class="swiper-pagination"></div>
+           </div>
+       </div>
+
+       <script>
+          var swiperTopic = new Swiper(".swiper-topic", {
+            slidesPerView: 1,
+            spaceBetween : 20,
+            pagination: {
+              el: ".swiper-pagination",
+              type: "fraction",
+            },
+              autoplay:{
+                  delay:3000,
+              },
+              speed:900.
+          });
+    </script>
+            
+        </div>
+    </section>
+    
+    <section class="main_03 effect_wrap">
+        <p class="title">COLLECTION</p>
+        <div class="cont_inner">
+            <div>
+                <img src="images/main03_01.png" alt="" />
+            </div>
+            <div class="swiper-collect">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide"><img src="images/main03_02.png" alt="" /></li>
+                    <li class="swiper-slide"><img src="images/main03_03.png" alt="" /></li>
+                </ul>
+                  <div class="swiper-pagination"></div>
+                <script type="text/javascript">
+                    var collectSwiper = new Swiper ('.swiper-collect',{
+                        effect:'slide',
+                        spaceBetween : 20,
+                        pagination:{
+                            el : '.swiper-pagination',
+                            clickable:true,
+                        }
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+    
+</div>
+
+<footer><img src="images/footer.png" alt=""/></footer>
+    
+    <a href="#" class="btn_top">멘 위로 이동</a>
+<div class="fix_menu">
+    <img src="images/b_menu.png" alt="" />
+</div>
+</div><!-- #wrap -->
+<script>
+$(document).ready(function(){
+    $('.main_banner').addClass('on');
+    
+    function fixed(){
+      var cont = $('.container').width();  
+        $('header').css('margin-left','-'+cont/2+'px');
+        $('.fix_menu').css('margin-left','-'+cont/2+'px');
+    };
+    
+    fixed();
+    $(window).resize(function () {
+	   fixed();
+    });
+
+    
+    $(window).scroll(function(){
+        var winTop = $(window).scrollTop();
+      
+      if(winTop>0){
+          $('.btn_top').stop().fadeIn();
+      }else{
+          $('.btn_top').stop().fadeOut();
+      }
+        $('.btn_top').click(function(){
+            $('html,body').stop().animate({scrollTop:0},1000);
+            return false;
+        });
+
+    });
+});
+    
+    
+    
+var effect = {
+	
+	container : null,
+	items : [],
+
+	init : function(){		
+		this.container = $('.container');
+		
+		var i=0;
+		this.container.find('.effect_wrap').each(function(){
+			var obj = {
+				target : $(this),
+				index : i,
+				activeStats : false
+			}
+			effect.items.push(obj);
+			i++;
+		});	
+
+		effect.scroll();
+		$(window).on('scroll' , function () {
+			effect.scroll();
+		});
+	},
+
+	scroll : function(){
+		var _this = this;
+
+		if($(window).scrollTop() > 0){
+			$('header').addClass('fix');
+		}else{
+			$('header').removeClass('fix');
+		}
+		
+		
+		for(var i = 0; i < effect.items.length; i++){
+			var _target = effect.items[i].target;
+			var _option = effect.items[i];
+			if(!_option.activeStats){
+				if($(window).scrollTop() + $(window).height() >= _option.target.offset().top){												
+					_option.target.addClass('actived');
+					_target.css({ 'transform' : 'translate(0px, 0px)' , 'opacity' : '1' , 'transition' : 'transform 1.2s cubic-bezier(0.190, 1.000, 0.220, 1.000) , opacity 1.2s cubic-bezier(0.190, 1.000, 0.220, 1.000)'});
+					_option.activeStats = true;
+				}
+			}				
+		}
+	}
+};
+
+		$(function(){
+		
+			effect.init();
+		});    
+    
+
+
+</script>
+</body>
+</html>

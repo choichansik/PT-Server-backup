@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>분실신고/재발급(신용/체크) : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">마이페이지</a></span>
+			<span><a href="#">결제내역</a></span>
+			<span>승인내역</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">고객센터</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>고객상담</em>분실신고/재발급(신용/체크)</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+
+					<!-- tab_ty -->
+					<nav class="tab_ty02">
+						<ul>
+							<li><a href="#">분실/도난신고</a></li>
+							<li><a href="#">사고내역 등록</a></li>
+							<li><a href="#">분실재발급 신청</a></li>
+						</ul>
+						<ul>
+							<li class="on"><a href="#">파손재발급 신청</a></li><!-- 활성화 class="on" -->
+							<li><a href="#">분실/도난신고 해제</a></li>
+							<li><a href="#">타사카드(일괄)분실신고 신청결과</a></li>
+						</ul>
+					</nav>
+					<!-- //tab_ty -->
+					
+					<!-- 파손재발급 카드 선택 -->
+					<article class="cont">
+						<h4 class="t_tit">파손재발급 카드 선택</h4>
+						
+						<!-- board_ty -->
+						<div class="board_ty">
+						<form>
+							<fieldset>
+							<legend>파손재발급 카드 선택</legend>
+							<ul class="pick_item">
+								<li class="list only">
+									<p>
+										<input type="radio" id="card_sel_1" name="card_sel"> 
+										<label for="card_sel_1">하나멤버스 1Q #tag1카드 Red 4089-****-****-8115 </label>
+									</p>
+								</li>
+								<li class="list only">
+									<p>
+										<input type="radio" id="card_sel_2" name="card_sel"> 
+										<label for="card_sel_2">CJ ONE 체크카드 [본인] 4089-****-****-8115 </label>
+									</p>
+								</li>
+							</ul>
+							</fieldset>
+						</form>
+						</div>
+						<!--// board_ty -->
+					</article>
+					<!--// 파손재발급 카드 선택 -->
+					
+					<!-- 기본정보 -->
+					<article class="cont">
+						<h4 class="t_tit">기본정보</h4>
+						<!-- table_ty -->
+						<div class="table_ty">
+							<table>
+								<caption>기본정보</caption>
+								<colgroup>
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:27%;">
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:27%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th id="table01_01" class="left">한글성명</th><!-- 17.08.08 접근성 수정 -->
+										<td headers="table01_01" class="left t_txt">손지원</td><!-- 17.08.08 접근성 수정 -->
+										<th id="table01_02" class="left">영문이름</th><!-- 17.08.08 접근성 수정 -->
+										<td headers="table01_02" class="left">SON JI WON</td><!-- 17.08.08 접근성 수정 -->
+									</tr>
+									<tr>
+										<th id="table01_03" class="left">휴대폰번호</th><!-- 17.08.08 접근성 수정 -->
+										<td headers="table01_03" class="left">(KT) 010-9920-****</td><!-- 17.08.08 접근성 수정 -->
+										<th id="table01_04" class="left">전화번호</th><!-- 17.08.08 접근성 수정 -->
+										<td headers="table01_04" class="left">010-9920-****</td><!-- 17.08.08 접근성 수정 -->
+									</tr>
+									<tr>
+										<th scope="row" class="left">이메일</th>
+										<td colspan="3" class="left">ch*******@naver.com</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">주소</th>
+										<td colspan="3" class="left">(08754) 서울시 관악구 신림로66길 27-7 403호 (신림동)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--// table_ty -->
+						<p class="table_info">회원정보가 변경된 경우, 개인/카드정보 &gt; 개인정보변경에서 확인/변경해 주시기 바랍니다.<a href="#" class="btn_xs btn_ty04">개인정보변경</a></p>
+					</article>
+					<!--// 기본정보 -->
+					
+					<!-- 직장정보 -->
+					<article class="cont">
+						<h4 class="t_tit">직장정보</h4>
+						<!-- table_ty -->
+						<div class="table_ty">
+							<table>
+								<caption>직장정보</caption>
+								<colgroup>
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:27%;">
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:27%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">직장명</th>
+										<td class="left">하나카드</td>
+									</tr>
+									<tr>
+										<th id="table02_01" scope="row" class="left">부서/직위</th><!-- 17.08.08 접근성 수정 -->
+										<td headers="table02_01" class="left">핀테크사업팀/과장</td><!-- 17.08.08 접근성 수정 -->
+										<th id="table02_02" scope="row" class="left">전화번호</th><!-- 17.08.08 접근성 수정 -->
+										<td headers="table02_02" class="left">010-9920-****</td><!-- 17.08.08 접근성 수정 -->
+									</tr>
+									<tr>
+										<th scope="row" class="left">주소</th>
+										<td colspan="3" class="left">(08754) 서울시 관악구 신림로66길 27-7 403호 (신림동)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--// table_ty -->
+					</article>
+					<!--// 직장정보 -->
+					
+					<!-- 추가정보 -->
+					<article class="cont">
+						<h4 class="t_tit">추가정보</h4>
+						
+						<!-- board_ty -->
+						<div class="board_ty">
+						<form>
+							<fieldset>
+							<legend>추가정보</legend>
+							<table>
+								<caption>추가정보</caption>
+								<colgroup>
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:77%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">카드수령지</th>
+										<td class="left">
+											<ul class="radio_box">
+												<li><input type="radio" id="income_ty" name="income_ty" checked><label for="income_ty">직장</label></li>
+												<li><input type="radio" id="income_ty02" name="income_ty"><label for="income_ty02">자택</label></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">현금인출기능</th>
+										<td class="left t_txt">없음</td>
+									</tr>
+								</tbody>
+							</table>
+							</fieldset>
+						</form>
+						</div>
+						<!--// board_ty -->
+					</article>
+					<!--// 추가정보 -->
+					
+					<!-- 17.06.12 추가 -->
+					<!-- 결제계좌 -->
+					<article class="cont">
+						<h4 class="t_tit">결제계좌</h4>
+						<!-- board_ty -->
+						<form>
+							<fieldset>
+							<legend>결제계좌</legend>
+							<div class="board_ty">
+								<table>
+									<caption>결제계좌</caption>
+									<colgroup>
+										<col span="1" style="width:23%;">
+										<col span="1" style="width:77%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="left">결제계좌</th>
+											<td class="left">
+												<div class="b_list txt"><span class="b_txt">국민은행 327********219</span> <a href="#" class="btn_pop btn_s btn_ty04">계좌확인</a></div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!--// board_ty -->
+							<div class="table_info">
+								<input type="checkbox" name="chk_bank" id="chk_bank">
+								<label for="chk_bank">마이너스 통장 등록 여부 조회에 관한 사항</label>
+								<a href="#" class="btn_xs btn_ty04 btn_pop">상세보기</a>
+							</div>
+							</fieldset>
+						</form>
+					</article>
+					<!--// 결제계좌 -->
+					<!-- //17.06.12 추가 -->
+					
+					<!-- 본인인증 -->
+					<article class="cont">
+						<h4 class="t_tit">본인인증</h4>
+						<!-- board_box -->
+						<div class="board_box">
+							<!-- tab_ty03 -->
+							<nav class="tab_ty03 tab_nav">
+								<a href="#tab01" class="on">카드인증</a>
+								<a href="#tab02">공인인증서 인증</a>
+							</nav>
+							<!-- //tab_ty03 -->
+							
+							<div class="layout_guide">
+								<p><span>인증 모듈 영역<br><br><em><a href="../guide/temp04.html" target="_blank">모듈 페이지 &gt;</a></em></span></p>
+							</div>
+						</div>
+						<!-- //board_box -->
+						<ul class="btn_area">
+							<li>
+								<a href="#" class="btn_b btn_ty">취소</a>
+								<a href="#" class="btn_b btn_ty02">신청</a>
+							</li>
+						</ul>
+					</article>
+					<!-- //본인인증 -->
+					
+					<!-- 안내 -->
+					<article class="cont">
+						<h4 class="blind">안내</h4>
+						<!-- info_box -->
+						<dl class="info_box">
+							<dt><a href="#">파손재발급 신청 안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">일부 신용/체크카드의 경우 카드사를 통한 재발급 신청이 제한될 수 있으니 고객센터 (1800-1111)로 문의바랍니다.</li>
+									<li class="blt1">통신&middot;전기요금, 보험료 등을 자동납부 중인 카드를 재발급하실 경우 카드번호 변경으로 자동납부가 불가 할 수 있으므로 해당 업체에 새로 발급한 카드번호로 변경 신청하여 주시기 바랍니다. </li>
+									<li class="blt1">가족카드재발급은 고객센터(1800-1111. 평일 09:00 ~ 18:00)를 통해서 발급 가능합니다</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!--// 안내 -->
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

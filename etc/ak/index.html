@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>레이어 팝업</title>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+<style>
+* {margin:0;padding:0;}
+li {list-style:none;}
+img {border:0;}
+
+/* pop_obj */    
+.pop_obj {position:absolute;left:100px;top:100px;transition:all 0.4s;animation:arrowdown both infinite 1.2s;}/* 팝업 위치 */
+.pop_obj:hover {animation:arrowdownEnd both 0.15s;}
+.pop_obj_cont {display:block;overflow:hidden;transition:all 0.5s;}
+.pop_obj_b {display:block;animation:fade both 0.4s;}
+.pop_obj_s {display:none;}
+.btn_pop_obj {display:block;position:absolute;left:50%;top:-2px;width:21px;height:21px;margin-left:14px;background:url("http://www.akmall.com/resource/front/images/button/btn_close06.gif") no-repeat;text-indent:-9999px;overflow:hidden;}/* 닫기버튼 위치 : 우선 AK와 동일 */
+
+/* 작아졌을시 */    
+.pop_obj.off {left:50px;}
+.pop_obj.off .pop_obj_b {display:none;}
+.pop_obj.off .pop_obj_s {display:block;animation:fade both 0.4s;}
+
+/* 작아졌을시 닫기 */  
+.pop_obj.hid {opacity:0;} 
+
+/* animation */
+@keyframes fade {
+0% {opacity:0;}
+100% {opacity:1;}
+}  
+@keyframes arrowdown {
+0% {transform:translateY(0);}
+60% {transform:translateY(4%);}/* 줄었을때 같이 사용하기 위치 %로 해요. 컨텐츠 높이에 따라 달라질겁니다. */
+100% {transform:translateY(0);}
+}
+@keyframes arrowdownEnd {
+0% {transform:translateY(3%);}
+100% {transform:translateY(0);}
+}
+);}
+    
+</style>
+<script>
+$(function(){
+    /* 이벤트 클릭 */
+	$('.pop_obj_cont').click(function(){
+		if($(this).closest('.pop_obj').hasClass('off')){
+			$(this).closest('.pop_obj').removeClass('off');
+            return false;
+		}
+	});
+    
+    /* 이벤트 닫기 클릭 */
+	$('.btn_pop_obj').click(function(){
+		if($(this).closest('.pop_obj').hasClass('off')){
+            $(this).closest('.pop_obj').addClass('hid');  // 스르륵 사라진 다음
+            setTimeout(function(){
+                $(this).closest('.pop_obj').remove();   //리무브 시켰어요
+            }, 500);
+		}else{
+			$(this).closest('.pop_obj').addClass('off');
+		}
+        return false;
+	});
+    
+    /* 로드 후 사라짐 */
+    setTimeout(function(){
+        $('.pop_obj').addClass('hid');
+        setTimeout(function(){
+            $('.pop_obj').remove();
+        }, 500);
+    }, 10000);  // 1000 이 1초 → 10초뒤 사라짐
+});
+</script> 
+</head>
+
+<body>
+    <!-- pop_obj -->
+    <div class="pop_obj">
+        <!-- pop_obj_cont -->
+        <a href="javascript:alert('링크연결');" class="pop_obj_cont">
+            <img src="http://www.akmall.com/resource/templates/main/2019/layer_190226_b.png" alt="" class="pop_obj_b">
+            <img src="http://www.akmall.com/resource/templates/main/2019/layer_190226_s.png" alt="" class="pop_obj_s">
+        </a>
+        <!-- //pop_obj_cont -->
+        <a href="#" class="btn_pop_obj">팝업닫기</a>
+    </div>
+    <!-- //pop_obj -->
+</body>
+</html>

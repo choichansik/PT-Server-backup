@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>정보이용/제공내역 조회 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">고객센터</a></span>
+			<span><a href="#">고객보호정책</a></span>
+			<span>정보이용/제공내역 조회</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">고객센터</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>고객보호정책</em>정보이용/제공내역 조회</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					
+					<!-- tab_ty -->
+					<nav class="tab_ty">
+						<ul>
+							<li class="on"><a href="#">고객정보 이용/제공내역</a></li>
+							<li><a href="#">개인정보제공내역</a></li>
+							<li><a href="#">그룹사간 고객정보제공내역</a></li>
+							<li><a href="#">금융거래정보제공내역</a></li>
+							<li><a href="#">개인정보열람</a></li>
+						</ul>
+					</nav>
+					<!-- //tab_ty -->
+
+					<!-- 조회 -->
+					<article class="cont">
+						<h4 class="blind">고객정보 이용/제공내역</h4>
+						<!-- search_area02 -->
+						<div class="search_area02 ty02">
+						<form>
+							<fieldset>
+							<legend>이용내역선택</legend>
+								<ul>
+									<li class="list">
+										<p class="tit">이용내역선택</p>
+										<ul class="chk_box">
+											<li><input type="radio" id="useChk01_1" name="useChk01" checked><label for="useChk01_1">정보이용내역</label></li>
+											<li><input type="radio" id="useChk01_2" name="useChk01"><label for="useChk01_2">정보제공내역</label></li>
+										</ul>	
+									</li>
+									<li class="list">
+										<p class="tit">이용기간</p>
+										<input type="text" class="input_ty w140 select_date" title="시작일 입력 (예:0000-00-00)">
+										<span class="b_br">~</span>
+										<input type="text" class="input_ty w140 select_date" title="종료일 입력 (예:0000-00-00)">
+										<ul class="b_list">
+											<li>
+												<ul class="radio_box02 btn">
+													<li><input type="radio" id="dateChk01_1" class="btn_direct" name="dateChk01"><label for="dateChk01_1">직접입력</label></li>
+													<li><input type="radio" id="dateChk01_2" name="dateChk01" checked><label for="dateChk01_2">1개월</label></li>
+													<li><input type="radio" id="dateChk01_3" name="dateChk01"><label for="dateChk01_3">2개월</label></li>
+													<li><input type="radio" id="dateChk01_4" name="dateChk01"><label for="dateChk01_4">3개월</label></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<!-- btn_area -->
+								<ul class="btn_area">
+									<li>
+										<a href="#next_step" onClick="NextStepOpen();" class="btn_m btn_ty02">조회</a>
+									</li>
+								</ul>
+								<!-- //btn_area -->
+							</fieldset>
+						</form>
+						</div>
+						<!-- //search_area02 -->
+						<ul class="sch_info">
+							<li>2016년 3월 12일 이후 이용/제공된 내역부터 조회하실 수 있습니다.</li>
+							<li>신용정보의 이용 및 보호에 관한 법률 제35조에 따라 내부경영관리 등 이용 건 및 반복적인 업무위탁 건은 제외됩니다.</li>
+						</ul>
+					</article>
+					<!-- //조회 -->
+						
+					<div><!-- div에 class="next_step_cont" id="next_step" 추가하면 none,block 처리됨 -->
+						<!-- 정보이용내역 -->
+						<article class="cont">
+							<h4 class="t_tit">정보이용내역</h4>
+							<div class="table_ty02 pd">
+								<table>
+									<caption>정보이용내역</caption>
+									<colgroup>
+										<col span="1" style="width:16%;">
+										<col span="1" style="width:25%;">
+										<col span="1" style="width:12%;">
+										<col span="1" style="width:35%;">
+										<col span="1" style="width:12%;">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">이용주체</th>
+											<th scope="col">이용목적</th>
+											<th scope="col">이용일</th>
+											<th scope="col">이용한 신용정보의 내용</th>
+											<th scope="col">보유기간</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="left">하나카드</td>
+											<td class="left">마케팅 TM</td>
+											<td>2017.00.00</td>
+											<td class="left">성명, 자택번호, 직장번호, 휴대폰번호</td>
+											<td>2017.00.00</td>
+										</tr>
+										<tr>
+											<td class="left">하나카드</td>
+											<td class="left">마케팅 TM</td>
+											<td>2017.00.00</td>
+											<td class="left">성명, 자택번호, 직장번호, 휴대폰번호</td>
+											<td>2017.00.00</td>
+										</tr>
+										<tr>
+											<td class="left">하나카드</td>
+											<td class="left">마케팅 TM</td>
+											<td>2017.00.00</td>
+											<td class="left">성명, 자택번호, 직장번호, 휴대폰번호</td>
+											<td>2017.00.00</td>
+										</tr>
+										<tr>
+											<td class="emp" colspan="5">고객 정보 이용 제공 내역이 없습니다.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<a href="#" class="btn_more"><strong>더보기</strong></a>
+						</article>
+						<!-- //정보이용내역 -->
+					</div> 
+				
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

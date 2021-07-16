@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#wrap {width: 1920px;margin: 0 auto;}
+
+#header,
+#container {width: 1860px;margin: 0 auto;}
+
+.wing-banner {position: fixed;z-index: 1000;right: 0;}
+
+.banner-wrap {position:relative;width: 1860px;height: 800px;overflow: hidden;}
+.banner-wrap .item-big,
+.banner-wrap .item-big ul,
+.banner-wrap .item-big ul li {position:absolute;width: 100%;height:100%;}
+.banner-wrap .item-big .visual {position: absolute;top:0;left:0;width: 100%;height: 100%;}
+.banner-wrap .item-big .txt-wrap {position: absolute;top:60%;left:50%; margin-top: -81px; margin-left:-299px;}
+.banner-wrap .pagination {position: absolute;right: 0;bottom: 0;z-index: 10;}
+
+.main-01 .title-wrap {display: flex;justify-content: center;margin: 0 auto 80px;cursor: pointer;}
+.main-01 .title-wrap li {padding: 0 15px;font-size: 35px;color: #e1e1e1;font-family: 'Spoqa Han Sans Neo';font-weight: 700;}
+.main-01 .title-wrap li.on {color: #000;text-decoration: underline;text-underline-position: under;transition: 0.2s;}
+.main-01 .product-wrap {padding: 0 100px;}
+.main-01 .product-wrap img {cursor: pointer;}
+
+.main02 {padding-left:350px; margin-bottom: 50px;}
+
+.main-02.swiper-container {width: 1230px;height: 610px;margin-left:350px;}
+.main-02 .swiper-slide {position:relative;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;flex-direction: column;}
+.main-02 .swiper-slide img.img {position:absolute;top:0;left:0;object-fit: cover;cursor: pointer; transition: box-shadow 0.45s ease;z-index: 5;}
+.main-02 .swiper-slide img.img:hover {box-shadow: 10px 10px 10px rgb(0 0 0 / 30%);}
+.main-02 .swiper-slide img.txt {position:absolute;bottom:0;left:0;object-fit: cover;cursor: pointer;}
+
+.main-03 {display: flex;justify-content: space-between;}
+.main-03 .representation {padding-top: 100px;}
+.main-03 .product-wrap {width: 1000px;}
+
+/* 공통 */
+.on {display: block;}
+.off {display: none!important;}
+.margin-bottom {margin-bottom: 100px;}
+
+.effect_wrap {transform:translate(0px , 70px);opacity:0; will-change:width , height , transform , opacity;}

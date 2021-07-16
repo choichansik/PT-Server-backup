@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>수수료계산 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">혜택</a></span>
+			<span><a href="#">포인트</a></span>
+			<span><a href="#">제휴포인트</a></span>
+			<span>하나OK캐쉬백포인트</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">금융</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>단기카드대출(현금서비스)</em>수수료계산</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					<!-- 상단 -->
+					<article class="cont">
+						<h4 class="t_tit">이용한도</h4>
+						<!-- table_ty -->
+						<div class="table_ty">
+							<form>
+								<fieldset>
+								<legend>이용한도</legend>
+								<table>
+									<caption>이용한도</caption>
+									<colgroup>
+										<col span="1" style="width:23%;">
+										<col span="1" style="width:77%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="left">이용한도</th>
+											<td class="left">
+												<span class="set ty02">
+													<strong>300 <em>만원</em></strong><em>&rarr;</em> <strong><span class="t_point">500</span><em class="t_point">만원</em></strong>
+												</span>
+												<a href="#" class="btn_xs btn_ty04">한도상향</a>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">이자율</th>
+											<td class="left">
+												<span class="set ty02">
+													<strong>19.24 <em>%</em></strong><em>&rarr;</em> <strong><span>이자율</span> 15<em>%</em></strong>
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								</fieldset>
+							</form>
+						</div>
+						<!-- //table_ty -->
+						<!-- 17.07.20 수정<p class="table_info">할인행사 대상은 수수료율이 위 수수료율 보다 인하 적용될 수 있습니다.</p> -->
+					</article>
+					<!--// 상단 -->
+					
+					<!-- 시뮬레이션 -->
+					<article class="cont">
+						<h4 class="t_tit">시뮬레이션</h4>
+						<ul class="table_head">
+							<li class="blt1">단기카드대출(현금서비스) 수수료 ＝ 단기카드대출(현금서비스) 이용금액 × 고객등급별 수수료율 × 이용기간/365  (윤년 366일)</li>
+							<li class="blt1">윤년은 366일이 적용됩니다.</li>
+						</ul>
+						<div class="board_ty">
+							<table>
+								<caption>시뮬레이션 테이블</caption>
+								<colgroup>
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:77%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">신청금액</th>
+										<td class="left">
+											<input type="text" class="input_ty w140" title="신청금액 입력">
+											<span class="b_txt">만원</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">이용일</th>
+										<td class="left"><input type="text" class="input_ty w140 select_date" title="이용일 입력 (예:0000-00-00)"></td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">결제청구단위</th>
+										<td class="left">
+											<div class="b_list">
+												<select name="paydate" class="select_ty w320" title="결제청구단위 선택">
+													<option value="">결제청구단위 선택</option>
+													<option value="etc">결제예정일지정</option>
+												</select>
+											</div>
+											<div class="b_list hidden_etc">
+												<span class="b_txt">고객님의 결제일 선택</span>
+												<input type="text" class="input_ty w140 select_date" title="고객님의 결제일 입력 (예:0000-00-00)">
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<ul class="btn_area">
+							<li>
+								<a href="#" class="btn_b btn_ty">초기화</a>
+								<a href="#next_step" onClick="NextStepOpen();" class="btn_b btn_ty02">계산</a>
+							</li>
+						</ul>
+					</article>
+					<!-- //시뮬레이션 -->
+
+<script>		
+jQuery(function($){
+	/* 결제일 지정 */
+	$("select[name='paydate']").change(function(){
+		var _opt = $(this).val();
+		if( _opt ==  'etc'){
+			$('.hidden_etc').css('display', 'block');
+		} else {
+			$('.hidden_etc').css('display', 'none');
+		}
+	});
+});
+</script>
+				
+					<div class="next_step_cont on" id="next_step"><!-- div에 class="next_step_cont" id="next_step" 추가하면 none,block 처리됨 -->
+						<!-- 계산결과 -->
+						<article class="cont">
+							<h4 class="t_tit">수수료계산 결과</h4>
+								<div class="conversion_wrap ty02">
+								<ul class="fee_calc">
+									<li class="list">
+										<span class="tit">신청금액</span>
+										<span class="data money"><em>1,000,000</em>원</span>
+									</li>
+									<li class="list">
+										<span class="tit">이용일</span>
+										<span class="data">2017.04.08</span>
+									</li>
+								</ul>
+								<div class="cen_arr">
+									<span class="ct_point txt">이용일수 <em>40</em>일</span>
+								</div>
+								<ul class="fee_calc ty02">
+									<li class="list">
+										<span class="tit">결제금액</span>
+										<span class="data money"><em class="t_point">1,000,500</em>원</span>
+									</li>
+									<li class="list">
+										<span class="tit">수수료율</span>
+										<span class="data">15.4%</span>
+									</li>
+									<li class="list">
+										<span class="tit">결제일</span>
+										<span class="data">2017.04.08</span>
+									</li>
+								</ul>
+							</div>
+							<!-- 17.07.20 수정 -->
+							<ul class="btn_area">
+								<li>
+									<a href="#" class="btn_b btn_ty02">신청</a>
+								</li>
+							</ul>
+							<!-- //17.07.20 수정 -->
+						</article>
+						<!-- //계산결과 -->
+					</div>
+					
+					<!-- 유용한 정보 -->
+					<article class="cont">
+						<h4 class="blind">유용한 정보</h4>
+						<!-- useful_nav -->
+						<!-- 17.07.11 : str -->
+						<nav class="useful_nav02">
+							<p><i><img src="../../images/contents/ico_useful_tel.png" alt="금융센터 (아이콘)"></i>금융센터<strong>1800 - 1000</strong></p>
+							<p><i><img src="../../images/contents/ico_useful_time.png" alt="상담가능시간 (아이콘)"></i>상담가능시간 (평일)<strong>09:00 ~ 18:00</strong></p>
+							<p><i><img src="../../images/contents/ico_useful_time.png" alt="신청가능시간 (아이콘)"></i>신청가능시간<strong>24시 365일</strong></p>
+						</nav>
+						<!-- //17.07.11 : end -->
+						<!-- //useful_nav -->
+					</article>
+					<!-- //유용한 정보 -->
+					
+					<!-- 자주찾는 메뉴 -->
+					<article class="cont">
+						<h4 class="blind">자주찾는 메뉴</h4>
+						<!-- useful_nav -->
+						<nav class="useful_nav">
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae05.png" alt="이용대금명세서 (아이콘)"></i>이용대금명세서</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae06.png" alt="결제예정금액 (아이콘)"></i>결제예정금액</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae12.png" alt="이용대금 결제 (아이콘)"></i>이용대금 결제</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae08.png" alt="해외승인내역 (아이콘)"></i>해외승인내역</a>
+						</nav>
+						<!-- //useful_nav -->
+					</article>
+					<!-- //자주찾는 메뉴 -->
+					
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

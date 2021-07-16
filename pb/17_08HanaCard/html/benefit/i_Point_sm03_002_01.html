@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>카드혜택이용실적 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">마이페이지</a></span>
+			<span><a href="#">결제내역</a></span>
+			<span>승인내역</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">혜택</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>나만의 혜택</em>카드혜택이용실적</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					<!-- tab_ty -->
+					<nav class="tab_ty">
+						<ul>
+							<li><a href="#">서비스제공 실적</a></li>
+							<li class="on"><a href="#">카드이용혜택 금액</a></li><!-- 활성화 class="on" -->
+						</ul>
+					</nav>
+					<!-- //tab_ty -->
+
+					<!-- search_area02 -->
+					<div class="search_area02">
+					<form>
+						<fieldset>
+						<legend>조회조건</legend>
+							<ul>
+								<li class="list">
+									<p class="tit">카드구분</p>
+									<div class="btn chk_guide_area">
+										<ul class="chk_box">
+											<li class="chk_on">
+												<input type="radio" id="radio01_1" name="radid01"> 
+												<label for="radio01_1">하나카드</label>
+											</li>
+											<li>
+												<input type="radio" id="radio01_2" name="radid01" checked>
+												<label for="radio01_2">구.외환카드</label>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<p class="tit">카드선택</p>
+									<select class="select_ty w630" title="카드선택">
+										<option value="">카드선택</option>
+										<option value="">5243-****-****-3569[본인/HANA MASTER] 하나멤버스 1Q 하나멤버스 1Q</option>
+										<option value="">내맘대로 T PLUS (5243-****-****-1234)</option>
+									</select>
+								</li>
+								<li class="list">
+									<p class="tit">조회기간</p>
+									<select class="select_ty w630" title="조회기간 선택">
+										<option value="">2017-02</option>
+									</select>
+								</li>
+							</ul>
+							<!-- btn_area -->
+							<ul class="btn_area">
+								<li>
+									<a href="#next_step" onClick="NextStepOpen();" class="btn_m btn_ty02">조회</a>
+								</li>
+							</ul>
+							<!-- //btn_area -->
+						</fieldset>
+					</form>
+					</div>
+					<!-- //search_area02 -->
+					
+					<div><!-- div에 class="next_step_cont" id="next_step" 추가하면 none,block 처리됨 -->
+						<!-- 연간할인한도 -->
+						<article class="cont">
+							<h4 class="t_tit">연간 할인한도</h4>
+							<!-- 17.07.11 수정 -->
+							<ul class="discount_limit">
+								<li class="list01 ty02">
+									<dl class="total">
+										<dt>연간한도</dt>
+										<dd><strong>18,000,000</strong>원</dd>
+									</dl>
+								</li>
+								<li class="list02">
+									<dl class="total">
+										<dt>이용금액</dt>
+										<dd class="t_point"><strong>8,000,000</strong>원</dd>
+									</dl>
+								</li>
+							</ul>
+							<!-- //17.07.11 수정 -->
+						</article>
+						<!-- //연간할인한도 -->
+
+						<!-- 월간할인한도 -->
+						<article class="cont">
+							<h4 class="t_tit">월 통합 할인한도</h4>
+							<!-- 17.07.11 수정 -->
+							<ul class="discount_limit">
+								<li class="list01">
+									<dl class="total">
+										<dt>월간한도</dt>
+										<dd><strong>18,000,000</strong>원</dd>
+									</dl>
+									<dl class="cont_desc">
+										<dt>전월 인정실적</dt>
+										<dd><strong>18,000,000</strong>원</dd>
+									</dl>
+								</li>
+								<li class="list02">
+									<dl class="total">
+										<dt>이용금액</dt>
+										<dd class="t_point"><strong>8,000,000</strong>원</dd>
+									</dl>
+								</li>
+								<li class="list03">
+									<dl class="total">
+										<dt>잔여한도</dt>
+										<dd><strong>8,000,000</strong>원</dd>
+									</dl>
+								</li>
+							</ul>
+							<!-- //17.07.11 수정 -->
+						</article>
+						<!-- //월할인한도 -->
+
+						<!-- 할인서비스 별 월간 한도 조회 -->
+						<article class="cont">
+							<h4 class="t_tit">서비스별 월간한도</h4>
+							<div class="table_ty">
+								<form>
+									<fieldset>
+										<legend>서비스별 월간한도</legend>
+										<ul class="pick_item">
+											<li class="list">
+												<p class="b_tit">SK모바일주유권(5천원권) 
+													<span><a href="#" class="btn_arr ty02">혜택내역</a></span>
+												</p>
+												<div class="data">
+													<dl>
+														<dt>월간한도</dt>
+														<dd>1,000원</dd>
+													</dl>
+													<dl>
+														<dt>월간사용가능횟수</dt>
+														<dd>5건</dd>
+													</dl>
+												</div>
+												<div class="data">
+													<dl>
+														<dt>이용금액</dt>
+														<dd>1,000원</dd>
+													</dl>
+													<dl>
+														<dt>이용횟수</dt>
+														<dd>5건</dd>
+													</dl>
+												</div>
+												<div class="data">
+													<dl>
+														<dt>잔여한도</dt>
+														<dd>1,000원</dd>
+													</dl>
+													<dl>
+														<dt>잔여횟수</dt>
+														<dd>5건</dd>
+													</dl>
+												</div>
+											</li>
+											<li class="list">
+												<p class="b_tit">SK모바일주유권(5천원권) 
+													<span><a href="#" class="btn_arr ty02">혜택내역</a></span>
+												</p>
+												<div class="data">
+													<dl>
+														<dt>월간한도</dt>
+														<dd>1,000원</dd>
+													</dl>
+													<dl>
+														<dt>월간사용가능횟수</dt>
+														<dd>5건</dd>
+													</dl>
+												</div>
+												<div class="data">
+													<dl>
+														<dt>이용금액</dt>
+														<dd>1,000원</dd>
+													</dl>
+													<dl>
+														<dt>이용횟수</dt>
+														<dd>5건</dd>
+													</dl>
+												</div>
+												<div class="data">
+													<dl>
+														<dt>잔여한도</dt>
+														<dd>1,000원</dd>
+													</dl>
+													<dl>
+														<dt>잔여횟수</dt>
+														<dd>5건</dd>
+													</dl>
+												</div>
+											</li>
+											<li class="emp">조회된 내역이 없습니다.</li>
+										</ul>
+									</fieldset>
+								</form>
+							</div>
+							<a href="#" class="btn_more off02"><strong>더보기</strong></a><!-- 17.07.27 수정 -->
+							<p class="table_info02 ty03">인천공항라운지(가족카드) 서비스는 가족카드를 발급한 경우 해당 가족카드에 대해 제공되는 서비스로, 가족카드 발급 여부와 무관하게 항목은 표시됩니다.</p><!-- 17.07.27 수정 -->
+						</article>
+						<!-- //할인서비스 별 월간 한도 조회 -->
+					</div><!-- //div에 class="next_step_cont" id="next_step" 추가하면 none,block 처리됨 -->
+					
+					<!-- 안내 -->
+					<article class="cont">
+						<h4 class="blind">카드이용혜택금액 안내</h4>
+						<dl class="info_box">
+							<dt><a href="#">카드이용혜택금액 안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">할인 및 적립으로 혜택 받은 금액만 조회 가능합니다. (무이자할부, 캐쉬백 등은 조회 불가)</li>
+									<li class="blt1">월(1일~말일) 기준으로 혜택 받은 금액을 보여드립니다. </li>
+									<li class="blt1">승인취소, 매출취소 및 조회일자 등에 따라 혜택금액이 상이할 수 있습니다.</li> 
+									<li class="blt1">월간사용가능횟수 표기된 서비스는 서비스별 연간사용가능횟수 내에서 할인서비스가 제공됩니다.</li>
+									<li class="blt1">카드별 서비스 상세 이용기준은 카드혜택보기를 이용하시면 됩니다.</li>
+									<li class="blt1 t_point">소지하신 카드 중 카드선택 조회된 상품에 한하여 실적 조회 가능합니다.(단, BC카드 제외) </li>
+								</ul>
+							</dd>
+						</dl>
+					</article>
+					<!-- // 안내 -->
+
+					<!-- 자주찾는 메뉴 -->
+					<article class="cont">
+						<h4 class="blind">자주찾는 메뉴</h4>
+						<!-- useful_nav -->
+						<nav class="useful_nav">
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae01.png" alt="웹비밀번호 변경 (아이콘)"></i>웹비밀번호 변경</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae02.png" alt="마케팅 수신 동의 변경 (아이콘)"></i>마케팅 수신 동의 변경</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae03.png" alt="명세서 수령지 변경 (아이콘)"></i>명세서 수령지 변경</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae04.png" alt="금융주소 한번에 서비스 (아이콘)"></i>금융주소 한번에 서비스</a>
+						</nav>
+						<!-- //useful_nav -->
+					</article>
+					<!-- 자주찾는 메뉴 -->
+
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

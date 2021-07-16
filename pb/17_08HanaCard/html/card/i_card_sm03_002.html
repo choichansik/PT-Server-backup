@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>친구추천 카드신청 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">카드</a></span>
+			<span><a href="#">발급조회/사용등록</a></span>
+			<span>카드발급조회</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">카드</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>친구추천카드</em>친구추천 카드신청</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					<!-- 상단 -->
+					<article class="cont">
+						<div class="fri_card_visual">
+							<h4>친구에게 하나카드를 추천하세요!</h4>
+							<p>추천친구가 하나카드를 신청하시면 고객님에게 <span class="t_point">5만원 캐쉬백</span>, <br>추천친구에게는 <span class="t_point">연회비 100%(5천원~3만원) 캐쉬백</span> 해 드립니다.</p>
+							<ul>
+								<li>기간<em>2017.04.01 ~ 2017.06.30</em></li>
+								<li>대상<em>하나카드 신규 고객</em></li>
+							</ul>
+							<a href="#" class="btn_m btn_ty02">추천 URL 받기</a>
+						</div>
+					</article>
+					<!--// 상단 -->
+					
+					<!-- tab_ty -->
+					<nav class="tab_ty">
+						<ul>
+							<li><a href="#">서비스 안내</a></li>
+							<li class="on"><a href="#">추천내역 확인</a></li><!-- 활성화 class="on" -->
+						</ul>
+					</nav>
+					<!-- //tab_ty -->
+					
+					<!-- 추천내역 확인 -->
+					<article class="cont">
+						<h4 class="t_tit">추천내역 확인 <span>고객님의 추천친구가 신규고객일 경우, 캐쉬백 해 드립니다.</span></h4>
+						
+						<div class="search_area02 ty05"><!-- 17.06.19 -->
+							<form>
+								<fieldset>
+								<legend>조회조건</legend>
+									<ul class="only center">
+										<li class="list">
+											<p class="blind">조회기간</p>
+											<input type="text" class="input_ty w140 select_date" title="시작일 입력 (예:0000-00-00)">
+											<span class="b_br">~</span>
+											<input type="text" class="input_ty w140 select_date" title="종료일 입력 (예:0000-00-00)">
+											<ul class="radio_box02 btn radio"><!-- 17.06.19 -->
+												<li><input type="radio" id="dateChk12_1" class="btn_direct" name="dateChk12"><label for="dateChk12_1">직접입력</label></li>
+												<li><input type="radio" id="dateChk12_2" name="dateChk12"><label for="dateChk12_2">오늘</label></li>
+												<li><input type="radio" id="dateChk12_3" name="dateChk12" checked><label for="dateChk12_3">2주</label></li>
+												<li><input type="radio" id="dateChk12_4" name="dateChk12"><label for="dateChk12_4">1개월</label></li>
+												<li><input type="radio" id="dateChk12_5" name="dateChk12"><label for="dateChk12_5">3개월</label></li>
+												<li><input type="radio" id="dateChk12_6" name="dateChk12"><label for="dateChk12_6">6개월</label></li>
+												<li><input type="radio" id="dateChk12_7" name="dateChk12"><label for="dateChk12_7">이번달</label></li>
+												<li><input type="radio" id="dateChk12_8" name="dateChk12"><label for="dateChk12_8">지난달</label></li>
+											</ul>
+										</li>
+									</ul>
+									
+									<ul class="btn_area">
+										<li><a href="#" class="btn_m btn_ty02">조회</a></li>
+									</ul>
+								</fieldset>
+							</form>
+						</div>
+						
+						<!-- table_ty -->
+						<div class="table_ty02">
+							<table>
+								<caption>추천내역 확인</caption>
+								<colgroup>
+									<col span="1" style="width:30%;">
+									<col span="2" style="width:35%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col"></th>
+										<th scope="col">신규 회원</th>
+										<th scope="col">기존 회원</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">신청 완료</th><!-- 17.06.06 -->
+										<td class="right">0건</td>
+										<td class="right">0건</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">발급 완료</th><!-- 17.06.06 -->
+										<td class="right">0건</td>
+										<td class="right">0건</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--// table_ty -->
+						
+					</article>
+					<!--// 추천내역 확인 -->
+					
+					<!-- 안내 -->
+					<article class="cont">
+						<h4 class="blind">친구추천 카드신청안내</h4>
+						<!-- info_box -->
+						<dl class="info_box on">
+							<dt><a href="#">친구추천 카드신청안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">추천 친구가 하나카드 신규 고객일 경우 캐쉬백 가능합니다. (기존 고객일 경우 이벤트 대상에서 제외)
+										<ul>
+											<li class="blt2">신규고객이란 : 하나개인신용카드 <strong class="t_point02 accent">최초 발급 고객</strong></li>
+											<li class="blt2">기존고객이란 : 하나개인신용카드 보유 고객 및 현재 보유카드가 없어도 기존에 발급/해지 이력이 있는 고객</li>
+										</ul>
+									</li>
+									<li class="blt1">친구추천 캐쉬백은 프로모션 기간별 합산하여 누적 최대 10명까지만 가능합니다. (11번째 친구 추천 시 캐쉬백 불가)</li>
+									<li class="blt1">캐쉬백은 카드발급 <strong class="t_point02 accent">다음달 말일</strong> 이내 지급됩니다.</li>
+									<li class="blt1">추천내역 대상 건수는 조회일 기준으로 실제 지급된 캐쉬백 대상건과 다를 수 있습니다.</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!-- //안내 -->
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

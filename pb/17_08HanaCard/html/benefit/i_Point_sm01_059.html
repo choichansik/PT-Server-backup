@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>포인트연계할부 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">마이페이지</a></span>
+			<span><a href="#">결제내역</a></span>
+			<span>승인내역</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">혜택</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>포인트</em>포인트연계할부</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					
+					<!-- tab_ty -->
+					<nav class="tab_ty">
+						<ul>
+							<li class="on"><a href="#">YES Save(구.외환)</a>
+								<!-- tab_s -->
+								<div class="tab_s">
+									<a href="#">서비스 안내</a>
+									<a href="#" class="on">이용/상환내역</a>
+								</div>
+								<!-- //tab_s -->
+							</li>
+							<li><a href="#">크로스마일 SAVE</a></li>
+							<li><a href="#">Smart SAVE(구.하나SK)</a></li>
+							<li><a href="#">T SAVE</a></li>
+						</ul>
+					</nav>
+					<!--// tab_ty -->
+
+					<!-- search_area02 -->
+					<div class="search_area02">
+						<form>
+							<fieldset>
+							<legend>조회조건</legend>
+								<ul>
+									<li class="list">
+										<p class="tit">조회기간</p>
+										<input type="text" class="input_ty w140 select_date" title="시작일 입력 (예:0000-00-00)">
+										<span class="b_br">~</span>
+										<input type="text" class="input_ty w140 select_date" title="종료일 입력 (예:0000-00-00)">
+										<ul class="radio_box02 btn">
+											<li><input type="radio" id="dateChk01_1" class="btn_direct" name="dateChk01"><label for="dateChk01_1">직접입력</label></li>
+											<li><input type="radio" id="dateChk01_2" name="dateChk01" checked><label for="dateChk01_2">오늘</label></li>
+											<li><input type="radio" id="dateChk01_3" name="dateChk01"><label for="dateChk01_3">2주</label></li>
+											<li><input type="radio" id="dateChk01_4" name="dateChk01"><label for="dateChk01_4">1개월</label></li>
+											<li><input type="radio" id="dateChk01_5" name="dateChk01"><label for="dateChk01_5">3개월</label></li>
+										</ul>
+									</li>
+									<li class="list">
+										<p class="tit">가입서비스</p>
+										<select class="select_ty w420" title="가입서비스 선택">
+										<option value="">선택</option>
+										<option value="">구매서비스</option>
+										<option value="">전환서비스</option>
+										<option value="">모두투어</option>
+										<option value="">선포인트</option>
+										<option value="">웅진코웨이세이브</option>
+										<option value="">투어</option>
+										<option value="">마일리지세이브</option>
+									</select>
+									</li>
+								</ul>
+								<!-- btn_area -->
+								<ul class="btn_area">
+									<li>
+										<a href="#next_step" onClick="NextStepOpen();" class="btn_m btn_ty02">조회</a>
+									</li>
+								</ul>
+								<!-- //btn_area -->
+							</fieldset>
+						</form>
+					</div>
+					<!-- //search_area02 -->
+
+					<div class="next_step_cont"  id="next_step"><!-- div에 class="next_step_cont" id="next_step" 추가하면 none,block 처리됨 -->
+					<!-- 조회 결과 -->
+					<article class="cont">
+						<!-- state_ty -->
+						<div class="state_ty">
+							<div class="state_head">
+								<h4 class="blind">조회 결과</h4>
+							</div>
+							<!-- state_area -->
+							<ul class="state_area">
+								<li class="detail">
+									<div class="info_s">
+										<div class="c1">
+											<ul>
+												<li><em>2017.07.05</em></li>
+											</ul>
+											<ul>
+												<li>본인 <em>1234</em></li>
+												<li>이용금액 <em>10,000원</em></li>
+											</ul>
+										</div>
+										<p class="c2">파인마트</p>
+									</div>
+									<div class="s3">
+										<ul>
+											<li><em>1,000</em>원</li>
+											<li><a href="#" class="btn_arr btn_pop">상환내역</a></li>
+										</ul>
+									</div>
+								</li>
+								<li class="detail">
+									<div class="info_s">
+										<div class="c1">
+											<ul>
+												<li><em>2017.07.05</em></li>
+											</ul>
+											<ul>
+												<li>본인 <em>1234</em></li>
+												<li>이용금액 <em>10,000원</em></li>
+											</ul>
+										</div>
+										<p class="c2">롯데홈쇼핑</p>
+									</div>
+									<div class="s3">
+										<ul>
+											<li><em>1,000</em>원</li>
+											<li><a href="#" class="btn_arr btn_pop">상환내역</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<!-- //state_area -->
+						</div>
+						<!-- //state_ty -->
+						<a href="#" class="btn_more"><strong>더보기</strong></a>
+					</article>
+					<!-- //조회 결과 -->
+					</div><!-- //div에 class="next_step_cont" id="next_step" 추가하면 none,block 처리됨 -->
+					
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

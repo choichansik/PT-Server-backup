@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* NotoSansKR */
+@font-face {
+   font-family: "NotoSansKR";
+   font-weight: 100;
+   font-style: normal;
+   src: url("NotoSansKR-Thin.woff2") format("woff2"), url("NotoSansKR-Thin.woff") format("woff"), url("NotoSansKR-Thin.otf") format("opentype");
+}
+@font-face {
+   font-family: "NotoSansKR";
+   font-weight: 200;
+   font-style: normal;
+   src: url("NotoSansKR-Light.woff2") format("woff2"), url("NotoSansKR-Light.woff") format("woff"), url("NotoSansKR-Light.otf") format("opentype");
+}
+@font-face {
+   font-family: "NotoSansKR";
+   font-weight: 300;
+   font-style: normal;
+   src: url("NotoSansKR-DemiLight.woff2") format("woff2"), url("NotoSansKR-DemiLight.woff") format("woff"), url("NotoSansKR-DemiLight.otf") format("opentype");
+}
+@font-face {
+   font-family: "NotoSansKR";
+   font-weight: 400;
+   font-style: normal;
+   src: url("NotoSansKR-Regular.woff2") format("woff2"), url("NotoSansKR-Regular.woff") format("woff"), url("NotoSansKR-Regular.otf") format("opentype");
+}
+@font-face {
+   font-family: "NotoSansKR";
+   font-weight: 500;
+   font-style: normal;
+   src: url("NotoSansKR-Medium.woff2") format("woff2"), url("NotoSansKR-Medium.woff") format("woff"), url("NotoSansKR-Medium.otf") format("opentype");
+}
+@font-face {
+   font-family: "NotoSansKR";
+   font-weight: 700;
+   font-style: normal;
+   src: url("NotoSansKR-Black.woff2") format("woff2"), url("NotoSansKR-Black.woff") format("woff"), url("NotoSansKR-Black.otf") format("opentype");
+}
+@font-face {
+   font-family: "NotoSansKR";
+   font-weight: 900;
+   font-style: normal;
+   src: url("NotoSansKR-Bold.woff2") format("woff2"), url("NotoSansKR-Bold.woff") format("woff"), url("NotoSansKR-Bold.otf") format("opentype");
+}

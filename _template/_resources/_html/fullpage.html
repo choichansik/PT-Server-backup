@@ -1,0 +1,198 @@
+<!--
+	* FullPage API
+	https://github.com/alvarotrigo/fullpage.js
+	* FullPage Examples
+	https://alvarotrigo.com/fullPage/ko/#examples
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+<title>Template_Fullpage</title>
+<link rel="stylesheet" type="text/css" href="../_style/reset.css">
+<link rel="stylesheet" type="text/css" href="../packages/fullPage.js-2.9.7/jquery.fullpage.min.css">
+<link rel="stylesheet" type="text/css" href="../packages/swiper-4.5.0/swiper.min.css">
+<script src="../packages/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="../packages/fullPage.js-2.9.7/jquery.fullpage.min.js"></script>
+<script src="../packages/fullPage.js-2.9.7/scrolloverflow.min.js"></script>
+<script src="../packages/swiper-4.5.0/swiper.min.js"></script>
+<style type="text/css">
+	.fp-section { border-top: 1px solid #ccc }
+	.fp-tableCell { text-align: center; }
+	.fp-tooltip { color: #000 !important }
+	.fp-controlArrow.fp-prev { left: 200px; }
+	.fp-controlArrow.fp-next { right: 200px; }
+	.header { position: fixed; top: 0; left: 0; z-index: 1; background: rgba(0, 0, 0, 0.1); width: 100%; height: 50px; line-height: 50px; padding-left: 50px }
+	.nav { position: fixed; top: 100px; left: 100px; z-index: 1; }
+	.nav ul li { display: inline-block; }
+	.nav ul li.active a { color: orange; }
+	.aside { position: fixed; top: 0; right: 0; z-index: 1; background: rgba(0, 0, 0, 0.1); padding: 50px; height: 100vh; }
+</style>
+<script>
+	$(function() {
+
+		// *** copy ***
+		// fullpage
+		$('#fullpage').fullpage({
+			// section
+			sectionSelector: '.section, .footer',
+			anchors: ['sec01', 'sec02', 'sec03', 'sec04', 'sec05', 'sec06', 'footer'],
+			// layout
+			paddingTop: '50px',
+			menu: '.nav',
+			scrollOverflow: true,
+			fixedElements: '.header, .aside',
+			// navi
+			navigation: true,
+			navigationPosition: 'left',
+			navigationTooltips: ['sec01', 'sec02', 'sec03', 'sec04', 'sec05', 'sec06', 'footer'],
+			showActiveTooltip: true,
+			// slides
+			slidesNavigation: true,
+			slidesNavPosition: 'bottom',
+			onLeave: function(index, nextIndex, direction) {
+				console.log(index);
+				console.log(nextIndex);
+				console.log(direction);
+			},
+			onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+				console.log(anchorLink);
+				console.log(index);
+				console.log(slideIndex);
+				console.log(direction);
+				console.log(nextSlideIndex);
+			},
+			afterRender: function() {
+			},
+			afterResize: function() {
+			},
+			afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
+				console.log(anchorLink);
+				console.log(index);
+				console.log(slideAnchor);
+				console.log(slideIndex);
+			},
+			afterLoad: function(anchorLink, index) {
+				console.log(anchorLink);
+				console.log(index);
+			}
+		});
+
+		// swiper
+		var swiper01 = new Swiper('.swiper-container');
+		// //*** copy ***
+
+	});
+</script>
+</head>
+<body>
+
+	<!-- *** copy *** -->
+	<div id="fullpage">
+
+		<!-- header -->
+		<header class="header">
+			<div class="header_inr">
+				header
+			</div>
+		</header>
+		<!-- //header -->
+
+		<!-- nav -->
+		<nav class="nav">
+			<ul class="nav_inr">
+				<li data-menuanchor="sec01" class="active"><a href="#sec01">sec01</a></li>
+				<li data-menuanchor="sec02"><a href="#sec02">sec02</a></li>
+				<li data-menuanchor="sec03"><a href="#sec03">sec03</a></li>
+				<li data-menuanchor="sec04"><a href="#sec04">sec04</a></li>
+				<li data-menuanchor="sec05"><a href="#sec05">sec05</a></li>
+				<li data-menuanchor="sec06"><a href="#sec06">sec06</a></li>
+				<li data-menuanchor="footer"><a href="#footer">footer</a></li>
+			</ul>
+		</nav>
+		<!-- //nav -->
+
+		<!-- aside -->
+		<aside class="aside">
+			<div class="aside_inr">
+				aside
+			</div>
+		</aside>
+		<!-- //aside -->
+
+		<!-- section -->
+		<section class="section sec01">
+			<div class="section_inr">
+				sec01 / basic
+			</div>
+		</section>
+
+		<section class="section sec02 fp-auto-height" style="height: 200px; line-height: 200px">
+			<div class="section_inr">
+				sec02 / fp-auto-height
+			</div>
+		</section>
+
+		<section class="section sec03">
+			<div class="section_inr" style="height: 2000px; background: #ccc">
+				sec03 / overflowscroll
+			</div>
+		</section>
+
+		<section class="section sec04">
+			<div class="section_inr">
+				<div class="slide">
+					<div class="slider_inr" style="height: 100%; background: #ccc">sec04 / slide1</div>
+				</div>
+				<div class="slide">
+					<div class="slider_inr" style="height: 100%; background: #eee">sec04 / slide2</div>
+				</div>
+				<div class="slide">
+					<div class="slider_inr" style="height: 100%; background: #ccc">sec04 / slide3</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section sec05">
+			<div class="section_inr" style="height: 50%;">
+				<!-- swiper -->
+				<div class="swiper-container" style="height: 100%;">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slide_inr" style="height: 100%; background: #999">sec05 / swiper / slide1</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide_inr" style="height: 100%; background: #aaa">sec05 / swiper / slide2</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slide_inr" style="height: 100%; background: #999">sec05 / swiper / slide3</div>
+						</div>
+					</div>
+				</div>
+				<!-- //swiper -->
+			</div>
+		</section>
+
+		<section class="section sec06 fp-noscroll">
+			<div class="section_inr">
+				<video loop muted data-autoplay>
+					<source src="../_images/vdo_sample_01.mp4" type="video/mp4">
+				</video>
+			</div>
+		</section>
+		<!-- //section -->
+
+		<!-- footer -->
+		<footer class="footer fp-auto-height" style="height: 200px;">
+			<div class="footer_inr" style="height: 200px; line-height: 200px">
+				footer / fp-auto-height
+			</div>
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //*** copy *** -->
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AMall / MARK&LONA 제안</title>
+<link rel="shortcut icon" href="common/images/favicon.ico" type="image/x-icon">
+<style type="text/css">
+	* { margin: 0 auto; font-family: 'Malgun Gothic', '맑은 고딕', '돋움', Dotum, Arial, Helvetica, Apple Gothic; }
+	img { border: 0; }
+	li { list-style: none; }
+	body { background: #fff; overflow-y: scroll; }
+	#wrap { width: 1400px; margin-top: 120px }
+	#wrap .title{
+		font-size: 40px;
+    	color: #000;
+		text-align: center;
+		margin-top: 50px;
+	}
+	#wrap .margin-more{
+		margin-top: 150px;
+	}
+	#wrap .logo { text-align: center; }
+	#wrap .contents { position: relative; margin: 60px 0 80px 0; padding: 0; text-align: center; }
+	#wrap .contents li { 
+		display: inline-block;
+		margin-left: 25px; 
+		animation: cont both 0.7s;
+		box-sizing: border-box;
+	}
+	#wrap .contents li:nth-child(4n+1) { margin-left: 0; }
+	#wrap .contents li:nth-child(2) { animation-delay: 0.2s; }
+	#wrap .contents li:nth-child(3) { animation-delay: 0.4s;margin-left: 50px;}
+	#wrap .contents li:nth-child(4) { animation-delay: 0.6s; }
+	#wrap .contents li:nth-child(5) { animation-delay: 0.8s; }
+	#wrap .contents li:nth-child(6) { animation-delay: 1s; }
+	#wrap .contents li:nth-child(7) { animation-delay: 1.2s;margin-left: 50px; }
+	#wrap .contents li:nth-child(8) { animation-delay: 1.4s;}
+	#wrap .contents li a { position: relative; display: block; width: 318.75px; height: 318.75px; transform: translateZ(0) scale(1, 1); box-shadow: 3px 4px 8px 0 rgba(0, 0, 0, 0.2); transition: box-shadow 0.4s; overflow: hidden; }
+	#wrap .contents li a img { position: relative; width: 100%; height: 100%; display: block; transition: all 0.4s; opacity: 1; }
+	#wrap .contents li a em { position: absolute; left: 50%; top: 50%; display: block; width: 60px; height: 60px; margin: 0 0 0 -30px; opacity: 0; transition: all 0.4s; z-index: 10; }
+	#wrap .contents li a em:before { position: absolute; left: 50%; top: 50%; width: 60px; height: 2px; margin: -2px 0 0 -30px; background: #fff; content: ""; }
+	#wrap .contents li a em:after { position: absolute; left: 50%; top: 50%; width: 2px; height: 60px; margin: -30px 0 0 -2px; background: #fff; content: ""; }
+	#wrap .contents li a:after { display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #333; color: #fff; opacity: 0.3; transform: scale(2) translateX(-100%) translateY(-100%) translateZ(0) rotate(-45deg); content: ""; transition: transform cubic-bezier(0.23, 1, 0.32, 1) 2s; mix-blend-mode: multiply; }
+	#wrap .contents li span {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; font-size: 24px; display: block; width: 100%;}
+	#wrap .contents li a:hover em { margin-top: -30px; opacity: 0.95; }
+	#wrap .contents li a:hover img { opacity: 0.85; transform: scale(1.2) translateZ(0px); transition-delay: 0.15s; }
+	#wrap .contents li a:hover:after { transform: scale(2) rotate(-45deg) translateZ(0); transition-duration: 1s; }
+	/* #wrap .content-line::after{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #000;
+		bottom: -100px;
+	} */
+	#wrap .footer { text-align: center; margin-bottom: 200px;}
+	@keyframes cont {
+		0% { transform: translateY(10px); opacity: 0; }
+		100% { transform: translateY(0); opacity: 1; }
+	}
+</style>
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap">
+		<div class="logo"><img src="common/images/amalllogo.png" alt=""></div>
+		<h1 class="title">The A Mall 시안 - Type A</h1>
+		<ul class="contents content-line">
+			<li>
+				<a href="theAmall_A/pc/index.html" target="_blank">
+					<img src="common/images/visual01.jpg" alt="">
+					<span>The A Mall PC</span>
+				</a>
+			</li>
+			<li>
+				<a href="theAmall_A/mobile/index.html" target="_blank">
+					<img src="common/images/visual02.jpg" alt="">
+					<span>The A Mall Mobile</span>
+				</a>
+			</li>
+			<li>
+				<a href="MARKLONA_A/pc/index.html" target="_blank">
+					<img src="common/images/visual03.jpg" alt="">
+					<span>MARK&LONA PC</span>
+				</a>
+			</li>
+			<li>
+				<a href="MARKLONA_A/mobile/index2.html" target="_blank">
+					<img src="common/images/visual04.jpg" alt="">
+					<span>MARK&LONA Mobile</span>
+				</a>
+			</li>
+		</ul>
+		<h1 class="title margin-more">The A Mall 시안 - Type B</h1>
+		<ul class="contents">
+			<li>
+				<a href="theAmall_B/B/index.html" target="_blank">
+					<img src="common/images/visual01_b.jpg" alt="">
+					<span>The A Mall PC</span>
+				</a>
+			</li>
+			<li>
+				<a href="theAmall_B/MOBILE/index2.html" target="_blank">
+					<img src="common/images/visual02_b.jpg" alt="">
+					<span>The A Mall Mobile</span>
+				</a>
+			</li>
+			<li>
+				<a href="MARKLONA_B/B/index.html" target="_blank">
+					<img src="common/images/visual03.jpg" alt="">
+					<span>MARK&LONA PC</span>
+				</a>
+			</li>
+			<li>
+				<a href="MARKLONA_B/MOBILE/index2.html" target="_blank">
+					<img src="common/images/visual04_b.jpg" alt="">
+					<span>MARK&LONA Mobile</span>
+				</a>
+			</li>
+		</ul>
+		<div class="footer"><img src="common/images/logo.jpg" alt="FRAMEOUT"></div>
+	</div>
+	<!-- //wrap -->
+</body>
+</html>

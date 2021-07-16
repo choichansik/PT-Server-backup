@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">카드</a></span>
+			<span><a href="#">발급조회/사용등록</a></span>
+			<span>카드발급조회</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">카드</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area02">
+			<!-- card_area -->
+			<div class="card_area">
+				<!-- card_view -->
+				<article class="card_view">
+					<!-- card_title -->
+					<div class="card_title">
+						<ul class="ico">
+							<li class="c5">NEW</li>
+							<li class="c4">인기</li>
+							<li class="c2">이벤트</li>
+							<li class="c3">추천</li>
+							<li class="c1">하나머니 적립</li>
+						</ul>
+						<h3 class="tit">하나멤버스 <em>1Q Play1</em> 카드</h3><!-- 숫자 영문일시 em -->
+						<p class="txt">포인트를 현금으로 쓰는 하나멤버스 신용카드</p>
+					</div>
+					<!-- //card_title -->
+					
+					<!-- card_view_cont -->
+					<div class="card_view_cont">
+						<div class="card_view_img"><img src="../../images/data/img_card01.png" alt="하나멤버스 1Q Play1 카드 (이미지)"></div>
+						<!-- related_card -->
+						<div class="related_card">
+							<ul>
+								<li>
+									<div class="btn_hit"><img src="../../images/data/img_card02.png" alt=""></div><!-- 17.08.08 접근성 수정 -->
+									<div class="over">
+										<p class="txt">하나멤버스 1Q Play1 카드</p>
+										<p class="txt02">젊은 감각의 Trendy한 선택</p>
+										<div class="detail_btn">
+											<a href="#">상세보기</a>
+											<a href="#card_under" onClick="return cardFill(this);">비교담기</a><!-- 비교빼기 : cardFillOut(this);-->
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="btn_hit"><img src="../../images/data/img_card03.png" alt=""></div><!-- 17.08.08 접근성 수정 -->
+									<div class="over">
+										<p class="txt">SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</p>
+										<p class="txt02">젊은 감각의 Trendy한 선택</p>
+										<div class="detail_btn">
+											<a href="#">상세보기</a>
+											<a href="#card_under" onClick="return cardFill(this);">비교담기</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="btn_hit"><img src="../../images/data/img_card04.png" alt=""></div><!-- 17.08.08 접근성 수정 -->
+									<div class="over">
+										<p class="txt">하나멤버스 1Q Play1 카드</p>
+										<p class="txt02">젊은 감각의 Trendy한 선택 젊은 감각의 Trendy한 선택</p>
+										<div class="detail_btn">
+											<a href="#">상세보기</a>
+											<a href="#card_under" onClick="return cardFill(this);">비교담기</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //related_card -->
+						<!-- btn -->
+						<ul class="btn">
+							<li><a href="#">혜택 시뮬레이션</a></li>
+							<li><a href="#">친구추천</a></li>
+							<li><a href="#">비교담기</a></li>
+						</ul>
+						<!-- //btn -->
+					</div>
+					<!-- //card_view_cont -->
+
+					<!-- card_view_info -->
+					<div class="card_view_info">
+						<!-- info01 -->
+						<div class="info01">
+							<ul>
+								<li class="list">
+									<i class="ico"><img src="../../images/contents/ico_c_benefit11.png" alt=""></i><!-- 17.08.07 접근성 수정 -->
+									<div class="txt">
+										<dl>
+											<dt><em>2천~1만5천원</em><span>할인</span></dt>
+											<dd>SK텔레콤</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="list">
+									<i class="ico"><img src="../../images/contents/ico_c_benefit01.png" alt=""></i>
+									<div class="txt">
+										<dl>
+											<dt><em>100~150원</em><span>할인</span></dt>
+											<dd>SK주유소 리터당</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="list">
+									<i class="ico"><img src="../../images/contents/ico_c_benefit42.png" alt=""></i>
+									<div class="txt">
+										<dl>
+											<dt><em>5~10%</em><span>할인</span></dt>
+											<dd>마트</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="list">
+									<i class="ico"><img src="../../images/contents/ico_c_benefit12.png" alt=""></i>
+									<div class="txt">
+										<dl>
+											<dt><em>5~10%</em><span>할인</span></dt>
+											<dd>학원</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //info01 -->
+						<!-- info02 -->
+						<div class="info02">
+							<dl>
+								<!-- 연회비 -->
+								<dt>연회비</dt>
+								<dd class="s1">
+									<ul>
+										<li>국내전용 9,000원 국내전용 9,000원 (기본6,000원+제휴3,000원)</li>
+										<li>국내전용 9,000원 (기본6,000원+제휴3,000원)</li>
+										<li>국내전용 9,000원 (기본6,000원+제휴3,000원)</li>
+									</ul>
+								</dd>
+								<!-- //연회비 -->
+								<!-- 브랜드 -->
+								<dt>브랜드</dt>
+								<dd class="s2">
+									<ul>
+										<li><img src="../../images/contents/ico_card_ty_internal.png" alt="국내전용"></li>
+										<li><img src="../../images/contents/ico_card_ty_visa.png" alt="VISA"></li>
+										<li><img src="../../images/contents/ico_card_ty_master.png" alt="Master Card"></li>
+										<li><img src="../../images/contents/ico_america.gif" alt="익스프레스"></li>
+									</ul>
+								</dd>
+								<!-- //브랜드 -->
+							</dl>
+						</div>
+						<!-- //info02 -->
+						
+						<!-- info02 -->
+						<div class="info02 len3"><!-- 3가지 항목이 들어갈 경우 class="len3" 17.06.13 추가 -->
+							<dl>
+								<!-- 연회비 -->
+								<dt>연회비</dt>
+								<dd class="s1">
+									<ul>
+										<li>국내전용 9,000원</li>
+									</ul>
+								</dd>
+								<!-- //연회비 -->
+								<!-- 브랜드 -->
+								<dt>브랜드</dt>
+								<dd class="s2">
+									<ul>
+										<li><img src="../../images/contents/ico_card_ty_internal.png" alt="국내전용"></li>
+										<li><img src="../../images/contents/ico_card_ty_amex.png" alt="AMEX"></li>
+										<li><img src="../../images/contents/ico_card_ty_jcb.png" alt="JCB"></li>
+									</ul>
+								</dd>
+								<!-- //브랜드 -->
+								<!-- 발급대상 -->
+								<dt>발급대상</dt>
+								<dd class="s3">
+									<ul>
+										<li>만 18세 이상</li>
+									</ul>
+								</dd>
+								<!-- //발급대상 -->
+							</dl>
+						</div>
+						<!-- //info02 -->
+					</div>
+					<!-- //card_view_info -->
+					
+					<!-- card_view_btn -->
+					<div class="card_view_btn">
+						<!-- btn -->
+						<div class="btn">
+							<span>전화신청<em>1599-1118</em></span>
+							<a href="#" class="btn_l btn_ty06">간편신청</a>
+							<a href="#" class="btn_l btn_ty03">카드신청</a>
+							<!--<a href="#" class="btn_l btn_ty02">홈페이지 링크가 있는 경우</a>-->
+						</div>
+						<!-- //btn -->
+						<p class="txt">제휴연회비(해피오토멤버쉽 연회비)는 당사 연회비 면제조건과 무관하게 면제 불가합니다.</p>
+					</div>
+					<!-- //card_view_btn -->
+				</article>
+				<!-- //card_view -->
+
+				<!-- cont_box -->
+				<div class="cont_box">
+					<!-- cont_box_area -->
+					<div class="cont_box_area">
+						<!-- cont -->
+						<article class="cont">
+							<h4 class="blind">카드상세내용</h4>
+							<!-- card_view_event -->
+							<div class="card_view_event">
+								<a href="#" title="이벤트 바로가기"><img src="../../images/data/card_view_event.jpg" alt="하나카드멤버스 1Q 신용카드 이벤트"></a>
+							</div>
+							<!-- //card_view_event -->
+							
+							<!-- card_view_detail -->
+							<div class="card_view_detail">
+								<!-- tab_ty06 17.06.05 상단탭 추가 -->
+								<nav class="tab_ty06">
+									<ul>
+										<li><a href="#"><span>다이아몬드클럽<br>카드 종류</span></a></li><!-- 활성화 class="on" -->
+										<li class="on"><a href="#"><span>다이아몬드클럽<br>스카이패스</span></a></li>
+										<li><a href="#"><span>다이아몬드클럽<br>아시아나클럽</span></a></li>
+										<li><a href="#"><span>다이아몬드클럽<br>골프마일리지</span></a></li>
+										<li><a href="#"><span>공통<br>서비스</span></a></li>
+										<li><a href="#"><span>마스타 다이아몬드<br>서비스</span></a></li>
+									</ul>
+								</nav>
+								<!-- //tab_ty06 -->
+								
+								<!-- tab_ty06 -->
+								<!--<nav class="tab_ty06">
+									<ul>
+										<li class="on"><a href="#"><span>프리미어<br>카드 종류</span></a></li>
+										<li><a href="#"><span>프리미어<br>스카이패스</span></a></li>
+										<li><a href="#"><span>프리미어<br>아시아나클럽</span></a></li>
+										<li><a href="#"><span>프리미어<br>포인트</span></a></li>
+										<li><a href="#"><span>프리미어<br>쇼핑</span></a></li>
+										<li><a href="#"><span>Free<br>Package</span></a></li>
+										<li><a href="#"><span>공통<br>서비스</span></a></li>
+									</ul>
+								</nav>-->
+								<!-- //tab_ty06 -->
+
+								<!-- tab_ty03 -->
+								<nav class="tab_ty card_info_tab mb">
+									<ul>
+										<li class="on"><a href="#card_info01">주요혜택</a></li>
+										<li><a href="#card_info02">하나마나 서비스</a></li>
+										<li><a href="#card_info03">영화 할인 서비스</a></li>
+										<li><a href="#card_info04">공과금 납부 서비스</a></li>
+										<li><a href="#card_info02">하나마나 서비스</a></li>
+										<li><a href="#card_info03">영화 할인 서비스</a></li>
+										<li><a href="#card_info04">공과금 납부 서비스</a></li>
+									</ul>
+								</nav>
+								<!-- //tab_ty03 -->
+
+								<!-- 주요혜택 -->
+								<div class="tab_cont on" id="card_info01"><!-- 활성화 class="on" -->
+									<h5 class="blind">주요혜택</h5>
+
+									<!-- 17.07.19 수정 -->
+									<div class="card_info_txt">
+										<span class="txt">상품 이용 전 반드시 혜택 별 상세 안내 및 서비스 제공조건을 확인하시기 바랍니다.</span>
+									</div>
+									<!-- //17.07.19 수정 -->
+									
+									<!-- card_info_list -->
+									<ul class="card_info_list">
+										<li>
+											<a href="#none" onclick="tabMove('301205050205287')">
+												<i class="ico"><img src="/img/individual/card_view/benefit_ic_refueling.jpg" alt="혜택 아이콘"></i><!-- image size : 120*80px -->
+												<div class="tit">
+													<p>주유 할인</p>
+												</div>
+												<div class="txt">
+													<p>주유 월 2만원 할인</p>
+													<ul>
+														<li class="blt2">SK주유소 월 합산 10만원 이상 이용 시 마다, 모바일 주유권 제공<br>(4,000원권 2매, 월 최대 4매까지)</li>
+													</ul>
+												</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#none" onclick="tabMove('301205100538378')">
+												<i class="ico"><img src="/img/individual/card_view/benefit_ic_mart.jpg" alt="혜택 아이콘"></i><!-- image size : 120*80px -->
+												<div class="tit">
+													<p>마트 할인</p>
+												</div>
+												<div class="txt">
+													<p>마트 월 2만원 할인</p>
+													<ul>
+														<li class="blt2">3대 마트(이마트, 홈플러스, 롯데마트) 월 합산 10만원 이상 이용 시 마다<br>모바일 마트할인권 제공(5,000원권 2매, 월 최대 4매까지)</li>
+													</ul>
+												</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#none" onclick="tabMove('301205300517529')">
+												<i class="ico"><img src="/img/individual/card_view/benefit_ic_academy.jpg" alt="혜택 아이콘"></i><!-- image size : 120*80px -->
+												<div class="tit">
+													<p>학원 할인</p>
+												</div>
+												<div class="txt">
+													<p>전국 학원 업종 5% 할인</p>
+													<ul>
+														<li class="blt2">전국 외국어/기능/컴퓨터/예,체능계/보습/유치원/독서실 등 학원 업종 결제 시 5% 할인</li>
+													</ul>
+												</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#none" onclick="tabMove('301205091125281')">
+												<i class="ico"><img src="/img/individual/card_view/benefit_ic_double.jpg" alt="혜택 아이콘"></i><!-- image size : 120*80px -->
+												<div class="tit">
+													<p>T멤버십 더블 할인</p>
+												</div>
+												<div class="txt">
+													<ul>
+														<li class="blt1">T멤버십 할인 + Touch1카드 기본 할인</li><!-- (혹시나 블릿 확인 입니다.) -->
+														<li class="blt1">영화 최대 12회 무료</li>
+														<li class="blt1">도미노 피자 최대 50% 할인 등</li>
+													</ul>
+												</div>
+											</a>
+										</li>
+
+										<li>
+											<a href="#none" onclick="tabMove('301205090107443')">
+												<i class="ico"><img src="/ATTACH/WWW/img/individual/card_view/benefit_ic_cashback01.jpg" alt="혜택 아이콘"></i><!-- image size : 120*80px -->
+												<div class="tit">
+													<p>T멤버십/OK캐쉬백</p>
+												</div>
+												<div class="txt">
+													<p>T멤버십 가입 고객의 경우 T멤버십/제휴 가맹점 할인서비스 이용 가능<br>전국 OK캐쉬백 가맹점에서 편리하게 이용 가능</p>
+												</div>
+											</a>
+										</li>
+									
+										<li>
+											<a href="#card_info02" class="tab_link">
+												<i class="ico"><img src="../../images/data/ico_card_info01.png" alt="임시 아이콘"></i><!-- image size : 120*80px -->
+												<div class="tit">
+													<p>하나머니 서비스</p>
+												</div>
+												<div class="txt">
+													<p>마트, 백화점, 온라인쇼핑, 통신요금/대중교통, 해외사용금액<br>10만원 이용할 때마다 5천 하나머니 적립 (월 최대 5만 하나머니)</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#card_info03" class="tab_link">
+												<i class="ico"><img src="../../images/data/ico_card_info02.png" alt="임시 아이콘"></i>
+												<div class="tit">
+													<p>영화 할인 서비스</p>
+												</div>
+												<div class="txt">
+													<p>cgv, 메가박스, 롯데시네마 영화표 1만원 이상 결제하면<br>5천원 청구할인 (월1회)</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#card_info04" class="tab_link">
+												<i class="ico"><img src="../../images/data/ico_card_info03.png" alt="임시 아이콘"></i>
+												<div class="tit">
+													<p><em>카카오페이결제</em><br>할인 서비스</p>
+												</div>
+												<div class="txt">
+													<p>마트, 백화점, 온라인쇼핑, 통신요금/대중교통, 해외사용금액<br>10만원 이용할 때마다 5천 하나머니 적립 (월 최대 5만 하나머니)<br>10만원 이용할 때마다 5천 하나머니 적립<br>
+전월 사용금액 40만원 이상 5천원, 80만원 이상 1만원, 120만원 이상 2만원 할인</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<!-- //card_info_list -->
+								</div>
+								<!-- //주요혜택 -->
+
+								<!-- 하나마나 서비스 -->
+								<div class="tab_cont" id="card_info02">
+									<h5 class="blind">하나마나 서비스</h5>
+									<!-- 17.07.19 수정 -->
+									<div class="card_info_txt">
+										<span class="txt">상품 이용 전 반드시 혜택 별 상세 안내 및 서비스 제공조건을 확인하시기 바랍니다.</span>
+									</div>
+									<!-- //17.07.19 수정 -->
+									
+									
+									하나마나 서비스 내용<br>
+									<span class="t_point02">As-is 내용 마크업 동일 스타일 css로 맞춥니다.</span>
+								</div>
+								<!-- //하나마나 서비스 -->
+								
+								<!-- 영화 인 서비스 -->
+								<div class="tab_cont" id="card_info03">
+									<h5 class="blind">영화 할인 서비스</h5>
+									<!-- 17.07.19 수정 -->
+									<div class="card_info_txt">
+										<span class="txt">상품 이용 전 반드시 혜택 별 상세 안내 및 서비스 제공조건을 확인하시기 바랍니다.</span>
+									</div>
+									<!-- //17.07.19 수정 -->
+									
+									영화 인 서비스
+									<span class="t_point02">As-is 내용 마크업 동일 스타일 css로 맞춥니다.</span>
+								</div>
+								<!-- //영화 할인 서비스 -->
+								
+								<!-- 공과금 납부 서비스 -->
+								<div class="tab_cont" id="card_info04">
+									<h5 class="blind">하나마나 서비스</h5>
+									<!-- 17.07.19 수정 -->
+									<div class="card_info_txt">
+										<span class="txt">상품 이용 전 반드시 혜택 별 상세 안내 및 서비스 제공조건을 확인하시기 바랍니다.</span>
+									</div>
+									<!-- //17.07.19 수정 -->
+									
+									공과금 납부 서비스 내용
+									<span class="t_point02">As-is 내용 마크업 동일 스타일 css로 맞춥니다.</span>
+								</div>
+								<!-- //공과금 납부 서비스 -->
+							</div>
+							<!-- //card_view_detail -->
+							
+							<!-- accordian _ty -->
+							<ul class="accordian_ty">
+								<li class="list"><!-- 활성화 class="on" -->
+									<a href="#"><span>통합한도(서비스 제공 기준)</span></a>
+									<div class="view">
+										<dl class="li">
+											<dt class="t_tit02">적립대상</dt>
+											<dd>
+												<ul class="txt_li">
+													<li claSS="blt1">하나머니 적립대상 이용하신 고객(구 하나포인트, YES포인트 포함</li>
+													<li claSS="blt1 t_point02">As-is 내용 마크업 동일 스타일 css로 맞춥니다.</li>
+												</ul>
+											</dd>
+										</dl>
+										<dl class="li">
+											<dt class="t_tit02">적립대상</dt>
+											<dd>
+												<ul class="txt_li">
+													<li claSS="blt1">하나머니 적립 및 사용기준은 하나카드가 발행하는 하나머니 적립형 상품을 기준으로 합니다.</li>
+													<li claSS="blt1">카드 이용 실적에 따른 하나머니 적립은 거래 건별로 사용금액 1,000원당 최소 1머니를 기준으로 하며, 소수점 이하 절사합니다.</li>
+													<li claSS="blt1">최근 월의 사용실적을 기준으로 적립을 제고하는 경우에는 실적기준을 충족한 경우에만 머니가 적립됩니다.</li>
+													<li claSS="blt1">상품 및 서비스별로 적립률 및 실적 제외 요건이 상이하오니, 자세한 적립률은 해당카드 안내 페이지에서 확인하시기 바랍니다.</li>
+													<li claSS="blt1">상품 및 서비스별로 적립한도가 정해진 경우에는 한도를 초과한 분에 대해서는 적립이 제외되거나, 낮은 적립률이 적용됩니다.</li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="list">
+									<a href="#"><span>안내</span></a>
+									<div class="view">
+										<dl class="li">
+											<dt class="t_tit02">적립대상</dt>
+											<dd>
+												<ul class="txt_li">
+													<li claSS="blt1">하나머니 적립대상 이용하신 고객(구 하나포인트, YES포인트 포함</li>
+													<li claSS="blt1 t_point02">As-is 내용 마크업 동일 스타일 css로 맞춥니다.</li>
+												</ul>
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+							<!-- //accordian _ty -->
+							
+							<!-- card_view_info_txt -->
+							<ul class="card_view_info_txt">
+								<li class="tit">신용카드 남용은 가계경제에 위협이 됩니다. 연체 이자울24.0~27.9%)은 정상이자율 및 연체일 수에 따라 적용됩니다.</li>
+								<li>
+									<em>카드 출시 시기 : 2016.11.17</em>
+									<em>여성금융협회 심의필 제 2016-C1h-01743 (2016.11.30)</em>
+								</li>
+							</ul>
+							<!-- //card_view_info_txt -->
+							
+							<!-- card_view_other -->
+							<div class="card_view_other">
+								<h5 class="tit"><span>같은혜택<br>다른카드</span></h5>
+								<ul class="txt">
+									<li class="list">
+										<p class="img"><img src="../../images/data/img_card03.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<div class="s_txt"><p>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</p></div>
+									</li>
+									<li class="list">
+										<p class="img"><img src="../../images/data/img_card02.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<div class="s_txt"><p>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</p></div>
+									</li>
+								</ul>
+							</div>
+							<!-- //card_view_other -->
+							
+							<!-- useful_nav -->
+							<nav class="useful_nav">
+								<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae05.png" alt="이용대금명세서 (아이콘)"></i>이용대금명세서</a>
+								<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae06.png" alt="결제예정금액 (아이콘)"></i>결제예정금액</a>
+								<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae12.png" alt="이용대금 결제 (아이콘)"></i>이용대금 결제</a>
+								<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae08.png" alt="해외승인내역 (아이콘)"></i>해외승인내역</a>
+							</nav>
+							<!-- //useful_nav -->
+						</article>
+						<!-- //useful_nav -->
+					</div>
+					<!-- //cont_box_area -->
+				</div>
+				<!-- //cont_box -->
+			</div>
+			<!-- //card_area -->
+			
+			<!-- 카드비교 -->
+			<article class="card_under" id="card_under">
+				<a href="#card_under" class="btn_card_under">카드비교 보기</a>
+				<!-- card_under_area -->
+				<div class="card_under_area">
+					<h3 class="tit">카드비교<em>3</em></h3>
+					<!-- card_under_cont -->
+					<div class="card_under_cont">
+						<ul>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card02.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card03.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card04.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+						</ul>
+						<a href="#" class="btn btn_b btn_ty02">비교하기</a>
+					</div>
+					<!-- //card_under_cont -->
+				</div>
+				<!-- //card_under_area -->
+			</article>
+			<!-- //카드비교 -->
+		</div>
+		<!-- //cont_area -->
+		<!--<a href="#container" class="btn_top">상단으로 이동</a>-->
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

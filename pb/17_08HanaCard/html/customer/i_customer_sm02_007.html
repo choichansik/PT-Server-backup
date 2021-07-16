@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>보안프로그램 장애해결 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">고객센터</a></span>
+			<span><a href="#">이용안내</a></span>
+			<span>해외이용안내</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">고객센터</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>이용안내</em>보안프로그램 장애해결</h3>
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					<!-- install_programs_header -->
+					<div class="install_programs_header">
+						<span class="connet">고객님께서 현재 접속하신 PC정보 입니다.</span>
+						<dl class="conatact_info">
+							<dt>운영체제</dt>
+							<dd>Windows64,Win64</dd>
+							<dt>브라우저</dt>
+							<dd>Chrome,56.0.2924.87[UriI3GM]</dd>
+						</dl>
+					</div>
+					<!-- //install_programs_header -->
+
+					<article class="cont">
+						<h2 class="blind">설치 안내</h2>
+						<div class="install_box">
+							<dl>
+								<dt><span class="t_point">전체설치</span> 클릭시 필수보안 프로그램이 자동 설치합니다.</dt>
+								<dd>보안프로그램 통합 설치가 원활하지 않을 경우, 아래 프로그램 설치를 각각 진행해 주세요.<br>설치완료 메시지가 반복적으로 나오면 브라우저 종료 및 해당프로그램 삭제 후 재설치 하시기 바랍니다.</dd>
+							</dl>
+							<!-- 17.07.14 수정 -->
+							<div class="btn_box">
+								<a href="#" class="btn_install">전체 설치</a>
+								<a href="#" class="btn_install">전체 설치</a>
+							</div>
+							<!-- //17.07.14 수정 -->
+						</div>
+					</article>
+
+<!-- 17.07.14 수정 -->
+<script type="text/javascript">
+function getFaq(v){
+	jQuery(function($){
+		$('.accordian_ty .list').css('height', 68);
+		$('.accordian_ty .list').removeClass('on');
+		var tgt = $(v).attr("href");
+		var tgtFocus = $(tgt).find('a').eq(0);	
+		$(tgt).addClass('on');
+		$(tgt).css('height', $(tgt).find('.view').innerHeight() + 68);
+
+		$('html, body').stop().animate({scrollTop:$(tgt).offset().top - 200}, 600);
+		tgtFocus.focus()	
+	});
+	return false;
+}
+</script>
+<!-- //17.07.14 수정 -->
+
+					<article class="cont">
+						<h2 class="t_tit">보안필수 프로그램</h2>
+						<!-- table_ty02 -->
+						<div class="table_ty02 vm">
+							<table>
+								<caption>보안필수 프로그램</caption>
+								<colgroup>
+									<col span="1" style="width:30%;">
+									<col span="1" style="width:46%;">
+									<col span="1" style="width:24%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">프로그램명</th>
+										<th scope="col">내용</th>
+										<th scope="col">설치상태</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">통합설치 프로그램 (veraport)</th>
+										<td class="left">
+											<p class="txt_install">필수 프로그램을 통합 설치하기 위한 프로그램입니다.</p>
+											<a href="#tc1" onClick="return getFaq(this);" class="btn_xs btn_ty04">상세보기</a><!-- 17.07.14 수정 -->
+										</td>
+										<td><span class="install_yes">설치됨</span></td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">공인인증서 보안 (WiziN-Delfino G3)</th>
+										<td class="left">
+											<p class="txt_install">웹표준 대체기술이 적용된 공인인증서 로그인과 전자서명을<br>지원해 주는 프로그램입니다.</p>
+											<a href="#tc2" onClick="return getFaq(this);" class="btn_xs btn_ty04">상세보기</a><!-- 17.07.14 수정 -->
+										</td>
+										<td><span class="install_yes">설치됨</span></td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">키보드 보안 (ASTx)</th>
+										<td class="left">
+											<p class="txt_install">키보드로 입력되는 정보가 유출되거나 변조되지 않도록 보호해<br>주는 프로그램입니다.</p>
+											<a href="#tc3" onClick="return getFaq(this);" class="btn_xs btn_ty04">상세보기</a><!-- 17.07.14 수정 -->
+										</td>
+										<td>
+											<span class="b_txt">미설치</span>
+											<div class="install_div">
+												<a href="#" class="btn_m btn_ty">다운로드</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+						<!-- //table_ty02 -->
+						<p class="txt_install02">보안 프로그램 설치 시 "새로고침" 버튼을 클릭하시어 설치 상태를 확인하여 주시기 바랍니다.</p>
+						<!-- btn_area -->
+						<ul class="btn_area">
+							<li>
+								<a href="#" class="btn_b btn_ty06">새로고침</a>
+								<a href="#" class="btn_b btn_ty04">홈페이지</a>
+							</li>
+						</ul>
+						<!-- //btn_area -->
+					</article>
+		
+					<!-- 아코디언 -->
+					<article class="cont">
+						<h4 class="blind">보안프로그램 장애해결</h4>
+						<!-- accordian _ty -->
+						<ul class="accordian_ty ty02">							
+							<!-- 통합보안프로그램(Veraport) 설치안내 -->
+							<li class="list on" id="tc1"><!-- 17.07.14 수정 -->
+								<a href="#"><span>통합보안프로그램(Veraport) 설치안내</span></a>
+								<div class="view">
+									<dl class="li">
+										<dt class="t_tit02">주요기능</dt>
+										<dd>
+											<ul class="txt_li02">
+												<li>하나카드 오픈웹 이용 시 필요한 보안 프로그램에 대하여 통합 설치 관리 기능을 제공하는 프로그램입니다.<br>“통합설치 프로그램”은 최초 접속 시 1회 설치되며, 설치가 진행되지 않으실 경우 설치파일을 다운로드 받은 후 수동으로 설치하실 수 있습니다.</li>
+											</ul>
+										</dd>
+									</dl>
+
+									<dl class="li">
+										<dt class="t_tit02">지원환경</dt>
+										<dd>
+											<!-- table_ty -->
+											<div class="table_ty02 pd">
+											<table>
+												<caption>지원환경</caption>
+												<colgroup>
+													<col span="1" style="width:28%;">
+													<col span="6" style="width:12%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">Internet<br>Explorer</th>
+														<th scope="col">Edge</th>
+														<th scope="col">Chrome</th>
+														<th scope="col">Safari</th>
+														<th scope="col">Firefox</th>
+														<th scope="col">Opera</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">Windows<br>win XP(SP3) ~ win10</td>
+														<td>IE 6.0이상</td>
+														<td>12.0이상</td>
+														<td>38.0이상</td>
+														<td>5.1.7이상</td>
+														<td>32.0이상</td>
+														<td>25.0이상</td>
+													</tr>
+													<tr>
+														<td class="left">Mac<br>OS X 10.6 ~ 10.11</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>38.0이상</td>
+														<td>5.1.7이상</td>
+														<td>32.0이상</td>
+														<td>25.0이상</td>
+													</tr>
+													<tr>
+														<td class="left">리눅스 Ubuntu<br>12.04, 14.04, 14.10<br>15.04. 15.10</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>38.0이상</td>
+														<td>미지원</td>
+														<td>32.0이상</td>
+														<td>25.0이상<br>&#40;64bit&#41;</td>
+													</tr>
+													<tr>
+														<td class="left">리눅스 Fedora<br>18~23</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>38.0이상</td>
+														<td>미지원</td>
+														<td>32.0이상</td>
+														<td>미지원</td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</dd>
+									</dl>
+
+									<dl class="li">
+										<dt class="t_tit02">기술지원 연락처</dt>
+										<dd>
+											<ul class="txt_li02">
+												<li class="blt1">회사명 : 위즈베라</li>
+												<li class="blt1">고객지원센터 : 070-4659-3607 </li>
+												<li class="blt1">업무시간 : 평일 9:00~18:00, 토요일, 공휴일 휴무</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							
+							<!-- 공인인증서 보안(WizIN-Delfino G3) 안내 -->
+							<li class="list" id="tc2"><!-- 17.07.14 수정 -->
+								<a href="#"><span>공인인증서 보안(WizIN-Delfino G3) 안내</span></a>
+								<div class="view">
+									<dl class="li">
+										<dt class="t_tit02">주요기능</dt>
+										<dd>
+											<ul class="txt_li02">
+												<li class="blt1">사용자 인증 : 사용자 인증에 사용될 공인인증서 제출 및 검증 기능을 제공합니다.</li>
+												<li class="blt1">전자서명 수행 및 검증: 공인인증서를 이용한 전자서명 수행 및 전자서명의 전위와 서명자를 확인 합니다.</li>
+												<li class="blt1">전자봉투: 공인인증서에 포함된 식별번호를 이용하여 인증서 소유자의 신원확인 지원합니다.</li>
+											</ul>
+										</dd>
+									</dl>
+
+									<dl class="li">
+										<dt class="t_tit02">지원환경</dt>
+										<dd>
+											<!-- table_ty -->
+											<div class="table_ty02 pd">
+											<table>
+												<caption>지원환경</caption>
+												<colgroup>
+													<col span="1" style="width:28%;">
+													<col span="6" style="width:12%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">Internet<br>Explorer</th>
+														<th scope="col">Edge</th>
+														<th scope="col">Chrome</th>
+														<th scope="col">Safari</th>
+														<th scope="col">Firefox</th>
+														<th scope="col">Opera</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">Windows<br>win XP(SP3) ~ win10</td>
+														<td>IE 6.0이상</td>
+														<td>12.0이상</td>
+														<td>38.0이상</td>
+														<td>5.1.7이상</td>
+														<td>32.0이상</td>
+														<td>25.0이상</td>
+													</tr>
+													<tr>
+														<td class="left">Mac<br>OS X 10.6 ~ 10.11</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>38.0이상</td>
+														<td>5.1.7이상</td>
+														<td>32.0이상</td>
+														<td>25.0이상</td>
+													</tr>
+													<tr>
+														<td class="left">리눅스 Ubuntu<br>12.04, 14.04, 14.10<br>15.04. 15.10</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>38.0이상</td>
+														<td>미지원</td>
+														<td>32.0이상</td>
+														<td>25.0이상<br>&#40;64bit&#41;</td>
+													</tr>
+													<tr>
+														<td class="left">리눅스 Fedora<br>18~23</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>38.0이상</td>
+														<td>미지원</td>
+														<td>32.0이상</td>
+														<td>미지원</td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</dd>
+									</dl>
+
+									<dl class="li">
+										<dt class="t_tit02">기술지원 연락처</dt>
+										<dd>
+											<ul class="txt_li02">
+												<li class="blt1">회사명 : 위즈베라</li>
+												<li class="blt1">고객지원센터 : 070-4659-3607 </li>
+												<li class="blt1">업무시간 : 평일 9:00~18:00, 토요일, 공휴일 휴무</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</li>
+							
+							<!-- 키보드 보안(ASTx) 안내 -->
+							<li class="list" id="tc3"><!-- 17.07.14 수정 -->
+								<a href="#"><span>키보드 보안(ASTx) 안내</span></a>
+								<div class="view">
+									<dl class="li">
+										<dt class="t_tit02">주요기능</dt>
+										<dd>
+											<ul class="txt_li02">
+												<li>개인PC방화벽 &nbsp; 키보드보안 &nbsp; 부정거래 사용 확인 프로그램(Ahnlab Safe Transaction)은 키보드 보안(Anti-keylogger), 네트워크보안(Firewall/IPS), 고객정보를 도용한 부정거래 여부확인 등으로 구성 된 서비스로 온라인을 통해 처리되는 모든 정보의 교류를 안전하게 보호해 드리는 서비스 입니다.</li>
+											</ul>
+										</dd>
+									</dl>
+
+									<dl class="li">
+										<dt class="t_tit02">지원환경</dt>
+										<dd>
+											<!-- table_ty --><!-- 17.07.25 수정 -->
+											<div class="table_ty02 pd">
+												<table>
+													<caption>지원환경</caption>
+													<colgroup>
+														<col span="1" style="width:22%;">
+														<col span="6" style="width:13%;">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">구분</th>
+															<th scope="col">Internet<br>Explorer</th>
+															<th scope="col">Edge</th>
+															<th scope="col">Chrome</th>
+															<th scope="col">Safari</th>
+															<th scope="col">Firefox</th>
+															<th scope="col">Opera</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th scope="row" class="left">Windows<br>winXP(SP3) ~ Win10</th>
+															<td>IE 7.0이상</td>
+															<td>12이상</td>
+															<td>45.0이상</td>
+															<td>3.0이상</td>
+															<td>40이상</td>
+															<td>30이상</td>
+														</tr>
+														<tr>
+															<th scope="row" class="left">MAC<br>OS X 10.7 ~ 10.11</th>
+															<td>미지원</td>
+															<td>미지원</td>
+															<td>45.0이상</td>
+															<td>6.0이상</td>
+															<td>40이상</td>
+															<td>미지원</td>
+														</tr>
+														<tr>
+															<th scope="row" class="left">리눅스 Ubuntu<br>12.04, 14.04, 15.04</th>
+															<td>미지원</td>
+															<td>미지원</td>
+															<td>45.0이상</td>
+															<td>미지원</td>
+															<td>40이상</td>
+															<td>미지원</td>
+														</tr>
+														<tr>
+															<th scope="row" class="left">리눅스 Fedora<br>21, 22</th>
+															<td>미지원</td>
+															<td>미지원</td>
+															<td>45.0이상</td>
+															<td>미지원</td>
+															<td>40이상</td>
+															<td>미지원</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<!-- //table_ty --><!-- //17.07.25 수정 -->
+										</dd>
+									</dl>
+
+									<dl class="li">
+										<dt class="t_tit02">기술지원 연락처</dt>
+										<dd>
+											<!-- 17.06.28 수정 -->
+											<ul class="txt_li02">
+												<li class="blt1">회사명 : 안랩</li>
+												<li class="blt1">고객지원센터 : 1588-1803</li>
+												<li class="blt1">업무시간 : 평일 9:00~18:00, 토요일, 공휴일 휴무</li>
+											</ul>
+											<!-- //17.06.28 수정 -->
+										</dd>
+									</dl>
+								</div>
+							</li>
+							
+							<!-- 로그수집기(IPInside) 안내 -->
+							<li class="list">
+								<a href="#"><span>로그수집기(IPInside) 안내</span></a>
+								<div class="view">
+									<dl class="li">
+										<dt class="t_tit02">주요기능</dt>
+										<dd>
+											<ul class="txt_li02">
+												<li>안전한 금융거래를 위한 프로그램으로 온라인 거래내역 확인을 통해 전자금융 부정접속 및 부당거래를 예방해 줍니다.
+													<ul>
+														<li class="blt2">우회·변조 접속 탐지 기능</li>
+														<li class="blt2">정상적인 접속 여부에 대한 거래 검증 및 모니터링</li>
+													</ul>
+												</li>
+											</ul>
+										</dd>
+									</dl>
+
+									<dl class="li">
+										<dt class="t_tit02">지원환경</dt>
+										<dd>
+											<!-- table_ty -->
+											<div class="table_ty02 pd">
+											<table>
+												<caption>지원환경</caption>
+												<colgroup>
+													<col span="1" style="width:28%;">
+													<col span="6" style="width:12%;">
+												</colgroup>
+												<thead>
+													<tr>
+														<th scope="col">구분</th>
+														<th scope="col">Internet<br>Explorer</th>
+														<th scope="col">Edge</th>
+														<th scope="col">Chrome</th>
+														<th scope="col">Safari</th>
+														<th scope="col">Firefox</th>
+														<th scope="col">Opera</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="left">
+															Windows<br>
+															win XP(SP3)<br>
+															Vista<br>
+															win 7<br>
+															win 8<br>
+															win 8.1<br>
+															win 10
+														</td>
+														<td class="left">IE 7.0, 8.0<br>IE 7.0~9.0<br>IE 7.0 이상<br>IE 10.0 이상<br>IE 11.0 이상<br>IE 11.0 이상</td>
+														<td class="left">미지원<br>미지원<br>미지원<br>미지원<br>미지원<br>12.0 이상</td>
+														<td>10 이상</td>
+														<td>5.1.7 이상</td>
+														<td>27 이상</td>
+														<td>20 이상</td>
+													</tr>
+													<tr>
+														<td class="left">Mac<br>OS X 10.7.4 이상</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>10 이상</td>
+														<td>6.0 이상</td>
+														<td>지원 27 이상</td>
+														<td>20 이상</td>
+													</tr>
+													<tr>
+														<td class="left">리눅스 Ubuntu<br>12.04 이상</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>10 이상</td>
+														<td>미지원</td>
+														<td>지원 27 이상</td>
+														<td>20 이상</td>
+													</tr>
+													<tr>
+														<td class="left">리눅스 Fedora<br>15 이상</td>
+														<td>미지원</td>
+														<td>미지원</td>
+														<td>10 이상</td>
+														<td>미지원</td>
+														<td>지원 27 이상</td>
+														<td>20 이상</td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</dd>
+									</dl>
+
+									<dl class="li">
+										<dt class="t_tit02">기술지원 연락처</dt>
+										<dd>
+											<ul class="txt_li02">
+												<li class="blt1">회사명 : 인터리젠</li>
+												<li class="blt1">고객지원센터 : 02-576-2511</li>
+												<li class="blt1">업무시간 : 평일 9:00~18:00, 토요일, 공휴일 휴무</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</li>
+						</ul>
+						<!-- //accordian _ty -->
+					</article>
+					<!-- 아코디언 -->
+					
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>NH기업카드 PC A 시안</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="common/css/reset.css">
+<link rel="stylesheet" type="text/css" href="common/css/contents.css">
+<script src="common/js/jquery.js"></script>
+<script src="common/js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- header -->
+	<header id="header">
+		<div class="inner">
+			<a href="index.html" class="btn-transparent btn-01"></a>
+			<a href="index_store.html" class="btn-transparent btn-02"></a>
+			<a href="sub.html" class="btn-transparent btn-05"></a>
+			<div class="login_off logout_contents">
+				<a href="javascript:onChangeLoginToggle(0);" class="btn-transparent btn-03"></a>
+				<img src="common/images/login_off.png" alt=""/>
+			</div>
+			<div class="login_on login_contents">
+				<a href="javascript:onChangeLoginToggle(1);" class="btn-transparent btn-04"></a>
+				<img src="common/images/login_on.png" alt=""/>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<div id="container">
+
+		<div class="sub-01">
+			<div class="inner">
+				<div id="chart-wrap">
+					<div id="chartdiv"></div>
+					<div class="chart-data">
+						<div>
+						<div class="txt01"></div>
+						<div class="txt02"></div>
+						</div>
+					</div>
+				</div>
+				<div class="tooltip">
+					<div class="tooltip-btn"></div>
+					<div class="tooltip-data"><img src="common/images/tooltip.png" alt=""/></div>
+				</div>
+
+				<div class="select-arrow select-01" data-index="0">
+					<button class="btn" type="button">5개</button>
+					<div class="data">
+						<img src="common/images/select_data_01.png" alt=""/>
+					</div>
+				</div>
+
+				<div class="select-arrow select-02" data-index="1">
+					<button class="btn" type="button">14개</button>
+					<div class="data">
+						<img src="common/images/select_data_02.png" alt=""/>
+					</div>
+				</div>
+
+				<div class="select-arrow select-03" data-index="2">
+					<button class="btn" type="button">경영지원팀</button>
+					<div class="data">
+						<img src="common/images/select_data_03.png" alt=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="main-03">
+			<div class="inner">	
+				<div><img src="common/images/main_03_item_01.png" alt=""/></div>
+				<div class="card-list">
+					<ul>
+						<li>
+							<a href="javascript:;" class="btn-card-01">
+								<div class="item-inner">
+									<div class="txt01">법인카드 기본 안내</div>
+									<div class="txt02">법인카드 이용자를 위한<br><strong>안내 서비스</strong></div>
+									<div class="icon"></div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="btn-card-02">
+								<div class="item-inner">
+									<div class="txt01">데이터 전송 서비스</div>
+									<div class="txt02">맞춤 데이터 제공을 통한<br><strong>회계업무 지원</strong></div>
+									<div class="icon"></div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="btn-card-03">
+								<div class="item-inner">
+									<div class="txt01">부가세환급 지원 서비스</div>
+									<div class="txt02">매입세액 확대로 인해<br><strong>혜택 추가</strong></div>
+									<div class="icon"></div>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="btn-card-04">
+								<div class="item-inner">
+									<div class="txt01">NH채움카드 SMS 서비스</div>
+									<div class="txt02">이용내역 실시간<br><strong>메세지 전송</strong></div>
+									<div class="icon"></div>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="item-02">
+						<a href="#" class="btn-transparent btn-01"></a>
+						<img src="common/images/main_03_item_02.png" alt=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<footer id="footer"><div class="inner"><img src="common/images/footer.png" alt=""/></div></footer>
+	<!-- //footer -->
+
+	
+
+</div>
+<!-- //wrap -->
+
+<script src="common/js/TweenMax.min.js"></script>
+<script src="common/js/slick.min.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+<script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+<script>
+
+function onChangeLoginToggle(index){
+	if(index == 0){
+		$('.logout_contents').each(function(){
+			$(this).stop(true).fadeOut(200);
+		});
+		$('.login_contents').each(function(){
+			$(this).stop(true).fadeIn(200);
+		});
+		$('.login-form').addClass('actived');
+	}else{
+		$('.logout_contents').each(function(){
+			$(this).stop(true).fadeIn(200);
+		});
+		$('.login_contents').each(function(){
+			$(this).stop(true).fadeOut(200);
+		});
+		$('.login-form').removeClass('actived');
+	}
+}
+
+var effect = {
+	
+	container : null,
+	items : [],
+
+	init : function(){		
+		this.container = $('#container');
+		
+		var i=0;
+		this.container.find('.effect_wrap').each(function(){
+			var obj = {
+				target : $(this),
+				index : i,
+				activeStats : false
+			}
+
+			effect.items.push(obj);
+			i++;
+		});	
+
+		effect.scroll();
+		this.container.on('scroll' , function () {
+			effect.scroll();
+		});
+	},
+
+	scroll : function(){
+		var _this = this;
+
+		for(var i = 0; i < effect.items.length; i++){
+			var _target = effect.items[i].target;
+			var _option = effect.items[i];
+			if(!_option.activeStats){
+				if(_this.container.scrollTop() + _this.container.height() >= (_option.target.offset().top + _this.container.scrollTop())){
+					_option.target.addClass('actived');
+					_target.css({ 'transform' : 'translate(0px, 0px)' , 'opacity' : '1' , 'transition' : 'transform 0.85s 0.15s cubic-bezier(0.250, 0.460, 0.450, 0.940) , opacity 0.85s 0.15s cubic-bezier(0.250, 0.460, 0.450, 0.940)'});
+					_option.activeStats = true;
+				}
+			}				
+		}
+	}
+}
+
+var browserUI = {
+
+	isIE : function(){
+		var agent = navigator.userAgent.toLowerCase();
+		if((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf('msie') != -1)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+}
+
+var common = {
+
+	tooltipTimer : null,
+	tooltipElement : null,
+	tooltipStats : false,
+
+	init : function(){
+		this.tooltipElement = $('.tooltip');
+		this.tooltipDataElement = this.tooltipElement.find('.tooltip-data');
+		this.tooltipElement.find('.tooltip-btn').on('mouseenter mouseleave click' , function(e){
+			if(e.type == 'mouseenter'){
+				if(common.tooltipTimer) clearTimeout(common.tooltipTimer);
+				common.tooltipDataElement.stop(true).fadeIn(250);
+				common.tooltipStats = false;
+			}else if(e.type == 'mouseleave'){
+				if(!common.tooltipStats) common.tooltipDataElement.stop(true).fadeOut(250);
+			}else if(e.type == 'click'){
+				common.tooltipDataElement.stop(true);
+				if(common.tooltipTimer) clearTimeout(common.tooltipTimer);
+				common.tooltipStats = true;
+				common.tooltipDataElement.stop(true).fadeIn(250);
+				common.tooltipTimer = setTimeout(function(){					
+					common.tooltipDataElement.stop(true).fadeOut(250);
+					common.tooltipStats = false;
+				} , 5000);
+			}
+		});
+
+		$(document).on('click' , '.select-arrow' , function(e){
+			var _elementIndex = $(this).attr('data-index');
+			if($(this).hasClass('actived')){
+				$(this).find('.data').stop(true).slideUp(250);
+				$(this).removeClass('actived');
+			}else{
+				$(this).find('.data').stop(true).slideDown(250);
+				$(this).addClass('actived');
+			}
+
+			$('.select-arrow').each(function(){
+				if($(this).attr('data-index') != _elementIndex){
+					if($(this).hasClass('actived')){
+						$(this).find('.data').stop(true).slideUp(250);
+						$(this).removeClass('actived');
+					}
+				}
+			});
+
+		});
+	}
+}
+function topmove(){
+	$('html, body').stop().animate({'scrollTop':0}, {queue:false, duration:1000, easing:'easeOutCubic'});
+}
+
+$(function(){
+	effect.init();
+	common.init();
+});
+
+$(document).ready(function(){
+	$('#wrap').addClass('open');
+});
+
+/*===================================
+@ window resize
+===================================*/
+$(window).resize(function () {
+});
+
+
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+// Add data
+chart.data = [ {
+  "country": "경영지원팀",
+  "litres": 140,
+  "color": am4core.color("#3372b8"),
+  "isActive": true
+}, {
+  "country": "Technology팀",
+  "litres": 75,
+  "color": am4core.color("#fa7267")
+}, {
+  "country": "UX Consulting팀",
+  "litres": 57,
+  "color": am4core.color("#feb338")
+}, {
+  "country": "UX Design팀",
+  "litres": 88,
+  "color": am4core.color("#dde7fe")
+}];
+
+// Set inner radius
+chart.innerRadius = am4core.percent(60);
+
+// Add and configure Series
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "litres";
+pieSeries.dataFields.category = "country";
+pieSeries.slices.template.propertyFields.fill = "color";
+pieSeries.labels.template.disabled = true;
+pieSeries.ticks.template.disabled = true;
+pieSeries.slices.template.tooltipText = "";
+pieSeries.slices.template.propertyFields.isActive = "isActive";
+pieSeries.slices.template.togglable = false;
+
+var hs = pieSeries.slices.template.states.getKey("hover");
+hs.properties.scale = 1;
+
+
+var shadow = pieSeries.slices.template.filters.push(new am4core.DropShadowFilter);
+shadow.opacity = 0;
+
+var activeState = pieSeries.slices.template.states.getKey("active");
+activeState.properties.scale = 1.10;
+activeState.properties.shiftRadius = 0.04;
+
+var activeShadow = activeState.filters.push(new am4core.DropShadowFilter);
+activeShadow.color = am4core.color('#26507f');
+activeShadow.opacity = 0.32;
+activeShadow.dx = 0;
+activeShadow.dy = 5;
+activeShadow.blur = 7;
+
+//26507f
+
+pieSeries.slices.template.events.on("hit", function(ev) {
+  var series = ev.target.dataItem.component;
+  changeChartData(ev.target.dataItem.properties.category , ev.target.dataItem.value);
+  series.slices.each(function(item) {
+
+	if(item == ev.target){
+		if(!item.isActive) item.isActive = true;
+	 }
+    if (item.isActive && item != ev.target) {
+		//console.log(ev.target);
+      item.isActive = false;
+    }
+	
+  })
+});
+
+
+// This creates initial animation
+/*
+pieSeries.hiddenState.properties.opacity = 1;
+pieSeries.hiddenState.properties.endAngle = -90;
+pieSeries.hiddenState.properties.startAngle = -90;
+*/
+
+changeChartData('경영지원팀' , 140)
+}); // end am4core.ready()
+
+function changeChartData(name , value){
+	$('#chart-wrap').find('.txt01').html(name);
+	var _value = Math.floor(value / 360 * 100);
+	$('#chart-wrap').find('.txt02').html(_value + '<span>%</span>');
+}
+
+</script>
+</body>
+</html>

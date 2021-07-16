@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>Sync 카드 서비스 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">마이페이지</a></span>
+			<span><a href="#">결제내역</a></span>
+			<span>승인내역</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">혜택</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>카드혜택</em>Sync 카드 서비스</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					
+					<!-- tab_ty -->
+					<nav class="tab_ty">
+						<ul>
+							<li><a href="#">안내</a></li>
+							<li class="on"><a href="#">Sync Switch 조회/변경</a></li>
+							<li><a href="#">Sync 카드 이용실적</a></li>
+							<li><a href="#">Sync 카드 혜택금액</a></li>
+							<!--<li><span>Sync 카드 이용실적</span></li>
+							<li><span>Sync 카드 혜택금액</span></li> 17.06.12 링크 아닐경우 추가 -->
+						</ul>
+					</nav>
+					<!-- //tab_ty -->
+
+					<!-- search_area02 -->
+					<div class="search_area02">
+						<form>
+							<fieldset>
+							<legend>조회조건</legend>
+								<ul class="only center">
+									<li class="list">
+										<p class="blind">카드선택</p>
+										<select class="select_ty w630" title="카드선택">
+											<option value="">카드선택</option>
+											<option value="">5243-****-****-3569[본인/HANA MASTER] 하나멤버스 1Q 하나멤버스 1Q</option>
+											<option value="">내맘대로 T PLUS (5243-****-****-1234)</option>
+										</select>
+										<a href="#" class="btn_m btn_ty02">조회</a>
+									</li>
+								</ul>
+							</fieldset>
+						</form>
+					</div>
+					<!-- //search_area02 -->
+
+					<!-- 서비스 대상 카드 미 소지자인 경우 -->
+					<article class="cont">
+						<!-- comp_screen -->
+						<div class="comp_screen ty02">
+							<div class="txt">
+								<h4>Sync 카드를 소지한 고객님께만 제공되는 서비스이며,<br>해당 카드는 신규 발급이 <span class="t_point">중단되었습니다.</span></h4>
+							</div>
+						</div>
+						<!-- //comp_screen -->
+					</article>
+					<!-- //서비스 대상 카드 미 소지자인 경우 -->
+
+					<!-- 서비스 대상 카드 소지자인 경우 -->
+					<article class="cont">
+						<h4 class="t_tit">My Sync Switch 서비스</h4>
+						<!-- applied_services -->
+						<div class="applied_services">
+							<ul>
+								<li>
+									<dl>
+										<dt>이번 달 적용 서비스</dt>
+										<dd>Sync Together</dd>
+									</dl>
+									<dl>
+										<dt>적용 월</dt>
+										<dd>2017.04</dd>
+									</dl>
+								</li>
+								<li>
+									<dl>
+										<dt>다음 달 적용예정 서비스</dt>
+										<dd class="t_point">Sync Joy</dd>
+									</dl>
+									<dl>
+										<dt>적용 월</dt>
+										<dd>2017.05</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+						<!-- //applied_services -->
+						<!-- btn_area -->
+						<ul class="btn_area">
+							<li>
+								<a href="#" class="btn_b btn_ty02">변경</a>
+							</li>
+						</ul>
+						<!-- //btn_area -->
+					</article>
+					<!-- //서비스 대상 카드 소지자인 경우 -->
+
+					<script type="text/javascript">
+						jQuery(function($){
+							$('.chk_table input.chk_point').click(function(){
+								$('.chk_table .list').removeClass('on');
+								$(this).closest('li').addClass('on');
+							});
+						});
+					</script>
+
+					<!-- Sync Switch 서비스 변경 -->
+					<div>
+						<!-- Sync Switch 서비스 변경 선택 -->
+						<article class="cont">
+							<h4 class="t_tit">Sync Switch 서비스 변경</h4>
+							<form>
+								<fieldset>
+								<legend>신청내역</legend>
+								<ul class="sync_list chk_table">
+									<li class="list on">
+										<dl>
+											<dt><label for="radio01_1"><input type="radio" class="chk_point" id="radio01_1" name="radid01" checked>Sync Together 서비스</label></dt>
+											<dd>
+												<ul>
+													<li class="blt1">국, 내외 카드사용액 1.0%기본적립(적립형) / 0.8%기본할인(할인형)</li>
+													<li class="blt1">5대 가족생활비 영역 중 10만원 이상 사용 영역수에 따라 기본적립/할인 제공액의 20~50% 추가 적립/할인</li>
+													<li class="blt1">가족 생활비 영역: 주유, 할인점, 교육(학원 및 유치원), 통신, 온라인</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+									<li class="list">
+										<dl>
+											<dt><label for="radio01_2"><input type="radio" class="chk_point" id="radio01_2" name="radid01">Sync Joy 서비스 </label></dt>
+											<dd>
+												<ul>
+													<li class="blt1">국, 내외 카드사용액 0.5%기본적립(적립형) / 0.4%기본할인(할인형)</li>
+													<li class="blt1">5대 개인소비 영역 중 5만원 이상 사용 영역수에 따라 기본적립/할인 제공액의 20~50% 추가 적립/할인</li>
+													<li class="blt1">개인소비 영역: 커피, 편의점, 대중교통, 통신, 온라인</li>
+												</ul>
+											</dd>
+										</dl>
+									</li>
+								</ul>
+								</fieldset>
+							</form>
+						</article>
+						<!-- //Sync Switch 서비스 변경 선택 -->
+						<!-- 본인인증 -->
+						<article class="cont">
+							<h4 class="t_tit">본인인증</h4>
+							<!-- board_box -->
+							<div class="board_box">
+								<!-- tab_ty03 -->
+								<nav class="tab_ty03 tab_nav">
+									<a href="#tab01" class="on">카드인증</a>
+									<a href="#tab02">공인인증서 인증</a>
+								</nav>
+								<!-- //tab_ty03 -->
+								<div class="layout_guide">
+									<p><span>인증 모듈 영역<br><br><em><a href="../guide/temp04.html" target="_blank">모듈 페이지 &gt;</a></em></span></p>
+								</div>
+							</div>
+							<!-- //board_box -->
+							<!-- btn_area -->
+							<ul class="btn_area">
+								<li>
+									<a href="#" class="btn_b btn_ty">취소</a>
+									<a href="#" class="btn_b btn_ty02">확인</a>
+								</li>
+							</ul>
+							<!-- //btn_area -->
+						</article>
+						<!-- //본인인증 -->
+					</div>
+					<!-- //Sync Switch 서비스 변경 -->
+
+					<!-- 안내 -->
+					<article class="cont">
+						<h4 class="blind">안내</h4>
+						<!-- info_box -->
+						<dl class="info_box">
+							<dt><a href="#">Sync 카드 서비스 안내</a></dt>
+							<dd>
+								<h5 class="s_tit">Sync Switch 서비스란?</h5>
+								<ul>
+									<li class="blt1">고객님의 소비패턴 변화에 따라 “Sync Together 서비스”와 “Sync Joy 서비스”를 변경하실 수 있습니다.</li>
+									<li class="blt1">월 1회 신청하실 수 있으며, Sync Switch 서비스를 통하여 변경된 서비스는 변경일 다음달 부터 적용됩니다.</li>
+								</ul>
+								<h5 class="s_tit">Sync Together / Joy 서비스 혜택 안내</h5>
+								<ul>
+									<li class="blt1">Sync Together 서비스(이번 달 실적 50만원 이상 시 서비스 제공)
+										<ul>
+											<li class="blt2">국, 내외 카드사용액 1.0%기본적립(적립 형) / 0.8%기본할인(할인 형)</li>
+											<li class="blt2">5대 가족생활비 영역 중 10만원 이상 사용 영역수에 따라 기본적립/할인 제공액의 20~50% 추가 적립/할인</li>
+											<li class="blt2">가족 생활비 영역: 주유,할인점,교육(학원 및 유치원), 통신, 온라인</li>
+										</ul>
+									</li>
+									<li class="blt1">Sync Joy 서비스(이번 달 실적 제한 없이 서비스 제공)
+										<ul>
+											<li class="blt2">국, 내외 카드사용액 0.5%기본적립(적립 형) / 0.4%기본할인(할인 형)</li>
+											<li class="blt2">5대 개인소비 영역 중 5만원 이상 사용 영역수에 따라 기본적립/할인 제공액의 20~50% 추가 적립/할인</li>
+											<li class="blt2">개인소비 영역: 커피, 편의점, 대중교통, 통신, 온라인</li>
+										</ul>
+									</li>
+								</ul>
+								<h5 class="s_tit">Sync 카드 서비스 유의사항 안내</h5>
+								<ul>
+									<li class="blt1">Switch 서비스는 신청 다음달 1일부터 적용 됩니다.</li>
+									<li class="blt1">Switch 서비스는 본인/가족 카드 별로 각각 다르게 신청 가능합니다.</li>
+									<li class="blt1">가족카드의 Switch 서비스 신청은 본인회원만 가능합니다.</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!-- 안내 -->
+
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

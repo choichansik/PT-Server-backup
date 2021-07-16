@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>분실신고/재발급 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">마이페이지</a></span>
+			<span><a href="#">결제내역</a></span>
+			<span>승인내역</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">고객센터</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>고객상담</em>분실신고/재발급</h3> <!-- 17.06.13 수정 -->
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+
+					<!-- tab_ty -->
+					<nav class="tab_ty">
+						<ul>
+							<li><a href="#">분실/도난신고</a></li>
+							<li><a href="#">분실신고사고매출등록</a></li>
+							<li class="on"><a href="#">분실신고내역조회/해제</a></li><!-- 활성화 class="on" -->
+						</ul>
+					</nav>
+					<!-- //tab_ty -->
+					
+					<!-- step_ty02 -->
+					<div class="step_ty02 ty02">
+						<ol>
+							<li><i>1</i><em>분실신고내역</em></li>
+							<li class="on" title="현재위치"><i>2</i><em>해제확인</em></li><!-- 현재위치 class="on" -->
+							<li><i>3</i><em>해제완료</em></li>
+						</ol>
+					</div>
+					<!--// step_ty02 -->
+					
+					<!-- 조회일시 -->
+					<article class="cont">						
+						<!-- table_ty -->
+						<div class="table_ty02 pd">
+							<table>
+								<caption>조회일시</caption>
+								<colgroup>
+									<col span="1" style="width:25%;">
+									<col span="1" style="width:30%;">
+									<col span="3" style="width:15%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">분실신고접수일자</th>
+										<th scope="col">분실카드번호</th>
+										<th scope="col">카드구분</th>
+										<th scope="col">접수경로</th>
+										<th scope="col">사고매출</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2017.05.03 15:14:02</td>
+										<td><label for="chk01_1">4140-****-****-2573</label></td>
+										<td>법인공용</td>
+										<td>인터넷</td>
+										<td>N</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</article>
+					<!--// 조회일시 -->
+						
+					<article class="cont">
+						<h4 class="blind">해지사유</h4>
+						
+						<form>
+							<fieldset>
+							<legend>해지사유</legend>
+							<!-- board_ty -->
+							<div class="board_ty">
+								<table>
+									<caption>해지사유</caption>
+									<colgroup>
+										<col span="1" style="width:25%;">
+										<col span="1" style="width:75%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="left">해지사유</th>
+											<td class="left">
+												<select class="select_ty w180" title="해지사유 선택">
+													<option value="">분실카드 찾음</option>
+													<option value="">분실신고 오류</option>
+												</select>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">메모</th>
+											<td class="left"><input type="text" class="input_ty w100" placeholder="" title="해지사유 기타 입력"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<!-- btn_area -->
+							<ul class="btn_area">
+								<li>
+									<a href="#" class="btn_b btn_ty02">확인</a>
+								</li>
+							</ul>
+							</fieldset>
+						</form>
+					</article>
+					
+					<!-- 안내 -->
+					<article class="cont">
+						<h4 class="blind">안내</h4>
+						<!-- info_box -->
+						<dl class="info_box">
+							<dt><a href="#">분실신고내역조회/해제 안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">분실신고 당시 카드 재발급을 신청하신 고객님은 분실해지가 불가합니다.</li>
+									<li class="blt1">분실 해지 시 후불교통기능은 해지 후 지하철 2~3일, 버스 4~5일 후부터 이용가능 합니다.</li>
+									<li class="blt1">후불교통기능은 분실해지 7~10일 후 수령하실 수 있습니다.</li>
+									<li class="blt1">분실해지 신청은 월~금요일 08:00 ~ 21:00 까지 가능합니다. (토/일/공휴일은 불가)<br>(단, 전산시스템의 사정에 따라 약간의 변동이 있을 수 있습니다.)</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!--// 안내 -->
+
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

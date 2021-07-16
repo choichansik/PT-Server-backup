@@ -1,0 +1,961 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">카드</a></span>
+			<span><a href="#">발급조회/사용등록</a></span>
+			<span>카드발급조회</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">카드</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area02">
+			<!-- card_area -->
+			<div class="card_area">
+				<!-- card_view -->
+				<article class="card_view">
+					<!-- card_title -->
+					<div class="card_title">
+						<ul class="ico">
+							<li class="c1">NEW</li><!-- c1 c2 c3 : bg color -->
+							<li class="c2">인기</li>
+							<li class="c3">이벤트</li>
+							<li class="c4">추천</li>
+							<li class="c5">연회비캐쉬백</li>
+						</ul>
+						<h3 class="tit">하나멤버스 <em>1Q Play1</em> 카드</h3><!-- 숫자 영문일시 em -->
+						<p class="txt">포인트를 현금으로 쓰는 하나멤버스 신용카드</p>
+					</div>
+					<!-- //card_title -->
+					
+					<!-- card_view_cont -->
+					<div class="card_view_cont">
+						<div class="card_view_img"><img src="../../images/data/img_card01.png" alt="하나멤버스 1Q Play1 카드 (이미지)"></div>
+						<!-- related_card -->
+						<div class="related_card">
+							<ul>
+								<li>
+									<div class="btn_hit"><img src="../../images/data/img_card02.png" alt=""></div><!-- 17.08.08 접근성 수정 -->
+									<div class="over">
+										<p class="txt">하나멤버스 1Q Play1 카드</p>
+										<p class="txt02">젊은 감각의 Trendy한 선택</p>
+										<div class="detail_btn">
+											<a href="#">상세보기</a>
+											<a href="#card_under" onClick="return cardFill(this);">비교담기</a><!-- 비교빼기 : cardFillOut(this);-->
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="btn_hit"><img src="../../images/data/img_card03.png" alt=""></div><!-- 17.08.08 접근성 수정 -->
+									<div class="over">
+										<p class="txt">SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</p>
+										<p class="txt02">젊은 감각의 Trendy한 선택</p>
+										<div class="detail_btn">
+											<a href="#">상세보기</a>
+											<a href="#card_under" onClick="return cardFill(this);">비교담기</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="btn_hit"><img src="../../images/data/img_card04.png" alt=""></div><!-- 17.08.08 접근성 수정 -->
+									<div class="over">
+										<p class="txt">하나멤버스 1Q Play1 카드</p>
+										<p class="txt02">젊은 감각의 Trendy한 선택 젊은 감각의 Trendy한 선택</p>
+										<div class="detail_btn">
+											<a href="#">상세보기</a>
+											<a href="#card_under" onClick="return cardFill(this);">비교담기</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //related_card -->
+						<!-- btn -->
+						<ul class="btn">
+							<li><a href="#">혜택 시뮬레이션</a></li>
+							<li><a href="#">친구추천</a></li>
+							<li><a href="#">비교담기</a></li>
+						</ul>
+						<!-- //btn -->
+					</div>
+					<!-- //card_view_cont -->
+					
+					<!-- card_view_info -->
+					<div class="card_view_info">
+						<!-- info01 -->
+						<div class="info01">
+							<ul>
+								<li class="list">
+									<i class="ico"><img src="../../images/contents/card_view_ico01.png" alt="할인내용 (아이콘)"></i>
+									<div class="txt">
+										<dl>
+											<dt><em>1.5</em>%<span>적립</span></dt>
+											<dd>백화점/해외</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="list">
+									<i class="ico"><img src="../../images/contents/card_view_ico02.png" alt="할인내용 (아이콘)"></i>
+									<div class="txt">
+										<dl>
+											<dt><em>2,000</em>원<span>할인</span></dt>
+											<dd>영화/공연</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="list">
+									<i class="ico"><img src="../../images/contents/card_view_ico03.png" alt="할인내용 (아이콘)"></i>
+									<div class="txt">
+										<dl>
+											<dt><em>1.5</em>%<span>할인</span></dt>
+											<dd>3대 주유소 리터당</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="list">
+									<i class="ico"><img src="../../images/contents/card_view_ico04.png" alt="할인내용 (아이콘)"></i>
+									<div class="txt">
+										<dl>
+											<dt><em>24</em>개월<span>장기할부</span></dt>
+											<dd>SKT</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //info01 -->
+						<!-- info02 -->
+						<div class="info02">
+							<dl>
+								<!-- 연회비 -->
+								<dt>연회비</dt>
+								<dd class="s1">
+									<ul>
+										<li>국내전용 9,000원 국내전용 9,000원 (기본6,000원+제휴3,000원)</li>
+										<li>국내전용 9,000원 (기본6,000원+제휴3,000원)</li>
+										<li>국내전용 9,000원 (기본6,000원+제휴3,000원)</li>
+									</ul>
+								</dd>
+								<!-- //연회비 -->
+								<!-- 브랜드 -->
+								<dt>브랜드</dt>
+								<dd class="s2">
+									<ul>
+										<li><img src="../../images/contents/ico_card_ty_internal.png" alt="국내전용"></li>
+										<li><img src="../../images/contents/ico_card_ty_visa.png" alt="VISA"></li>
+										<li><img src="../../images/contents/ico_card_ty_master.png" alt="Master Card"></li>
+									</ul>
+								</dd>
+								<!-- //브랜드 -->
+							</dl>
+						</div>
+						<!-- //info02 -->
+					</div>
+					<!-- //card_view_info -->
+					
+					<!-- card_view_btn -->
+					<div class="card_view_btn">
+						<!-- btn -->
+						<div class="btn">
+							<!--<span>전화신청<em>1599-1118</em></span>
+							<a href="#" class="btn_l btn_ty06">간편신청</a>
+							<a href="#" class="btn_l btn_ty03">카드신청</a>-->
+							<a href="#" class="btn_l btn_ty02">홈페이지 링크가 있는 경우</a>
+						</div>
+						<!-- //btn -->
+						<p class="txt">제휴연회비(해피오토멤버쉽 연회비)는 당사 연회비 면제조건과 무관하게 면제 불가합니다.</p>
+					</div>
+					<!-- //card_view_btn -->
+				</article>
+				<!-- //card_view -->
+			
+				<!-- cont_box -->
+				<div class="cont_box">
+					<!-- cont_box_area -->
+					<div class="cont_box_area">
+						<!-- cont -->
+						<article class="cont">
+							<h4 class="blind">카드상세내용</h4>
+							<!-- card_view_event -->
+							<div class="card_view_event">
+								<a href="#" title="이벤트 바로가기"><img src="../../images/data/card_view_event.jpg" alt="하나카드멤버스 1Q 신용카드 이벤트"></a>
+							</div>
+							<!-- //card_view_event -->
+							
+							<!-- card_view_detail -->
+							<div class="card_view_detail">
+								<!-- tab_ty03 -->
+								<nav class="tab_ty tab_nav02 mb">
+									<ul>
+										<li><a href="#tab01">주요혜택</a></li>
+										<li  class="on"><a href="#tab02">하나마나 서비스</a></li>
+										<li><a href="#tab03">영화 활인 서비스</a></li>
+										<li><a href="#tab04">공과금 납부 서비스</a></li>
+									</ul>
+								</nav>
+								<!-- //tab_ty03 -->
+
+								<!-- 주요혜택 -->
+								<div class="tab_cont" id="tab01">
+									<h5 class="blind">주요혜택</h5>
+									<img src="../../images/data/img_card_view.jpg" alt="">
+								</div>
+								<!-- //주요혜택 -->
+
+								<!-- 하나마나 서비스 -->
+								<div class="tab_cont on" id="tab02">
+									<h5 class="blind">하나마나 서비스</h5>
+									
+									<!-- 기존 상세 : tab_cdCont -->
+									<div class="tab_cdCont">
+										<h5 class="card_info"><img src="/ATTACH/WWW/img/individual/visa/tit_point_acquis.gif" alt="하나머니 적립"></h5>
+										<h6 class="card_info" id="311609071055593"> 하나머니 적립</h6>
+										<div class="dep_txt">
+											종합적립한도 안에서 하나머니 적립 (월 최대 3만 하나머니)
+											<div class="dep2">지난달 실적 30만원 이상일 때 서비스 제공</div>
+										</div>
+
+										<h6 class="card_info" id="311609071059434"> 1. 테이블 Vertical : table_ty02</h6>
+										<div class="deph">
+											<div class="tbl_list">
+												<table summary="적립률 및 통합적립한도 안내입니다.">
+													<caption>적립률 및 통합적립한도</caption>
+													<colgroup>
+														<col style="width: 40%">
+														<col style="width: 30%">
+														<col style="width: 30%">
+													</colgroup>
+													<thead>
+														<tr>
+															<th scope="col">지난달 실적</th>
+															<th scope="col">적립률</th>
+															<th scope="col" class="last">월 통합적립한도</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>30만원 이상 ~ 60만원 미만</td>
+															<td>7%</td>
+															<td class="last">1만 하나머니</td>
+														</tr>
+														<tr>
+															<td>60만원 이상 ~ 90만원 미만</td>
+															<td>7%</td>
+															<td class="last">2만 하나머니</td>
+														</tr>
+														<tr>
+															<td>90만원 이상</td>
+															<td>10%</td>
+															<td class="last">3만 하나머니</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+
+										<h6 class="card_info" id="311609071106308"> 2. 테이블 Horizon : table_ty</h6>
+										<div class="deph">
+											<div class="tbl_listr">
+												<table summary="적립대상 가맹점 안내입니다.">
+													<caption>적립대상 가맹점</caption>
+													<colgroup>
+														<col style="width:30%">
+														<col style="width:70%">
+													</colgroup>
+													<tbody>
+														<tr class="">
+															<th scope="row">통신요금</th>
+															<td>SKT/SKB, KT, LGU+ 자동이체 이용금액 (자동이체 외 이용금액 제외)</td>
+														</tr>
+														<tr>
+															<th scope="row">오픈마켓</th>
+															<td>G마켓, 옥션, 11번가 (공식 홈페이지/App. 이용 시)</td>
+														</tr>
+														<tr>
+															<th scope="row">대중교통</th>
+															<td>버스, 지하철<br>(적립대상 : 시내버스, 마을버스, 광역버스, 지하철, 공항철도<br>적립제외 : 시외버스, 고속버스, 택시, T머니 서비스 이용금액)</td>
+														</tr>
+														<tr>
+															<th scope="row">프리미엄 아울렛</th>
+															<td>신세계사이먼 프리미엄 아울렛, 롯데 프리미엄 아울렛, 현대 프리미엄 아울렛,<br>이케아(IKEA) 국내 전 가맹점<br>
+															(온라인 이용금액, 식음료 매장, 편의시설 이용금액 제외)</td>
+														</tr>
+													
+													</tbody>
+												</table>
+											</div>
+										</div>
+
+										<h6 class="card_info" id="311412191012596">커피, 영화, 서점, 화장품 업종 이용금액 캐쉬백</h6>
+										<div class="tbl_list">
+											<table summary="커피, 영화, 서점, 화장품 업종 이용금액 캐쉬백">
+												<caption>
+												커피, 영화, 서점, 화장품 업종 이용금액 캐쉬백
+												</caption>
+												<colgroup>
+												<col style="width:25%">
+												<col style="width:25%">
+												<col style="width:25%">
+												<col style="width:25%">
+												</colgroup>
+												<thead>
+													<tr>
+													<th scope="col" rowspan="2">구분</th>
+													<th scope="col" rowspan="2">mobi box 앱 회원</th>
+													<th scope="col" class="last" colspan="2">mobi box 앱 비회원</th>
+													</tr>
+													<tr>
+													<th scope="col">모바일 카드</th>
+													<th scope="col" class="last">플라스틱 카드</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+													<td>캐쉬백률</td>
+													<td>3%</td>
+													<td>3%</td>
+													<td class="last">1%</td>
+													</tr>
+													<tr>
+													<td>캐쉬백 한도</td>
+													<td class="last" colspan="3">업종별 월 5천원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<ul class="note_list">
+											<li>할인대상가맹점 : 하나카드 가맹점 분류상 해당 업종으로 등록된 가맹점에 한함</li>
+											<li>mobi box 앱 안내 <a href="/PL10100000N.web?schID=pcd&amp;mID=PL10100000N&amp;tabID=02"><img src="../../images/data/btn_go.gif" alt="바로가기"></a></li>
+										</ul>
+
+
+										<h6 class="card_info" id="311509231003046"> 3. 복합(컨텐츠 + 테이블) </h6>
+										<ul class="dep_list">
+											<li>국내적립
+												<div class="dep2">적립대상 가맹점/업종은 하나카드 기준에 따라 적용<br>
+													<span style="padding-left:10px;">1) 마트 : 이마트 에브리데이, 홈플러스 익스프레스, 롯데슈퍼 제외/마트 내 임대매장 제외</span><br>
+													<span style="padding-left:10px;">2) 온라인쇼핑 : 상품권 구매 제외</span><br>
+													<span style="padding-left:10px;">3) 통신 : SKT, SKB, KT, LGU+ 자동이체 통신요금</span><br>* 각 통신사 고객센터/홈페이지를 통해 직접 자동이체 신청<br>
+													<span style="padding-left:10px;">4) 교통 : 시내버스, 마을버스, 광역버스, 공항버스, 지하철, 공항철도, 택시 (시외버스, 고속버스 제외)</span><br>
+													<span style="padding-left:10px;">5) 전기요금 : 한국전력공사 자동이체 요금 (아파트, 빌라, 연립, 다세대, 상가 등 일괄 납부 단체요금 제외)</span><br>
+													<span style="padding-left:10px;">6) 가스요금 : 각 지역 도시가스사업자 자동이체 요금</span>
+											 </div>
+											</li>
+											<li>해외적립
+												<div class="dep2">국내외겸용카드(MasterCard/JCB)로 사용시 제공</div>
+												<div class="dep2">해외 사용금액은 승인일자 및 승인금액 기준으로 산정<br>
+												(해외현금서비스, 현금인출의 경우 해외적립 사용금액에서 제외하며, 무승인 매입은 매입 월에 산정)</div>
+											 </li>
+										</ul>
+
+										<h6 class="card_info" id="311509231003046">이동통신 요금 할인 </h6>
+										<ul class="dep_list">
+											<li>SK텔레콤 이동통신 요금 자동이체 설정 시, 휴대폰 기종 / 자동이체 방법에 따라 월 2천원~1만5천원까지 할인 (월 1회)
+												<div class="dep2">할인기준
+													<div class="tbl_list">
+														<table summary="SK텔레콤 이동통신 요금 자동이체 설정 시, 휴대폰 기종 / 자동이체 방법에 따라 월 15,000원 할인 안내입니다.">
+														<caption>할인기준</caption>
+														<colgroup>
+															<col width="25%;">
+															<col width="25%;">
+															<col width="25%;">
+															<col width="25%;">
+														</colgroup>
+														<thead>
+														<tr>
+															<th scope="col">지난달 일시불/할부<br>
+															카드 이용금액</th>
+															<th scope="col">40만원 이상<br>70만원 미만</th>
+															<th scope="col">70만원 이상<br>100만원 미만</th>
+															<th class="last" scope="col">100만원 이상</th>
+														</tr>
+														</thead>
+														<tbody>
+														<tr>
+															<td>LTE 모바일</td>
+															<td>5,000원</td>
+															<td>10,000원</td>
+															<td class="last">15,000원</td>
+														</tr>
+														<tr>
+															<td>LTE</td>
+															<td>4,000원</td>
+															<td>7,000원</td>
+															<td class="last">13,000원</td>
+														</tr>
+														<tr>
+															<td>일반</td>
+															<td>2,000원</td>
+															<td>3,000원</td>
+															<td class="last">6,000원</td>
+														</tr>
+														</tbody>
+														</table>
+													</div>
+													<ul class="note_list">
+														<li>LTE 모바일 할인 : SKT LTE 휴대폰 이용 고객이 모바일카드로 자동이체 시</li>
+														<li>LTE 할인 : SKT LTE 휴대폰 이용 고객이 플라스틱카드로 자동이체 시</li>
+														<li>일반 할인 : SKT 2G/3G 휴대폰을 자동이체 시(플라스틱카드, 모바일카드 무관)</li>
+													</ul>
+													<div class="noti mt5"><strong>자동이체 신청 필수 : 카드 발급 후 SK텔레콤 고객센터를 통해 직접 자동이체 신청(휴대폰 114)</strong></div>
+												</div>
+											</li>
+											<li class="mt10">이동통신 요금 할인 유의 사항
+												<ul class="dep2">
+													<li>할인금액은 SK텔레콤 요금 청구서에서 차감 청구(유선전화, 인터넷, 인터넷전화 등 결합 상품 요금은 제외)</li>
+													<li>본인 명의의 SK텔레콤 이동통신 요금을 본인 명의 카드로 자동이체 시 서비스 제공(가족카드 불가)</li>
+													<li>자동이체 신청 후 다음달 청구 요금부터 통신 요금 할인 제공(자동이체 신청 이번달 할인 불가)</li>
+													<li>통신 요금이 할인 금액보다 작을 경우 청구된 요금만 할인</li>
+													<li>휴대폰 기종은 지난달 말일 기준으로 SK텔레콤에서 이용하고 있는 기종정보에 따름</li>
+													<li> LTE 휴대폰 여부는 SK텔레콤 기준(문의 : SK텔레콤 고객센터 ☎ 휴대폰 114)</li>
+													<li>모바일카드 할인은 LTE 휴대폰 기종에 한하여 적용되며 CLUB SK 모바일카드 발급 후 모바일카드로 통신요금 자동 이체 시 적용(단, 모바일/플라스틱카드 중복 할인 불가)</li>
+													<li>통신요금 할인은 SK텔레콤의 정책에 따라 일부 고객에게 제한 될 수 있음(문의 : SK텔레콤 고객센터 ☎ 휴대폰 114)</li>
+												</ul>
+											</li>
+											<li class="mt10">서비스 제공 조건
+												<ul class="dep2">
+													<li>지난달(1일~말일)국내외 일시불/할부 이용금액에 따라 차등 제공(40만원/70만원/100만원)</li>
+													<li>지난달 이용금액 산정 시 SK텔레콤 통신 요금, SK 주유소/충전소 이용금액은 지난달 카드 이용금액에 포함되지 않음<br>
+													(단, 아파트관리비, 국세, 지방세, 중/고/대학등록금 이용금액은 할인 여부 관계없이 지난달 이용금액 산정 시 제외)</li>
+													<li>최초 카드 사용 등록 후 다음달 말일까지는 지난달 카드 이용금액 40만원 미만 시에도 지난달 카드 이용금액 40만원 기준으로 서비스 제공</li>
+												</ul>
+											</li>
+										</ul>
+																			
+										<h6 class="card_info" id="311409020556487"> 4. 링크 : 타이틀 + 버튼 : 아멕스플래티늄 홈페이지 <a href="#"><img src="../../images/data/btn_go.gif" alt="비자플래티늄 홈페이지 바로가기"></a></h6>
+										<ul class="dep_list">
+											<li>ITIC 홈페이지(<a href="http://www.itic.co.kr" class="hana" target="_blank" title="새창열림">www.itic.co.kr</a>) 참고</li>
+										</ul>
+										
+										<h6 class="card_info" id="311409020556487"> 4-1. 링크 : 이미지 맵</h6>
+										<div class="img_box">
+											<img src="../../images/data/img_prepaid_card_step.jpg" alt="카드발급 > 본인등록 > 선불카드충전>카드사용" border="0" usemap="#Map">
+											<map name="Map" id="Map">
+												<area shape="rect" coords="188,42,256,61" href="/PIB5500000M.web?schID=pcd&amp;mID=PIB5000000M" alt="사용등록">
+												<area shape="rect" coords="341,42,410,61" href="/PY06003100M.web?schID=pcd&amp;mID=PY06003100M" alt="선불카드 충전하기">
+											</map>
+										</div>
+
+										<h6 class="card_info" id="311409020612295"> 5. 기타 : 인천공항 발렛파킹 서비스 이용방법(마스터, 비자, 아멕스 공통)</h6>
+										<ul class="dep_list">
+											<li>인천공항 이용 시 월3회 무료 발렛파킹 서비스를 제공해드립니다.
+												<div class="dep2">서비스 이용방법
+													<ul class="ls">
+														<li><strong>주차시</strong>
+															<div class="imgbox"><img src="../../images/data/parking_in.gif" alt="주차시 단계 안내"></div>
+															<ol class="hide">
+																<li>01 차량도착(인천공항 출발층 1~14번 정차장)</li>
+																<li>02 차량상태점검(차량점검 후 차량 열쇠 인수)</li>
+																<li>03 차량접수(차량 보관증 발급)</li>
+																<li>04 차량인도(인천공항 직영주차장 [㈜프로에스콤] 이동)</li>
+															</ol>
+														</li>
+														<li><strong>출차시</strong>
+															<div class="imgbox"><img src="../../images/data/parking_out.gif" alt="출차시 단계 안내"></div>
+															<ol class="hide">
+																<li>01 차량인도 (지하3층 차량인도장으로 이동)</li>
+																<li>02 차량인수(차량보관증/신용카드제시후, 주차권과 차량열쇠 수령)</li>
+																<li>03 주차요금정산(주차장 출차시 주차요금 정산)</li>
+															</ol>
+														</li>
+													</ul>
+													<div class="noti">유의사항 : 출차 시간은 약 10분정도 소요됩니다. 도착 후 출차 요청하는 경우 30분 이상 기다려야 하는 경우가 있으므로 미리 전화로 출차를 요청하여 주시기 바랍니다. </div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<!-- //기존 상세 : tab_cdCont -->
+
+
+								</div>
+								<!-- //하나마나 서비스 -->
+								
+								<!-- 영화 활인 서비스 -->
+								<div class="tab_cont" id="tab03">
+									<h5 class="blind">영화 활인 서비스</h5>
+									
+									<!-- 기존 상세 : tab_cdCont -->
+									<div class="tab_cdCont" style="display: block;">
+										<h5 class="card_info"><img src="/img/individual/check_card/st_point.gif" alt="포인트/마일리지"></h5>
+
+										<h6 class="card_info" id="311205240250305">에코머니 포인트란?</h6>
+										<div class="dep_txt">자발적 녹색생활 및 카드사용을 통해 적립되고, 다양한 사용처를 통해 편리하게 사용할 수 있는 친환경 마일리지입니다.</div>
+
+										<h6 class="card_info" id="311205240252163">에코머니 포인트 적립안내</h6>
+										<ul class="dep_list">
+											<li>기본적립 : 카드 이용금액 최대 0.8% 에코머니 포인트 적립
+												<div class="tbl_list">
+													<table summary="전월 이용 금액에 따른 적립율 안내입니다.">
+													<caption>전월 이용 금액에 따른 적립율</caption>
+													<colgroup>
+														<col style="width:20%">
+														<col style="width:20%">
+														<col style="width:20%">
+														<col style="width:20%">
+														<col style="width:20%">
+													</colgroup>
+													<thead>
+													<tr>
+														<th scope="col">전월 이용 금액</th>
+														<th scope="col">20만원 이상~<br>50만원 미만</th>
+														<th scope="col">50만원 이상~<br>100만원 미만</th>
+														<th scope="col">100만원 이상~<br>300만원 미만</th>
+														<th scope="col" class="last">300만원 이상</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td>적립율</td>
+														<td>0.2%</td>
+														<td>0.4%</td>
+														<td>0.6%</td>
+														<td class="last">0.8%</td>
+													</tr>
+													</tbody>
+													</table>
+												</div>
+												<div class="note">포인트 적립 제외 대상 : 후불교통요금, 그린카드 무이자할부 이용금액, 제세공과금, APT 관리비, 대학등록금</div>
+											</li>
+											<li class="mt10">5대 업종 특별적립 : 5대업종 중 매월 매출금액이 가장 큰 2개 업종에 대해 기본 적립율의 5배(1~4%) 에코머니 포인트 적립
+												<ul class="dep2">
+													<li>5대 업종 안내
+														<div class="tbl_list">
+															<table summary="대형할인점, 백화점, 주유, 교육, 병의원에 따른 가맹점 안내입니다.">
+															<caption>5대업종에 따른 가맹점</caption>
+															<colgroup>
+																<col style="width:20%">
+																<col style="width:80%">
+															</colgroup>
+															<thead>
+															<tr>
+																<th scope="col">5대업종</th>
+																<th scope="col" class="last">가맹점</th>
+															</tr>
+															</thead>
+															<tbody>
+															<tr>
+																<td>대형할인점</td>
+																<td class="last left pl15">
+																	이마트, 롯데마트, 홈플러스, 농협 하나로클럽 등 전국 모든 대형할인점(인터넷몰 제외)
+																</td>
+															</tr>
+															<tr>
+																<td>백화점</td>
+																<td class="last left pl15">
+																	롯데, 신세계, 현대, 갤러리아 등 전국 모든 백화점(단, 인터넷몰 제외)
+																</td>
+															</tr>
+															<tr>
+																<td>주유</td>
+																<td class="last left pl15">
+																	SK에너지, GS칼텍스, S-OIL, 현대오일뱅크 등 전국 모든 주유소(LPG 포함)
+																</td>
+															</tr>
+															<tr>
+																<td>교육</td>
+																<td class="last left pl15">전국 모든 학원(인터넷 결제 제외)</td>
+															</tr>
+															<tr>
+																<td>병의원</td>
+																<td class="last left pl15">전국 모든 병원, 의원, 한의원(약국, 동물병원 제외)</td>
+															</tr>
+															</tbody>
+															</table>
+														</div>
+													</li>
+													<li>카드 이용금액 별 적립율 안내
+														<div class="tbl_list">
+															<table summary="전월 이용 금액에 따른 적립율과 적립율 산정기준 안내입니다.">
+															<caption>전월 이용 금액에 따른 적립율과 산정기준</caption>
+															<colgroup>
+																<col style="width:20%">
+																<col style="width:20%">
+																<col style="width:20%">
+																<col style="width:20%">
+																<col style="width:20%">
+															</colgroup>
+															<thead>
+															<tr>
+																<th scope="col">전월 이용 금액</th>
+																<th scope="col">20만원 이상~<br>50만원 미만</th>
+																<th scope="col">50만원 이상~<br>100만원 미만</th>
+																<th scope="col">100만원 이상~<br>300만원 미만</th>
+																<th scope="col" class="last">300만원 이상</th>
+															</tr>
+															</thead>
+															<tbody>
+															<tr>
+																<td>적립율</td>
+																<td>1%</td>
+																<td>2%</td>
+																<td>3%</td>
+																<td class="last">4%</td>
+															</tr>
+															<tr>
+																<td>적립율<br>산정기준</td>
+																<td>기본적립율<br>0.2%×5배</td>
+																<td>기본적립율<br>0.4%×5배</td>
+																<td>기본적립율<br>0.6%×5배</td>
+																<td class="last">기본적립율<br>0.8%×5배</td>
+															</tr>
+															</tbody>
+															</table>
+														</div>
+														<div class="note">업종별 월 5천점 월 통합 최대 1만점 한도 적립</div>
+													</li>
+												</ul>
+											</li>
+											<li class="mt10">에코 특별 적립 : 대중교통(버스, 지하철) 이용금액 10~20% 에코머니 포인트 적립
+												<div class="tbl_list">
+													<table summary="전월 이용 금액에 따른 적립율과 적립한도 안내입니다.">
+													<caption>전월 이용 금액에 따른 적립율 적립한도</caption>
+													<colgroup>
+														<col style="width:20%">
+														<col style="width:40%">
+														<col style="width:40%">
+													</colgroup>
+													<thead>
+													<tr>
+														<th scope="col">전월 이용 금액</th>
+														<th scope="col">20만원 이상~50만원 미만</th>
+														<th scope="col" class="last">150만원 이상</th>
+													</tr>
+													</thead>
+													<tbody>
+													<tr>
+														<td>적립율</td>
+														<td>10%</td>
+														<td class="last">20%</td>
+													</tr>
+													<tr>
+														<td>적립한도</td>
+														<td>5,000점</td>
+														<td class="last">10,000점</td>
+													</tr>
+													</tbody>
+													</table>
+												</div>
+												<ul class="note_list">
+													<li>서비스 제공처 : 전국 지하철 및 버스(후불교통카드 사용처)</li>
+													<li>서비스 이용 안내 : 버스/지하철 월 이용금액 1만원 이상시 제공, 이용대금 명세서 상 교통요금 승인일 기준으로 전월실적 산정</li>
+												</ul>
+											</li>
+											<li class="mt10">친환경 제품 구매 시 최대 1~5% 적립
+												<div class="dep2">3대 대형 유통매장 및 기타 녹색매장에서 녹색매장에서 녹색제품을 그린카드로 결제 시 제품가액의 일정 비율(1~5%)을 포인트로 적립 받으실 수 있습니다.
+													<div class="tbl_list">
+														<table summary="제조사, 쇼핑, 커피전문점에 따른 적립처와 유의사항 안내입니다.">
+														<caption>제조사, 쇼핑, 커피전문점에 따른 적립처와 유의사항</caption>
+														<colgroup>
+															<col style="width:15%">
+															<col style="width:55%">
+															<col style="width:30%">
+														</colgroup>
+														<thead>
+														<tr>
+															<th scope="col">구분</th>
+															<th scope="col">적립처</th>
+															<th scope="col" class="last">유의사항</th>
+														</tr>
+														</thead>
+														<tbody>
+														<tr>
+															<th scope="row" class="ths">제조사</th>
+															<td class="left pl10">현대자동차, 삼천리 자전거, CJ제일제당, 리바트, LG생활건강,
+																	애경,풀무원, 롯데제과, 유한킴벌리, 경동나비엔, 대림B&amp;Co,
+																	삼양사, 슈가버블,CJ라이온, 아모레퍼시픽, 아델피아인터내셔널,
+																	캐논코리아비즈니스솔루션
+															</td>
+															<td class="last left pl10">환경마크, 탄소성적 표시 제품 구매 시 적립</td>
+														</tr>
+														<tr>
+															<th scope="row" class="ths">쇼핑</th>
+															<td class="left pl10">이마트, 롯데마트, 홈플러스, 롯데백화점, 갤러리아백화점, 초록마을, 올가홀푸드, 무공이네</td>
+															<td class="last left pl10">녹색 매장으로 지정된 매장에서 결제 시 적립</td>
+														</tr>
+														<tr>
+															<th scope="row" class="ths">커피전문점</th>
+															<td class="left pl10">엔제리너스</td>
+															<td class="last left pl10">전국 엔제리너스 매장에서 적립</td>
+														</tr>
+														</tbody>
+														</table>
+													</div>
+													<div class="note">참여 제조사 및 유통사는 지속 확대 예정이며, 적립율 및 서비스 제공 시기 등 자세한 내용은 <a href="http://www.ecomoney.co.kr" target="_blank" title="새창">에코머니 홈페이지</a> 참조</div>
+												</div>
+											</li>
+											<li class="mt10">에코머니 가맹점 적립 <a href="http://www.ecomoney.co.kr" target="_blank" title="새창"><img src="../../images/data/btn_franchise_view.gif" alt="에코머니 가맹점 보기"></a>
+												<div class="dep2">23개 에코머니 가맹점에서 그린카드로 결제 시 결제금액의 일정 비율(약 1~5%)을 포인트로 적립받으실 수 있습니다.</div>
+											</li>
+										</ul>
+
+										<h6 class="card_info" id="311205240253147">에코머니 포인트 사용안내</h6>
+										<ul class="dep_list">
+											<li>TOP포인트 전환 : 에코머니 포인트 1점 이상 보유 시 1점 단위 전환 가능(에코머니 1점=TOP1점)</li>
+											<li>현금전환 : 에코머니 포인트 2만점 이상 보유 시 1천점 단위 전환 가능(에코머니 1점=1원)</li>
+											<li>포인트 결제 : 에코머니 3만점 이상 보유 시 이동통신요금, 아파트 관리비, 후불 교통요금 포인트 차감 결제가능
+												<ul class="note_list">
+													<li>단, 이동통신요금, 아파트 관리비, 후불교통요금은 각각 3만원 이상 결제대금 청구 시 포인트 차감결제</li>
+													<li>이동통신요금, 아파트 관리비를 해당 카드로 자동이체 신청 시 서비스 이용 가능</li>
+													<li>차감횟수 및 최대금액 제한 없음</li>
+													<li>아파트 관리비는 결제대행 수수료 330원이 자동이체 카드 대금과 함께 청구</li>
+												</ul>
+											</li>
+											<li>에코머니 가맹점에서 결제
+												<div class="note">자세한 내용은 에코머니 홈페이지 참조 <a href="http://www.ecomoney.co.kr" target="_blank" title="새창"><img src="../../images/data/btn_go.gif" alt="에코머니 홈페이지 바로가기"></a></div>
+											</li>
+											<li><span class="hana"><strong>2013년 7월 1일자로 하나카드를 통해 제공되었던 아파트관리비 신용카드 자동이체 신청이 중단되었습니다.</strong></span><br>
+											고객의 편의를 위해 현재 이용중인 카드 자동납부는 자동이체 등록 카드의 유효기간까지만 가능하오니 이용에 <br>
+											착오 없으시기 바랍니다.<br>
+											.아파트관리비 자동이체가 등록된 신용카드의 유효기간 만료월까지는 아파트관리비 자동이체 방법을 변경해 주시길<br>
+											&nbsp;바랍니다.(전환이 되지 않은 경우 연체 될 수 있음)<br>
+											.아파트관리비 신용카드 이체를 은행계좌, 지로납부 등으로 전환하실 경우 전환시점 다음월에는 부득이 2개월치<br>
+											&nbsp;아파트관리비가 동시에 청구될 수 있습니다.<br>
+											</li>
+											<div class="noti" style="margin-left:13px;"> 통상적으로 해당 월 아파트관리비에 대한 카드대금은 회원의 결제일에 따라 다음월 또는 다다음월에 청구되며<br>
+											(ex.7월분 아파트관리비 8~9월 중 회원에게 청구) 은행자동이체의 경우에는 다음월에 결제됩니다.<br>
+											(ex.8월분 아파트관리비 9월 중 계좌인출)</div>
+										</ul>
+									</div>
+									<!-- //기존 상세 : tab_cdCont -->
+
+
+								</div>
+								<!-- //영화 활인 서비스 -->
+								
+								<!-- 공과금 납부 서비스 -->
+								<div class="tab_cont" id="tab04">
+									<h5 class="blind">하나마나 서비스</h5>
+									공과금 납부 서비스 내용
+								</div>
+								<!-- //공과금 납부 서비스 -->
+							</div>
+							<!-- //card_view_detail -->
+							
+							<!-- 	accordian_ty -->
+							<ul class="accordian_ty">
+								<li class="list on">
+									<a href="#"><span>지난달 실적과 관계없이 서비스 제공하는 기간</span></a>
+									<div class="view">
+										<p class="t_tit02">지난달 실적과 관계없이 서비스 제공하는 기간</p>
+										<ol class="num_li">
+											<li class="txt"><em>1.</em> Play1 하나머니 적립
+												<ul>
+													<li class="blt2">최초카드 사용등록일부터 다음달 말일까지 지난달 실적 30만원 미만이어도 지난달 실적 30만원 이상 ~ 60만원 미만 기준으로 서비스 제공<br>(적립률 7%, 통합 적립한도 1만 하나머니)</li>
+												</ul>
+											</li>
+											<li class="txt"><em>2.</em> Play1 영화관 할인
+												<ul>
+													<li class="blt2">최초카드 사용등록일부터 다음달 말일까지 지난달 실적 30만원 미만이어도 지난달 실적 30만원 이상 기준으로 서비스 제공<br>(1만원 이상 결제시 5천원 청구할인, 월 1회 한도)</li>
+												</ul>
+											</li>
+										</ol>
+									</div>
+								</li>
+								<li class="list">
+									<a href="#"><span>할인/적립 기준</span></a>
+									<div class="view">
+										<p class="t_tit02">할인/적립 기준</p>
+										<ul class="txt_li">
+											<li>매출접수된 국내외 일시불/할부 이용금액에 따라 적립/할인 혜택을 제공하며, 매출취소시 취소접수된 달에서 적립/할인된 금액을 차감 반영합니다
+												<ul>
+													<li class="blt2">적립기준 : 하나머니(1하나머니=1원)</li>
+													<li class="blt2">하나머니는 이용금액이 매출 접수된 다음날 적립 제공</li>
+													<li class="blt2">무승인 이용금액은 매출접수 일자 기준으로 적용</li>
+													<li class="blt2">할부이용 전체금액을 할부 이용한 달의 이용금액으로 반영</li>
+													<li class="blt2">본인카드와 가족카드 이용실적이 합산되어 적용 (모바일카드 포함)<p class="blt5">적립/할인 제외대상 : 무이자 이용금액, 상품권 및 기프트카드 구매, 선불카드 충전금액, 국세, 지방세, 공과금</p></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<a href="#"><span>서비스 제공조건</span></a>
+									<div class="view">
+										<p class="t_tit02">서비스 제공조건</p>
+										<ul class="txt_li">
+											<li>지난달 1일부터 말일까지의 국내외 일시불/할부 이용금액 30만원 / 60만원 / 90만원 이상시 서비스 혜택이 제공됩니다.
+												<ul>
+													<li class="blt2">이용일자 및 시각은 한국시각 기준으로 적용</li>
+													<li class="blt2">무승인 이용금액은 매출접수 일자 기준으로 적용</li>
+													<li class="blt2">할부이용 전체금액을 할부 이용한 달의 이용금액으로 반영</li>
+													<li class="blt2">본인카드와 가족카드 이용실적이 합산되어 적용 (모바일카드 포함)<p class="blt5">지난달 실적에서 제외되는 이용금액 : 국세, 지방세, 공과금, 상품권, 선불카드 충전, 기프트카드 구매, 아이행복 정부지원금, 도시가스 이용금액, 아파트관리비, 대학등록금, Play1 카드로 적립/할인받은 이용금액</p></li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<a href="#"><span>해외결제시 청구기준</span></a>
+									<div class="view">
+										<p class="t_tit02">해외결제시 청구기준</p>
+										해외 이용시(해외사이트 거래 포함) 이용금액에 국제브랜드사가 부과하는 수수료 (VISA/MasterCard/One Way(JCB) 1.0%, 아멕스 1.4%)를 포함하여 접수일의 KEB하나은행 전신환매도율을 적용한 후, 하나카드가 부과하는 해외서비스 수수료(신용카드 : 0.2%)를 포함한 금액으로 청구됩니다.(제3국 통화(KRW거래포함)는 미국달러로 환산되어 제공됩니다.)<br> 해외 가맹점에서 원화거래시(DCC) 추가수수료가 부과되므로 현지통화 및 미화로 거래하시기 바랍니다.
+									</div>
+								</li>
+								<li class="list">
+									<a href="#"><span>연회비 청구 및 반환기준</span></a>
+									<div class="view">
+										<p class="t_tit02">연회비 청구 및 반환기준</p>
+										연회비는 카드발급일이 속한 신용공여일의 첫 결제일에 청구되며, 카드발급일 기준으로 1년 단위로 청구됩니다.<br>회원이 유효기간이 도래하기 전에 카드를 해지하는 경우 이미 납부한 연회비에서 카드발급 및 배송비용(초년도 연회비에 한정), 부가서비스 제공에 소요된 비용을 차감한 후 회원이 계약을 해지한 날부터 잔여기간에 대하여 일할반환 해드립니다. 카드해지일 또는 교체발급일 기준 10영업일 이내 일할 계산하여 입금해 드립니다. <br>다만, 부가서비스 제공 상품의 경우 다음 다음달 5영업일 이내에 입금 해드립니다.
+									</div>
+								</li>
+								<li class="list">
+									<a href="#"><span>부가서비스 유지 및 변경 안내</span></a>
+									<div class="view">
+										<dl class="li">
+											<dt class="t_tit02">부가서비스 유지 및 변경 안내</dt>
+											<dd>
+												<ul class="txt_li">
+													<li class="blt1">카드 이용시 제공되는 포인트 및 할인혜택 등의 부가서비스는 카드 신규출시 이후 3년 이상 축소·폐지 없이 유지됩니다.</li>
+													<li class="blt1">상기에도 불구하고, 다음과 같은 사유가 발생한 경우 카드사는 부가서비스를 변경할 수 있습니다.
+														<ol class="num_li">
+															<li class="txt"><em>①</em>카드사 또는 부가서비스 관련 제휴업체의 휴업, 도산, 경영위기, 천재지변, 금융환경 급변 또는 그 밖에 이에 준하는 사유의 발생</li>
+															<li class="txt"><em>②</em>카드사의 노력에도 제휴업체가 일방적으로 부가서비스 변경을 통보(단, 다른 제휴업체를 통해 동종의 유사한 부가서비스 제공이 가능한 경우 제외)</li>
+															<li class="txt"><em>③</em>카드 신규출시 이후 3년 이상 경과했고, 해당 카드의 수익성 유지가 어려운 경우</li>
+														</ol>
+													</li>
+													<li class="blt1">카드사가 부가서비스를 변경하는 경우에는 부가서비스 변경 사유, 변경 내용 등을 사유발생 즉시 홈페이지에 게시하고, 카드대금청구서&middot;우편서신&middot;이메일&middot;문자메시지 중 한가지 이상의 방법으로 개별 고지해 드립니다.<br>특히 카드 신규 출시 이후 3년 이상 경과했고, 해당 카드의 수익성 유지가 어려워져 부가서비스를 변경하는 경우에는 6개월 전부터 매월 개별고지 해 드립니다.(개별고지 방법 : 카드대금청구서, 우편, 이메일, 휴대폰 문자메시지 중 하나)</li>
+												</ul>
+											</dd>
+										</dl>
+										<div class="li">
+											<ul class="txt_li">
+												<li class="blt1">2개 이상 카드사의 카드를 소지하실 경우, 회원님의 복수카드 정보가 종합신용정보집중기관을 통해 카드사간 공유되어 신용등급이나 이용한도 등에 영향을 미칠 수 있습니다.</li>
+												<li class="blt1">카드 발급 신청 시 상품 설명서 및 상품 약관을 반드시 확인하시기 바랍니다.</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<!-- 	//accordian_ty -->
+							
+							<!-- card_view_info_txt -->
+							<ul class="card_view_info_txt">
+								<li class="tit">신용카드 남용은 가계경제에 위협이 됩니다. 연체 이자울24.0~27.9%)은 정상이자율 및 연체일 수에 따라 적용됩니다.</li>
+								<li>
+									<em>카드 출시 시기 : 2016.11.17</em>
+									<em>여성금융협회 심의필 제 2016-C1h-01743 (2016.11.30)</em>
+								</li>
+							</ul>
+							<!-- //card_view_info_txt -->
+							
+							<!-- card_view_other -->
+							<div class="card_view_other">
+								<h5 class="tit"><span>같은혜택<br>다른카드</span></h5>
+								<ul class="txt">
+									<li class="list">
+										<p class="img"><img src="../../images/data/img_card03.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<div class="s_txt"><p>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</p></div>
+									</li>
+									<li class="list">
+										<p class="img"><img src="../../images/data/img_card02.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<div class="s_txt"><p>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</p></div>
+									</li>
+								</ul>
+							</div>
+							
+							<!-- useful_nav -->
+							<nav class="useful_nav">
+								<a href="#"><i><img src="../../images/contents/ico_useful_nav_card06.png" alt="카드발급조회 (아이콘)"></i>카드발급조회</a>
+								<a href="#"><i><img src="../../images/contents/ico_useful_nav_card07.png" alt="카드사용등록 (아이콘)"></i>카드사용등록</a>
+								<a href="#"><i><img src="../../images/contents/ico_useful_nav_card08.png" alt="카드분실/도난 (아이콘)"></i>카드분실/도난</a>
+								<a href="#"><i><img src="../../images/contents/ico_useful_nav_card09.png" alt="카드비밀번호 등록/변경 (아이콘)"></i>카드비밀번호 등록/변경</a>
+							</nav>
+							<!-- //useful_nav -->
+						</article>
+						<!-- //useful_nav -->
+					</div>
+					<!-- //cont_box_area -->
+				</div>
+				<!-- //cont_box -->
+			</div>
+			<!-- //card_area -->
+			
+			<!-- 카드비교 -->
+			<article class="card_under" id="card_under">
+				<a href="#card_under" class="btn_card_under">카드비교 보기</a>
+				<!-- card_under_area -->
+				<div class="card_under_area">
+					<h3 class="tit">카드비교<em>3</em></h3>
+					<!-- card_under_cont -->
+					<div class="card_under_cont">
+						<ul>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card02.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card03.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card04.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+						</ul>
+						<a href="#" class="btn btn_b btn_ty02">비교하기</a>
+					</div>
+					<!-- //card_under_cont -->
+				</div>
+				<!-- //card_under_area -->
+			</article>
+			<!-- //카드비교 -->
+		</div>
+		<!-- //cont_area -->
+		<!--<a href="#container" class="btn_top">상단으로 이동</a>-->
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

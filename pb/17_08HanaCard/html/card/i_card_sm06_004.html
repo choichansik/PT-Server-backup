@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<ul class="breadcrumb_area">
+				<li class="li home"><a href="#">HOME</a></li>
+				<li class="li"><a href="#">카드</a></li>
+				<li class="li">
+					<a href="#" class="link">카드안내<em>메뉴열기</em></a>
+					<div class="dep">
+						<ul>
+							<li class="on">카드안내</li><!-- 현재위치 -->
+							<li><a href="#">카드추천</a></li>
+							<li><a href="#">친구추천카드</a></li>
+							<li><a href="#">카드빠른발급</a></li>
+							<li><a href="#">발급조회/사용등록</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="#" class="link">하나멤버스 1Q<em>메뉴열기</em></a>
+					<div class="dep">
+						<ul>
+							<li class="on">하나멤버스 1Q</li><!-- 현재위치 -->
+							<li><a href="#">특별혜택카드</a></li>
+							<li><a href="#">제휴카드</a></li>
+							<li><a href="#">체크카드</a></li>
+							<li><a href="#">프리미엄카드</a></li>
+							<li><a href="#">선불카드</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">카드</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area02">
+			<h3 class="title">카드간편신청<span>간단한 정보 입력으로 빠르게 카드신청을 도와드립니다.</span></h3>
+			<!-- card_app-->
+			<div class="card_app">
+				<!-- card_step -->
+				<div class="card_step">
+					<ol>
+						<li class="on" title="현재위치"><em>STEP 1</em>신청서작성</li>
+						<li><em>STEP 2</em>신청완료</li>
+					</ol>
+				</div>
+				<!-- //card_step -->
+				
+				<!-- card_app_area -->
+				<div class="card_app_area">
+					<!-- card_app_info -->
+					<div class="card_app_info">
+						<dl class="info">
+							<dt class="img"><img src="../../images/data/img_card02.png" alt=""></dt><!-- 17.08.08 접근성 수정 -->
+							<dd class="txt"><p>하나멤버스 1Q Play1 카드</p></dd>
+						</dl>
+						
+						<!-- Step01 카드정보작성 -->
+						<ul class="list on" id="cs_info01"><!-- 활성화 class="on" -->
+							<li><strong class="tit">하나머니 적립</strong>0.5%</li>
+							<li><strong class="tit">커피숍 할인</strong>0.5%</li>
+							<li><strong class="tit">요식할인</strong>5,000원</li>
+						</ul>
+						<!-- //Step01 카드정보작성 -->
+					</div>
+					<!-- //card_app_info -->
+					
+					<!-- card_app_view -->
+					<div class="card_app_view">
+						<!-- Step01 카드정보작성 -->
+						<article class="list card_st01 on" id="cs_cont01"><!-- 활성화 class-"on" -->
+							<h4 class="blind">카드정보작성</h4>
+							<!-- 신청자정보 -->
+							<div class="default_cont">
+								<!-- default_cont_info -->
+								<div class="default_cont_info">
+									<ul>
+										<li>상담원이 전화 드려 카드신청을 도와드립니다.</li>
+										<li>카드신청을 위한 추가정보는 전화 통화 시 요청 드립니다.</li> 
+										<li>입력하신 정보는 카드신청 통화를 위한 목적 이외에는 사용하지 않습니다.</li>
+									</ul>
+								</div>
+								<!-- //default_cont_info -->
+								<!-- 신청자정보 -->
+								<article class="cont">
+									<h5 class="t_tit">신청자정보</h5>
+									<!-- board_ty03 -->
+									<div class="board_ty03">
+									<form>
+										<fieldset>
+										<legend>신청자정보</legend>
+										<table>
+											<caption>신청자정보</caption>
+											<colgroup>
+												<col span="1" style="width:16%;">
+												<col span="1" style="width:84%;">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="row" class="left">본인회원성명</th>
+													<td class="left">
+														<input type="text" class="input_ty" title="본인회원성명 입력">
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" class="left">주민등록번호</th>
+													<td class="left">
+														<input type="text" class="input_ty w180" title="주민등록번호 앞자리 입력">
+														<span class="b_br">-</span>
+														<div class="btn_key_box">
+															<input type="text" class="input_ty w180" title="주민등록번호 뒷자리 입력">
+															<a href="#" class="btn_key">가상 키보드</a>
+														</div>
+														<div class="b_list txt">
+															<input type="checkbox" id="per_chk01_1"> 
+															<label for="per_chk01_1">고객님의 실명 확인 및 당사회원여부 조회에 동의합니다.</label>
+															<a href="#" class="btn_pop_ico ty02">자세히보기</a>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" class="left">연락처</th>
+													<td class="left">
+														<div>
+															<select class="select_ty w90" title="전화번호 첫번째 자리 선택">
+																<option value="">선택</option>
+																<option value="">02</option>
+																<option value="">031</option>
+																<option value="">032</option>
+																<option value="">033</option>
+																<option value="">041</option>
+																<option value="">042</option>
+																<option value="">043</option>
+																<option value="">051</option>
+																<option value="">052</option>
+																<option value="">053</option>
+																<option value="">054</option>
+																<option value="">055</option>
+																<option value="">061</option>
+																<option value="">062</option>
+																<option value="">063</option>
+																<option value="">064</option>
+															</select>
+															<input type="text" class="input_ty w180" placeholder="‘-’ 없이 입력하세요." title="전화번호 나머지 번호 입력">
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="row" class="left">약관동의</th>
+													<td class="left">
+														<div>
+															<!-- agree_chk -->
+															<div class="agree_chk">
+																<div class="b_list all_chk">
+																	<div class="b_txt">
+																		<input type="checkbox" name="allChk01_1" id="chk01_all" class="chk_b_ty"><!-- Big Size : class="chk_b_ty" -->
+																		<label for="chk01_all">개인(신용)정보 필수적 전체동의</label> 
+																	</div>
+																</div>
+																<div class="b_list txt">
+																	<div class="b_txt">
+																		<input type="checkbox" name="allChk01_1" id="agree01_1"> 
+																		<label for="agree01_1">개인(신용)정보 필수적 수집, 이용에 관한 사항</label> 
+																	</div>
+																	<a href="#" class="btn_pop btn_xs btn_ty04">상세보기</a>
+																</div>
+																<div class="b_list txt">
+																	<div class="b_txt">
+																		<input type="checkbox" name="allChk01_1" id="agree01_2"> 
+																		<label for="agree01_2">주본인은 귀사가 상기 조회 목적으로 다음과 같은 본인의 고유식별정보를 조회하는 것에 동의합니다.</label>
+																		<p class="lable_txt">(고유식별정보 : 주민등록번호, 운전면허번호, 여권번호, 외국인등록번호)</p>
+																	</div>
+																</div>
+																<div class="b_list txt">
+																	<div class="b_txt">
+																		<input type="checkbox" name="allChk01_1" id="agree01_3"> 
+																		<label for="agree01_3">개인(신용)정보 조회에 관한 사항</label> 
+																	</div>
+																	<a href="#" class="btn_pop btn_xs btn_ty04">상세보기</a>
+																</div>
+																<div class="b_list txt">
+																	<div class="b_txt">
+																		<input type="checkbox" name="allChk01_1" id="agree01_4"> 
+																		<label for="agree01_4">주본인은 귀사가 상기 조회 목적으로 다음과 같은 본인의 고유식별정보를 조회하는 것에 동의합니다.</label>
+																		<p class="lable_txt">(고유식별정보 : 주민등록번호, 운전면허번호, 여권번호, 외국인등록번호)</p>
+																	</div>
+																</div>
+															</div>
+															<!--// agree_chk -->
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										</fieldset>
+									</form>
+									</div>
+									<!-- //board_ty03 -->
+								</article>
+								<!-- btn_area -->
+								<ul class="btn_area">
+									<li>
+										<a href="#" class="btn_b btn_ty02">확인</a>
+									</li>
+								</ul>
+								<!-- //btn_area -->
+							</div>
+							<!-- //신청자정보 -->
+
+							<!-- 본인인증 -->
+							<article class="cont box01">
+								<h5 class="t_tit">본인인증</h5>
+							
+									<!-- board_box -->
+									<div class="board_box">
+										<!-- tab_ty03 -->
+										<nav class="tab_ty03 tab_nav">
+											<a href="#tab01" class="on">공인인증서 인증</a>
+											<a href="#tab02">휴대폰 인증</a>
+										</nav>
+										<!-- //tab_ty03 -->
+										<div class="layout_guide">
+											<p><span>인증 모듈 영역<br><br><em><a href="../guide/temp04.html" target="_blank">모듈 페이지 &gt;</a></em></span></p>
+										</div>
+									</div>
+									<!-- //board_box -->
+								
+								<!-- btn_area -->
+								<ul class="btn_area">
+									<li>
+										<a href="#" class="btn_b btn_ty">취소</a>
+										<a href="#" class="btn_b btn_ty02">확인</a>
+									</li>
+								</ul>
+								<!-- //btn_area -->
+							</article>
+							<!-- //본인인증 -->
+						</article>
+						<!-- //Step01 카드정보작성 -->
+					</div>
+					<!-- //card_app_view -->
+				</div>
+				<!-- //card_app_area -->
+			</div>
+			<!-- //card_app -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

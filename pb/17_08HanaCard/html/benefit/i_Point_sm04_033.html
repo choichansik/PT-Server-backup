@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>캐쉬백 예정 금액 조회 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">마이페이지</a></span>
+			<span><a href="#">결제내역</a></span>
+			<span>승인내역</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">혜택</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>카드혜택</em>캐쉬백 예정 금액 조회</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					<!-- 17.06.10 상단컨켄츠 디자인적용 -->
+					<!-- 상단컨텐츠 -->
+					<article class="cont">
+						<h4 class="blind">캐쉬백 예정 금액 조회 안내</h4>
+						<ul class="ico_info03 ty02">
+							<li>
+								<dl>
+									<dt class="tit">대상카드 별</dt>
+									<dd class="ico"><img src="../../images/contents/ico_point04_033_01.png" alt=""></dd>
+									<dd class="info ty03">예상 금액 및 내역 조회</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt class="tit">캐쉬백 한도</dt>
+									<dd class="ico"><img src="../../images/contents/ico_point04_033_02.png" alt=""></dd>
+									<dd class="info ty03">월 최대 10만원</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt class="tit">매월 1일 ~ 말일까지 사용금액</dt>
+									<dd class="ico"><img src="../../images/contents/ico_point04_033_03.png" alt=""></dd>
+									<dd class="info ty03">익월 5영업일 입금</dd>
+								</dl>
+							</li>
+						</ul>
+					</article>
+					<!-- //상단컨텐츠 -->
+					<!-- //17.06.10 상단컨켄츠 디자인적용 -->
+
+					<!-- search_area02 -->
+					<div class="search_area02">
+						<form>
+							<fieldset>
+							<legend>조회조건</legend>
+								<ul>
+									<li class="list">
+										<p class="tit">카드선택</p>
+										<select class="select_ty w630" title="카드선택">
+											<option value="">카드선택</option>
+											<option value="">5243-****-****-3569[본인/HANA MASTER] 하나멤버스 1Q 하나멤버스 1Q</option>
+											<option value="">내맘대로 T PLUS (5243-****-****-1234)</option>
+										</select>
+									</li>
+									<li class="list">
+										<p class="tit">조회기간</p>
+										<input type="text" class="input_ty w140 select_date" title="시작일 입력 (예:0000-00-00)">
+										<span class="b_br">~</span>
+										<input type="text" class="input_ty w140 select_date" title="종료일 입력 (예:0000-00-00)">
+										<ul class="radio_box02 btn">
+											<li><input type="radio" id="dateChk01_1" class="btn_direct" name="dateChk01"><label for="dateChk01_1">직접입력</label></li>
+											<li><input type="radio" id="dateChk01_2" name="dateChk01"><label for="dateChk01_2">오늘</label></li>
+											<li><input type="radio" id="dateChk01_3" name="dateChk01" checked><label for="dateChk01_3">2주</label></li>
+											<li><input type="radio" id="dateChk01_4" name="dateChk01"><label for="dateChk01_4">1개월</label></li>
+											<li><input type="radio" id="dateChk01_5" name="dateChk01"><label for="dateChk01_5">3개월</label></li>
+										</ul>	
+									</li>
+								</ul>
+								<!-- btn_area -->
+								<ul class="btn_area">
+									<li>
+										<a href="#" class="btn_m btn_ty02">조회</a>
+									</li>
+								</ul>
+								<!-- //btn_area -->
+							</fieldset>
+						</form>
+					</div>
+					<!-- //search_area02 -->
+
+					<!-- 
+					<article class="cont">
+						<h4 class="blind">서비스 대상 카드 안내</h4>
+						<div class="bnnr_info_card">
+							<div class="txt">
+								<div class="inner">
+									<h5>캐쉬백 대상 카드가 아니신가요?</h5>
+									<p>캐쉬백 대상 카드를 소지한 고객님께만 제공되는 서비스입니다. <br>서비스 대상 카드를 확인하세요.</p>
+									<a href="#" class="btn_s btn_ty06">상품 안내 바로가기</a>
+								</div>
+							</div>
+						</div>
+					</article>
+					서비스 대상 카드 미 소지자인 경우 -->
+
+					<!-- 서비스 대상 카드 소지자인 경우 -->
+					<article class="cont">
+					<!-- state_ty -->
+						<div class="state_ty">
+							<!-- state_info -->
+							<div class="state_info">
+								<ul class="left">
+									<li>총 캐쉬백 금액<span class="t_point02"><em>60,000</em>원</span></li>
+									<li class="bar"><em>50</em>건</li>
+								</ul>
+							</div>
+							<!-- //state_info -->
+							<!-- state_area -->
+							<ul class="state_area">
+								<li class="list on"><!-- 활성화 class="on" -->
+									<a href="#" class="info">
+										<ul class="s1">
+											<li><em>2017.02.10</em></li>
+											<li><strong>GS25신림점</strong></li>
+										</ul>
+										<ul class="s2">
+											<li>이용금액 <em>50,000</em>원</li>
+											<li>본인 <em>1234</em></li>
+											<li class="t_point02">취소</li>
+										</ul>
+										<div class="s3">
+											<ul>
+												<li><em>50,000</em>원</li>
+											</ul>
+										</div>
+									</a>
+									<div class="view">
+										<ul class="s1">
+											<li>캐쉬백일자<em>2017.03.02</em></li>
+											<li>캐쉬백금액<em>10,000</em>원</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<a href="#" class="info">
+										<ul class="s1">
+											<li><em>2017.02.10</em></li>
+											<li><strong>SK주유소</strong></li>
+										</ul>
+										<ul class="s2">
+											<li>이용금액 <em>50,000</em>원</li>
+											<li>본인 <em>1234</em></li>
+											<li>정상</li>
+										</ul>
+										<div class="s3">
+											<ul>
+												<li><em>50,000</em>원</li>
+											</ul>
+										</div>
+									</a>
+									<div class="view">
+										<ul class="s1">
+											<li>캐쉬백일자<em>2017.03.02</em></li>
+											<li>캐쉬백금액<em>10,000</em>원</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list">
+									<a href="#" class="info">
+										<ul class="s1">
+											<li><em>2017.02.10</em></li>
+											<li><strong>SK주유소</strong></li>
+										</ul>
+										<ul class="s2">
+											<li>이용금액 <em>50,000</em>원</li>
+											<li>본인 <em>1234</em></li>
+											<li>정상</li>
+										</ul>
+										<div class="s3">
+											<ul>
+												<li><em>50,000</em>원</li>
+											</ul>
+										</div>
+									</a>
+									<div class="view">
+										<ul class="s1">
+											<li>캐쉬백일자<em>2017.03.02</em></li>
+											<li>캐쉬백금액<em>10,000</em>원</li>
+										</ul>
+									</div>
+								</li>
+								<li class="list emp">
+									조회 내역이 없습니다.
+								</li>
+							</ul>
+							<!-- //state_area -->
+							<a href="#" class="btn_more"><strong>더보기</strong></a>
+						</div>
+						<!-- //state_ty -->
+					</article>
+					<!-- //서비스 대상 카드 소지자인 경우 -->
+					
+					<!-- 안내 -->
+					<article class="cont">
+						<h4 class="blind">안내</h4>
+						<!-- info_box -->
+						<dl class="info_box">
+							<dt><a href="#">캐쉬백 예정 금액 조회 안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">캐쉬백 예상금액 및 캐쉬백 내역을 조회하세요.<a href="#" class="btn_xs btn_ty04">대상 카드 안내</a></li>
+									<li class="blt1">카드 별 서비스 제공조건이 상이하니 보유하신 카드 상품약관을 참조하시기 바랍니다.</li>
+									<li class="blt1">최초 카드 사용등록 후 익월 말일까지 이용금액 관계없이 제공</li>
+									<li class="blt1">월 최대 10만원까지 캐쉬백</li>
+									<li class="blt1">캐쉬백 제외 조건 : 국세, 지방세, 공과금 납부분, 무이자할부, 상품권구매, 무승인 매입건(보험료, 교통요금, 통신요금 등), 대학등록금, 기타 제수수료, 본 카드에서 제공하는 할인서비스(영화, 주유, 베이커리, 놀이공원, 통신) 이용분</li>
+									<li class="blt1">결제 계좌 관계없이 매월 1일 ~ 말일까지 사용금액에 대하여 익월 5영업일 입금
+										<ul>
+											<li class="blt2">체크카드의 경우, 체크카드에 연결된 결제 계좌로 입금</li>
+										</ul>
+									</li>
+									<li class="blt1">카드사용 취소 시, 결제계좌로 입금되었던 캐쉬백 금액은 다음달 입금되는 캐쉬백 금액에서 차감</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!-- //안내 -->
+					
+					<!-- 자주찾는 메뉴 -->
+					<article class="cont">
+						<h4 class="blind">자주찾는 메뉴</h4>
+						<!-- useful_nav -->
+						<nav class="useful_nav">
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae01.png" alt="웹비밀번호 변경 (아이콘)"></i>웹비밀번호 변경</a><!-- ico size : 36*36px -->
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae02.png" alt="마케팅 수신 동의 변경 (아이콘)"></i>마케팅 수신 동의 변경</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae03.png" alt="명세서 수령지 변경 (아이콘)"></i>명세서 수령지 변경</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae04.png" alt="금융주소 한번에 서비스 (아이콘)"></i>금융주소 한번에 서비스</a>
+						</nav>
+						<!-- //useful_nav -->
+					</article>
+					<!-- //자주찾는 메뉴 -->
+
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

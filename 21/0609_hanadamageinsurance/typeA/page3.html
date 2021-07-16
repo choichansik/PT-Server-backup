@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <title>원데이보험 시안 A타입</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>     
+    <script src="js/template-new.js"></script>
+    <link rel="stylesheet" href="../common/swiper/dist/css/swiper.min.css">
+</head>
+<body>
+<div id="wrap" style="height:100%;">
+    <header>	
+        <div class="header_01">
+            <img src="images/main_header.png" alt="" />
+        </div>
+    </header>
+
+    <div class="container calc">	
+        <div><img src="images/calc_header.png" alt="" /></div>
+        <div class="inner">
+            <ul class="quest">
+                <li class="birth on">
+                    <p class="tit">
+                        언제<br><span>태어났어요?</span>
+                    </p>
+                    <p class="desc">생년월일을 입력해주세요.</p>
+                </li>
+                <li class="gender">
+                    <p class="tit">
+                       여성분?<br><span>남성분? 알려주세요.</span>
+                    </p>
+                    <p class="desc">성별을 선택해주세요.</p>
+                </li>
+                <li class="date">
+                    <p class="tit">
+                       언제부터<br><span>언제까지 이용하세요?</span>
+                    </p>
+                    <p class="desc">이용시작일과 종료일을 알려주세요. </p>
+                </li>
+            </ul>
+            <div class="list_form">
+                <div class="form_03">
+                    <ul>
+                        <li class="d_s">
+                            <label for="start">시작일</label>
+                            <input type="text" name="date" id="start" class="in_date"/>
+                        </li>
+                        <li><p>-</p></li>
+                        <li class="d_e">
+                            <label for="end">종료일</label>
+                            <input type="text" name="date" id="end" class="in_date"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form_02">
+                    <div class="form-group">
+                        <ul class="radio-box">
+                            <li>
+                                <span>
+                                    <input type="radio" id="chk01_1" name="chk01" class="input_gen" />
+                                    <label for="chk01_1" class="chk"><span>남자</span></label>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <input type="radio" id="chk01_2" name="chk01" class="input_gen" />
+                                    <label for="chk01_2" class="chk"><span>여자</span></label>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form_01 on">
+                    <div class="ui-form">
+                        <label for="birth">생년월일</label>
+                        <input type="text" name="birth" id="birth" class="in_birth"/>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="btn_more"><a href="#"><img src="images/calc_next.png" alt="" /></a></div>
+        
+    </div>
+  
+    
+</div><!-- #wrap -->
+<section class="popup" id="pop01">
+<div class="wrap_pop">
+    <div class="cont">
+        <div class="inner">
+            <p class="noti"><span>잠깐!!!!</span></p>
+            <p class="tit">전기킥보드를 영업목적<br>혹은 경기용으로 이용하십니까?</p>
+
+            <ul class="radio-pop active">
+                <li>
+                    <span>
+                        <input type="radio" id="chk02_1" name="chk02" class="input_ans" />
+                        <label for="chk02_1" class="chk"><span>네</span></label>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <input type="radio" id="chk02_2" name="chk02" class="input_ans" checked />
+                        <label for="chk02_2" class="chk"><span>아니요</span></label>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="btn"><a href="#"><img src="images/calc_btnpop.png" alt="확인" /></a></div>
+    </div>
+</div>
+</section>
+    
+<section class="popup" id="pop02">
+<div class="wrap_pop">
+    <div class="cont">
+        <div><img src="images/main_header.png" alt="" /></div>
+        <div class="btn_close"><img src="images/calc_header.png" alt="" /></div>
+        <div class="tit inner">
+           원데이님<br>총보험료는<br>
+            <span class="txt-num">
+                <span class="counter">700</span><em>원</em>입니다.
+            </span>
+        </div>
+        <div class="fade">
+            <div>
+                <img src="images/calc_datail.png" alt="" />
+            </div>
+            <div>
+                <a href="#">
+                <img src="images/calc_datail_btn.png" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+    
+<script>
+$(function(){
+
+  var form1 = $('.in_birth');
+    var form2 = $('.form_02');
+    var form3 = $('.form_03');
+    var classOn = form3.hasClass('on');
+
+  form1.focus(function(){
+    $('.form_01').addClass('active');
+  });
+  form1.blur(function(){
+    $('.form_01').css('border','1px solid #dbdbdb').css('box-shadow','none');
+  });
+
+    
+$(window).scroll(function(){
+    var winTop = $(window).scrollTop();
+
+  if(winTop>0){
+      $('.btn_top').stop().fadeIn();
+  }else{
+      $('.btn_top').stop().fadeOut();
+  }
+    $('.btn_top').click(function(){
+        $('html,body').stop().animate({scrollTop:0},1000);
+        return false;
+    });
+    
+    
+    if($(window).scrollTop() + $(window).height() >= $('.sub_02 .ty01').offset().top + 300){											
+        $('.sub_02').addClass('active');
+    }
+    if($(window).scrollTop() + $(window).height() >= $('.sub_03').offset().top + 260){			
+        $('.sub_03').addClass('active');
+    }
+});
+    
+    
+function enterIdentity() {
+    let inputBirth          = $(".in_birth");
+    let radioGender         = $(".input_gen");
+    let inputStart          = $("#start");
+    let inputEnd            = $("#end");		
+
+    inputBirth.keypress(function(e) {
+        if (e.keyCode == 13) {
+            $(this).closest(".form_01").prev(".form_02").addClass("on");
+            $(".form_02").find('.radio-box').addClass('active');
+            radioGender.focus();
+        }
+    });
+    
+    radioGender.click(function(){
+        $(this).closest(".form_02").prev(".form_03").addClass("on");
+        inputStart.focus(); 
+        $('.form_02 .radio-box').css('border','1px solid #dbdbdb').css('box-shadow','none');
+    }); 
+    inputStart.keypress(function(e) {
+        if (e.keyCode == 13) {
+            inputEnd.focus();
+        }
+    });
+    inputEnd.keypress(function(e) {
+        if (e.keyCode == 13) {
+            // popup open
+            $('.btn_more').addClass('active');
+        }
+    });
+    $('.btn_more').click(function(){
+        $('#pop01').addClass('active');
+        return false;
+    });
+    $('#pop01 .btn').click(function(){
+        $('#pop01').removeClass('active');
+        $('#pop02').addClass('active');
+        return false;
+    });
+		
+}
+	
+enterIdentity();	
+    
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>마크앤로나 MOBILE B 시안</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="./css/base.css" media="all">
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./js/slick.min.js"></script>
+<style>
+	body {background: #fff;}
+
+	#header {position: fixed;top: 0;z-index: 10;}
+	#container {padding-top: 99px;}
+	.mobile-menubar-wrap {position: fixed;bottom: 0;z-index: 10;}
+
+	.effect_wrap {transform:translate(0px , 50px);opacity:0; will-change:width , height , transform , opacity;}
+</style>
+</head>
+<body>
+
+	<header id="header">	
+		<img src="images/header.jpg" alt=""/>
+	</header>
+
+	<div class="mobile-menubar-wrap">
+		<img src="images/mobile-menubar.jpg" alt=""/>
+	</div>
+	
+	<section id="container">
+		<img src="images/nav.jpg" alt=""/>	
+		<div class="main-banner">
+			<img src="images/banner.jpg" alt=""/>
+		</div>
+
+		<div class="main-item-01">
+			<div class="title effect_wrap"><img src="images/main_item_01_title.jpg" alt=""/></div>
+			<div class="product effect_wrap"><img src="images/main_item_01_product.jpg" alt=""/></div>
+		</div>
+		<div class="main-item-02">
+			<div class="title effect_wrap"><img src="images/main_item_02_title.jpg" alt=""/></div>
+			<div class="promotion effect_wrap"><img src="images/main_item_02_promotion.jpg" alt=""/></div>
+			<div class="product effect_wrap"><img src="images/main_item_02_product.jpg" alt=""/></div>
+			<div class="limit effect_wrap"><img src="images/main_item_02_limit.jpg" alt=""/></div>
+		</div>
+		<div class="main-item-03 effect_wrap"><img src="images/main_item_03.jpg" alt=""/></div>
+		<div class="main-item-04">
+			<div class="title effect_wrap"><img src="images/main_item_04_title.jpg" alt=""/></div>
+			<div class="product effect_wrap"><img src="images/main_item_04_product.jpg" alt=""/></div>
+		</div>
+	</section>
+	
+	<footer><img src="images/footer.jpg" alt=""/></footer>
+
+	<script>
+
+		var effect = {
+			
+			container : null,
+			items : [],
+		
+			init : function(){		
+				this.container = $('#container');
+				
+				var i=0;
+				this.container.find('.effect_wrap').each(function(){
+					var obj = {
+						target : $(this),
+						index : i,
+						activeStats : false
+					}
+					effect.items.push(obj);
+					i++;
+				});	
+		
+				effect.scroll();
+				$(window).on('scroll' , function () {
+					effect.scroll();
+				});
+			},
+		
+			scroll : function(){
+				var _this = this;
+		
+				if($(window).scrollTop() > 0){
+					$('header').addClass('fix');
+				}else{
+					$('header').removeClass('fix');
+				}
+				
+				
+				for(var i = 0; i < effect.items.length; i++){
+					var _target = effect.items[i].target;
+					var _option = effect.items[i];
+					if(!_option.activeStats){
+						if($(window).scrollTop() + $(window).height() >= _option.target.offset().top){												
+							_option.target.addClass('actived');
+							_target.css({ 'transform' : 'translate(0px, 0px)' , 'opacity' : '1' , 'transition' : 'transform 1.2s cubic-bezier(0.190, 1.000, 0.220, 1.000) , opacity 1.2s cubic-bezier(0.190, 1.000, 0.220, 1.000)'});
+							_option.activeStats = true;
+						}
+					}				
+				}
+			}
+		}
+		
+		
+		$(function(){
+		
+			effect.init();
+			$('.slick-slider').slick({                
+				infinite:true,
+				arrows:false,
+				slidesToShow:1,
+				slidesToScroll :1,
+				draggable:true,
+				dots:true
+			}); 
+		
+			/*
+			$('.slick-slider').slick({                
+					infinite:true,
+					arrows:false,
+					slidesToShow:1,
+					slidesToScroll :1,
+					draggable:true,
+					dots:true
+				}); 
+			*/
+		});
+	</script>
+</body>
+</html>

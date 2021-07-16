@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>전화신청 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">혜택</a></span>
+			<span><a href="#">포인트</a></span>
+			<span><a href="#">제휴포인트</a></span>
+			<span>하나OK캐쉬백포인트</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">금융</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>장기카드대출(카드론)</em>전화신청</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+
+					<!-- 상담신청 안내 -->
+					<article class="cont">
+						<h4 class="t_tit">장기카드대출(카드론) 전화신청</h4>
+						<ul class="txt_li">
+							<li class="blt1">장기카드대출(카드론) 전화신청을 하시면 접수 순서대로 상담원이 ARS(1800-1111)으로 전화 드려 신청을 도와드립니다.</li>
+							<li class="blt1">하나카드를 보유하고 계신 고객님께서만 상담신청이 가능합니다.</li>
+						</ul>
+					</article>
+					<!-- //상담신청 안내 -->
+					
+					<!-- 전화신청 -->
+					<article class="cont">
+						<h4 class="t_tit">전화신청</h4>
+						<!-- board_ty -->
+						<div class="board_ty">
+							<form>
+							<fieldset>
+							<legend>전화신청 입력</legend>
+							<table>
+								<caption>전화신청 입력 테이블</caption>
+								<colgroup>
+									<col span="1" style="width:25%;">
+									<col span="1" style="width:75%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">성명</th>
+										<td class="left">
+											<input type="text" class="input_ty w180" placeholder="성명" title="성명 입력">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">주민등록번호 앞 6자리</th>
+										<td class="left">
+											<input type="text" class="input_ty w180" placeholder="6자리(예시.880101)" title="주민등록번호 앞자리 입력">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">휴대폰번호</th>
+										<td class="left">
+											<select class="select_ty w180" title="휴대폰번호 통신사 선택">
+												<option value="">선택</option>
+												<option value="">SKT</option>
+												<option value="">KT</option>
+												<option value="">LG U+</option>
+												<option value="">SKT 알뜰폰</option>
+												<option value="">KT 알뜰폰</option>
+												<option value="">LG U+ 알뜰폰</option>
+											</select>
+											<select class="select_ty w90" title="휴대폰번호 첫번째 자리 선택">
+												<option value="">선택</option>
+												<option value="">010</option>
+												<option value="">011</option>
+												<option value="">016</option>
+												<option value="">017</option>
+												<option value="">018</option>
+												<option value="">019</option>
+											</select>
+											<div class="btn_key_box">
+												<input type="password" class="input_ty w180" placeholder="‘-’ 없이 입력하세요." title="휴대폰번호 나머지 입력">
+												<a href="#" class="btn_key">가상 키보드</a>
+											</div>
+											<div class="b_list txt chk">
+												<input type="checkbox" id="chk01_1"> 
+												<label for="chk01_1">고객님의 이름, 생년월일, 휴대폰번호를 이용하여 실명확인 및 당사 회원여부 조회와 장기카드대출(카드론)신청을 위한 통화에 동의합니다.<br>입력하신 정보는 별도로 저장되지 않습니다.</label> 
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</fieldset>
+							</form>
+						</div>
+						<!-- //board_ty -->
+						<!-- btn_area -->
+						<ul class="btn_area">
+							<li>
+								<a href="#next_step" onClick="NextStepOpen();" class="btn_b btn_ty02">확인</a>
+							</li>
+						</ul>
+						<!-- //btn_area -->
+					</article>
+					<!-- // 전화신청 -->
+					
+					<div class="next_step_cont on" id="next_step"><!-- div에 class="next_step_cont" id="next_step" 추가하면 none,block 처리됨 -->
+						<!-- 한도/이자율 안내 -->
+						<article class="cont">
+							<h4 class="t_tit">한도/이자율 안내</h4>
+							<div class="table_ty">
+								<table>
+									<caption>한도/이자율 안내 테이블</caption>
+									<colgroup>
+										<col span="1" style="width:23%;">
+										<col span="1" style="width:77%;">
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row" class="left">이용가능 금액</th>
+											<td class="left">
+												<span class="set ty02">
+													<strong>300 <em>만원</em></strong>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row" class="left">이자율</th>
+											<td class="left">
+												<span class="set ty02">
+													<strong>19.24 <em>%</em></strong> <em>→</em> <strong><span>할인 이자율</span> 15<em>%</em></strong>
+												</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<p class="table_info">이자율은 대출기간에 따라 변동될 수 있습니다.</p>
+						</article>
+						<!-- //한도/이자율 안내 -->
+						
+						<!-- 휴대폰 인증 -->
+						<article class="cont">
+							<h4 class="t_tit">휴대폰 인증<span>고객의 개인정보는 암호화 되어 안전하게 처리됩니다.</span></h4>
+							<!-- board_box -->
+							<div class="board_box">
+								<!-- tab_ty03 -->
+								<nav class="tab_ty03 tab_nav">
+									<a href="#tab03" class="on">휴대폰 인증</a>
+								</nav>
+								<!-- //tab_ty03 -->
+								<div class="layout_guide">
+									<p><span>인증 모듈 영역<br><br><em><a href="../guide/temp04.html" target="_blank">모듈 페이지 &gt;</a></em></span></p>
+								</div>
+							</div>
+							<!-- //board_box -->
+							<ul class="btn_area">
+								<li>
+									<a href="#" class="btn_b btn_ty">취소</a>
+									<a href="#" class="btn_b btn_ty02">전화신청</a>
+								</li>
+							</ul>
+						</article>
+						<!-- //휴대폰 인증 -->
+						
+						<!-- 17.07.11 수정 : str -->
+						<article class="cont">
+							<h4 class="blind">유용한 정보</h4>
+							<!-- useful_nav -->
+							<nav class="useful_nav02">
+								
+								<p><i><img src="../../images/contents/ico_useful_tel.png" alt="금융센터 (아이콘)"></i>금융센터<strong>1800 - 1000</strong></p>
+								<p><i><img src="../../images/contents/ico_useful_time.png" alt="상담가능시간 (아이콘)"></i>상담가능시간 (평일)<strong>09:00 ~ 18:00</strong></p>
+								<p><i><img src="../../images/contents/ico_useful_time.png" alt="신청가능시간 (아이콘)"></i>신청가능시간<strong>24시 365일</strong></p>
+							</nav>
+							<!-- //useful_nav -->
+						</article>
+						<!-- //17.07.11 수정 : end -->
+						
+					</div> <!-- div에 class="next_step_cont" id="next_step" 추가하면 none,block 처리됨 -->
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

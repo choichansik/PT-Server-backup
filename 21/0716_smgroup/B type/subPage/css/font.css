@@ -1,0 +1,66 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'MADE-Coachella-Black';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/MADE-Coachella-Black-PERSONAL-USE.woff') format('woff'),
+    url('../font/MADE-Coachella-Black-PERSONAL-USE.svg') format('svg'),
+    url('../font/MADE-Coachella-Black-PERSONAL-USE.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MADE-Coachella-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/MADE-Coachella-Bold-PERSONAL-USE.woff') format('woff'),
+    url('../font/MADE-Coachella-Bold-PERSONAL-USE.svg') format('svg'),
+    url('../font/MADE-Coachella-Bold-PERSONAL-USE.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MADE-Coachella-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/MADE-Coachella-Medium-PERSONAL-USE.woff') format('woff'),
+    url('../font/MADE-Coachella-Medium-PERSONAL-USE.svg') format('svg'),
+    url('../font/MADE-Coachella-Medium-PERSONAL-USE.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MADE-Coachella-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/MADE-Coachella-Regular-PERSONAL-USE.woff') format('woff'),
+    url('../font/MADE-Coachella-Regular-PERSONAL-USE.svg') format('svg'),
+    url('../font/MADE-Coachella-Regular-PERSONAL-USE.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MADE-Coachella-Light';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/MADE-Coachella-Light-PERSONAL-USE.woff') format('woff'),
+    url('../font/MADE-Coachella-Light-PERSONAL-USE.svg') format('svg'),
+    url('../font/MADE-Coachella-Light-PERSONAL-USE.otf') format('opentype');
+}
+@font-face {
+    font-family: 'MADE-Coachella-Thin';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/MADE-Coachella-Thin-PERSONAL-USE.woff') format('woff'),
+    url('../font/MADE-Coachella-Thin-PERSONAL-USE.svg') format('svg'),
+    url('../font/MADE-Coachella-Thin-PERSONAL-USE.otf') format('opentype');
+}
+
+@font-face{
+    font-family: 'Noto Sans KR', sans-serif;
+    /* Thin 100
+    Light 300
+    Regular 400
+    Medium 500
+    Bold 700
+    Black 900 */
+    font-family: 'Roboto', sans-serif;
+    /* Thin 100
+    Light 300
+    Regular 400
+    Medium 500
+    Bold 700
+    Black 900*/
+}

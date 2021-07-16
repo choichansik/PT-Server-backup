@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>카드발급조회 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">카드</a></span>
+			<span><a href="#">발급조회/사용등록</a></span>
+			<span>카드발급조회</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">카드</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>발급조회/사용등록</em>카드발급조회</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					<!-- 정보입력 -->
+					<article class="cont">
+						<h4 class="t_tit">정보입력</h4>
+						<!-- board_ty -->
+						<div class="board_ty">
+						<form>
+							<fieldset>
+							<legend>정보입력</legend>
+							<table>
+								<caption>정보입력</caption>
+								<colgroup>
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:77%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">성명</th>
+										<td class="left">
+											<input type="text" class="input_ty w180" placeholder="" title="성명 입력">
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">생년월일</th>
+										<td class="left">
+											<input type="text" class="input_ty w180" placeholder="" title="생년월일 입력">
+											<span class="b_txt">예시) 1980/02/13인 경우 → 19800213</span>
+										</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">휴대폰번호</th>
+										<td class="left">
+											<select class="select_ty w180" title="휴대폰번호 통신사 선택">
+												<option value="">선택</option>
+												<option value="">SKT</option>
+												<option value="">KT</option>
+												<option value="">LG U+</option>
+												<option value="">SKT 알뜰폰</option>
+												<option value="">KT 알뜰폰</option>
+												<option value="">LG U+ 알뜰폰</option>
+											</select>
+											<select class="select_ty w90" title="휴대폰번호 첫번째 자리 선택">
+												<option value="">선택</option>
+												<option value="">010</option>
+												<option value="">011</option>
+												<option value="">016</option>
+												<option value="">017</option>
+												<option value="">018</option>
+												<option value="">019</option>
+											</select>
+											<div class="btn_key_box">
+												<input type="password" class="input_ty w180" placeholder="'-' 업이 입력하세요" title="휴대폰번호 나머지 입력">
+												<a href="#" class="btn_key">가상 키보드</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</fieldset>
+						</form>
+						</div>
+						<!-- //board_ty -->
+						<p class="table_info">카가족카드의 발급진행 상황은 본인회원의 정보로 조회하여 주시기 바랍니다.</p>
+						<!-- btn_area -->
+						<ul class="btn_area">
+							<li>
+								<a href="#" class="btn_b btn_ty02">조회</a>
+							</li>
+						</ul>
+						<!-- //btn_area -->
+					</article>
+					<!-- //정보입력 -->
+					
+					<!-- 본인인증 -->
+					<article class="cont">
+						<h4 class="t_tit">본인인증</h4>
+						<!-- board_box -->
+						<div class="board_box">
+							<!-- tab_ty03 -->
+							<nav class="tab_ty03 tab_nav">
+								<a href="#tab02" class="on">공인인증서</a>
+							</nav>
+							<!-- //tab_ty03 -->
+							<div class="layout_guide">
+								<p><span>인증 모듈 영역<br><br><em><a href="../guide/temp04.html" target="_blank">모듈 페이지 &gt;</a></em></span></p>
+							</div>
+						</div>
+						<!-- //board_box -->
+					</article>
+					<!-- //본인인증 -->
+
+					<!-- info_box -->
+					<article class="cont">
+						<h4 class="blind">카드발급조회 안내</h4>
+						<!-- info_box -->
+						<dl class="info_box">
+							<dt><a href="#">카드발급조회 안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">최근 6개월 이내의 신청내역이 조회됩니다.</li>
+									<li class="blt1">카드신청내역이 조회 되지 않으실 경우 고객센터 (1800-1111)로 문의해 주시기 바랍니다.</li>
+									<li class="blt1">안전한 카드 사용을 위해 카드 수령 시 본인이 직접 ARS (1800-1111) 또는 <a href="#" class="link_txt02">카드사용등록</a> 메뉴를 통해 카드사용등록 후 이용 가능합니다.</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!-- //info_box -->
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

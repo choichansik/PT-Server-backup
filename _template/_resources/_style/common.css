@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* --------------------------------
+Common CSS
+-------------------------------- */
+
+/* body */
+body.locked { overflow: hidden; touch-action: none; }
+
+/* click popup */
+.pop_cont { display: none; }
+
+/* tab panel */
+.tab_panel .tab_btn { cursor: pointer; }
+.tab_panel .tab_cont { display: none; }
+.tab_panel .tab_cont.active { display: block; }
+
+/* toggle list */
+.togl_list > * { cursor: pointer; }
+
+/* mask */
+#mask { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, .9); z-index: 998; display: none; }

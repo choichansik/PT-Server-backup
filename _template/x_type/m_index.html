@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Template_M_Index</title>
+<link rel="shortcut icon" type="image/x-icon" href="../_resources/[gate]/favicon.ico">
+<link rel="stylesheet" type="text/css" href="../_resources/import.css">
+<script src="../_resources/import.js"></script>
+<style type="text/css">
+	.m_index{background:#d5d5d5;}
+	.m_index .device_box{position:absolute;left:0;top:50%;width:100%;margin-top:-400px;}
+	.m_index .device_wrap{position:relative;width:404px;margin:0 auto;background:#fff;border:2px solid #c0c0c0;border-radius:15px;}
+	.m_index .device_wrap:before{display:block;position:absolute;left:35%;top:18px;width:30%;height:6px;background:#d9d9d9;border-radius:4px;content:"";opacity:0.7;}
+	.m_index .device_cont{position:relative;width:360px;height:666px;margin:39px 19px;background:#fff;border:1px solid #d9d9d9;overflow:hidden;}
+	.m_index .device_cont p{position:absolute;width:100%;top:0;left:0;height:26px;background-color:#3a3a3a;}
+	.m_index .device_cont p img{margin-top:2px;width:100%;}
+	.m_index .device_cont .webview{width:377px;height:640px;padding-top:26px;border:0;overflow-x:hidden;}
+</style>
+</head>
+<body class="m_index">
+
+	<!-- device_box -->
+	<div class="device_box">
+
+		<!-- device_wrap -->
+		<div class="device_wrap">
+
+			<!-- device_cont -->
+			<div class="device_cont">
+				
+				<p><img src="../_resources/_images/img_mobile_bar.png" alt="" class="img"></p>
+				<iframe name="mobile" class="webview" src="m_main.html" frameborder="0"></iframe>
+
+			</div>
+			<!-- //device_cont -->
+
+		</div>
+		<!-- //device_wrap -->
+
+	</div>
+	<!-- //device_box -->
+
+</body>
+</html>
+

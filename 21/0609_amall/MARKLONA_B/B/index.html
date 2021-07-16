@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>마크앤로나 PC B 시안</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="common/css/reset.css">
+<link rel="stylesheet" type="text/css" href="common/css/contents.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="common/js/jquery.js"></script>
+<script src="common/js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- header -->
+	<header id="header">
+		<img src="common/images/header.jpg" alt="" />
+	</header>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container">
+		<div class="main-banner basic-banner banner-wrap">
+			<!-- item-big -->
+			<div class="item-big">
+				<ul>
+					<li class="item01">
+						<div class="visual"><img class="obj" src="common/images/banner1.jpg"/></div>
+						<div class="txt-wrap txt01">
+							<div class="inner">
+								<div class="d_t">
+									<div class="d_c">
+										<img src="common/images/banner1_txt.png" alt="" class="txt-cell"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item02">
+						<div class="visual"><img class="obj" src="common/images/banner2.jpg"/></div>
+						<div class="txt-wrap txt02">
+							<div class="inner">
+								<div class="d_t">
+									<div class="d_c">
+										<img src="common/images/banner2_txt.png" alt="" class="txt-cell"/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- //item-big -->
+
+			<!-- pagination -->
+			<div class="pagination"><img src="common/images/pagnation.png" alt=""/></div>
+			<!-- //pagination -->
+		</div>
+
+		<div class="main-01 margin-bottom effect_wrap">
+			<img src="common/images/gender-product.jpg" alt="여성,남성상품"/>
+		</div>
+
+		<!-- banner1 일 경우 출력 -->
+		<div class="main02 effect_wrap">
+			<img src="common/images/promotion-img1.jpg" alt=""/>
+			<img src="common/images/promotion-img2.jpg" alt=""/>
+		</div>
+		<!-- //banner1 일 경우 출력 -->
+
+		<!-- banner2 일 경우 출력 -->
+		<!-- <div class="main02">
+			<img src="common/images/promotion2-img1.png" alt=""/>
+			<img src="common/images/promotion2-img2.png" alt=""/>
+		</div> -->
+		<!-- //banner2 일 경우 출력 -->
+
+		<div class="main-02 swiper-container mySwiper margin-bottom effect_wrap">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+					<img src="common/images/promotion-img3.jpg" alt="" class="img"/>
+					<img src="common/images/promotion-txt3.jpg" alt="" class="txt"/>
+				</div>
+        <div class="swiper-slide">
+					<img src="common/images/promotion-img4.jpg" alt="" class="img"/>
+					<img src="common/images/promotion-txt4.jpg" alt="" class="txt"/>
+				</div>
+        <div class="swiper-slide">
+					<img src="common/images/promotion2-img3.jpg" alt="" class="img"/>
+					<img src="common/images/promotion2-txt3.jpg" alt="" class="txt"/>
+				</div>
+        <div class="swiper-slide">
+					<img src="common/images/promotion2-img4.jpg" alt="" class="img"/>
+					<img src="common/images/promotion2-txt4.jpg" alt="" class="txt"/>
+				</div>
+      </div>
+    </div>
+
+		<div class="main-03 effect_wrap">
+			<img src="common/images/sub-banner.jpg" alt=""/>
+		</div>
+
+		<div class="main-04 effect_wrap">
+			<img src="common/images/ranking.jpg" alt=""/>
+		</div>
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<footer id="footer"><img src="common/images/footer.jpg" alt=""/></footer>
+	<!-- //footer -->
+
+	
+
+</div>
+<!-- //wrap -->
+
+<script src="common/js/TweenMax.min.js"></script>
+<script src="common/js/slick.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+	var main = {
+	
+		pTarget			:	null,		
+		itemBig			:	null,		
+		itemPage		:	null,		
+		timer				:	null,		
+		delay				:	5000,		
+		cur				:	0,			
+		prev				:	-1,			
+		len					:	-1,		
+		dir					:	'right',	
+		flag				:	false,		
+		IE					:	false,		
+		first				:	true,		
+		SW				:	0,	
+		SH					:	0,	
+		delayTimer : null,
+		scrolling : false,
+		stats	: 'visual',
+	
+		init : function(){
+			var _this					=	this;
+	
+			// 타겟 및 속성 지정
+			_this.pTarget			=	$('.main-banner');
+			_this.itemBig			=	_this.pTarget.find('.item-big');
+			_this.itemPage			=	_this.pTarget.find('.item-page');
+			// _this.len					=	_this.itemBig.find('li').length;
+			_this.len					=	2;
+	
+			
+			// 페이징 생성
+			var _i;
+			for(_i = 0; _i < _this.len; _i++){
+				var _li	=	document.createElement('li');
+				var _a	=	document.createElement('a');
+				var _span	=	document.createElement('span');
+				_a.setAttribute('href','javascript:;');
+				_a.innerHTML = _i+1;
+				_a.appendChild(_span);
+				_li.appendChild(_a);
+				_this.itemPage.find('.page-data > ul').append(_li);
+			}
+	
+			//페이징 이벤트 등록		
+			_this.itemPage.find('a').on('click',function(e){			
+				_this.click($(this).parent().index());	
+			});
+	
+			//컨트롤러 생성
+			if(_this.len > 1){
+				var _prev	=	document.createElement('a');
+				var _next	=	document.createElement('a');
+				_prev.setAttribute('href','javascript:;');
+				_next.setAttribute('href','javascript:;');
+				_prev.className = "btn-control btn-prev";
+				_next.className = "btn-control btn-next";
+				_this.pTarget.append(_prev);
+				_this.pTarget.append(_next);
+	
+			}
+	
+			//컨트롤러 이벤트 등록
+			_this.pTarget.find('.btn-control').on('mouseenter mouseleave click',function(e){			
+				if(e.type == 'mouseenter'){
+					if(_this.len > 1)_this.autoStop();
+				}else if(e.type == 'mouseleave'){
+					if(_this.len > 1)_this.autoStart();
+	
+				}else if(e.type == 'click'){
+					if(_this.len > 1){
+						if(!main.flag){
+							main.prev	=	main.cur;
+							if($(this).hasClass('btn-prev')){
+								//prev
+								main.cur = (main.cur == 0)?main.len-1:main.cur=main.cur-1;
+								main.dir = 'left';
+							}else{
+								//next
+								main.cur = (main.cur >= main.len-1)?0:main.cur = main.cur+1;
+								main.dir = 'right';
+							}	
+							main.set(main.cur , main.prev , main.dir);
+							main.flag = true;
+						}
+					}
+				}
+	
+			});
+	
+			_this.itemPage.on('.page-data').bind('mouseenter mouseleave',function(e){
+				if(e.type == 'mouseenter'){
+					//_this.autoStop();
+				}else{
+					//_this.autoStart();
+				}
+			});			
+			
+			if(_this.len > 1)_this.autoStart();
+			main.set(0 , -1 ,  main.dir);
+			_this.pTarget.addClass('open');
+			
+			TweenMax.set(_this.pTarget.find('.txt-cell') , {x : -50 , alpha : 0});
+			TweenMax.set(_this.pTarget.find('.visual'), {alpha : 0});
+	
+			main.resize();
+			// _this.pTarget.on('mousewheel DOMMouseScroll', function (event) {						
+			// 	var e = window.event || event;
+			// 	var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail))
+			// 	if(browserUI.isIE()){
+			// 		delta = delta;
+			// 	}								
+				
+			// 	if(!main.scrolling){
+			// 		if (delta > 0) {
+			// 			//up
+			// 			//console.log('up');
+			// 		}else{
+			// 			//down
+			// 			//console.log('down');
+			// 			TweenMax.killTweensOf($('#container'));
+			// 			TweenMax.killTweensOf(main.pTarget);
+			// 			TweenMax.to($('#container') , 0.95 , {top : 0, ease:Quad.easeOut , onUpdate : function(){effect.scroll()}});
+			// 			TweenMax.to(main.pTarget , 0.95 , {top : main.SH * -1 , ease:Quad.easeOut});
+			// 			main.stats = 'contents';
+			// 			main.scrolling = true;
+			// 			common.scrolling = false;
+			// 			$('#header').addClass('fix');
+			// 		}	
+			// 	}
+					
+			// });
+	
+	
+		},
+	
+		resize : function(){	
+			main.SW = $(window).width();
+			main.SH = $(window).height();
+	
+			if(main.stats == 'visual'){
+				TweenMax.set($('#container') , {top : main.SH});
+	
+			}else if(main.stats == 'contents'){
+				TweenMax.set($('#container') , {top : 0});
+			}
+		},
+	
+		click : function(_i){
+			var _this		=	this,
+				 _index	=	_i;
+	
+	
+			if(!_this.flag && _index != _this.cur){				
+				_this.prev	=	_this.cur;
+				_this.cur		=	_index;
+				_this.dir		=	(_this.cur > _this.prev) ? 'right' : 'left';
+				_this.set(_this.cur , _this.prev , _this.dir);
+				_this.flag = true;
+				_this.autoStart();
+			}
+		},
+	
+		set : function(_i , _p, _d){
+	
+			var _this		=	this,
+				 _cur		=	_i,			 
+				 _prev	=	_p,
+				 _dir		=	_d;
+	
+				 clearTimeout(main.delayTimer);
+			
+	
+			// 비주얼 이미지 정렬
+			_this.itemBig.find('> ul > li').each(function(){
+				var _target			=	$(this);
+	
+				if($(this).index() == _prev){
+					_target.css('z-index',3);
+					//prev
+
+					// 배너 변경에 따른 프로모션 변화
+					// if($(this).index() == 0) {
+					// 	$(".promotion-02").removeClass("off");
+					// 	$(".promotion-01").addClass("off");
+					// } else {
+					// 	$(".promotion-01").removeClass("off");
+					// 	$(".promotion-02").addClass("off");
+					// }
+					_target.find('.txt-cell').each(function(){
+						var _delay = 0;
+						TweenMax.killTweensOf($(this))
+						TweenMax.to($(this) , 1.5 , {x : 50 , alpha :0 , delay : _delay , ease:Quad.easeOut});
+						$(this).find('p').css({
+							'-webkit-filter' : 'blur(50px)',
+							'filter' : 'blur(50px)',
+							'transition' : 'filter 1.5s 0s ease'
+						});
+					});
+					
+					TweenMax.killTweensOf(_target.find('.visual'))
+					TweenMax.killTweensOf(_target.find('.obj'))
+					TweenMax.killTweensOf(_target.find('.visual'))
+					TweenMax.to(_target.find('.visual') , 1.2 , {scale : 1.2 , alpha : 0 , delay : 0 , ease:Quad.easeOut});
+				}else if($(this).index() == _cur){
+					//cur
+					_target.css('z-index',5);
+	
+					TweenMax.killTweensOf(_target.find('.visual'))
+					TweenMax.killTweensOf(_target.find('.obj'))
+	
+					if(_this.first){
+						_target.find('.txt-cell').each(function(){
+							var _delay = ($(this).index() * 0.15) + 0.5 ;
+							TweenMax.killTweensOf($(this))
+							TweenMax.set($(this) , { x : -50 , alpha : 0});
+							TweenMax.to($(this) ,1.5, {x : 0 , alpha : 1 , scale : 1 , delay : _delay , ease:Quad.easeOut});
+							$(this).find('p').css({
+								'-webkit-filter' : 'blur(0px)',
+								'filter' : 'blur(0px)',
+								'transition' : 'filter 1.5s 0.5s ease'
+							});
+						});
+						
+						TweenMax.set(_target.find('.visual'), {scale :1 , alpha : 0});
+					}else{
+						_target.find('.txt-cell').each(function(){
+							var _delay = ($(this).index() * 0.15) + 1 ;
+							TweenMax.killTweensOf($(this))
+							TweenMax.set($(this) , { x : -50 , alpha : 0});
+							TweenMax.to($(this) ,1.5 , {x : 0 , alpha : 1 , scale : 1 , delay : _delay , ease:Quad.easeOut});
+							$(this).find('p').css({
+								'-webkit-filter' : 'blur(0px)',
+								'filter' : 'blur(0px)',
+								'transition' : 'filter 1.5s 1s ease'
+							});
+						});
+						TweenMax.set(_target.find('.visual'), {scale :0.8 , alpha : 0});
+					}
+					TweenMax.set(_target.find('.obj'), {scale :1});
+					TweenMax.to(_target.find('.visual') , 1.2 , {scale : 1 , alpha : 1 , delay : 0 , ease:Quad.easeOut});
+					TweenMax.to(_target.find('.obj') , (main.delay / 1000) , {scale : 1.2 , delay : 0 , ease:Linear.easeNone});
+				}else{
+					//other
+					_target.css('z-index',2);
+				}
+			});		
+			
+			main.delayTimer = setTimeout(function(){main.flag = false;},3000);
+	
+			
+			_this.itemPage.find('.page-data > ul > li').eq(_cur).addClass('actived').siblings().removeClass('actived');
+			_this.first = false;
+		},
+		
+		autoRun : function(){
+	
+			if(!main.flag){				
+				main.prev	=	main.cur;
+				main.cur	=	 (main.cur >= main.len-1) ? 0 : main.cur = main.cur+1;
+				main.dir		=	'right';
+				main.set(main.cur , main.prev , main.dir);
+				main.flag = true;
+			}
+	
+		},
+		
+		autoStart : function(){	
+			clearInterval(main.timer);
+			main.timer = setInterval(main.autoRun , main.delay);
+		},
+		
+		autoStop : function(){
+			clearInterval(main.timer);
+		}
+	
+	}
+	
+	var effect = {
+		
+		container : null,
+		items : [],
+	
+		init : function(){		
+			this.container = $('#container');
+			
+			var i=0;
+			this.container.find('.effect_wrap').each(function(){
+				var obj = {
+					target : $(this),
+					index : i,
+					activeStats : false
+				}
+	
+				effect.items.push(obj);
+				i++;
+			});	
+	
+			$('.main02').find('.data-cell').on('mouseenter' , function(e){
+				if($(this).hasClass('actived')){
+					$(this).removeClass('dimd').siblings().addClass('dimd');
+				}
+			});
+	
+			$('.main02').on('mouseleave' , function(){
+				$(this).find('.data-cell').each(function(){
+					$(this).removeClass('dimd');
+				});
+			});
+	
+			TweenMax.set($('.main02').find('.item-01 .data-item') , {left : -350 , alpha : 0});
+			TweenMax.set($('.main02').find('.item-02 .data-item') , {right : -350 , alpha : 0});
+			effect.scroll();
+			$(window).on('scroll' , function () {
+				effect.scroll();
+			});
+		},
+	
+		scroll : function(){
+			var _this = this;
+	
+			for(var i = 0; i < effect.items.length; i++){
+				var _target = effect.items[i].target;
+				var _option = effect.items[i];
+				if(!_option.activeStats){
+					if($(window).scrollTop() + $(window).height() >= _option.target.offset().top){
+						if(_target.hasClass('customer-effect')){					
+							if(_target.hasClass('slider-wrap')){
+								TweenMax.to(_target.find('.item-01') , 0.75 , {left : 10 , alpha : 1 , delay : 0.5 , ease:Quad.easeOut});
+								TweenMax.to(_target.find('.item-02') , 0.75 , {left : 420 , alpha : 1 , delay : 0.5, ease:Quad.easeOut});
+								TweenMax.to(_target.find('.item-03') , 0.75 , {left : 830 , alpha : 1 , delay : 0.5, ease:Quad.easeOut , onComplete : function(){
+									//console.log('end');
+	
+									var target = $('.main-02');
+									target.find('.item-01').attr('style', '');
+									target.find('.item-02').attr('style', '');
+									target.find('.item-03').attr('style', '');
+									target.find('.slider-wrap').addClass('action');
+									var slider = target.find('.main02-slider').slick({
+										infinite: false,
+										arrows:true,
+										slidesToShow: 3,
+										slidesToScroll: 3,
+										draggable:true,
+										prevArrow: target.find('.btn-slider-prev')[0],
+										nextArrow: target.find('.btn-slider-next')[0],
+										dots:false,
+										autoplay: false
+									});
+									slider.on('beforeChange' , function(event , slick , currentSlide , nextSlide){
+										var pageItem = slick.$slider.parents('.main-02').find('.page-value');
+										var currentIndex = nextSlide;
+										pageItem.html('<em>' + (nextSlide + 1) + '</em><span> / ' + (slick.slideCount - 2) +'</span>');
+	
+										slick.$slider.parents('.main-02').find('.visual .item').each(function(){
+											if($(this).index() == currentIndex){
+												TweenMax.killTweensOf($(this));
+												TweenMax.set($(this) , {alpha : 0 , scale : 1.2});
+												TweenMax.to($(this) , 0.65 , {alpha : 1 , scale : 1 , ease:Quad.easeOut});
+											}else{
+												TweenMax.to($(this) , 0.65 , {alpha : 0 , scale : 0.9 , ease:Quad.easeOut});
+											}
+										});
+									});
+	
+								}});	
+							}
+							
+							if(_target.hasClass('main02')){
+								TweenMax.to($('.main02').find('.item-01 .data-item') , 0.95 , {left : 0 , alpha : 1 , delay : 0.5 , ease:Quad.easeOut, onComplete : function(){
+									this.target.parent().addClass('actived');
+								}});
+								TweenMax.to($('.main02').find('.item-02 .data-item') , 0.95 , {right : 0 , alpha : 1 , delay : 0.5, ease:Quad.easeOut , onComplete : function(){
+									this.target.parent().addClass('actived');
+								}});
+							}
+						}else{
+							_option.target.addClass('actived');
+							_target.css({ 'transform' : 'translate(0px, 0px)' , 'opacity' : '1' , 'transition' : 'transform 0.85s 0.15s cubic-bezier(0.250, 0.460, 0.450, 0.940) , opacity 0.85s 0.15s cubic-bezier(0.250, 0.460, 0.450, 0.940)'});
+						}
+						_option.activeStats = true;
+					}
+				}				
+			}
+		}
+	}
+	
+	var browserUI = {
+	
+		isIE : function(){
+			var agent = navigator.userAgent.toLowerCase();
+			if((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf('msie') != -1)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+	}
+	
+	var common = {
+	
+		scrolling : false,
+		container : null,
+	
+		init : function(){
+			this.container = $('#container');
+	
+			this.container.on('mousewheel DOMMouseScroll', function (event) {						
+				var e = window.event || event;
+				var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail))
+				if(browserUI.isIE()){
+					delta = delta;
+				}								
+				
+				if(!common.scrolling){
+					if (delta > 0) {
+						//up
+					//	console.log('up');
+						if(common.container.scrollTop() == 0){
+							TweenMax.killTweensOf($('#container'));
+							TweenMax.killTweensOf(main.pTarget);
+							TweenMax.to($('#container') , 0.95 , {top : main.SH, ease:Quad.easeOut });
+							TweenMax.to(main.pTarget , 0.95 , {top :0 , ease:Quad.easeOut});
+							common.scrolling = true;
+							main.scrolling = false;
+							main.stats = 'visual';
+							$('#header').removeClass('fix');
+						}
+					}else{
+						//down
+						//console.log('down');
+					//	TweenMax.killTweensOf($('#container'));
+					//	TweenMax.killTweensOf(main.pTarget);
+					//	TweenMax.to($('#container') , 0.95 , {top : 0, ease:Quad.easeOut , onUpdate : function(){effect.scroll()}});
+					//	TweenMax.to(main.pTarget , 0.95 , {top : main.SH * -1 , ease:Quad.easeOut});
+					//	common.scrolling = true;
+					}	
+				}
+					
+			});
+		}
+	}
+	function topmove(){
+		$('html, body').stop().animate({'scrollTop':0}, {queue:false, duration:1000, easing:'easeOutCubic'});
+	}
+
+	var swiper = new Swiper(".mySwiper", {
+		slidesPerView: 2,
+		slidesPerGroup: 2,
+		loop: true,
+		loopFillGroupWithBlank: true,
+		// pagination: {
+		// 	el: ".swiper-pagination",
+		// 	clickable: true,
+		// },
+		// navigation: {
+		// 	nextEl: ".swiper-button-next",
+		// 	prevEl: ".swiper-button-prev",
+		// },
+	});
+	
+	$(function(){
+		main.init();
+		effect.init();
+		common.init();
+	});
+	
+	$(document).ready(function(){
+		$('#wrap').addClass('open');
+	});
+	
+
+	/*===================================
+	@ window resize
+	===================================*/
+	$(window).resize(function () {
+		main.resize();
+	});
+	</script>
+</body>
+</html>

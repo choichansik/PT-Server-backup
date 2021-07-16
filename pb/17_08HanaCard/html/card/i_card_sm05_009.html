@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>카드비밀번호 등록/변경 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">카드</a></span>
+			<span><a href="#">발급조회/사용등록</a></span>
+			<span>카드비밀번호 등록/변경</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">카드</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>발급조회/사용등록</em>카드비밀번호 등록/변경</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					<!-- tab_ty -->
+					<nav class="tab_ty"><!-- 17.06.03 탭 수정 -->
+						<ul>
+							<li class="on"><a href="#">신용/체크카드</a></li><!-- 활성화 class="on" -->
+							<li><a href="#">기명식 선불카드</a></li>
+						</ul>
+					</nav>
+					<!-- //tab_ty -->
+					
+					<!-- 카드정보 -->
+					<article class="cont">
+						<h4 class="t_tit">카드정보</h4>
+						<!-- board_ty -->
+						<div class="board_ty">
+						<form>
+							<fieldset>
+							<legend>카드정보</legend>								
+							<table>
+								<tr>
+									<th scope="row" class="left">카드번호</th>
+									<td class="left">
+										<div class="btn_security_box">
+											<input type="password" class="input_ty w420" placeholder="'-' 제외하고 입력" title="카드번호 입력">
+											<!--a href="#" class="btn_masking">마스킹 해지</a-->
+											<a href="#" class="btn_key">가상 키보드</a>
+										</div>
+										<!-- 로그인 시 보유카드번호 select box 선택 
+										<select class="select_ty w420 selectBox" title="카드선택" >
+											<option value="">9413-****-****-1738 내카드 (기명선불)</option>
+										</select>
+										-->
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="left">유효기간</th>
+									<td class="left">
+										<input type="text" class="input_ty w140" placeholder="MM" title="유효기간 월 입력">
+										<span class="b_txt02">월</span>
+										<input type="text" class="input_ty w140" placeholder="YY" title="유효기간 년도 입력">
+										<span class="b_txt02">년</span>
+										<div class="b_list txt">
+											카드앞면에 02/13일 경우, 02월 13년으로 입력
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="left">CVV번호</th>
+									<td class="left">
+										<div class="btn_key_box">
+											<input type="password" class="input_ty w140" placeholder="뒷면 3자리" title="CVV번호 입력">
+											<a href="#" class="btn_key">가상 키보드</a>
+										</div>
+										<a href="#" class="btn_s btn_ty04 btn_pop">CVV 안내</a><!-- 17.08.08 접근성 수정 -->
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="left">신규 비밀번호</th>
+									<td class="left">
+										<div class="btn_security_box">
+											<input type="password" class="input_ty w200" title="신규 비밀번호 입력">
+											<!--a href="#" class="btn_masking">마스킹 해지</a-->
+											<a href="#" class="btn_key">가상 키보드</a>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row" class="left">비밀번호 확인</th>
+									<td class="left">
+										<div class="btn_security_box">
+											<input type="password" class="input_ty w200" title="비밀번호 확인">
+											<!--a href="#" class="btn_masking">마스킹 해지</a-->
+											<a href="#" class="btn_key">가상 키보드</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+							</fieldset>
+						</form>
+						</div>
+						<!--// board_ty -->
+					</article>
+					<!-- //카드정보 -->
+					
+					<!-- 본인인증 -->
+					<article class="cont">
+						<h4 class="t_tit">본인인증</h4>
+						<!-- board_box -->
+						<div class="board_box">
+							<!-- tab_ty03 -->
+							<nav class="tab_ty03 tab_nav">
+								<a href="#tabA03" class="on">휴대폰인증</a>
+							</nav>
+							<!-- //tab_ty03 -->
+							<div class="layout_guide">
+								<p><span>인증 모듈 영역<br><br><em><a href="../guide/temp04.html" target="_blank">모듈 페이지 &gt;</a></em></span></p>
+							</div>
+						</div>
+						<!-- //board_box -->
+						<ul class="btn_area">
+							<li>
+								<a href="#" class="btn_b btn_ty">취소</a>
+								<a href="#" class="btn_b btn_ty02">확인</a>
+							</li>
+						</ul>
+					</article>
+					<!-- //본인인증 -->
+
+					<!-- info_box -->
+					<article class="cont">
+						<h4 class="blind">카드비밀번호 등록/변경 안내</h4>
+						<!-- info_box -->
+						<dl class="info_box">
+							<dt><a href="#">카드비밀번호 등록/변경 안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">신규로 발급받은 카드의 비밀번호를 등록하거나 기존에 사용중인 카드의 비밀번호를 변경하실 수 있습니다.</li>
+									<li class="blt1">비밀번호 미등록 카드인 경우에는, 비밀번호를 등록하시면 카드사용등록도 함께 처리됩니다.</li>
+									<li class="blt1">IC칩 비밀번호 등록/변경은 가까운 하나은행 영업점에서 신청하실 수 있습니다.</li>
+									<li class="blt1">기업카드의 비밀번호 등록/변경 신청은 ‘기업 &gt; 기업카드안내 &gt; 카드비밀번호 등록/변경’ 메뉴를 이용하시기 바랍니다. <a href="#" class="btn_xs btn_ty04">바로가기</a></li>
+									<li class="blt1">카드 비밀번호에는 주민등록번호 일부, 전화번호, 연속된 번호 등은 사용하실 수 없습니다.</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!-- //info_box -->
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

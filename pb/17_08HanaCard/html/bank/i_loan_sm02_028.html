@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>수수료계산 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">혜택</a></span>
+			<span><a href="#">포인트</a></span>
+			<span><a href="#">제휴포인트</a></span>
+			<span>하나OK캐쉬백포인트</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">금융</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>장기카드대출(카드론)</em>수수료계산</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+					
+					<!-- 선택 가능한 금융상품이 없는 경우 -->
+					<article class="cont">
+						<h4 class="t_tit">신청정보 입력</h4>
+						<!-- search_area02 -->
+						<div class="search_area02">
+						<form>
+							<fieldset>
+							<legend>조회조건</legend>
+								<ul>
+									<li class="list">
+										<p class="tit">카드론상품</p>
+										<select class="select_ty w610" title="카드론상품 선택" disabled>
+											<option value="">해당 금융 상품이 없습니다.</option>
+										</select>
+									</li>
+									<li class="list">
+										<p class="tit">대출금액</p>
+										<input type="text" class="input_ty w140" title="대출금액 입력">
+										<span class="b_txt02">만원</span>
+									</li>
+									<li class="list">
+										<p class="tit">대출기간</p>
+										<input type="text" class="input_ty w140" title="대출기간 입력">
+										<span class="b_txt02">개월</span>
+									</li>
+								</ul>
+								<!-- btn_area -->
+								<ul class="btn_area">
+									<li>
+										<a href="#" class="btn_m btn_ty02">조회</a>
+									</li>
+								</ul>
+								<!-- //btn_area -->
+							</fieldset>
+						</form>
+						</div>
+						<!-- //search_area02 -->
+					</article>
+					<!--// 선택 가능한 금융상품이 없는 경우 -->
+					
+					<article class="cont">
+						<!-- search_area02 -->
+						<div class="search_area02">
+						<form>
+							<fieldset>
+							<legend>조회조건</legend>
+								<ul>
+									<li class="list">
+										<p class="tit">카드론상품</p>
+										<select class="select_ty w610" title="카드론상품 선택">
+											<option value="">하나카드론(만기일시) [금융상품코드 : 61071]</option>
+										</select>
+									</li>
+									<li class="list">
+										<p class="tit">대출금액</p>
+										<input type="text" class="input_ty w140" value="720" title="대출금액 입력">
+										<span class="b_txt02">만원</span>
+										<div class="b_list txt">최대 720만원</div>
+									</li>
+									<li class="list">
+										<p class="tit">대출기간</p>
+										<input type="text" class="input_ty w140" value="6" title="대출기간 입력">
+										<span class="b_txt02">개월</span>
+										<div class="b_list txt">(장기카드대출(카드론) 대출기간은 6개월~12개월로 입력하세요.)</div>
+									</li>
+								</ul>
+								<!-- btn_area -->
+								<ul class="btn_area">
+									<li>
+										<a href="#" class="btn_m btn_ty02">조회</a>
+									</li>
+								</ul>
+								<!-- //btn_area -->
+							</fieldset>
+						</form>
+						</div>
+						<!-- //search_area02 -->
+					</article>
+					
+					<!-- 신상정보 입력조회 테이블1 -->
+					<article class="cont">
+						<h4 class="blind">신상정보 입력조회 테이블1</h4>
+						<div class="table_ty">
+							<table>
+								<caption>신상정보 입력조회 테이블1</caption>
+								<colgroup>
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:77%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">대출시행일</th>
+										<td class="left">2017.00.00</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">이자율</th>
+										<td class="left">12.9%</td>
+									</tr>
+									<tr>
+										<th scope="row" class="left">총 납입이자</th>
+										<td class="left">79,164원</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</article>
+					<!-- //신상정보 입력조회 테이블1 -->
+					
+					<!-- 신상정보 입력조회 테이블2 -->
+					<article class="cont">
+						<div class="table_head">
+							<h4 class="blind left">신상정보 입력조회 테이블2</h4>
+							<ul class="right">
+								<li class="data">(단위 : 원)</li>
+							</ul>
+						</div>
+						<div class="table_ty02 pd">
+							<table>
+								<caption>회차별 결제예정금액 테이블2</caption>
+								<colgroup>
+									<col span="1" style="width:12%;">
+									<col span="4" style="width:22%;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col">구분</th>
+										<th scope="col">결제일</th>
+										<th scope="col">원금</th>
+										<th scope="col">이자</th>
+										<th scope="col">소계</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>2017.02.01</td>
+										<td class="right">0원</td>
+										<td class="right">25,800원</td>
+										<td class="right"><strong>25,800원</strong></td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>2017.03.01</td>
+										<td class="right">0원</td>
+										<td class="right">25,800원</td>
+										<td class="right"><strong>25,800원</strong></td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td>2017.04.01</td>
+										<td class="right">0원</td>
+										<td class="right">25,800원</td>
+										<td class="right"><strong>25,800원</strong></td>
+									</tr>
+									<tr>
+										<td>4</td>
+										<td>2017.05.01</td>
+										<td class="right">0원</td>
+										<td class="right">25,800원</td>
+										<td class="right"><strong>25,800원</strong></td>
+									</tr>
+									<tr>
+										<td>5</td>
+										<td>2017.06.01</td>
+										<td class="right">0원</td>
+										<td class="right">25,800원</td>
+										<td class="right"><strong>25,800원</strong></td>
+									</tr>
+									<tr>
+										<td>6</td>
+										<td>2017.07.01</td>
+										<td class="right">0원</td>
+										<td class="right">25,800원</td>
+										<td class="right"><strong>25,800원</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="table_info">연체율 : 24.0~27.9% 고객등급별 차등적용</p>
+					</article>
+					<!-- //신상정보 입력조회 테이블2 -->
+					
+					<!-- 17.07.20 수정 -->
+					<ul class="btn_area mtm10">
+						<li>
+							<a href="#" class="btn_b btn_ty02">신청</a>
+						</li>
+					</ul>
+					<!-- //17.07.20 수정 -->
+					
+					<!-- 유용한 정보 -->
+					<article class="cont">
+						<h4 class="blind">유용한 정보</h4>
+						<!-- useful_nav -->
+						<nav class="useful_nav02">
+							<!-- 17.07.07 수정 --><!-- 17.07.25 접근성 수정 -->
+							<p><i><img src="../../images/contents/ico_useful_tel.png" alt=""></i>금융센터<strong>1800 - 1000</strong></p>
+							<p><i><img src="../../images/contents/ico_useful_time.png" alt=""></i>상담가능시간 (평일)<strong>09:00 ~ 18:00</strong></p>
+							<p><i><img src="../../images/contents/ico_useful_time.png" alt=""></i>신청가능시간<strong>24시 365일</strong></p>
+							<!-- //17.07.07 수정 --><!-- //17.07.25 접근성 수정 -->
+						</nav>
+						<!-- //useful_nav -->
+					</article>
+					<!-- //유용한 정보 -->
+					
+					<!-- 자주찾는 메뉴 -->
+					<article class="cont">
+						<h4 class="blind">자주찾는 메뉴</h4>
+						<!-- useful_nav -->
+						<nav class="useful_nav">
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae01.png" alt="웹비밀번호 변경 (아이콘)"></i>웹비밀번호 변경</a><!-- ico size : 36*36px -->
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae02.png" alt="마케팅 수신 동의 변경 (아이콘)"></i>마케팅 수신 동의 변경</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae03.png" alt="명세서 수령지 변경 (아이콘)"></i>명세서 수령지 변경</a>
+							<a href="#"><i><img src="../../images/contents/ico_useful_nav_mypae04.png" alt="금융주소 한번에 서비스 (아이콘)"></i>금융주소 한번에 서비스</a>
+						</nav>
+						<!-- //useful_nav -->
+					</article>
+					<!-- //자주찾는 메뉴 -->
+					
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

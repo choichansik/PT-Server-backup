@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ko" class="fix">
+<head>
+<meta charset="utf-8">
+<title>The A mall PC 시안</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="../../common/swiper/dist/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="common/css/reset.css">
+<link rel="stylesheet" type="text/css" href="common/css/contents.css">
+<script src="common/js/jquery.js"></script>
+<script src="common/js/jquery.easing.1.3.js"></script>
+<script src="common/swiper/dist/js/swiper.min.js"></script>
+</head>
+<body><!-- wrap -->
+<div id="wrap">
+    <div class="top_banner">
+		<div class="inner">
+            <img src="common/images/header_topbanner.png" alt="배너" />
+		</div>
+    </div>
+	<!-- header -->
+	<header id="header">
+		<div class="inner">
+            <ul>
+                <li>
+                    <img src="common/images/header01.png" alt="" />
+			        <a href="index.html" class="btn-01"></a>
+                </li>
+                <li>
+                    <img src="common/images/header02.png" alt="" />
+                </li>
+                <li>
+                    <img src="common/images/header03.png" alt="" />
+			        <a href="../../MARKLONA/pc/index.html" class="btn-02" target="_blank"></a>
+                </li>
+            </ul>
+		</div>
+	</header>
+	<!-- //header -->
+    <nav>
+    <div class="inner">
+            <div class="gnb">
+                <a href=""><img src="common/images/gnb.png" alt="메뉴" /></a>
+            </div>
+        </div>
+    </nav>
+    <div class="wrap_banner">
+    <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="mask"><img src="common/images/main_bnr_02.png" alt="" /></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mask"><img src="common/images/main_bnr_03.png" alt="" /></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="mask"><img src="common/images/main_bnr_01.png" alt="" /></div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+	<!-- container -->
+	<div id="container">
+	    <section class="main_01 effect_wrap">
+            <div class="cont_inner">
+                <div class="title"><img src="common/images/tit_01.png" alt="top seller" /></div>
+                <ul class="category font_gd">
+                    <li class="on">#1 PLASTIC ISLAND</li>
+                    <li>#2 LAP</li>
+                    <li>#3 LAPCOS</li>
+                    <li>#4 PENFIELD</li>
+                    <li>#5 HORN GARMENT</li>
+                </ul>
+                <div class="cont">
+                    <ul>
+                        <li class="on">
+                            <div class="main01-slide">
+                                <div class="data-inner">
+                                    <div class="data-group">
+                                        <div class="slider-wrap effect_wrap customer-effect">
+                                            <div class="slider-inner">
+                                                <div class="main01-slider">
+                                                    <div class="main01-slider-cell slick-slide">
+                                                        <img src="common/images/sec01_01.png" alt="" />
+                                                    </div>
+                                                    <div class="main01-slider-cell slick-slide">
+                                                        <img src="common/images/sec01_03.png" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-ui customer-effect">
+                                            <button type="button" class="btn-ui-arrow btn-slider-prev"><span>이전</span></button>
+                                            <button type="button" class="btn-ui-arrow btn-slider-next"><span>다음</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main01_txt">
+                                <ul>
+                                    <li><img src="common/images/sec01_02.png" alt="" /></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="main07-slide">
+                                <div class="data-inner">
+                                    <div class="data-group">
+                                        <div class="slider-wrap effect_wrap customer-effect">
+                                            <div class="slider-inner">
+                                                <div class="main07-slider">
+                                                    <div class="main07-slider-cell slick-slide">
+                                                        <img src="common/images/sec01_03.png" alt="" />
+                                                    </div>
+                                                    <div class="main07-slider-cell slick-slide">
+                                                        <img src="common/images/sec01_01.png" alt="" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-ui customer-effect">
+                                            <button type="button" class="btn-ui-arrow btn-slider-prev"><span>이전</span></button>
+                                            <button type="button" class="btn-ui-arrow btn-slider-next"><span>다음</span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main01_txt">
+                                <ul>
+                                    <li><img src="common/images/sec01_04.png" alt="" /></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $('.main_01 .category li').click(function(){
+                $(this).addClass('on').siblings().removeClass('on');
+                var tabIndex = $(this).index();
+                var num = tabIndex % 2;
+                if(num == 0){
+                    $('.main_01 .cont > ul > li').eq(0).addClass('on').siblings().removeClass('on');
+                }else if(num == 1){
+                    $('.main_01 .cont > ul > li').eq(1).addClass('on').siblings().removeClass('on');
+                }
+            });
+
+        });
+        </script>
+        <section class="main_01_1 effect_wrap">
+            <div class="inner">
+                <div class="wrap_f">
+                    <a href="#">
+                    <div>
+                        <div class="mask"><img src="common/images/sec01_1_01_1.png" alt="" /></div>
+                    </div>
+                    <div>
+                        <div class="mask"><img src="common/images/sec01_1_01_2.png" alt="" /></div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main_02 effect_wrap">
+            <div class="cont_inner">
+                <div class="title"><img src="common/images/tit_02.png" alt="recommendation" /></div>
+                <div class="cont">
+                    <div class="main02_txt">
+                        <img src="common/images/sec02_01.png" alt="" />
+                    </div>
+                    <div class="mask_scroll">
+                        <div class="swiper-scroll">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="common/images/sec02_02.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="common/images/sec02_03.png" alt="" /></div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                    <script>
+                        var swiperScroll = new Swiper(".swiper-scroll", {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                        freeMode: true,
+                        scrollbar: {
+                            el: ".swiper-scrollbar",
+                        },
+                            speed:700,
+                        });
+                </script>
+                </div>
+            </div>
+        </section>
+        <section class="main_03 effect_wrap">
+            <div class="cont_inner">
+                <div class="title"><img src="common/images/tit_03.png" alt="now trending" /></div>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.main_03 .category li').click(function(){
+                        $(this).addClass('on').siblings().removeClass('on');
+                    var tabIndex = $(this).index();
+                    var num = tabIndex % 2;
+                    if(num == 0){
+                        $('.main_03 .cont > li').eq(num).addClass('on').siblings().removeClass('on');
+                    }else if(num == 1){
+                        $('.main_03 .cont > li').eq(num).addClass('on').siblings().removeClass('on');
+                    };
+                    });
+                });
+                </script>
+                <ul class="category">
+                    <li class="on">#여름</li>
+                    <li>#라벤더</li>
+                    <li>#펀칭</li>
+                    <li>#로고티셔츠</li>
+                    <li>#레이스</li>
+                    <li>#반팔자켓</li>
+                    <li>#원피스</li>
+                    <li>#여름자켓</li>
+                </ul>
+                <ul class="cont">
+                    <li class="on">
+                        <div class="main03-slide">
+                            <div class="data-inner">
+                                <div class="data-group">
+                                    <div class="slider-wrap effect_wrap customer-effect">
+                                        <div class="slider-inner">
+                                            <div class="main03-slider">
+                                                <div class="main03-slider-cell slick-slide">
+                                                    <img src="common/images/sec03_01.png" alt="" />
+                                                </div>
+                                                    <div class="main03-slider-cell slick-slide">
+                                                    <img src="common/images/sec03_02.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-ui customer-effect">
+                                        <button type="button" class="btn-ui-arrow btn-slider-prev"><span>이전</span></button>
+                                        <button type="button" class="btn-ui-arrow btn-slider-next"><span>다음</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main06-slide">
+                            <div class="data-inner">
+                                <div class="data-group">
+                                    <div class="slider-wrap effect_wrap customer-effect">
+                                        <div class="slider-inner">
+                                            <div class="main06-slider">
+                                                <div class="main06-slider-cell slick-slide">
+                                                    <img src="common/images/sec03_02.png" alt="" />
+                                                </div>
+                                                    <div class="main06-slider-cell slick-slide">
+                                                    <img src="common/images/sec03_01.png" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-ui customer-effect">
+                                        <button type="button" class="btn-ui-arrow btn-slider-prev"><span>이전</span></button>
+                                        <button type="button" class="btn-ui-arrow btn-slider-next"><span>다음</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="main_04 effect_wrap">
+            <div class="cont_inner">
+                <div class="title"><img src="common/images/tit_04.png" alt="brand" /></div>
+                <div class="main04-slide">
+                    <div class="data-inner">
+                        <div class="data-group">
+                            <div class="slider-wrap effect_wrap customer-effect">
+                                <div class="slider-inner">
+                                    <div class="main04-slider">
+                                        <div class="main04-slider-cell slick-slide">
+                                            <ul class="brand">
+                                                <li><a href="#"><img src="common/images/sec04_01.png" alt="" /></a></li>
+                                                <li><a href="#"><img src="common/images/sec04_02.png" alt="" /></a></li>
+                                                <li><a href="#"><img src="common/images/sec04_03.png" alt="" /></a></li>
+                                                <li><a href="#"><img src="common/images/sec04_04.png" alt="" /></a></li>
+                                                <li><a href="#"><img src="common/images/sec04_05.png" alt="" /></a></li>
+                                                <li><a href="#"><img src="common/images/sec04_06.png" alt="" /></a></li>
+                                                <li><a href="#"><img src="common/images/sec04_07.png" alt="" /></a></li>
+                                                <li><a href="#"><img src="common/images/sec04_08.png" alt="" /></a></li>
+                                                <li><a href="#"><img src="common/images/sec04_09.png" alt="" /></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main_05 effect_wrap effect_wrap">
+            <div class="cont_inner">
+                <div class="title"><img src="common/images/tit_05.png" alt="magazine" /></div>
+                <div class="main05-slide">
+                    <div class="data-inner">
+                        <div class="data-group">
+                            <div class="slider-wrap effect_wrap customer-effect">
+                                <div class="slider-inner">
+                                    <div class="main05-slider">
+                                        <div class="main05-slider-cell slick-slide">
+                                            <img src="common/images/sec05_01.png" alt="" />
+                                        </div>
+                                            <div class="main05-slider-cell slick-slide">
+                                            <img src="common/images/sec05_02.png" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <a href="#">
+                        <img src="common/images/sec05_btn.png" alt="더보기" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="main_06 effect_wrap">
+            <div class="cont_inner">
+                <div class="title"><img src="common/images/tit_06.png" alt="photo review" /></div>
+                <ul class="reviews">
+                    <li>
+                        <a href="#">
+                            <div class="photo">
+                                <div class="mask">
+                                    <img src="common/images/sec06_01.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <img src="common/images/sec06_02.png" alt="" />
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="photo">
+                                <div class="mask">
+                                    <img src="common/images/sec06_03.png" alt="" />
+                                </div>
+                            </div>
+                            <div class="txt">
+                                <img src="common/images/sec06_04.png" alt="" />
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="btn_more">
+                    <img src="common/images/btn_more.png" alt="더보기" />
+                </div>
+            </div>
+        </section>
+	</div>
+	<!-- //container -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="cont_inner">
+            <img src="common/images/footer.png" alt="" />
+        </div>
+    </footer>
+    <!-- //footer -->
+
+</div>
+<!-- //wrap -->
+<script src="common/js/TweenMax.min.js"></script>
+<script src="common/js/slick.min.js"></script>
+<script>
+    var target01 = $('.main01-slide');
+    target01.find('.slider-wrap').addClass('action');
+    var slider01 = target01.find('.main01-slider').slick({
+        infinite: false,
+        arrows:true,
+        slidesToScroll: 1,
+        draggable:true,
+        prevArrow: target01.find('.btn-slider-prev')[0],
+        nextArrow: target01.find('.btn-slider-next')[0],
+        dots:false,
+        autoplay: false,
+        speed:700,
+    });
+    var target02 = $('.main03-slide');
+    target02.find('.slider-wrap').addClass('action');
+    var slider02 = target02.find('.main03-slider').slick({
+        infinite: false,
+        arrows:true,
+        slidesToScroll: 1,
+        draggable:true,
+        prevArrow: target02.find('.btn-slider-prev')[0],
+        nextArrow: target02.find('.btn-slider-next')[0],
+        dots:true,
+        autoplay: false,
+        speed:700,
+    });
+    var target03 = $('.main04-slide');
+    target03.find('.slider-wrap').addClass('action');
+    var slider03 = target03.find('.main04-slider').slick({
+        infinite: false,
+        arrows:false,
+        slidesToScroll: 1,
+        draggable:true,
+        dots:true,
+        autoplay: false,
+        speed:700,
+    });
+    var target04 = $('.main05-slide');
+    target04.find('.slider-wrap').addClass('action');
+    var slider04 = target04.find('.main05-slider').slick({
+        infinite: false,
+        arrows:false,
+        slidesToScroll: 1,
+        draggable:true,
+        dots:true,
+        autoplay: false,
+        speed:700,
+    });
+    var target05 = $('.main06-slide');
+    target05.find('.slider-wrap').addClass('action');
+    var slider02 = target05.find('.main06-slider').slick({
+        infinite: false,
+        arrows:true,
+        slidesToScroll: 1,
+        draggable:true,
+        prevArrow: target05.find('.btn-slider-prev')[0],
+        nextArrow: target05.find('.btn-slider-next')[0],
+        dots:true,
+        autoplay: false,
+        speed:700,
+    });
+    var target06 = $('.main07-slide');
+    target06.find('.slider-wrap').addClass('action');
+    var slider01 = target06.find('.main07-slider').slick({
+        infinite: false,
+        arrows:true,
+        slidesToScroll: 1,
+        draggable:true,
+        prevArrow: target06.find('.btn-slider-prev')[0],
+        nextArrow: target06.find('.btn-slider-next')[0],
+        dots:false,
+        autoplay: false,
+        speed:700,
+    });
+
+$(document).ready(function(){
+	$('#wrap').addClass('open');
+	var effect = {
+		container : null,
+		items : [],
+		init : function(){
+			this.container = $('#container');
+			var i=0;
+			this.container.find('.effect_wrap').each(function(){
+				var obj = {
+					target : $(this),
+					index : i,
+					activeStats : false
+				}
+				effect.items.push(obj);
+				i++;
+			});
+			$('.main-02').find('.data-cell').on('mouseenter' , function(e){
+				if($(this).hasClass('actived')){
+					$(this).removeClass('dimd').siblings().addClass('dimd');
+				}
+			});
+			$('.main-02').on('mouseleave' , function(){
+				$(this).find('.data-cell').each(function(){
+					$(this).removeClass('dimd');
+				});
+			});
+			TweenMax.set($('.main-02').find('.item-01 .data-item') , {left : -350 , alpha : 0});
+			TweenMax.set($('.main-02').find('.item-02 .data-item') , {right : -350 , alpha : 0});
+			effect.scroll();
+			$(window).on('scroll' , function () {
+				effect.scroll();
+			});
+		},
+		scroll : function(){
+			var _this = this;
+			for(var i = 0; i < effect.items.length; i++){
+				var _target = effect.items[i].target;
+				var _option = effect.items[i];
+				if(!_option.activeStats){
+					if($(window).scrollTop() + $(window).height() >= _option.target.offset().top){
+						if(_target.hasClass('customer-effect')){
+							if(_target.hasClass('slider-wrap')){
+								TweenMax.to(_target.find('.item-01') , 0.75 , {left : 10 , alpha : 1 , delay : 0.5 , ease:Quad.easeOut});
+								TweenMax.to(_target.find('.item-02') , 0.75 , {left : 420 , alpha : 1 , delay : 0.5, ease:Quad.easeOut});
+								TweenMax.to(_target.find('.item-03') , 0.75 , {left : 830 , alpha : 1 , delay : 0.5, ease:Quad.easeOut , onComplete : function(){
+									//console.log('end');
+									var target = $('.main-02');
+									target.find('.item-01').attr('style', '');
+									target.find('.item-02').attr('style', '');
+									target.find('.item-03').attr('style', '');
+									target.find('.slider-wrap').addClass('action');
+									var slider = target.find('.main-02-slider').slick({
+										infinite: false,
+										arrows:true,
+										slidesToShow: 3,
+										slidesToScroll: 3,
+										draggable:true,
+										prevArrow: target.find('.btn-slider-prev')[0],
+										nextArrow: target.find('.btn-slider-next')[0],
+										dots:false,
+										autoplay: false
+									});
+									slider.on('beforeChange' , function(event , slick , currentSlide , nextSlide){
+										var pageItem = slick.$slider.parents('.main-02').find('.page-value');
+										var currentIndex = nextSlide;
+										pageItem.html('<em>' + (nextSlide + 1) + '</em><span> / ' + (slick.slideCount - 2) +'</span>');
+										slick.$slider.parents('.main-02').find('.visual .item').each(function(){
+											if($(this).index() == currentIndex){
+												TweenMax.killTweensOf($(this));
+												TweenMax.set($(this) , {alpha : 0 , scale : 1.2});
+												TweenMax.to($(this) , 0.65 , {alpha : 1 , scale : 1 , ease:Quad.easeOut});
+											}else{
+												TweenMax.to($(this) , 0.65 , {alpha : 0 , scale : 0.9 , ease:Quad.easeOut});
+											}
+										});
+									});
+								}});
+							}
+							if(_target.hasClass('main-02')){
+								TweenMax.to($('.main-02').find('.item-01 .data-item') , 0.95 , {left : 0 , alpha : 1 , delay : 0.5 , ease:Quad.easeOut, onComplete : function(){
+									this.target.parent().addClass('actived');
+								}});
+								TweenMax.to($('.main-02').find('.item-02 .data-item') , 0.95 , {right : 0 , alpha : 1 , delay : 0.5, ease:Quad.easeOut , onComplete : function(){
+									this.target.parent().addClass('actived');
+								}});
+							}
+						}else{
+							_option.target.addClass('actived');
+							_target.css({ 'transform' : 'translate(0px, 0px)' , 'opacity' : '1' , 'transition' : 'transform 1.2s cubic-bezier(0.190, 1.000, 0.220, 1.000) , opacity 1.2s cubic-bezier(0.190, 1.000, 0.220, 1.000)'});
+						}
+						_option.activeStats = true;
+					}
+				}
+			}
+		}
+	}
+	var browserUI = {
+		isIE : function(){
+			var agent = navigator.userAgent.toLowerCase();
+			if((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf('msie') != -1)){
+				return true;
+			}else{
+				return false;
+			}
+		}
+	}
+	var common = {
+		scrolling : false,
+		container : null,
+		init : function(){
+			this.container = $('#container');
+			this.container.on('mousewheel DOMMouseScroll', function (event) {
+				var e = window.event || event;
+				var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail))
+				if(browserUI.isIE()){
+					delta = delta;
+				}
+				if(!common.scrolling){
+					if (delta > 0) {
+						//up
+					//	console.log('up');
+						if(common.container.scrollTop() == 0){
+							TweenMax.killTweensOf($('#container'));
+							TweenMax.killTweensOf(main.pTarget);
+							TweenMax.to($('#container') , 0.95 , {top : main.SH, ease:Quad.easeOut });
+							TweenMax.to(main.pTarget , 0.95 , {top :0 , ease:Quad.easeOut});
+							common.scrolling = true;
+							main.scrolling = false;
+							main.stats = 'visual';
+							$('#header').removeClass('fix');
+						}
+					}else{
+						//down
+						//console.log('down');
+					//	TweenMax.killTweensOf($('#container'));
+					//	TweenMax.killTweensOf(main.pTarget);
+					//	TweenMax.to($('#container') , 0.95 , {top : 0, ease:Quad.easeOut , onUpdate : function(){effect.scroll()}});
+					//	TweenMax.to(main.pTarget , 0.95 , {top : main.SH * -1 , ease:Quad.easeOut});
+					//	common.scrolling = true;
+					}
+				}
+			});
+		}
+	}
+	function topmove(){
+		$('html, body').stop().animate({'scrollTop':0}, {queue:false, duration:1000, easing:'easeOutCubic'});
+	}
+
+	$(document).ready(function(){
+		$('#wrap').addClass('open');
+        effect.init()
+	});
+
+	$('.main-01 .title-wrap li').click(function(){
+		var idx = $(this).index();
+		if(idx !== 2) {
+			$('.title').removeClass("on");
+			$(`.title:eq(${idx})`).addClass("on");
+
+			if($('.title:eq(0)').hasClass("on")) {
+				$('.bestseller-wrap').css("display","flex");
+				$('.live-wrap').addClass("off");
+				$('.basic-banner').removeClass("off");
+				$('.live-banner').addClass("off");
+			} else {
+				$('.bestseller-wrap').css("display","none");
+				$('.live-wrap').removeClass("off");
+				$('.basic-banner').addClass("off");
+				$('.live-banner').removeClass("off");
+			}
+		}
+	});
+
+	var wingTop = -800;
+
+    $(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();
+    var position	= (scrollTop + wingTop);
+
+			if(0 < position && position < 4400) {
+				$(".wing-banner").stop().animate({
+					"top" : position + "px"
+				}, 500)
+			}
+	}).scroll();
+
+    var swiper = new Swiper('.swiper-container',{
+        slidesPerView:'auto',
+        spaceBetween: 20,
+        // lazy: {
+        //     loadPrevNext: true,
+        //     loadPrevNextAmount : 1,
+        // },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 2000,
+        },
+        autoplayDisableOnInteraction: false,
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        },
+        speed : 900,
+    });
+
+	/*===================================
+	@ window resize
+	===================================*/
+	$(window).resize(function () {
+		main.resize();
+	});
+});
+</script>
+</body>
+</html>

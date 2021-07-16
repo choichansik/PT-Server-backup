@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>내게 맞는 카드 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">카드</a></span>
+			<span><a href="#">발급조회/사용등록</a></span>
+			<span>카드발급조회</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<ul class="breadcrumb_area">
+				<li class="li home"><a href="#">HOME</a></li>
+				<li class="li"><a href="#">카드</a></li>
+				<li class="li">
+					<a href="#" class="link">카드추천<em>메뉴열기</em></a>
+					<div class="dep">
+						<ul>
+							<li><a href="#">카드안내</a></li>
+							<li class="on">카드추천</li><!-- 현재위치 -->
+							<li><a href="#">친구추천카드</a></li>
+							<li><a href="#">카드빠른발급</a></li>
+							<li><a href="#">발급조회/사용등록</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="li">
+					<a href="#" class="link">내게 맞는 카드<em>메뉴열기</em></a>
+					<div class="dep">
+						<ul>
+							<li><a href="#">카드 한눈에 보기</a></li>
+							<li><a href="#">추천카드</a></li>
+							<li class="on">내게 맞는 카드</li><!-- 현재위치 -->
+							<li><a href="#">인기 Top3 카드</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">카드</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area02">
+			<h3 class="title"><em>카드추천</em>내게 맞는 카드</h3>
+
+			<!-- card_cont -->
+			<div class="card_cont">
+				<!-- tab_ty -->
+				<nav class="tab_ty">
+					<ul>
+						<li><a href="i_card_sm02_002.html">혜택으로 찾기</a></li>
+						<li><a href="i_card_sm02_003.html">제휴사로 찾기</a></li>
+						<li class="on"><a href="i_card_sm02_004.html">라이프스타일로 찾기</a></li>
+					</ul>
+				</nav>
+				<!-- //tab_ty -->
+<script type="text/javascript">
+/* 라이프로 찾기  : 우선 UI 확인 상 입니다. 개발 적용시 참고 부탁드립니다.*/
+jQuery(function($){
+	$('.my_card_life_view li a').each(function(i) {
+		$(this).prepend('<i>' + (i + 1) + '</i>');
+	});
+	$('.my_card_life_view').append('<span class=\"my_card_life_view_ed\"></span>');
+	$('.my_card_life_view_ed').attr('tabindex', 0);
+	$('.my_card_life_view_target .btn').click(function(){
+		if($('.fixed_ty').hasClass('on')){
+			selectTargetClose();
+		}else{
+			$('.fixed_ty').addClass('on');
+			$('.my_card_life_view_target .btn em').text('닫기');
+		}
+		return false;
+	});
+	$('.my_card_search.fixed_ty').bind('mouseleave',function(){
+		selectTargetClose();
+	});
+	$('.my_card_life_view_ed, .tab_ty a').bind('focusin',function(){
+		selectTargetClose();
+	});
+});
+	
+function selectTargetClose(){
+	jQuery(function($){
+		$('.fixed_ty').removeClass('on');
+		$('.my_card_life_view_target .btn em').text('열기');
+		//$('.my_card_life_view_target .btn').focus();
+	});	
+}
+function selectTarget(val){
+	jQuery(function($){
+		$('.my_card_life_view li').removeClass('on');
+		var tag = $('.my_card_life_view li').eq(val - 1);
+		var tag_s = tag.find('span').text()
+		tag.addClass('on');
+		$('.txt_select span').text(tag_s);
+		selectTargetClose();
+	});	
+	return false;
+}
+</script>
+				
+				<article class="my_card_search fixed_ty" id="selectTarget">
+					<h4 class="blind">내게 맞는 카드 : 라이프스타일로 찾기 검색</h4>
+					<div class="my_card_life_view_target">
+						<div class="txt_select">
+							<p class="txt"><span>주말엔 적당한 문화 생활이 필요해요!</span></p>
+						</div>
+						<a href="#selectTarget" class="btn"><span>라이프스타일로 찾기 검색<em>열기</em></span></a>
+					</div>
+
+					<!-- my_card_life_view -->
+					<div class="my_card_life_view">
+						<div class="inner">
+							<ul>
+								<li class="on"><a href="#selectTarget" onClick="return selectTarget(1);"><span>주말엔 적당한 문화 생활이 필요해요!</span></a></li><!-- 현재 선택 class="on" -->
+								<li><a href="#selectTarget" onClick="return selectTarget(2);"><span>스트레스 쌓일 땐 쇼핑이 최고죠!</span></a></li>
+								<li><a href="#selectTarget" onClick="return selectTarget(3);"><span>해외여행갈 땐 항공사 마일리지를 꼭 챙기자!</span></a></li>
+								<li><a href="#selectTarget" onClick="return selectTarget(4);"><span>스펙 세상에 대한 준비는 열공 뿐!</span></a></li>
+								<li><a href="#selectTarget" onClick="return selectTarget(5);"><span>가족과 함께하면 더 행복한 저녁식사!</span></a></li>
+								<li><a href="#selectTarget" onClick="return selectTarget(6);"><span>어차피 납부할거면 캐쉬백이라도 세이브 해야죠!</span></a></li>
+								<li><a href="#selectTarget" onClick="return selectTarget(7);"><span>어린 자녀를 위한 다양한 혜택이 필요해요!</span></a></li>
+								<li><a href="#selectTarget" onClick="return selectTarget(8);"><span>연휴에 즐기는 나만의 스마트 라이프 혜택을 찾자!</span></a></li>
+								<li><a href="#selectTarget" onClick="return selectTarget(9);"><span>나의 변신은 무죄, 방법을 찾아보자!</span></a></li>
+								<li><a href="#selectTarget" onClick="return selectTarget(10);"><span>나를 업그레이드 시키고 혜택은 덤으로 받자!</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- //my_card_life_view -->
+				</article>
+				
+				<!-- my_card_list -->
+				<article class="my_card_list">
+					<h4 class="blind">내게 맞는 카드 : 라이프스타일로 찾기 검색 결과</h4>
+					<!-- card_slide_box -->
+					<div class="card_slide_box">
+						<!-- card_slide -->
+						<div class="card_slide">
+							<!-- card_slide_area -->
+							<ul class="card_slide_area">
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card01.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<!--<li>국내전용 8,000원</li>-->
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a><!-- 비교빼기 : cardFillOut(this);-->
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<!--<a href="#" class="btn_ty03">카드신청</a>-->
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card02.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내전용 8,000원</li>
+														<li>국내외겸용(JCB) 8,000원</li>
+														<li>국내외겸용(MasterCard) 10,000원</li>
+														<li>국내외겸용(Visa) 12,000원</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card03.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<!--<li>스타벅스/커피빈 4,000원 할인</li>-->
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card04.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card05.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card01.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card02.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card03.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card04.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card05.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card01.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<li class="li">
+									<!-- c_target -->
+									<div class="c_target">
+										<p class="img"><img src="../../images/data/img_card02.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+										<dl class="txt">
+											<dt>SK브로드밴드 고객용 하나멤버스 1Q카드 Shopping</dt>
+											<dd>포인트를 현금으로 쓰는 하나멤버스 신용 포인트를 현금으로 쓰는 하나멤버스 신용</dd>
+										</dl>
+										<!-- over -->
+										<div class="over">
+											<!-- txt -->
+											<div class="txt">
+												<ul class="s1">
+													<li>5천 하나머니 제공</li>
+													<li>5천 하나머니 제공 5천 하나머니 제공 5천 하나머니 제공</li>
+													<li>스타벅스/커피빈 4,000원 할인</li>
+												</ul>
+												<!-- 연회비 -->
+												<div class="s2">
+													<a href="#" onClick="return btnAnnual(this);" class="btn_annual">연회비<em>열림</em></a>
+													<ul>
+														<li>국내외겸용 본인 15,000원<br>(기본 5,000원 + 제휴 10,000원)</li>
+														<li>국내외겸용 가족 20,000원<br>(기본 5,000원 + 제휴 15,000원)</li>
+													</ul>
+												</div>
+												<!-- //연회비 -->
+											</div>
+											<!-- //txt -->
+											<!-- btn -->
+											<ul class="btn">
+												<li>
+													<a href="#card_under" onClick="return cardFill(this);" class="btn_ty06">비교함에 담기</a>
+												</li>
+												<li>
+													<a href="#" class="btn_ty04">상세보기</a>
+													<a href="#" class="btn_ty03">카드신청</a>
+												</li>
+											</ul>
+											<!-- //btn -->
+										</div>
+										<!-- //over -->
+									</div>
+									<!-- //c_target -->
+								</li>
+								<!--<li class="emp">
+									내게 맞는 카드가 없습니다.
+								</li>-->
+							</ul>
+							<!-- //card_slide_area -->
+						</div>
+						<!-- //card_slide -->
+						
+						<!-- 17.07.27 추가 -->
+						<ul class="card_view_info_txt ty02">
+							<li class="tit">카드 발급 신청 시 상품 설명서 및 상품 약관을 반드시 확인하시기 바랍니다.</li>
+							<li class="tit"><strong>신용카드 남용은 가계경제에 위협이 됩니다.</strong></li>
+							<li class="tit"><strong>연체이자율(24.0~27.9%)은 정상이자율 및 연체일 수에 따라 차등 적용됩니다.</strong></li>
+							<li class="blt5">여신금융협회 심의필 제 2017-C1h-09083호(2017.07.27~2018.07.26)</li><!-- 17.08.03 추가 -->
+						</ul>
+						<!-- //17.07.27 추가 -->
+					</div>
+					<!-- //card_slide_box -->
+					<a href="#" class="btn_more"><strong>더보기</strong></a>
+				</article>
+				<!-- //my_card_list -->
+			</div>
+			<!-- //card_cont -->
+			
+			<!-- 카드비교 -->
+			<article class="card_under" id="card_under">
+				<a href="#card_under" class="btn_card_under">카드비교 보기</a>
+				<!-- card_under_area -->
+				<div class="card_under_area">
+					<h3 class="tit">카드비교<em>3</em></h3>
+					<!-- card_under_cont -->
+					<div class="card_under_cont">
+						<ul>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card02.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card03.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+							<li class="list">
+								<p class="img"><img src="../../images/data/img_card04.png" alt=""></p><!-- 17.08.08 접근성 수정 -->
+								<div class="txt">
+									<p>하나멤버스 1Q<br>Pay1 카드</p>
+								</div>
+								<a href="#" class="btn_card_under_delete">카드삭제</a>
+							</li>
+						</ul>
+						<a href="#" class="btn btn_b btn_ty02">비교하기</a>
+					</div>
+					<!-- //card_under_cont -->
+				</div>
+				<!-- //card_under_area -->
+			</article>
+			<!-- //카드비교 -->
+		</div>
+		<!-- //cont_area -->
+		<!--<a href="#container" class="btn_top">상단으로 이동</a>-->
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

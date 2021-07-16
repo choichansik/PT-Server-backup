@@ -1,0 +1,109 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Freight-Big-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/Freight-Big-Bold.woff') format('woff'),
+    url('../font/Freight-Big-Bold.svg') format('svg'),
+    url('../font/Freight Big Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Freight-Big-Book';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/Freight-Big-Book.woff') format('woff'),
+    url('../font/Freight-Big-Book.svg') format('svg'),
+    url('../font/Freight Big Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro-Black';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/SourceSansPro-Black.woff') format('woff'),
+    url('../font/SourceSansPro-Black.svg') format('svg'),
+    url('../font/SourceSansPro-Black.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/SourceSansPro-Bold.woff') format('woff'),
+    url('../font/SourceSansPro-Bold.svg') format('svg'),
+    url('../font/SourceSansPro-Bold.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'SourceSansPro-SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/SourceSansPro-SemiBold.woff') format('woff'),
+    url('../font/SourceSansPro-SemiBold.svg') format('svg'),
+    url('../font/SourceSansPro-SemiBold.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/SourceSansPro-Regular.woff') format('woff'),
+    url('../font/SourceSansPro-Regular.svg') format('svg'),
+    url('../font/SourceSansPro-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/SourceSansPro-Light.woff') format('woff'),
+    url('../font/SourceSansPro-Light.svg') format('svg'),
+    url('../font/SourceSansPro-Light.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'SourceSansPro-ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/SourceSansPro-ExtraLight.woff') format('woff'),
+    url('../font/SourceSansPro-ExtraLight.svg') format('svg'),
+    url('../font/SourceSansPro-ExtraLight.ttf') format('ttf');
+}
+
+
+@font-face {
+    font-family: 'Spoqa-Han-Sans-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/Spoqa-Han-Sans-Bold.woff') format('woff'),
+    url('../font/Spoqa-Han-Sans-Bold.svg') format('svg'),
+    url('../font/Spoqa-Han-Sans-Bold.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Spoqa-Han-Sans-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/Spoqa-Han-Sans-Regular.woff') format('woff'),
+    url('../font/Spoqa-Han-Sans-Regular.svg') format('svg'),
+    url('../font/Spoqa-Han-Sans-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Spoqa-Han-Sans-Light';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/Spoqa-Han-Sans-Light.woff') format('woff'),
+    url('../font/Spoqa-Han-Sans-Light.svg') format('svg'),
+    url('../font/Spoqa-Han-Sans-Light.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Spoqa-Han-Sans-Thin';
+    font-style: normal;
+    font-weight: normal;
+    src:url('../font/Spoqa-Han-Sans-Thin.woff') format('woff'),
+    url('../font/Spoqa-Han-Sans-Thin.svg') format('svg'),
+    url('../font/Spoqa-Han-Sans-Thin.ttf') format('ttf');
+}
+
+@font-face{
+    font-family: 'Noto Sans KR', sans-serif;
+    /* Light 300
+    Regular 400
+    Medium 500
+    Bold 700
+    Black 900 */
+}

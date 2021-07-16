@@ -1,0 +1,106 @@
+<!-- 
+	* Slick API
+	https://github.com/kenwheeler/slick/
+	* Slick Demos
+	http://kenwheeler.github.io/slick/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+<title>Template_Slick</title>
+<link rel="stylesheet" type="text/css" href="../_style/reset.css">
+<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick.min.css">
+<link rel="stylesheet" type="text/css" href="../packages/slick-1.8.1/slick-theme.css">
+<script src="../packages/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="../packages/slick-1.8.1/slick.min.js"></script>
+<style type="text/css">
+	#wrap { max-width: 1000px; margin: 0 auto; }
+	section { border: 1px solid #ccc; }
+</style>
+</head>
+<body>
+
+	<div id="wrap">
+
+		<!-- slick01 : basic -->
+		<section class="slick01_wrp">
+
+			<!-- *** copy *** -->
+			<div class="slick01">
+				<div>
+					<div class="slide_inr">slide 1</div>
+				</div>
+				<div>
+					<div class="slide_inr">slide 2</div>
+				</div>
+				<div>
+					<div class="slide_inr">slide 3</div>
+				</div>
+			</div>
+			<style>
+				.slick01 .slick-slide { height: 200px; }
+				.slick01 .slide_inr { height: 100%; text-align: center; }
+			</style>
+			<script>
+				$('.slick01').slick({
+					autoplay: true,
+					autoplaySpeed: 2000,
+					arrows: false,
+					dots: true,
+					infinite: true,
+				});
+			</script>
+			<!-- //*** copy *** -->
+
+		</section>
+		<!-- //slick01 -->
+
+		<!-- slick02 : basic -->
+		<section class="slick02_wrp">
+
+			<!-- *** copy *** -->
+			<div class="slick02">
+				<div>
+					<div class="slide_inr">slide 1</div>
+				</div>
+				<div>
+					<div class="slide_inr">slide 2</div>
+				</div>
+				<div>
+					<div class="slide_inr">slide 3</div>
+				</div>
+				<div>
+					<div class="slide_inr">slide 4</div>
+				</div>
+				<div>
+					<div class="slide_inr">slide 5</div>
+				</div>
+				<div>
+					<div class="slide_inr">slide 6</div>
+				</div>
+			</div>
+			<style>
+				.slick02 .slick-slide { width: 300px; height: 200px; border: 1px solid #ccc; }
+				.slick02 .slide_inr { height: 100%; text-align: center; }
+			</style>
+			<script>
+				$('.slick02').slick({
+					autoplay: true,
+					autoplaySpeed: 2000,
+					arrows: false,
+					dots: true,
+					infinite: true,
+					variableWidth: true
+				});
+			</script>
+			<!-- //*** copy *** -->
+
+		</section>
+		<!-- //slick02 -->
+
+	</div>
+
+</body>
+</html>

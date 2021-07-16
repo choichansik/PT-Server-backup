@@ -1,0 +1,843 @@
+#wrap{
+    /* max-width: 1920px; */
+    min-width: 1440px;
+    overflow-y: hidden;
+}
+/* ---------------------------------------------- header */
+.header_wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    background-color: #fff;
+    width: 100%;
+    transition: border-bottom .35s ;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+}
+.header_wrap.active{
+    border-bottom: 1px solid #e5e5e5;
+    top: 0;
+}
+header{
+    margin: 0 80px;
+    position: relative;
+}
+header .header_inner{
+    width: 100%;
+}
+header nav li,
+header .user li{
+    float: left;
+}
+header #logo,
+header nav,
+header .user{
+    display: inline-block;
+}
+header #logo a{
+    display: block;
+    padding: 15px 0;
+    width: 110px;
+    height: 60px;
+}
+header nav{
+    margin-left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header nav li a{
+    font-family: 'SourceSansPro-Regular';
+    font-size: 18px;
+    color: #000;
+    padding: 10px 18px;
+}
+header .user{
+    position: absolute;
+    right: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .user li a{
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 12px;
+    position: relative;
+    display: block;
+}
+header .user li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #e5e5e5;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+header .user li:nth-child(1) a::after{
+    display: none;
+}
+header .user .reservation_Btn{
+    display: inline-block;
+}
+header .user .reservation_Btn a{
+    width: 180px;
+    height: 56px;
+    background-color: #a98f5e;
+    display: block;
+    text-align: center;
+    line-height: 56px;
+    color: #fff;
+    font-family: 'SourceSansPro-Regular';
+    font-size: 20px;
+    letter-spacing: .05em;
+}
+header .user li{
+    margin-top: 10px;
+}
+header .user li:nth-child(3){
+    margin-right: 25px;
+}
+/* ---------------------------------------------- header */
+#section_wrap{
+    padding-top: 90px;
+}
+/* ---------------------------------------------- section wrap */
+
+/* section.page-classification------------------- */
+section.page-classification{
+    margin-top: 80px;
+}
+section.page-classification .page-classification_inner{
+    width: 1440px;
+    margin: 0 auto;
+}
+section.page-classification ul.page-classification_nav,
+section.page-classification ul.page-classification_user-behavior{
+    display: inline-block;
+}
+section.page-classification ul.page-classification_nav li,
+section.page-classification ul.page-classification_user-behavior li{
+    float: left;
+}
+section.page-classification ul.page-classification_user-behavior{
+    float: right;
+}
+section.page-classification ul.page-classification_nav{
+    margin-left: 20px;
+    position: relative;
+}
+section.page-classification ul.page-classification_nav::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -20px;
+    top: 0;
+    background: url("../img/home-icon.png") no-repeat center / 100%;
+    cursor: pointer;
+}
+section.page-classification ul.page-classification_nav li{
+    font-family: 'SourceSansPro-Light';
+    font-size: 16px;
+    color: #757575;
+    letter-spacing: 0.05em;
+    padding: 0 15px;
+    position: relative;
+}
+section.page-classification ul.page-classification_nav li::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    right: -5px;
+    top: 50%;
+    background-color: #757575;
+}
+section.page-classification ul.page-classification_nav li:nth-child(3){
+    color: #000;
+    font-family: 'SourceSansPro-SemiBold';
+    cursor: pointer;
+    position: relative;
+}
+section.page-classification ul.page-classification_nav li:nth-child(3)::after{
+    width: 8px;
+    height: 13px;
+    background: url("../img/navgoicon_hover.png") no-repeat center / 100%;
+    transform: translate(0, -50%);
+    transition: all .35s;
+    content: "";
+    display: block;
+    top: 9.2px;
+}
+#clickhereId::after{
+    background: url("../img/navgoicon.png") no-repeat center / 100%;
+    transition: all .35s;
+    animation: clickhereMove 1.5s infinite;
+}
+@keyframes clickhereMove{
+    0%{transform: translate(0, -50%);}
+    50%{transform: translate(8px, -50%);}
+    100%{transform: translate(0, -50%);}
+}
+section.page-classification ul.page-classification_nav li:nth-child(3) ul{
+    position: absolute;
+    width: 475px;
+    height: 90px;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.15);
+    left: 100px;
+    top: -10px;
+    border-radius: 8px;
+    padding: 10px;
+    display: none;
+}
+section.page-classification ul.page-classification_nav li:nth-child(3) ul li{
+    float: left;
+    width: 157px;
+    height: 30px;
+    padding: 0;
+    background-color: #fff;
+    transition: all .35s;
+}
+section.page-classification ul.page-classification_nav li:nth-child(3) ul li:hover{
+    background-color: #f2eee7;
+}
+section.page-classification ul.page-classification_nav li:nth-child(3) ul li::after{
+    display: none;
+}
+section.page-classification ul.page-classification_nav li:nth-child(3) ul li a{
+    font-family: 'SourceSansPro-Regular';
+    font-size: 13px;
+    color: #757575;
+    display: block;
+    width: 157px;
+    height: 30px;
+    line-height: 30px;
+    transition: all .35s;
+    margin-left: 10px;
+}
+section.page-classification ul.page-classification_nav li:nth-child(3) ul li:hover a{
+    color: #8d6313;
+}
+section.page-classification ul.page-classification_user-behavior li{
+    width: 21px;
+    height: 21px;
+    background-color: #000;
+    cursor: pointer;
+}
+section.page-classification ul.page-classification_user-behavior li span{
+    display: none;
+}
+section.page-classification ul.page-classification_user-behavior li:nth-child(1){
+    background: url("../img/print-icon.png") no-repeat center / 100%;
+}
+section.page-classification ul.page-classification_user-behavior li:nth-child(2){
+    background: url("../img/share-icon.png") no-repeat center / 90%;
+    margin-left: 20px;
+}
+/* section.page-classification------------------- */
+
+/* section.hotel-main-info------------------- */
+section.hotel-main-info{
+    margin-top: 125px;
+}
+section.hotel-main-info .hotel-main-info_inner{
+    width: 1440px;
+    margin: 0 auto;
+}
+section.hotel-main-info .main-info_visual{
+    width: 100%;
+    height: 700px;
+    margin-bottom: 140px;
+}
+section.hotel-main-info .main-info_visual .visual_textwrap{
+    width: 401px;
+    height: 700px;
+    margin-right: 80px;
+    display: inline-block;
+    position: relative;
+}
+section.hotel-main-info .visual_textwrap .title{
+    margin-bottom: 160px;
+}
+section.hotel-main-info .visual_textwrap .title h2{
+    font-family: 'Freight-Big-Bold';
+    font-size: 120px;
+    color: #000;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+section.hotel-main-info .visual_textwrap .title p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #000;
+    font-weight: 400;
+}
+section.hotel-main-info .visual_textwrap ul.explanation li{
+    float: left;
+    width: 75%;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 1.8;
+}
+section.hotel-main-info .visual_textwrap ul.explanation li:nth-child(2n+1){
+    width: 20%;
+    margin-right: 5%;
+    color: #a98f5e;
+}
+section.hotel-main-info .visual_textwrap .reservation_btn a{
+    display: block;
+    color: #a98f5e;
+    width: 200px;
+    height: 56px;
+    border: 1px solid #a98f5e;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 20px;
+    font-family: 'SourceSansPro-Regular';
+    letter-spacing: 0.05;
+    transition: all .35s;
+}
+section.hotel-main-info .visual_textwrap .reservation_btn a:hover{
+    background-color: #a98f5e;
+    color: #fff;
+}
+section.hotel-main-info .main-info_visual .visual_imgwrap{
+    width: 955px;
+    height: 700px;
+    display: inline-block;
+    position: relative;
+}
+section.hotel-main-info .main-info_visual .visual_imgwrap .visual_imgwraphidden{
+    overflow: hidden;
+}
+section.hotel-main-info .main-info_visual .visual_imgwraper{
+    width: 955px;
+    height: 700px;
+}
+section.hotel-main-info .main-info_visual .visual_imgwrap .visual_imgslide{
+    width: 955px;
+    height: 700px;
+    background-color: #333;
+    /* transform: translateX(-80px); */
+    /* transition: all 2s !important; */
+    /* opacity: 0; */
+}
+section.hotel-main-info .main-info_visual .visual_imgwrap .visual_imgslide.swiper-slide-prev{
+    left: -80px;
+    transition: all 2s;
+}
+section.hotel-main-info .main-info_visual .visual_imgwrap .visual_imgslide.swiper-slide-active{
+    left: 0px;
+    transition: all 2s;
+}
+section.hotel-main-info .main-info_visual .visual_imgwrap .visual_img_1{
+    background: url("../img/hotel-main-visual-img1.png") no-repeat center / cover;
+}
+section.hotel-main-info .main-info_visual .visual_imgwrap .visual_img_2{
+    background: url("../img/hotel-main-visual-img2.png") no-repeat center / cover;
+}
+section.hotel-main-info .main-info_visual .visual_imgwrap .visual_imgwrap_btnwrap{
+    width: 130px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 40px;
+    box-shadow: 8px 5px 40px 0px rgba(0 0 0 / 16%);
+    position: absolute;
+    bottom: 0;
+    left: -65px;
+    z-index: 100;
+}
+section.hotel-main-info .swiper-button-prev:after,
+section.hotel-main-info .swiper-container-rtl .swiper-button-next:after{
+    display: none;
+}
+section.hotel-main-info .swiper-button-next:after,
+section.hotel-main-info .swiper-container-rtl .swiper-button-prev:after{
+    display: none;
+}
+section.hotel-main-info .swiper-button-prev,
+section.hotel-main-info .swiper-button-next{
+    width: 40px;
+    height: 40px;
+}
+section.hotel-main-info .swiper-button-prev::after,
+section.hotel-main-info .swiper-button-next::after{
+    width: 20px;
+    height: 12px;
+    content: "";
+    display: block;
+}
+section.hotel-main-info .swiper-button-prev::after{
+    background: url("../img/hotel-main-visual-iconL1.png") no-repeat center / 100%;
+}
+section.hotel-main-info .swiper-button-next::after{
+    background: url("../img/hotel-main-visual-iconR1.png") no-repeat center / 100%;
+}
+section.hotel-main-info .swiper-button-prev,
+section.hotel-main-info .swiper-container-rtl .swiper-button-next{
+    left: 18px;
+    top: 42px;
+}
+section.hotel-main-info .swiper-button-next,
+section.hotel-main-info .swiper-container-rtl .swiper-button-prev{
+    right: 18px;
+    top: 42px;
+}
+section.hotel-main-info .visual_img_swiper-pagination{
+    width: 240px;
+    height: 2px;
+    left: 0;
+    margin-top: 60px;
+}
+section.hotel-main-info .swiper-pagination-progressbar{
+    background-color: #c9c6c7;
+}
+section.hotel-main-info .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: #a98f5e;
+}
+
+
+section.hotel-main-info ul.main-info_detail{
+    width: 100%;
+    height: 260px;
+    display: table;
+    table-layout: fixed;
+    border: 1px solid #c9c6c7;
+    box-sizing: border-box;
+}
+section.hotel-main-info ul.main-info_detail li{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+section.hotel-main-info ul.main-info_detail li::after{
+    height: 163px;
+    width: 1px;
+    background-color: #c9c6c7;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section.hotel-main-info ul.main-info_detail li:nth-child(1)::after{
+    display: none;
+}
+section.hotel-main-info ul.main-info_detail li .icon{
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+section.hotel-main-info ul.main-info_detail li.location .icon{
+    background: url("../img/hotel-main-detailinfo1.png") no-repeat center / 100%;
+}
+section.hotel-main-info ul.main-info_detail li.config .icon{
+    background: url("../img/hotel-main-detailinfo2.png") no-repeat center / 100%;
+}
+section.hotel-main-info ul.main-info_detail li.outlook .icon{
+    background: url("../img/hotel-main-detailinfo3.png") no-repeat center / 100%;
+}
+section.hotel-main-info ul.main-info_detail li.CheckInOut .icon{
+    background: url("../img/hotel-main-detailinfo4.png") no-repeat center / 100%;
+}
+section.hotel-main-info ul.main-info_detail h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    color: #a98f5e;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+section.hotel-main-info ul.main-info_detail p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.3;
+}
+section.hotel-main-info .visual_textwrap .visual_img_swiper-count{
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    font-family: 'Spoqa-Han-Sans-Regular';
+    font-size: 16px;
+    color: #000;
+}
+/* section.hotel-main-info------------------- */
+
+/* section.hotel-room-info------------------- */
+section.hotel-room-info{
+    margin-top: 140px;
+}
+section.hotel-room-info .room-info_visual{
+    width: 100%;
+    height: 540px;
+    background: url("../img/main-info-detailimg.png") no-repeat center / cover;
+    margin-bottom: 80px;
+}
+section.hotel-room-info .hotel-room-info_inner{
+    width: 1440px;
+    margin: 0 auto;
+}
+section.hotel-room-info ul.room-info_detail{
+    display: table;
+    table-layout: fixed;
+    margin-bottom: 100px;
+}
+section.hotel-room-info ul.room-info_detail li{
+    display: table-cell;
+}
+section.hotel-room-info ul.room-info_detail li:nth-child(1){
+    padding-right: 30px;
+}
+section.hotel-room-info ul.room-info_detail li:nth-child(2){
+    padding-left: 30px;
+}
+section.hotel-room-info ul.room-info_detail .title{
+    position: relative;
+    padding-bottom: 60px;
+}
+section.hotel-room-info ul.room-info_detail .title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #a98f5e;
+    bottom: 30px;
+}
+section.hotel-room-info ul.room-info_detail .title h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    display: inline-block;
+}
+section.hotel-room-info ul.room-info_detail .title span{
+    font-family: 'SourceSansPro-SemiBold';
+    font-size: 24px;
+    color: #a98f5e;
+    display: inline-block;
+    margin-left: 15px;
+}
+section.hotel-room-info ul.room-info_detail .content p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 17.7px;
+    padding-left: 60px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    position: relative;
+}
+section.hotel-room-info ul.room-info_detail .content p:nth-child(3){
+    margin-bottom: 0;
+}
+section.hotel-room-info ul.room-info_detail .content p::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    bottom: 0;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+section.hotel-room-info ul.room-info_detail .content p.content3::after,
+section.hotel-room-info ul.room-info_detail .content p.content4::after{
+    top: 0;
+    transform: translateY(0);
+}
+section.hotel-room-info ul.room-info_detail .content p.content1::after{
+    background: url("../img/content_icon1.png") no-repeat center / 100%;
+}
+section.hotel-room-info ul.room-info_detail .content p.content2::after{
+    background: url("../img/content_icon2.png") no-repeat center / 100%;
+}
+section.hotel-room-info ul.room-info_detail .content p.content3::after{
+    background: url("../img/content_icon3.png") no-repeat center / 100%;
+}
+section.hotel-room-info ul.room-info_detail .content p.content4::after{
+    background: url("../img/content_icon4.png") no-repeat center / 100%;
+}
+section.hotel-room-info .room-info_refund{
+    background-color: #f8f8f8;
+    width: 100%;
+    padding: 60px;
+}
+section.hotel-room-info .room-info_refund h3{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+section.hotel-room-info .room-info_refund h3::after{
+    content: "";
+    display: block;
+    position:absolute;
+    width: 4px;
+    height: 4px;
+    background-color: #a98f5e;
+    left: 0px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+}
+section.hotel-room-info .room-info_refund_regulatiom{
+    padding-bottom: 70px;
+    position: relative;
+}
+section.hotel-room-info .room-info_refund_regulatiom::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e9e9e9;
+    bottom:35px;
+}
+section.hotel-room-info .room-info_refund_regulatiom .content h4{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+section.hotel-room-info .room-info_refund .content p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.88;
+}
+section.hotel-room-info .room-info_refund_regulatiom ul{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+section.hotel-room-info .room-info_refund_regulatiom ul li{
+    display: table-cell;
+}
+section.hotel-room-info .room-info_refund_etc{
+    position: relative;
+    padding-bottom: 70px;
+}
+section.hotel-room-info .room-info_refund_etc::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e9e9e9;
+    bottom:35px;
+}
+section.hotel-room-info .room-info_refund_reservation .reservation_h3,
+section.hotel-room-info .room-info_refund_reservation .reservation_p{
+    display: inline-block;
+}
+section.hotel-room-info .room-info_refund_reservation .reservation_p{
+    font-family: 'Spoqa-Han-Sans-Regular';
+    font-size: 18px;
+    color: #555555;
+    line-height: 21px;
+    margin-left: 40px;
+}
+/* section.hotel-room-info------------------- */
+
+
+/* section.hotel-other-room------------------- */
+section.hotel-other-room{
+    margin-top: 140px;
+    background-color: #f6f4ee;
+    width: 100%;
+    height: 840px;
+}
+section.hotel-other-room .hotel-other-room_inner{
+    width: 1440px;
+    margin: 0 auto;
+}
+section.hotel-other-room .hotel-other-room_title{
+    padding-top: 120px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+section.hotel-other-room .hotel-other-room_title h2{
+    font-family: 'Freight-Big-Book';
+    font-size: 64px;
+    color: #000;
+}
+section.hotel-other-room ul.hotel-other-room_content{
+    width: 100%;
+    background-color: #a98f5e;
+}
+section.hotel-other-room ul.hotel-other-room_content li{
+    float: left;
+    width: 440px;
+    height: 450px;
+    background-color: #fff;
+    margin-left: 60px;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+    position: relative;
+    top: 225px;
+    left: 220px;
+    transition: all .35s;
+}
+section.hotel-other-room ul.hotel-other-room_content li:nth-child(1){
+    margin-left: 0;
+}
+section.hotel-other-room ul.hotel-other-room_content li .content_img{
+    width: 440px;
+    height: 260px;
+    background-color: #333;
+    position: relative;
+}
+section.hotel-other-room ul.hotel-other-room_content li .content_img::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 440px;
+    height: 260px;
+    background-color: #000;
+    opacity: .0;
+    top: 0;
+    left: 0;
+    transition: all .35s;
+}
+section.hotel-other-room ul.hotel-other-room_content li:hover .content_img::after{
+    opacity: .5;
+}
+section.hotel-other-room ul.hotel-other-room_content li .content_img a{
+    display: block;
+    width: 160px;
+    height: 50px;
+    background-color: #a98f5e;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'SourceSansPro-Regular';
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    transition: all .35s;
+    z-index: 100;
+}
+section.hotel-other-room ul.hotel-other-room_content li:hover a{
+    opacity: 1;
+}
+section.hotel-other-room ul.hotel-other-room_content li:hover{
+    height: 535px;
+    background-color: #fff;
+    box-shadow: 8px 5px 40px 0px rgba(0 0 0 / 16%);
+}
+section.hotel-other-room ul.hotel-other-room_content li.Royal_suite .content_img{
+    background: url("../img/otherRoom-1.png") no-repeat center / cover;
+}
+section.hotel-other-room ul.hotel-other-room_content li.Queen_suite .content_img{
+    background: url("../img/otherRoom-2.png") no-repeat center / cover;
+}
+section.hotel-other-room ul.hotel-other-room_content li.Junior_suite .content_img{
+    background: url("../img/otherRoom-3.png") no-repeat center / cover;
+}
+section.hotel-other-room ul.hotel-other-room_content li .content_text{
+    padding: 35px 35px 20px 35px;
+}
+section.hotel-other-room ul.hotel-other-room_content li .content_text h3{
+    font-family: 'Freight-Big-Book';
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 20px;
+}
+section.hotel-other-room ul.hotel-other-room_content li .content_text p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    color:#000;
+    line-height: 1.5;
+    position: relative;
+    padding-bottom: 20px;
+}
+section.hotel-other-room ul.hotel-other-room_content li .content_text p::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #f0f0f0;
+    bottom: 0;
+    opacity: 0;
+    transition: all .35s;
+}
+section.hotel-other-room ul.hotel-other-room_content li:hover .content_text p::after{
+    opacity: 1;
+}
+section.hotel-other-room ul.hotel-other-room_content .content_text_hover{
+    width: 370px;
+    display: table;
+    table-layout: fixed;
+    padding: 0 35px;
+    opacity: 0;
+    transition: all .1s;
+}
+section.hotel-other-room ul.hotel-other-room_content li:hover .content_text_hover{
+    opacity: 1;
+}
+section.hotel-other-room ul.hotel-other-room_content .content_text_hover .content_text_hover_content{
+    display: table-cell;
+    vertical-align:middle;
+}
+
+section.hotel-other-room ul.hotel-other-room_content .content_text_hover .content_text_hover_content p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+}
+section.hotel-other-room ul.hotel-other-room_content .content_text_hover .content_text_hover_content p:nth-child(1){
+    color: #a98f5e;
+    margin-bottom: 10px;
+}
+/* ---------------------------------------------- section wrap */
+
+/* ---------------------------------------------- footer */
+/* footer */
+footer img{
+    width: 100%;
+}
+/* ---------------------------------------------- footer */
+
+
+/* numberFont */
+
+#Spoqa-Han-Sans-Bold{
+    font-family: 'Spoqa-Han-Sans-Bold';
+}
+#Spoqa-Han-Sans-Regular{
+    font-family: 'Spoqa-Han-Sans-Regular';
+}
+#Spoqa-Han-Sans-Light{
+    font-family: 'Spoqa-Han-Sans-Light';
+}
+#Spoqa-Han-Sans-Thin{
+    font-family: 'Spoqa-Han-Sans-Thin';
+}

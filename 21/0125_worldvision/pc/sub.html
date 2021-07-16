@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko" class="">
+<head>
+
+<title>월드비전 PC 시안</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="common/css/reset.css">
+<link rel="stylesheet" type="text/css" href="common/css/contents.css">
+<script src="common/js/jquery.js"></script>
+<script src="common/js/jquery.easing.1.3.js"></script>
+</head>
+
+<body>
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- header -->
+	<header id="header">
+		<div class="inner">
+			<div class="off"></div>
+			<div class="on"></div>
+			<a href="index.html" class="btn-01"></a>
+			<a href="sub.html" class="btn-02"></a>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container" class="">
+		<div class="sub01">
+			<div class="data-inner">
+				<div class="d_t">
+					<div class="d_c">
+						<img src="common/images/sub_visual_txt.png" alt=""/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="sub02">
+			<div class="txt01 effect_wrap"><img src="common/images/sub02_obj01.png" alt=""/></div>
+		</div>
+
+		<div class="sub03">
+			<div class="txt01 effect_wrap"><img src="common/images/sub03_obj01.png" alt=""/></div>
+		</div>
+
+		<div class="sub04">
+			<div class="data-inner">
+				<div class="txt01 effect_wrap"><img src="common/images/sub04_obj01.png" alt=""/></div>
+			</div>
+		</div>
+
+		<div class="sub05">
+			<div class="txt01 effect_wrap"><img src="common/images/sub05_obj01.png" alt=""/></div>
+		</div>
+	
+	</div>
+	<!-- //container -->
+
+
+
+	<!-- footer -->
+	<footer id="footer"></footer>
+	<!-- //footer -->
+
+	
+
+</div>
+<!-- //wrap -->
+
+<script src="common/js/TweenMax.min.js"></script>
+<script src="common/js/slick.min.js"></script>
+<script>
+var effect = {
+	
+	container : null,
+	items : [],
+
+	init : function(){		
+		this.container = $('#container');
+		
+		var i=0;
+		this.container.find('.effect_wrap').each(function(){
+			var obj = {
+				target : $(this),
+				index : i,
+				activeStats : false
+			}
+
+			effect.items.push(obj);
+			i++;
+		});	
+
+		effect.scroll();
+		$(window).on('scroll' , function () {
+			effect.scroll();
+		});
+	},
+
+	scroll : function(){
+		var _this = this;
+
+		if($(window).scrollTop() > 0){
+			$('#header').addClass('fix');
+		}else{
+			$('#header').removeClass('fix');
+		}
+		
+		for(var i = 0; i < effect.items.length; i++){
+			var _target = effect.items[i].target;
+			var _option = effect.items[i];
+			if(!_option.activeStats){
+				if($(window).scrollTop() + $(window).height() >= _option.target.offset().top){												
+					_option.target.addClass('actived');
+					_target.css({ 'transform' : 'translate(0px, 0px)' , 'opacity' : '1' , 'transition' : 'transform 1.2s cubic-bezier(0.190, 1.000, 0.220, 1.000) , opacity 1.2s cubic-bezier(0.190, 1.000, 0.220, 1.000)'});
+					_option.activeStats = true;
+				}
+			}				
+		}
+	}
+}
+
+var browserUI = {
+
+	isIE : function(){
+		var agent = navigator.userAgent.toLowerCase();
+		if((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf('msie') != -1)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+}
+
+$(function(){
+	effect.init();
+});
+
+$(document).ready(function(){
+	$('#wrap').addClass('open');
+});
+
+/*===================================
+@ window resize
+===================================*/
+$(window).resize(function () {
+	main.resize();
+});
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="euc-kr">
+<meta name="viewport" content="width=1450">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<title>포인트기부 : 하나카드</title>
+<link rel="shortcut icon" href="../../images/layout/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="../../images/layout/apple-touch-icon.png">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../js/ui.js"></script> 
+<script type="text/javascript" src="../../js/template.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<header>
+		<h1 class="blind">하나카드</h1>
+		<p class="guide">Header</p>
+	</header>
+	<!-- //header -->
+
+	<!-- breadcrumb -->
+	<nav class="breadcrumb">
+		<div class="cont">
+			<span><a href="#">HOME</a></span>
+			<span><a href="#">마이페이지</a></span>
+			<span><a href="#">결제내역</a></span>
+			<span>승인내역</span>
+		</div>
+	</nav>
+	<!-- //breadcrumb -->
+	
+	<!-- container -->
+	<section id="container">
+		<h2 class="blind">혜택</h2><!-- Gnb 1depth Menu -->
+		<!-- cont_area -->
+		<div class="cont_area">
+			<h3 class="title"><em>포인트</em>포인트기부</h3>
+			
+			<!-- cont_box -->
+			<div class="cont_box">
+				<!-- cont_box_area -->
+				<div class="cont_box_area">
+
+					<!-- tab_ty -->
+					<nav class="tab_ty">
+						<ul>
+							<li><a href="#">포인트기부</a></li>
+							<li><a href="#">착한포인트 자동기부</a></li>
+							<li class="on"><a href="#">소멸예정포인트 자동기부</a>
+								<!-- tab_s -->
+								<div class="tab_s">
+									<a href="#" class="on">신청</a><!-- 활성화 class="on" -->
+									<a href="#">조회/해지</a>
+								</div>
+								<!-- //tab_s -->
+							</li>
+						</ul>
+					</nav>
+					<!-- //tab_ty -->
+
+					<!-- 17.06.10 상단컨켄츠 디자인적용 -->
+					<!-- 상단컨텐츠 -->
+					<article class="cont">
+						<h4 class="blind">포인트기부 안내</h4>
+						<div class="top_point_ban">
+							<div class="ban_bg02"><!-- 17.06.28 수정 -->
+								<h5 class="ban_tit">소멸 예정인 포인트를 기부 하세요!</h5>
+								<p class="s1 b_txt">하나카드를 통해 적립하신 포인트 중, 유효기간이 만료되어<br><span class="t_point"> 소멸 예정인 포인트를 기부 하실 수 있습니다.</span></p>
+								<p class="s2">한 번 신청으로 매 월 소멸 예정인 하나머니 및 착한포인트를 자동으로 기부하세요.</p>
+							</div>
+						</div>
+					</article>
+					<!-- //상단컨텐츠 -->
+					<!-- //17.06.10 상단컨켄츠 디자인적용 -->
+
+					<!-- 포인트 종류 -->
+					<article class="cont">
+						<h4 class="t_tit">포인트 종류</h4>
+						<!-- board_ty -->
+						<div class="board_ty">
+						<form>
+							<fieldset>
+							<legend>포인트 종류</legend>
+							<table>
+								<caption>포인트 종류</caption>
+								<colgroup>
+									<col span="1" style="width:20%;">
+									<col span="1" style="width:80%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">포인트 선택</th>
+										<td class="left">
+											<ul class="radio_box">
+												<li><input type="radio" id="point_ty" name="point_ty"><label for="point_ty">하나머니</label></li>
+												<li><input type="radio" id="point_ty02" name="point_ty"><label for="point_ty02">착한포인트</label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</fieldset>
+						</form>
+						</div>
+						<!-- //board_ty -->
+					</article>
+					<!-- //기부 방법 -->
+
+					<!-- 기부처 -->
+					<article class="cont">
+						<h4 class="t_tit">기부처</h4>
+						<!-- board_ty -->
+						<div class="board_ty">
+						<form>
+							<fieldset>
+							<legend>기부처</legend>
+							<table>
+								<caption>기부처</caption>
+								<colgroup>
+									<col span="1" style="width:23%;">
+									<col span="1" style="width:77%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" class="left">기부처</th>
+										<td class="left">
+											<select class="select_ty w320" title="기부처 선택">
+												<option value="">기부처 선택</option>
+												<option value="">한국심장재단</option>
+												<option value="">한국소아암재단</option>
+												<option value="">한국백혈병어린이재단</option>
+												<option value="">굿네이버스기부금</option>
+												<option value="">세이브더칠드런</option>
+												<option value="">월드비전</option>
+												<option value="">사회복지공동모금회(사랑의열매)</option>
+												<option value="">녹색연합</option>
+												<option value="">전국재해구호협회</option>
+												<option value="">구세군</option>
+												<option value="">하나금융공익재단</option>
+												<option value="">사랑밭</option>
+												<option value="">초록우산 어린이재단</option>
+												<option value="">외환은행 나눔재단</option>
+												<option value="">글로벌비전</option>
+												<option value="">한국해비타트</option>
+												<option value="">한국국제기아대책기구</option>
+												<option value="">외환은행 동우회</option>
+												<option value="">유니세프한국위원회</option>
+											</select>
+											<span class="donation_area">
+												<a href="http://www.heart.or.kr" class="link_txt02" target="_blank" title="한국심장재단 새창 열림">http://www.heart.or.kr</a>
+												<!--링크
+												<a href="http://www.angelc.or.kr" class="link_txt02" target="_blank" title="한국소아암재단 새창 열림">http://www.angelc.or.kr</a>
+												<a href="http://www.kclf.org" class="link_txt02" target="_blank" title="한국백혈병어린이재단 새창 열림">http://www.kclf.org</a>
+												<a href="http://www.goodneighbors.kr" class="link_txt02" target="_blank" title="굿네이버스기부금 새창 열림">http://www.goodneighbors.kr</a>
+												<a href="http://www.sc.or.kr" class="link_txt02" target="_blank" title="세이브더칠드런 새창 열림">http://www.sc.or.kr</a>
+												<a href="http://www.worldvision.or.kr" class="link_txt02" target="_blank" title="월드비전 새창 열림">http://www.worldvision.or.kr</a>
+												<a href="http://www.chest.or.kr" class="link_txt02" target="_blank" title="사회복지공동모금회(사랑의열매) 새창 열림">http://www.chest.or.kr</a>
+												<a href="http://www.greenkorea.org" class="link_txt02" target="_blank" title="녹색연합 새창 열림">http://www.greenkorea.org</a>
+												<a href="http://www.relief.or.kr" class="link_txt02" target="_blank" title="전국재해구호협회 새창 열림">http://www.relief.or.kr</a>
+												<a href="http://www.salvationarmy.or.kr" class="link_txt02" target="_blank" title="구세군 새창 열림">http://www.salvationarmy.or.kr</a>
+												<a href="http://www.hanafoundation.or.kr" class="link_txt02" target="_blank" title="하나금융공익재단 새창 열림">http://www.hanafoundation.or.kr</a>
+												<a href="http://www.withgo.or.kr/" class="link_txt02" target="_blank" title="사랑밭 새창 열림">http://www.withgo.or.kr/</a>
+												<a href="http://www.childfund.or.kr" class="link_txt02" target="_blank" title="초록우산어린이재단 새창 열림">http://www.childfund.or.kr</a>
+												-->
+											</span>
+											<!-- <span class="donation_area emp">-</span>링크가 없는경우 -->
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							</fieldset>
+						</form>
+						</div>
+						<!-- //board_ty -->
+					</article>
+					<!-- //기부처 -->
+
+					<!-- 정보제공 동의 -->
+					<article class="cont">
+						<h4 class="t_tit">정보제공 동의</h4>
+						<!-- terms_area -->
+						<div class="terms_area">
+						<form>
+							<fieldset>
+							<legend>정보제공 동의</legend>
+							<ul class="list">
+								<li>
+									<label for="chk03_agree05">내용에 동의하십니까?</label>
+									<a href="#" class="btn_xs btn_ty04 btn_pop">상세보기</a>
+									<input type="checkbox" name="allChk03" id="chk03_agree05">
+								</li>
+							</ul>
+							</fieldset>
+						</form>
+						</div>
+						<!-- //terms_area -->
+					</article>
+					<!-- //정보제공 동의 -->
+
+					<!-- 본인인증 -->
+					<article class="cont">
+						<h4 class="t_tit">본인인증</h4>
+						<!-- board_box -->
+						<div class="board_box">
+							<!-- tab_ty03 -->
+							<nav class="tab_ty03 tab_nav">
+								<a href="#tab01" class="on">카드 인증</a>
+								<a href="#tab02">공인인증서 인증</a>
+							</nav>
+							<!-- //tab_ty03 -->
+							<div class="layout_guide">
+								<p><span>인증 모듈 영역<br><br><em><a href="../guide/temp04.html" target="_blank">모듈 페이지 &gt;</a></em></span></p>
+							</div>
+						</div>
+						<!-- //board_box -->
+						<!-- btn_area -->
+						<ul class="btn_area">
+							<li>
+								<a href="#" class="btn_b btn_ty02">자동기부 신청</a>
+							</li>
+						</ul>
+						<!-- //btn_area -->
+					</article>
+					<!-- //본인인증 -->
+
+					<!-- 안내 -->
+					<article class="cont">
+						<h4 class="blind">소멸예정포인트 자동기부 안내</h4>
+						<!-- info_box -->
+						<dl class="info_box">
+							<dt><a href="#">소멸예정포인트 자동기부 안내</a></dt>
+							<dd>
+								<ul>
+									<li class="blt1">포인트 기부 신청은 하나카드 홈페이지, 고객센터(1800-1111), 하나은행 영업점, ARS(1800-0066)를 통해 가능합니다. </li>
+									<li class="blt1">연간(회계연도 기준)으로 해당 기부처별 기부금 영수증을 발행해 드립니다.</li>
+									<li class="blt1">영수증발행 연락처는 각 기부처별 홈페이지를 참조하시기 바랍니다.</li>
+									<li class="blt1">소득공제 영수증은 기부처별 발급 기준(예:1만원 이상)에 따라 발급 여부가 달라질 수 있습니다.</li>
+								</ul>
+							</dd>
+						</dl>
+						<!-- //info_box -->
+					</article>
+					<!-- //안내 -->
+
+				</div>
+				<!-- //cont_box_area -->
+			</div>
+			<!-- //cont_box -->
+		</div>
+		<!-- //cont_area -->
+		<a href="#container" class="btn_top">상단으로 이동</a>
+	</section>
+	<!-- //container -->
+	
+	<!-- footer -->
+	<footer>
+		<p class="guide">Footer</p>
+	</footer>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

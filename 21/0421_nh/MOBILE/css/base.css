@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import url("slick.css");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,input,select,textarea,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{padding:0px; margin:0px; vertical-align:top;}
+html {overflow-y:auto; font-family:'Roboto','Noto Sans KR','맑은 고딕','Malgun Gothic','dotum'; font-weight:300; text-align:center; color:#666; font-size:14px; line-height:1; letter-spacing:normal; word-break:keep-all;}
+html, body {width:100%; -webkit-text-size-adjust:none;}
+body{position:relative;}
+ul, ol {list-style-type:none;}
+h1,h2,h3,h4,h5,h6,th{font-weight:300;}
+table{border-collapse:collapse; border-spacing:0;}
+img,fieldset{border:0;outline:none;}
+label {cursor:pointer;}
+i, em, address {font-style:normal;}
+caption,legend{visibility:hidden; width:0px; height:0px; font-size:0px; line-height:0px;}
+img{max-width:100%;}
+input,select,textarea{font-family:'Roboto','Noto Sans KR','맑은 고딕','Malgun Gothic','dotum'; font-weight:300;}
+textarea{resize:none; border:none; background:none;}
+a {text-decoration:none; color:#666; cursor:pointer;}
+a:link, a:visited {text-decoration:none; color:#666;}
+a:hover, a:focus, a:active{background:none; text-decoration:none;}
+/* html5 ie9 else */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block; padding:0; margin:0;}
+
+
+.intro {position:fixed;top:0;left:0;width:100%;height:100%;}
+
+.iphoneX {position:absolute; top:50%; left:50%; display:inline-block; width:380px; height:750px; margin:-330px 0 0 -190px; border-radius:30px; background-color:#000; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);}
+.iphoneX-body {position:absolute; top:0; right:0; bottom:0; left:0; display:block; width:auto; height:auto; border-radius:20px; margin:10px; overflow:hidden;}
+.iphoneX-body-inner {position:absolute; top:0; right:0; bottom:0; left:0; display:block; width:auto; height:auto; margin:auto -17px auto auto; overflow-x:hidden;overflow-y:scroll;}
+
+.iphoneX-header {position:absolute; top:0; left:0; width:100%; z-index:1000;}
+.iphoneX-header .bar {position:absolute; top:8px; left:50%; display:block; width:210px; height:30px; background:#000; margin-left:-105px; border-radius: 0px 0px 20px 20px; opacity:0;}
+.status {position:absolute; top:0; left:0; width:100%; height:30px; z-index:1005;}
+.status:before {content:'';position:absolute;top:0;left:0;display:block;width:100%;height:100%; background:url(../images/common/iphoneX_status_bar_white.png) center top no-repeat; background-size:100% auto;opacity:1;}
+.status:after {content:'';position:absolute;top:0;left:0;display:block;width:100%;height:100%; background:url(../images/common/iphoneX_status_bar_black.png) center top no-repeat; background-size:100% auto;opacity:0;}
+.status.black:before{opacity:0;}
+.status.black:after{opacity:1;}
+.status.white:before{opacity:1;}
+.status.white:after{opacity:0;}
+.iphoneX-bottom {position:absolute; bottom:15px; left:50%; display:block; width:136px; height:4px; background:#000; border-radius:2px; margin-left:-68px; z-index:10; box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);opacity:0;}
+

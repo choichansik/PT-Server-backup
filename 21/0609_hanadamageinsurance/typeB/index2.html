@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<title>하나손해보험 원데이보험</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="./css/base.css" media="all">
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<style>
+.item-data{position:relative; display:none; min-height:100%;background:#fff;}
+.item-data.show{display:block;}
+
+.item01 {width:360px; height:720px;background-color:transparent;}
+.item01 .top {position:absolute;top:0;left:0;width:100%; z-index:10;}
+.btn-menu {top:30px; right:0; width:55px; height:55px; z-index:20;}
+.btn-reset {top:30px; left:0; width:187px; height:55px; z-index:20;}
+
+.banner-cell {position:absolute;top:0;left:0;width:100%;height:100%;z-index:1; opacity:0; transition:opacity 1.2s ease;}
+.banner-cell.actived {opacity:1; z-index:10;}
+
+.menu {position:absolute;top:0;left:0;width:100%;height:100%;z-index:1000;display:none;}
+.menu.actived{display:block;}
+.menu .btn-01 {top:34px; right:30px; width:23px; height:23px; z-index:20;}
+.menu .btn-02 {top:177px; left:36px; width:303px; height:59px; z-index:20;}
+
+
+.quick {position:absolute;bottom:480px;right:16px;z-index:1;}
+.iframe-content {position:absolute;top:0;left:0;width:100%;height:100%;}
+
+iframe {border:none;outline:none;background:none;}
+</style>
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap">
+		<div class="intro">
+			<div class="iphoneX">
+				<div class="iphoneX-body">
+					<div class="iphoneX-body-inner" style="overflow:hidden;">
+						<iframe src="page2.html" width="100%" height="720" class="iframe-content"></iframe>			
+					</div>
+				</div>
+				<div class="iphoneX-header"><div class="bar"></div></div>
+				<div class="iphoneX-bottom"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //wrap -->
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

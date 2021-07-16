@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<title>The A Mall 홈페이지 리뉴얼 시안</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="common/css/reset.css">
+<style type="text/css">
+body {font-family:'Noto Sans KR', Arial, sans-serif; }
+#wrap {position:fixed;top:0;left:0;width:100%;height:100%;}
+#wrap > div{display:table;width:100%;height:100%;table-layout:fixed;}
+#wrap > div > div {display:table-cell;width:100%;height:100%;vertical-align:middle;text-align:center;}
+.intro h1 {font-size:60px;color:#000;}
+.intro {max-width:1200px;margin:0 auto;}
+.list {margin:100px 0 0 0;}
+.list:after {content:''; display:block; clear:both;}
+.list > div {float:left; width:50%;box-sizing:border-box; padding:0 20px;}
+.list .title {font-size:34px; color:#333; line-height:32px;margin-bottom:50px;}
+.list .list-item {margin:-10px;}
+.list .list-item:after {content:'';display:block;clear:both;}
+.list .list-item .list-item-data {float:left;width:50%;padding:0 10px; box-sizing:border-box;}
+.logo {margin-top:150px;}
+.detail {position:relative;height:300px;background:#fafafa;overflow:hidden;}
+.detail a {position:absolute;top:0;left:0;width:100%;height:300px;font-size:24px;color:#fff;line-height:300px;display:block;text-align:center;z-index:5;}
+.detail .visual {position:absolute;top:0;left:0;width:100%;height:100%;transition:transform 0.35s ease;transform:scale(1) rotate(0.001deg);}
+.detail:hover .visual {transform:scale(1.1) rotate(0.001deg);}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div>
+			<div>
+				<div class="intro">
+					<h1>The A Mall 시안 - Type B</h1>
+					<div class="list">
+						<div class="list-cell">
+							<div class="title">The A Mall</div>
+							<div class="list-item">
+								<div class="list-item-data">
+									<div class="detail">
+										<a href="theAmall_B/B/index.html" target="_blank">PC</a>
+										<div class="visual"><img src="common/images/visual01_b.jpg" alt=""/></div>
+									</div>
+								</div>
+								<div class="list-item-data">
+									<div class="detail">
+										<a href="theAmall_B/MOBILE/index2.html" target="_blank">Mobile</a>
+										<div class="visual"><img src="common/images/visual02_b.jpg" alt=""/></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="list-cell">
+							<div class="title">MARK&amp;LONA</div>
+							<div class="list-item">
+								<div class="list-item-data">
+									<div class="detail">
+										<a href="MARKLONA_B/B/index.html" target="_blank">PC</a>
+										<div class="visual"><img src="common/images/visual03.jpg" alt=""/></div>
+									</div>
+								</div>
+								<div class="list-item-data">
+									<div class="detail">
+										<a href="MARKLONA_B/MOBILE/index2.html" target="_blank">Mobile</a>
+										<div class="visual"><img src="common/images/visual04_b.jpg" alt=""/></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p class="logo"><img src="common/images/logo.jpg" alt=""/></p>
+				</div>
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

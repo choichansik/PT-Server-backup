@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>NH기업카드 PC A 시안</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="common/css/reset.css">
+<link rel="stylesheet" type="text/css" href="common/css/contents.css">
+<script src="common/js/jquery.js"></script>
+<script src="common/js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+
+<!-- wrap -->
+<div id="wrap">
+
+	<!-- header -->
+	<header id="header" class="store">
+		<div class="inner">
+			<a href="index.html" class="btn-transparent btn-01"></a>
+			<a href="index_store.html" class="btn-transparent btn-02"></a>
+			<a href="sub.html" class="btn-transparent btn-05"></a>
+			<div class="login_off logout_contents">
+				<a href="javascript:onChangeLoginToggle(0);" class="btn-transparent btn-03"></a>
+				<img src="common/images/login_off.png" alt=""/>
+			</div>
+			<div class="login_on login_contents">
+				<a href="javascript:onChangeLoginToggle(1);" class="btn-transparent btn-04"></a>
+				<img src="common/images/login_on.png" alt=""/>
+			</div>
+		</div>
+	</header>
+	<!-- //header -->
+	
+	<!-- container -->
+	<div id="container">
+
+		<div class="main-store-01">
+			<div class="main-banner">
+				<div class="main-banner-slider">
+					<div class="slider-cell"><div class="banner-item item-01"></div></div>
+					<div class="slider-cell"><div class="banner-item item-02"></div></div>
+				</div>
+			</div>
+			
+			<div class="txt01">가맹점 여러분들의<br><strong>든든한 사업파트너로</strong><br>차별화된 서비스를 제공합니다.</div>
+			<div class="login-form">
+				<div class="login_off logout_contents">
+					<a href="javascript:onChangeLoginToggle(0);" class="btn-transparent btn-01"></a>
+					<img src="common/images/kv_login_off.png" alt=""/>
+				</div>
+				<div class="login_on login_contents">
+					<a href="javascript:onChangeLoginToggle(1);" class="btn-transparent btn-02"></a>
+					<img src="common/images/kv_login_on.png" alt=""/>
+				</div>
+			</div>
+			<div class="quick">
+				<a href="javascript:;" class="btn-quick-01"><div class="icon"></div><div class="name">가맹점정보</div></a>
+				<a href="javascript:;" class="btn-quick-02"><div class="icon"></div><div class="name">가맹점한도</div></a>
+				<a href="javascript:;" class="btn-quick-03"><div class="icon"></div><div class="name">가맹점승인내역</div></a>
+				<a href="javascript:;" class="btn-quick-04"><div class="icon"></div><div class="name">입금내역</div></a>
+				<a href="javascript:;" class="btn-quick-05"><div class="icon"></div><div class="name">매출실적</div></a>
+			</div>
+
+		</div>
+
+		<div class="main-store-02">
+			<div class="inner">
+				<div class="card-list">
+					<a href="javascript:;" class="btn-card-item">
+						<div class="txt01">Service</div>
+						<div class="txt02">가맹점<br>이용안내</div>
+						<div class="more"></div>
+					</a>
+					<a href="javascript:;" class="btn-card-item">
+						<div class="txt01">Issuing</div>
+						<div class="txt02">신용카드<br>취급절차</div>
+						<div class="more"></div>
+					</a>
+					<a href="javascript:;" class="btn-card-item">
+						<div class="txt01">Billing</div>
+						<div class="txt02">가맹점<br>대금청구절차</div>
+						<div class="more"></div>
+					</a>
+					<a href="javascript:;" class="btn-card-item">
+						<div class="txt01">Comliance</div>
+						<div class="txt02">가맹점<br>준수사항</div>
+						<div class="more"></div>
+					</a>
+				</div>
+				<div class="card-list2">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<div class="card-thumb"><img src="common/images/main_store_card_01.png" alt=""/><div class="hover"><div class="more">자세히 보기</div></div></div>
+								<div class="txt01">올바른 FLEX 카드</div>
+								<div class="txt02">법인사업자에 최적화된 혜택!</div>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<div class="card-thumb"><img src="common/images/main_store_card_02.png" alt=""/><div class="hover"><div class="more">자세히 보기</div></div></div>
+								<div class="txt01">올바른 NEW HAVE</div>
+								<div class="txt02">개인사업자 필수 카드로 품격을 경험!</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<img src="common/images/main_store_02_item_01.jpg" alt=""/>
+				
+				<button type="button" class="btn-plus-more btn-more-1"></button>
+				<button type="button" class="btn-plus-more btn-more-2"></button>
+			</div>
+		</div>
+
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<footer id="footer"><div class="inner"><img src="common/images/footer.png" alt=""/></div></footer>
+	<!-- //footer -->
+
+	
+
+</div>
+<!-- //wrap -->
+
+<script src="common/js/TweenMax.min.js"></script>
+<script src="common/js/slick.min.js"></script>
+<script>
+
+function onChangeLoginToggle(index){
+	if(index == 0){
+		$('.logout_contents').each(function(){
+			$(this).stop(true).fadeOut(200);
+		});
+		$('.login_contents').each(function(){
+			$(this).stop(true).fadeIn(200);
+		});
+		$('.login-form').addClass('actived');
+	}else{
+		$('.logout_contents').each(function(){
+			$(this).stop(true).fadeIn(200);
+		});
+		$('.login_contents').each(function(){
+			$(this).stop(true).fadeOut(200);
+		});
+		$('.login-form').removeClass('actived');
+	}
+}
+
+var effect = {
+	
+	container : null,
+	items : [],
+
+	init : function(){		
+		this.container = $('#container');
+		
+		var i=0;
+		this.container.find('.effect_wrap').each(function(){
+			var obj = {
+				target : $(this),
+				index : i,
+				activeStats : false
+			}
+
+			effect.items.push(obj);
+			i++;
+		});	
+
+		effect.scroll();
+		this.container.on('scroll' , function () {
+			effect.scroll();
+		});
+	},
+
+	scroll : function(){
+		var _this = this;
+
+		for(var i = 0; i < effect.items.length; i++){
+			var _target = effect.items[i].target;
+			var _option = effect.items[i];
+			if(!_option.activeStats){
+				if(_this.container.scrollTop() + _this.container.height() >= (_option.target.offset().top + _this.container.scrollTop())){
+					_option.target.addClass('actived');
+					_target.css({ 'transform' : 'translate(0px, 0px)' , 'opacity' : '1' , 'transition' : 'transform 0.85s 0.15s cubic-bezier(0.250, 0.460, 0.450, 0.940) , opacity 0.85s 0.15s cubic-bezier(0.250, 0.460, 0.450, 0.940)'});
+					_option.activeStats = true;
+				}
+			}				
+		}
+	}
+}
+
+var browserUI = {
+
+	isIE : function(){
+		var agent = navigator.userAgent.toLowerCase();
+		if((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf('msie') != -1)){
+			return true;
+		}else{
+			return false;
+		}
+	}
+}
+
+var common = {
+	
+	mainBannerContainer : null,
+	mainBannerLen : 0,
+	mainBanner : null,
+
+	init : function(){
+		this.mainBannerContainer = $('.main-banner');
+		this.mainBanner = $('.main-banner-slider').slick({
+			infinite: true,
+			arrows:false,
+			slidesToShow: 1,
+			draggable:false,
+			dots:true,
+			autoplay: true,
+			autoplaySpeed:3000,
+		});		
+	}
+}
+function topmove(){
+	$('html, body').stop().animate({'scrollTop':0}, {queue:false, duration:1000, easing:'easeOutCubic'});
+}
+
+$(function(){
+	effect.init();
+	common.init();
+});
+
+$(document).ready(function(){
+	$('#wrap').addClass('open');
+});
+
+/*===================================
+@ window resize
+===================================*/
+$(window).resize(function () {
+});
+
+
+</script>
+</body>
+</html>

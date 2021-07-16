@@ -1,0 +1,414 @@
+<!-- BLOCK : header, nav, aside, article, main, section, footer -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Template_Markup</title>
+<link rel="stylesheet" type="text/css" href="../import.css">
+<script src="../packages/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="../packages/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="../_script/eventClick.js"></script>
+<script src="../_script/funcClick.js"></script>
+<script src="../_script/funcHover.js"></script>
+<script src="../_script/funcScroll.js"></script>
+<style>
+	*::after { position: absolute; top: 50%; left: 50%; display: inline-block; transform: translate(-50%, -50%); font-size: 15px; color: #fff; text-shadow: 0 0 5px #000; z-index: 1; }
+	.header_inr::after { content: 'HEADER' }
+	.nav_inr::after { content: 'NAV' }
+	.aside_inr::after { content: 'ASIDE' }
+	.visual::after { content: 'VISUAL' }
+	.section::after { content: 'SECTION' }
+	.footer::after { content: 'FOOTER' }
+	.btn_top::after { content: 'TOP' }
+	.btn_goto::after { content: 'GOTO' }
+	.btn_pop::after { content: 'POP' }
+	.btn_cls::after { content: 'CLS' }
+	.btn_show::after { content: 'SHOW' }
+	.btn_hide::after { content: 'HIDE' }
+	.btn_togl::after { content: 'TOGL' }
+
+	/* common */
+	body{font-family:'NotoSansKR','Malgun Gothic','맑은 고딕',Apple Gothic,Helvetica,Arial,sans-serif;background:#fff;color:#000;}
+
+	/* wrap */
+	#wrap{position:relative;width:100%;height:100%;max-width:1920px;min-width:1400px;margin:0 auto;overflow:hidden;}
+
+	/* header */
+	.header{position:relative;}
+	.header_inr{position:relative;height:100px;background:#000;opacity:.5}
+
+	/* nav */
+	.nav{position:absolute;top:150px;left:50px;z-index:1;width:600px;height:100px;background:#000;opacity:.5;}
+
+	/* aside */
+	.aside{position:fixed;top:0;right:0;z-index:2;width:100px;height:100vh;background:#000;opacity:.5}
+
+	/* container */
+	.container{position:relative;}
+
+	/* visual */
+	.visual{position:relative;}
+	.visual_inr{height:500px;background:#000;opacity:.2}
+
+	/* maincont */
+	.maincont{position:relative;}
+
+	/* section */
+	.section{position:relative;}
+	.section_inr{height:300px;border:1px solid #ccc;}
+
+	/* sec01 */
+	.sec01{position:relative;}
+
+	/* footer */
+	.footer{position:relative;}
+	.footer_inr{height:100px;background:#000;opacity:.5}
+
+	/* click totop */
+	.btn_top{position:fixed;bottom:100px;right:100px;width:50px;height:50px;border-radius:100%;background:orange;z-index:9}
+
+	/* click goto */
+	.btn_goto{position:fixed;bottom:100px;right:200px;width:50px;height:50px;border-radius:100%;background:orange;z-index:9}
+
+	/* click popup */
+	.btn_pop{position:fixed;top:50%;left:100px;width:50px;height:50px;border-radius:100%;background:orange;z-index:9}
+	.pop_cont{position:fixed;top:0;left:0;width:500px;height:500px;background:#fff;border:1px solid #ccc;z-index:999;}
+	.pop_cont_inr .btn_cls{position:absolute;top:50px;right:50px;width:50px;height:50px;background:orange;border-radius:100%;}
+
+	/* click show */
+	.btn_show{position:fixed;bottom:100px;left:100px;width:50px;height:50px;border-radius:100%;background:orange;z-index:9}
+
+	/* click hide */
+	.btn_hide{position:fixed;bottom:100px;left:200px;width:50px;height:50px;border-radius:100%;background:orange;z-index:9}
+
+	/* click toggle */
+	.btn_togl{position:fixed;bottom:100px;left:300px;width:50px;height:50px;border-radius:100%;background:orange;z-index:9}
+	.tog_cont{position:fixed;top:0;left:0;width:500px;height:500px;background:#fff;border:1px solid #ccc;z-index:999;display:none;}
+
+</style>
+</head>
+<body class="p_main">
+
+	<!-- wrap -->
+	<div id="wrap" class="wrap">
+		<div class="wrap_inr">
+			
+			<!-- header : title, gnb -->
+			<header class="header">
+				<div class="header_inr">
+
+					<div class="h1_wrp">
+						<h1 class="h1"></h1>
+					</div>
+					<div class="gnb_wrp">
+						<div class="gnb"></div>
+					</div>
+
+				</div>
+			</header>
+			<!-- //header -->
+
+			<!-- nav : navi, menu, sidemenu, floatmenu -->
+			<nav class="nav">
+				<div class="nav_inr">
+
+					<figure class="fig_wrp fig01">
+						<img class="img01" src="" alt="">
+						<img class="img02" src="" alt="">
+					</figure>
+					<figure class="fig_wrp fig02">
+						<img class="img01" src="" alt="">
+						<img class="img02" src="" alt="">
+					</figure>
+
+				</div>
+			</nav>
+			<!-- //nav -->
+
+			<!-- aside : quick, hiddenmenu -->
+			<aside class="aside">
+				<div class="aside_inr">
+
+					<div class="quick_wrp">
+						<div class="quick"></div>
+					</div>
+
+				</div>
+			</aside>
+			<!-- //aside -->
+
+			<!-- container -->
+			<div class="container">
+				<div class="container_inr">
+
+					<!-- visual : visual, slider -->
+					<article class="visual">
+						<div class="visual_inr">
+
+							<div class="slider_wrp slider01">
+							</div>
+							<div class="slider_wrp slider02">
+							</div>
+
+						</div>
+					</article>
+					<!-- //visual -->
+
+					<!-- maincont : contents -->
+					<main class="maincont">
+						<div class="maincont_inr">
+
+							<!-- section : item -->
+							<section class="section sec01">
+								<div class="section_inr sec01_inr">
+
+									<div class="item_wrp">
+										<div class="item"></div>
+									</div>
+									<div class="item_wrp">
+										<span class="item"></span>
+									</div>
+									<div class="item_wrp">
+										<p class="item"></p>
+									</div>
+
+								</div>
+							</section>
+							<!-- section -->
+
+							<!-- section : img -->
+							<section class="section sec02">
+								<div class="section_inr sec02_inr">
+
+									<div class="img_wrp img01">
+										<img class="img" src="" alt="">
+									</div>
+									<div class="img_wrp img02">
+										<img class="img" src="" alt="">
+									</div>
+
+								</div>
+							</section>
+							<!-- //section -->
+
+							<!-- section : tit -->
+							<section class="section sec03">
+								<div class="section_inr sec03_inr">
+
+									<div class="tit_wrp tit01">
+										<img class="tit" src="" alt="">
+									</div>
+									<div class="tit_wrp tit02">
+										<p class="tit"></p>
+									</div>
+
+								</div>
+							</section>
+							<!-- //section -->
+
+							<!-- section : txt -->
+							<section class="section sec04">
+								<div class="section_inr sec04_inr">
+
+									<div class="txt_wrp txt01">
+										<img class="txt" src="" alt="">
+									</div>
+									<div class="txt_wrp txt02">
+										<p class="txt"></p>
+									</div>
+
+								</div>
+							</section>
+							<!-- //section -->
+
+							<!-- section : btn -->
+							<section class="section sec05">
+								<div class="section_inr sec05_inr">
+
+									<div class="btn_wrp btn01">
+										<a class="btn" href="#"></a>
+									</div>
+									<div class="btn_wrp btn02">
+										<a class="btn" href="#"></a>
+									</div>
+
+								</div>
+							</section>
+							<!-- //section -->
+
+							<!-- section : list -->
+							<section class="section sec06">
+								<div class="section_inr sec06_inr">
+
+									<div class="list_wrp list01">
+										<ul class="ul_item ul01">
+											<li class="li_item li01"></li>
+											<li class="li_item li02"></li>
+										</ul>
+										<ul class="ul_item ul02">
+											<li class="li_item li01"></li>
+											<li class="li_item li02"></li>
+										</ul>
+									</div>
+									<div class="list_wrp list02">
+										<ul class="ul_item ul01">
+											<li class="li_item li01"></li>
+											<li class="li_item li02"></li>
+										</ul>
+										<ul class="ul_item ul02">
+											<li class="li_item li01"></li>
+											<li class="li_item li02"></li>
+										</ul>
+									</div>
+
+								</div>
+							</section>
+							<!-- //section -->
+
+							<!-- section : figure -->
+							<section class="section sec07">
+								<div class="section_inr sec07_inr">
+
+									<figure class="fig_wrp fig01">
+										<img class="img01" src="" alt="">
+										<img class="img02" src="" alt="">
+									</figure>
+									<figure class="fig_wrp fig02">
+										<img class="img01" src="" alt="">
+										<img class="img02" src="" alt="">
+									</figure>
+
+								</div>
+							</section>
+							<!-- //section -->
+							
+
+							<!-- section : name -->
+							<section class="section sec08">
+								<div class="section_inr sec08_inr">
+
+									<div class="name_wrp name01">
+										<p class="name"></p>
+									</div>
+									<div class="name_wrp name02">
+										<p class="name"></p>
+									</div>
+									<div class="name_wrp name03">
+										<p class="name"></p>
+									</div>
+
+								</div>
+							</section>
+							<!-- //section -->
+
+							<!-- section : tab panel -->
+							<section class="section sec09">
+								<div class="section_inr sec09_inr">
+									
+									<div class="tab_panel">
+										<ul class="tab_btn_wrp">
+											<li class="tab_btn on">tab_btn_1</li>
+											<li class="tab_btn">tab_btn_2</li>
+										</ul>
+										<div class="tab_cont active">
+											<div class="tab_cont_inr">
+												tab_cont_1
+											</div>
+										</div>
+										<div class="tab_cont">
+											<div class="tab_cont_inr">
+												tab_cont_2
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</section>
+							<!-- //section -->
+
+							<!-- section : toggle list -->
+							<section class="section sec10">
+								<div class="section_inr sec10_inr">
+									
+									<ul class="togl_child">
+										<li class="on">togl_list_1</li>
+										<li>togl_list_2</li>
+										<li>togl_list_3</li>
+									</ul>
+									<div class="togl_child2">
+										<p class="on">togl_list_1</p>
+										<p>togl_list_2</p>
+										<p>togl_list_3</p>
+									</div>
+
+								</div>
+							</section>
+							<!-- //section -->
+
+						</div>
+					</main>
+					<!-- //maincont -->
+
+					<!-- footer -->
+					<footer class="footer">
+						<div class="footer_inr">
+
+						</div>
+					</footer>
+					<!-- //footer -->
+
+				</div>
+			</div>
+			<!-- //container -->
+
+		</div>
+	</div>
+	<!-- //wrap -->
+
+	<!-- click totop -->
+	<a href="#" class="btn_top"></a>
+	<!-- //click totop -->
+
+	<!-- click goto -->
+	<!-- #goto로 이동 -->
+	<a href="#goto" class="btn_goto"></a>
+	<!-- //click goto -->
+
+	<!-- click popup -->
+	<!-- #popCont를 노출 -->
+	<a href="#popCont" class="btn_pop"></a>
+	<div id="popCont" class="pop_cont">
+		<div class="pop_cont_inr">
+			<a href="" class="btn_cls"></a>
+			<div class="pop_wrap">
+				<div class="pop">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //click popup -->
+
+	<!-- click show -->
+	<!-- #showCont를 노출 -->
+	<a href="#showCont" class="btn_show"></a>
+	<!-- //click show -->
+
+	<!-- click hide -->
+	<!-- #hideCont를 비노출 -->
+	<a href="#hideCont" class="btn_hide"></a>
+	<!-- //click hide -->
+
+	<!-- click toggle -->
+	<!-- #togCont를 토글 -->
+	<a href="#togCont" class="btn_togl"></a>
+	<div id="togCont" class="tog_cont">
+	</div>
+	<!-- //click toggle -->
+
+	<!-- mask -->
+	<div id="mask"></div>
+	<!-- //mask -->
+
+</body>
+</html>
