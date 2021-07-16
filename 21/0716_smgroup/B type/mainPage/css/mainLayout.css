@@ -12,9 +12,9 @@ html, body{
 #wrap{
     min-width: 1440px;
     overflow-y: hidden;
+    display: none;
 }
 
-/* ---------------------------------------------- header */
 .header_wrap{
     position: fixed;
     z-index: 10;
@@ -47,7 +47,7 @@ header .header_inner{
     width: 1400px;
     margin: 0 auto;
 }
-/* logo */
+
 header .logo{
     width: 130px;
     height: 45px;
@@ -60,7 +60,7 @@ header .logo a{
 header .logo img{
     width: 100%;
 }
-/* nav */
+
 header nav{
     margin-left: 60px;
     display: inline-block;
@@ -78,7 +78,7 @@ header nav li a{
     font-family: 400;
     padding: 20px 30px;
 }
-/* user */
+
 header .user{
     float: right;
     margin-top: 45px;
@@ -94,7 +94,6 @@ header .user li a{
     padding: 12px;
 }
 
-/* ---------------------------------------------- visual */
 .visual{
     overflow: hidden;
     position: relative;
@@ -102,12 +101,15 @@ header .user li a{
 .visual .visual-inner{
     width: 100vw;
     height: 100vh;
-    background: url("../img/visual-df.png")no-repeat center center;
+    /* background: url("../img/visual-df.png")no-repeat center center; */
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
-    /* transform: translate(-50%, -50%); */
+}
+.visual .visual-inner img{
+    width: 100%;
+    height: 100vh;
 }
 .visual .text_wrap{
     position: absolute;
@@ -143,7 +145,7 @@ header .user li a{
     font-weight: 500;
     font-size: 35px;
     margin-top: 60px;
-    transition: 
+    transition:
     transform 1.5s .8s cubic-bezier(.49,.26,.35,.88),
     opacity 1.5s .8s cubic-bezier(.49,.26,.35,.88);
     transform: translateY(50px);
@@ -199,9 +201,7 @@ header .user li a{
     z-index: 90;
     background: url("../img/visual_reservation_content.png") no-repeat center / 100%;
 }
-/* ---------------------------------------------- visual */
 
-/* ---------------------------------------------- promotions */
 .promotions .promotions_title{
     width: 1400px;
     margin: 0 auto;
@@ -240,7 +240,6 @@ header .user li a{
     height: 680px;
     position: relative;
 }
-/* slide */
 .promotions .promotions_slide{
     width: 500px;
     height: 680px;
@@ -259,30 +258,7 @@ header .user li a{
     z-index: 9;
     transition: all .35s;
 }
-/* .promotions .promotions_slide .hover_icon{
-    position: absolute;
-    width: 84px;
-    height: 84px;
-    background-color: #000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg);
-    background: url("../img/promotions_hover.png") no-repeat center / 100%;
-    z-index: 90;
-    transition: all .35s;
-    opacity: 0;
-    cursor: pointer;
-}
-.promotions .promotions_slide:hover .hover_icon{
-    opacity: 1;
-}
-.promotions .promotions_slide .hover_icon:hover{
-    transform: translate(-50%, -50%) rotate(180deg);
-}
-.promotions .promotions_slide:hover::after{
-    z-index: 11;
-    opacity: .8;
-} */
+
 .promotions .promotions_slide.content1{
     background: url("../img/promotions_1.png") no-repeat center / 100%;
     transition: all .35s;
@@ -307,7 +283,6 @@ header .user li a{
     background-size: 110%;
     transition: all .35s;
 }
-/* textwrap */
 .promotions .promotions_slide_textwrap{
     display: inline-block;
     position: absolute;
@@ -342,7 +317,6 @@ header .user li a{
     color: #fff;
     margin-top: 35px;
 }
-/* pagination */
 .promotions .swiper-container-horizontal > .swiper-pagination-progressbar,
 .promotions .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
     top: 720px;
@@ -355,9 +329,6 @@ header .user li a{
     background-color: #ececec;
 }
 
-/* ---------------------------------------------- promotions */
-
-/* ---------------------------------------------- hottel-info */
 .hottel-info{
     position: relative;
 }
@@ -461,7 +432,6 @@ header .user li a{
     background: url("../img/donggangline.png") no-repeat center / 100%;
     opacity: 0;
 }
-/* move */
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-next span,
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-next h3,
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-next p,
@@ -562,18 +532,11 @@ header .user li a{
     position: relative;
     z-index: 1;
 }
-/* ---------------------------------------------- hottel-info */
-
-/* ---------------------------------------------- notice */
-
-
-/* ---------------------------------------------- notice */
 .notice{
     background: url("../img/notice.png") no-repeat center / cover;
 }
 .notice .notice_inner{
     width: 1400px;
-    /* height: 100%; */
     margin: 0 auto;
     position: relative;
 }
@@ -717,7 +680,6 @@ header .user li a{
     z-index: 100;
     transform: translate(-50%, -50%) rotate(0deg);
     cursor: pointer;
-    /* display: none; */
     transition: all .35s;
 }
 .notice .notice_slide .hoverBtn::after{
@@ -734,7 +696,6 @@ header .user li a{
     display: block;
 }
 
-/* ---------------------------------------------- footer */
 footer{
     height: 158px;
     width: 100vw;
@@ -742,4 +703,3 @@ footer{
 footer img{
     width: 100%;
 }
-/* ---------------------------------------------- footer */

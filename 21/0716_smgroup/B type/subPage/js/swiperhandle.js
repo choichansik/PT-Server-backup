@@ -15,13 +15,11 @@ $(document).ready(function(){
                     $(".promotions_slide_hiden").css("overflow", "visible");
                 }if(this.realIndex == 4){
                     $(".promotions_slide_hiden").css("overflow", "visible");
-                }if(this.realIndex == 0){
-                    $(".promotions_slide_hiden").css("overflow", "hidden");
                 }
             }
         }
     });
-    
+
     var visualSlider = new Swiper(".visual_view_slide", {
         cssWidthAndHeight : true,
         slidesPerView : 'auto',
@@ -29,7 +27,7 @@ $(document).ready(function(){
         autoResize : false,
         loop: true,
         centeredSlides : true,
-        speed : 2000,
+        speed : 1000,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,

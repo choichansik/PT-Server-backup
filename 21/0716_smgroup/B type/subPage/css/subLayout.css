@@ -192,7 +192,6 @@ section.visual .visual_view ul.visual_view_info li p{
     font-size: 20px;
     font-weight: 500;
     color: #000;
-    
 }
 section.visual .visual_view .visual_view_slide,
 section.visual .visual_view .visual_view_slide .view_slide_wrapper{
@@ -213,7 +212,7 @@ section.visual .visual_view .visual_view_slide .view_slide_wrapper .view_slide_l
     height: 700px;
     background-color: #fff;
     opacity: .8;
-    transition: all .35s .2s;
+    transition: all .35s .1s;
 }
 section.visual .visual_view .visual_view_slide .view_slide_wrapper .view_slide_list.swiper-slide-active::after{
     opacity: 0;
