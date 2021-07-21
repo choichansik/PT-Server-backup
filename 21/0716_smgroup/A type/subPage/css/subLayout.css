@@ -180,7 +180,13 @@ section.page-classification ul.page-classification_nav li:nth-child(3)::after{
 #clickhereId::after{
     background: url("../img/navgoicon.png") no-repeat center / 100%;
     transition: all .35s;
-    animation: clickhereMove 1.5s infinite;
+    -webkit-animation: clickhereMove 1.5s infinite;
+            animation: clickhereMove 1.5s infinite;
+}
+@-webkit-keyframes clickhereMove{
+    0%{transform: translate(0, -50%);}
+    50%{transform: translate(8px, -50%);}
+    100%{transform: translate(0, -50%);}
 }
 @keyframes clickhereMove{
     0%{transform: translate(0, -50%);}
@@ -821,6 +827,10 @@ section.hotel-other-room ul.hotel-other-room_content .content_text_hover .conten
 
 /* ---------------------------------------------- footer */
 /* footer */
+footer{
+    /* width: 100%; */
+    overflow: hidden;
+}
 footer img{
     width: 100%;
 }

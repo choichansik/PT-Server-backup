@@ -6,14 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/mainLayout.css" />
-    <link rel="stylesheet" href="plugin/jquery.fullPage.css" />
     <link rel="stylesheet" href="plugin/swiper-bundle.css" />
     <link rel="stylesheet" href="css/font.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script rel="preload" src="js/jquery-3.5.1.min.js"></script>
-    <script rel="preload" src="plugin/jquery.fullPage.js"></script>
     <script src="plugin/swiper-bundle.js"></script>
     <script src="js/swiperhandle.js"></script>
     <script src="js/main.js"></script>
@@ -70,10 +68,10 @@
             </header>
         </div>
 
-        <main id="fullpage">
+        <div id="section_wrap">
             <section class="section visual">
                 <div class="visual-inner">
-                    <img src="img/visual-df.png" alt="">
+                    <!-- <img src="img/visual-df.png" alt=""> -->
                 </div>
                 <div class="text_wrap">
                     <h1>
@@ -88,235 +86,270 @@
                     </div>
                 </div>
             </section>
-            <section class="section promotions">
-                <div class="promotions_title">
-                    <h2>PROMOTIONS</h2>
-                    <p>탑스텐 호텔은 최고의 프로모션을 제공합니다.</p>
-                </div>
-                <div class="promotions_slide_area">
-                    <div class="promotions_slide_hiden">
-                        <div class="promotions_slide_inner">
-                            <div class="swiper-wrapper promotions_slide_wrap">
-                                <div class="swiper-slide promotions_slide content1">
-                                    <div class="promotions_slide_textwrap">
-                                        <span class="where">제주</span>
-                                        <h3>제주도 여행<br/>
-                                            패키지 프로모션</h3>
-                                        <span class="date">2021.06.11 ~ 2021.06.11</span>
+            <div class="section_wrap_margin">
+                <section class="section promotions">
+                    <div class="promotions_inner rellax" data-rellax-speed="7">
+                        <div class="promotions_title hidden">
+                            <h2>PROMOTIONS</h2>
+                            <p>탑스텐 호텔은 최고의 프로모션을 제공합니다.</p>
+                        </div>
+                        <div class="promotions_slide_area hidden">
+                            <div class="promotions_slide_hiden">
+                                <div class="promotions_slide_inner">
+                                    <div class="swiper-wrapper promotions_slide_wrap" id="scrolSlide1">
+                                        <div class="swiper-slide promotions_slide content1">
+                                            <div class="promotions_slide_textwrap">
+                                                <span class="where">제주</span>
+                                                <h3>제주도 여행<br/>
+                                                    패키지 프로모션</h3>
+                                                <span class="date">2021.06.11 ~ 2021.06.11</span>
+                                            </div>
+                                            <div class="hover_icon"></div>
+                                        </div>
+                                        <div class="swiper-slide promotions_slide content2">
+                                            <div class="promotions_slide_textwrap">
+                                                <span class="where">제주</span>
+                                                <h3>제주도 여행<br/>
+                                                    패키지 프로모션</h3>
+                                                <span class="date">2021.06.11 ~ 2021.06.11</span>
+                                            </div>
+                                            <div class="hover_icon"></div>
+                                        </div>
+                                        <div class="swiper-slide promotions_slide content3">
+                                            <div class="promotions_slide_textwrap">
+                                                <span class="where">제주</span>
+                                                <h3>제주도 여행<br/>
+                                                    패키지 프로모션</h3>
+                                                <span class="date">2021.06.11 ~ 2021.06.11</span>
+                                            </div>
+                                            <div class="hover_icon"></div>
+                                        </div>
+                                        <div class="swiper-slide promotions_slide content4">
+                                            <div class="promotions_slide_textwrap">
+                                                <span class="where">제주</span>
+                                                <h3>제주도 여행<br/>
+                                                    패키지 프로모션</h3>
+                                                <span class="date">2021.06.11 ~ 2021.06.11</span>
+                                            </div>
+                                            <div class="hover_icon"></div>
+                                        </div>
+                                        <div class="swiper-slide promotions_slide content5">
+                                            <div class="promotions_slide_textwrap">
+                                                <span class="where">제주</span>
+                                                <h3>제주도 여행<br/>
+                                                    패키지 프로모션</h3>
+                                                <span class="date">2021.06.11 ~ 2021.06.11</span>
+                                            </div>
+                                            <div class="hover_icon"></div>
+                                        </div>
                                     </div>
-                                    <div class="hover_icon"></div>
-                                </div>
-                                <div class="swiper-slide promotions_slide content2">
-                                    <div class="promotions_slide_textwrap">
-                                        <span class="where">제주</span>
-                                        <h3>제주도 여행<br/>
-                                            패키지 프로모션</h3>
-                                        <span class="date">2021.06.11 ~ 2021.06.11</span>
-                                    </div>
-                                    <div class="hover_icon"></div>
-                                </div>
-                                <div class="swiper-slide promotions_slide content3">
-                                    <div class="promotions_slide_textwrap">
-                                        <span class="where">제주</span>
-                                        <h3>제주도 여행<br/>
-                                            패키지 프로모션</h3>
-                                        <span class="date">2021.06.11 ~ 2021.06.11</span>
-                                    </div>
-                                    <div class="hover_icon"></div>
-                                </div>
-                                <div class="swiper-slide promotions_slide content4">
-                                    <div class="promotions_slide_textwrap">
-                                        <span class="where">제주</span>
-                                        <h3>제주도 여행<br/>
-                                            패키지 프로모션</h3>
-                                        <span class="date">2021.06.11 ~ 2021.06.11</span>
-                                    </div>
-                                    <div class="hover_icon"></div>
-                                </div>
-                                <div class="swiper-slide promotions_slide content5">
-                                    <div class="promotions_slide_textwrap">
-                                        <span class="where">제주</span>
-                                        <h3>제주도 여행<br/>
-                                            패키지 프로모션</h3>
-                                        <span class="date">2021.06.11 ~ 2021.06.11</span>
-                                    </div>
-                                    <div class="hover_icon"></div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <section class="section hottel-info">
-                <div class="hottel-info_imgslide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide hotel-info-1-img"></div>
-                        <div class="swiper-slide hotel-info-2-img"></div>
+                <section class="section hottel-info">
+                    <div class="hottel-info_imgslide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide hotel-info-1-img"></div>
+                            <div class="swiper-slide hotel-info-2-img"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="hottel-info_textslide">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="textslide_inner">
-                                <div class="jejumap"></div>
-                                <span class="title">Tops 10 HOTEL & RESORT</span>
-                                <h3>Jeju</h3>
-                                <p>에메랄드 빛 바다와 푸른 하늘의<br/>
-                                    고향 제주에서 낭만을 느끼실 수 있습니다.</p>
-                                <div class="hottel-info_golink">
-                                    <a href="#">바로가기</a>
+                    <div class="hottel-info_textslide rellax" data-rellax-speed="7">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="textslide_inner">
+                                    <div class="jejumap hidden"></div>
+                                    <span class="title hidden">Tops 10 HOTEL & RESORT</span>
+                                    <h3 class="hidden">Jeju</h3>
+                                    <p class="hidden">에메랄드 빛 바다와 푸른 하늘의<br/>
+                                        고향 제주에서 낭만을 느끼실 수 있습니다.</p>
+                                    <div class="hottel-info_golink hidden">
+                                        <a href="#">바로가기</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="textslide_inner">
+                                    <div class="donggangmap hidden"></div>
+                                    <span class="title hidden">Tops 10 HOTEL & RESORT</span>
+                                    <h3 class="hidden">Dong gang</h3>
+                                    <p class="hidden">에메랄드 빛 바다와 푸른 하늘의<br/>
+                                        고향 제주에서 낭만을 느끼실 수 있습니다.</p>
+                                    <div class="hottel-info_golink hidden">
+                                        <a href="#">바로가기</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="textslide_inner">
-                                <div class="donggangmap"></div>
-                                <span class="title">Tops 10 HOTEL & RESORT</span>
-                                <h3>Dong gang</h3>
-                                <p>에메랄드 빛 바다와 푸른 하늘의<br/>
-                                    고향 제주에서 낭만을 느끼실 수 있습니다.</p>
-                                <a href="#">바로가기</a>
+                        <div class="swiper-button-next hidden"><span></span></div>
+                        <div class="swiper-button-prev hidden"><span></span></div>
+                    </div>
+                    <div class="canvasOverFlow view rellax" data-rellax-speed="7">
+                        <div class="canvas_wrap hidden"></div>
+                    </div>
+                </section>
+                <section class="section notice">
+                    <div class="notice_inner rellax" data-rellax-speed="4">
+                        <div class="notice_title title hidden">
+                            <h2>NOTICE</h2>
+                            <p>예약 전 공지사항을 확인하세요.</p>
+                        </div>
+                        <div class="notice_slide_area hidden">
+                            <div class="notice_slide_wrap swiper-wrapper"  id="scrolSlide2">
+                                <div class="notice_slide swiper-slide">
+                                    <div class="notice_slide_inner">
+                                        <div class="notice_textwrap">
+                                            <span class="area">강릉</span>
+                                            <h3>부대영업시설 휴무 안내</h3>
+                                            <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
+                                                고객 여러분께 마스크와 손소독제를 지급
+                                                하고 있습니다.</p>
+                                            <span class="date">2021.06.21</span>
+                                        </div>
+                                    </div>
+                                    <div class="hoverBtn"></div>
+                                </div>
+                                <div class="notice_slide swiper-slide">
+                                    <div class="notice_slide_inner">
+                                        <div class="notice_textwrap">
+                                            <span class="area">제주</span>
+                                            <h3>부대영업시설 휴무 안내</h3>
+                                            <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
+                                                고객 여러분께 마스크와 손소독제를 지급
+                                                하고 있습니다.</p>
+                                            <span class="date">2021.06.21</span>
+                                        </div>
+                                    </div>
+                                    <div class="hoverBtn"></div>
+                                </div>
+                                <div class="notice_slide swiper-slide">
+                                    <div class="notice_slide_inner">
+                                        <div class="notice_textwrap">
+                                            <span class="area">골프</span>
+                                            <h3>GRIDDLE GARDEN BBQ 안내</h3>
+                                            <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
+                                                고객 여러분께 마스크와 손소독제를 지급
+                                                하고 있습니다.</p>
+                                            <span class="date">2021.06.21</span>
+                                        </div>
+                                    </div>
+                                    <div class="hoverBtn"></div>
+                                </div>
+                                <div class="notice_slide swiper-slide">
+                                    <div class="notice_slide_inner">
+                                        <div class="notice_textwrap">
+                                            <span class="area">동강</span>
+                                            <h3>2021년 여름성수기 회원 예약 안내</h3>
+                                            <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
+                                                고객 여러분께 마스크와 손소독제를 지급
+                                                하고 있습니다.</p>
+                                            <span class="date">2021.06.21</span>
+                                        </div>
+                                    </div>
+                                    <div class="hoverBtn"></div>
+                                </div>
+                                <div class="notice_slide swiper-slide">
+                                    <div class="notice_slide_inner">
+                                        <div class="notice_textwrap">
+                                            <span class="area">강릉</span>
+                                            <h3>부대영업시설 휴무 안내</h3>
+                                            <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
+                                                고객 여러분께 마스크와 손소독제를 지급
+                                                하고 있습니다.</p>
+                                            <span class="date">2021.06.21</span>
+                                        </div>
+                                    </div>
+                                    <div class="hoverBtn"></div>
+                                </div>
+                                <div class="notice_slide swiper-slide">
+                                    <div class="notice_slide_inner">
+                                        <div class="notice_textwrap">
+                                            <span class="area">강릉</span>
+                                            <h3>부대영업시설 휴무 안내</h3>
+                                            <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
+                                                고객 여러분께 마스크와 손소독제를 지급
+                                                하고 있습니다.</p>
+                                            <span class="date">2021.06.21</span>
+                                        </div>
+                                    </div>
+                                    <div class="hoverBtn"></div>
+                                </div>
+                                <div class="notice_slide swiper-slide">
+                                    <div class="notice_slide_inner">
+                                        <div class="notice_textwrap">
+                                            <span class="area">강릉</span>
+                                            <h3>부대영업시설 휴무 안내</h3>
+                                            <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
+                                                고객 여러분께 마스크와 손소독제를 지급
+                                                하고 있습니다.</p>
+                                            <span class="date">2021.06.21</span>
+                                        </div>
+                                    </div>
+                                    <div class="hoverBtn"></div>
+                                </div>
+                                <div class="notice_slide swiper-slide">
+                                    <div class="notice_slide_inner">
+                                        <div class="notice_textwrap">
+                                            <span class="area">강릉</span>
+                                            <h3>부대영업시설 휴무 안내</h3>
+                                            <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
+                                                고객 여러분께 마스크와 손소독제를 지급
+                                                하고 있습니다.</p>
+                                            <span class="date">2021.06.21</span>
+                                        </div>
+                                    </div>
+                                    <div class="hoverBtn"></div>
+                                </div>
+                            </div>
+                            <div class="noticeBtn_wrap">
+                                <div class="noticeBtn_area">
+                                    <div class="swiper-button-prev" id="noticeBtnL"><span></span></div>
+                                    <div class="swiper-button-next" id="noticeBtnR"><span></span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"><span></span></div>
-                    <div class="swiper-button-prev"><span></span></div>
-                </div>
-                <div class="canvasOverFlow view">
-                    <div class="canvas_wrap"></div>
-                </div>
-            </section>
-            <section class="section notice">
-                <div class="notice_inner">
-                    <div class="notice_title title">
-                        <h2>NOTICE</h2>
-                        <p>예약 전 공지사항을 확인하세요.</p>
-                    </div>
-                    <div class="notice_slide_area">
-                        <div class="notice_slide_wrap swiper-wrapper">
-                            <div class="notice_slide swiper-slide">
-                                <div class="notice_slide_inner">
-                                    <div class="notice_textwrap">
-                                        <span class="area">강릉</span>
-                                        <h3>부대영업시설 휴무 안내</h3>
-                                        <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
-                                            고객 여러분께 마스크와 손소독제를 지급
-                                            하고 있습니다.</p>
-                                        <span class="date">2021.06.21</span>
-                                    </div>
-                                </div>
-                                <div class="hoverBtn"></div>
-                            </div>
-                            <div class="notice_slide swiper-slide">
-                                <div class="notice_slide_inner">
-                                    <div class="notice_textwrap">
-                                        <span class="area">제주</span>
-                                        <h3>부대영업시설 휴무 안내</h3>
-                                        <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
-                                            고객 여러분께 마스크와 손소독제를 지급
-                                            하고 있습니다.</p>
-                                        <span class="date">2021.06.21</span>
-                                    </div>
-                                </div>
-                                <div class="hoverBtn"></div>
-                            </div>
-                            <div class="notice_slide swiper-slide">
-                                <div class="notice_slide_inner">
-                                    <div class="notice_textwrap">
-                                        <span class="area">골프</span>
-                                        <h3>GRIDDLE GARDEN BBQ 안내</h3>
-                                        <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
-                                            고객 여러분께 마스크와 손소독제를 지급
-                                            하고 있습니다.</p>
-                                        <span class="date">2021.06.21</span>
-                                    </div>
-                                </div>
-                                <div class="hoverBtn"></div>
-                            </div>
-                            <div class="notice_slide swiper-slide">
-                                <div class="notice_slide_inner">
-                                    <div class="notice_textwrap">
-                                        <span class="area">동강</span>
-                                        <h3>2021년 여름성수기 회원 예약 안내</h3>
-                                        <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
-                                            고객 여러분께 마스크와 손소독제를 지급
-                                            하고 있습니다.</p>
-                                        <span class="date">2021.06.21</span>
-                                    </div>
-                                </div>
-                                <div class="hoverBtn"></div>
-                            </div>
-                            <div class="notice_slide swiper-slide">
-                                <div class="notice_slide_inner">
-                                    <div class="notice_textwrap">
-                                        <span class="area">강릉</span>
-                                        <h3>부대영업시설 휴무 안내</h3>
-                                        <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
-                                            고객 여러분께 마스크와 손소독제를 지급
-                                            하고 있습니다.</p>
-                                        <span class="date">2021.06.21</span>
-                                    </div>
-                                </div>
-                                <div class="hoverBtn"></div>
-                            </div>
-                            <div class="notice_slide swiper-slide">
-                                <div class="notice_slide_inner">
-                                    <div class="notice_textwrap">
-                                        <span class="area">강릉</span>
-                                        <h3>부대영업시설 휴무 안내</h3>
-                                        <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
-                                            고객 여러분께 마스크와 손소독제를 지급
-                                            하고 있습니다.</p>
-                                        <span class="date">2021.06.21</span>
-                                    </div>
-                                </div>
-                                <div class="hoverBtn"></div>
-                            </div>
-                            <div class="notice_slide swiper-slide">
-                                <div class="notice_slide_inner">
-                                    <div class="notice_textwrap">
-                                        <span class="area">강릉</span>
-                                        <h3>부대영업시설 휴무 안내</h3>
-                                        <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
-                                            고객 여러분께 마스크와 손소독제를 지급
-                                            하고 있습니다.</p>
-                                        <span class="date">2021.06.21</span>
-                                    </div>
-                                </div>
-                                <div class="hoverBtn"></div>
-                            </div>
-                            <div class="notice_slide swiper-slide">
-                                <div class="notice_slide_inner">
-                                    <div class="notice_textwrap">
-                                        <span class="area">강릉</span>
-                                        <h3>부대영업시설 휴무 안내</h3>
-                                        <p>탑스텐 빌라드애월 호텔에서는 투숙하시는
-                                            고객 여러분께 마스크와 손소독제를 지급
-                                            하고 있습니다.</p>
-                                        <span class="date">2021.06.21</span>
-                                    </div>
-                                </div>
-                                <div class="hoverBtn"></div>
-                            </div>
-                        </div>
-                        <div class="noticeBtn_wrap">
-                            <div class="noticeBtn_area">
-                                <div class="swiper-button-prev" id="noticeBtnL"><span></span></div>
-                                <div class="swiper-button-next" id="noticeBtnR"><span></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer class="section footer fp-auto-height" style="background-color: black;">
-            <img src="img/footer.png" alt=""></footer>
-        </main>
+                </section>
+                <footer class="section footer fp-auto-height">
+                    <img src="img/footer.png" alt="">
+                </footer>
+            </div>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script>
-        document.getElementById("wrap").style.display="block";$("#fullpage").fullpage({autoScrolling:true,scrollHorizontally:true,'afterLoad':function(anchorLink,index){if(index==1){$('.header_wrap').removeClass("on").addClass('on')}else{$('.header_wrap').removeClass('on')}},});
+    // Accepts any class name
+        var rellax = new Rellax('.rellax',{
+            speed: -2,
+            center: true,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
     </script>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    
+    <script>
+        gsap.to("#scrolSlide1", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -2600,
+        })
+
+        gsap.to("#scrolSlide2", {
+            scrollTrigger : {
+                scrub : 1
+            },
+            x : -4650,
+        })
+    </script> -->
 </body>
 </html>

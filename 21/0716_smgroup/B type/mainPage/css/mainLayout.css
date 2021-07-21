@@ -1,8 +1,6 @@
-.section,
-body,
-.fp-tableCell,
 html {
-    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 html, body{
     height: 100%;
@@ -12,22 +10,23 @@ html, body{
 #wrap{
     min-width: 1440px;
     overflow-y: hidden;
-    display: none;
 }
 
 .header_wrap{
     position: fixed;
     z-index: 10;
     width: 100vw;
-    top: 0;
-    left: 0;
-    transition: all 1s 1.2s;
-}
-.header_wrap{
     top: -146px;
+    left: 0;
+    transition: top .35s;
 }
 .header_wrap.on{
     top: 0px;
+    transition: top 1s 1.2s;
+}
+.header_wrap.scroll{
+    top: 0px;
+    transition: top .35s;
 }
 
 header{
@@ -93,19 +92,26 @@ header .user li a{
     color: #fff;
     padding: 12px;
 }
-
-.visual{
+#section_wrap{
     overflow: hidden;
-    position: relative;
+}
+section.visual{
+    overflow: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
 }
 .visual .visual-inner{
     width: 100vw;
     height: 100vh;
-    /* background: url("../img/visual-df.png")no-repeat center center; */
     background-size: cover;
     position: absolute;
     top: 0;
     left: 0;
+    background: url("../img/visual-df.png") no-repeat center fixed;
+    background-size: cover;
 }
 .visual .visual-inner img{
     width: 100%;
@@ -162,10 +168,15 @@ header .user li a{
     bottom: -170px;
     left: 0;
     overflow: hidden;
+    transition: bottom .5s .1s;
 }
 .visual .visual_reservation.on{
     bottom: 0px;
-    transition: all 1s 2s;
+    transition: bottom 1s 2s;
+}
+.visual .visual_reservation.scroll{
+    bottom: 0px;
+    transition: bottom .5s .3s;
 }
 
 .visual .visual_reservation::after{
@@ -176,7 +187,8 @@ header .user li a{
     left: 0;
     width: 100vw;
     height: 190px;
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
 }
 .visual .visual_reservation .visual_reservationBg{
     height: 190px;
@@ -201,11 +213,24 @@ header .user li a{
     z-index: 90;
     background: url("../img/visual_reservation_content.png") no-repeat center / 100%;
 }
-
+.section_wrap_margin{
+    margin-top: 120vh;
+}
+section.promotions{
+    width: 100vw;
+    height: 1080px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+}
+section.promotions .promotions_inner{
+    padding-top: 140px;
+}
 .promotions .promotions_title{
     width: 1400px;
-    margin: 0 auto;
+    margin-left: 260px;
     margin-bottom: 45px;
+    /* margin-top: 125px; */
 }
 .promotions .promotions_title h2,
 .promotions .promotions_title p{
@@ -329,8 +354,11 @@ header .user li a{
     background-color: #ececec;
 }
 
-.hottel-info{
+section.hottel-info{
     position: relative;
+    width: 100vw;
+    height: 1080px;
+    z-index: 10;
 }
 .hottel-info .hottel-info_imgslide{
     width: 100vw;
@@ -344,7 +372,7 @@ header .user li a{
     background: url("../img/hotel_1.png") no-repeat center / cover;
 }
 .hottel-info .hottel-info_imgslide .hotel-info-2-img{
-    background: url("../img/hotel_2.png") no-repeat center /cover;
+    background: url("../img/hotel_2.png") no-repeat center / cover;
 }
 .hottel-info .hottel-info_imgslide .swiper-slide::after{
     content: "";
@@ -353,7 +381,7 @@ header .user li a{
     width: 100%;
     height: 100%;
     background-color: #000;
-    opacity: .4;
+    opacity: .2;
 }
 .hottel-info .hottel-info_textslide{
     position: absolute;
@@ -380,7 +408,7 @@ header .user li a{
 }
 .hottel-info .hottel-info_textslide .textslide_inner h3{
     font-family: 'MADE-Coachella-Light';
-    font-size: 110px;
+    font-size: 100px;
     margin-bottom: 30px;
     margin-top: 10px;
     transition: all 1s;
@@ -438,7 +466,8 @@ header .user li a{
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-next .jejumap,
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-next .donggangmap{
     transform: translateX(-50%);
-    animation: opacity 1.5s .2s both;
+    -webkit-animation: opacity 1.5s .2s both;
+            animation: opacity 1.5s .2s both;
 }
 
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-prev span,
@@ -447,11 +476,17 @@ header .user li a{
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-prev .jejumap,
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-prev .donggangmap{
     transform: translateX(50%);
-    animation: opacity 1.5s .2s both;
+    -webkit-animation: opacity 1.5s .2s both;
+            animation: opacity 1.5s .2s both;
 }
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-prev h3,
 .hottel-info .hottel-info_textslide .swiper-slide.swiper-slide-duplicate-next h3{
-    animation: opacityH3 1.5s .2s both;
+    -webkit-animation: opacityH3 1.5s .2s both;
+            animation: opacityH3 1.5s .2s both;
+}
+@-webkit-keyframes opacityH3{
+    0%{opacity: 0;}
+    100%{opacity: .35;}
 }
 @keyframes opacityH3{
     0%{opacity: 0;}
@@ -488,7 +523,11 @@ header .user li a{
     width: 46px;
     height: 33px;
     background-color: #000;
-    display: block;
+    display: inline-block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 .hottel-info .swiper-button-prev span{
     background: url("../img/hoter-info-L.png") no-repeat center / 100%;
@@ -511,34 +550,59 @@ header .user li a{
     right: 20%;
 }
 .hottel-info .canvasOverFlow{
-    width: 0vw;
-    height: 100vh;
-    position: relative;
+    width: 0;
+    height: 540px;
+    position: absolute;
     z-index: 1;
     overflow: hidden;
+    right: 50%;
+    top: 0;
 }
 .hottel-info .canvasOverFlow.view{
-    animation: view 1.5s .2s both;
-    width: 50vw;
+    -webkit-animation: view 1.5s .2s both;
+            animation: view 1.5s .2s both;
+    width: 914px;
+    height: 540px;
+}
+@-webkit-keyframes view {
+    0%{width: 0vw;}
+    100%{width: 914px;}
 }
 @keyframes view {
     0%{width: 0vw;}
-    100%{width: 50vw;}
+    100%{width: 914px;}
 }
 .hottel-info .canvas_wrap{
-    width: 100vw;
-    height: 100vh;
+    width: 914px;
+    height: 252px;
     background: url("../img/line.png") no-repeat 50% 30% / cover;
-    position: relative;
+    position: absolute;
     z-index: 1;
+    bottom: 50px;
 }
-.notice{
+.hottel-info .swiper-button-prev,
+.hottel-info .swiper-container-rtl .swiper-button-next{
+    background-image: none;
+}
+.hottel-info .swiper-button-next,
+.hottel-info .swiper-container-rtl .swiper-button-prev{
+    background-image: none;
+}
+
+
+section.notice{
     background: url("../img/notice.png") no-repeat center / cover;
+    width: 100vw;
+    height: 1080px;
+    position: relative;
+    margin-bottom: 295px;
+    z-index: 10;
 }
 .notice .notice_inner{
     width: 1400px;
     margin: 0 auto;
     position: relative;
+    padding-top: 270px;
 }
 
 .notice .notice_title{
@@ -565,7 +629,7 @@ header .user li a{
 }
 .notice .notice_slide_area{
     height: 350px;
-    overflow: hidden;
+    overflow-x: clip;
 }
 .notice .notice_slide_area .notice_slide{
     width: 338.5px;
@@ -577,7 +641,7 @@ header .user li a{
     width: 1400px;
     height: 40px;
     position: absolute;
-    top: 0;
+    bottom: 380px;
 }
 .notice .notice_slide_area .noticeBtn_area{
     height: 40px;
@@ -616,6 +680,7 @@ header .user li a{
 .notice .notice_slide .notice_textwrap{
     width: 100%;
     height: 100%;
+    position: relative;
 }
 .notice .notice_slide .notice_textwrap span.area{
     width: 60px;
@@ -681,6 +746,10 @@ header .user li a{
     transform: translate(-50%, -50%) rotate(0deg);
     cursor: pointer;
     transition: all .35s;
+    opacity: 0;
+}
+.notice .notice_slide:hover .hoverBtn{
+    opacity: 1;
 }
 .notice .notice_slide .hoverBtn::after{
     content: "";
@@ -697,9 +766,76 @@ header .user li a{
 }
 
 footer{
-    height: 158px;
+    height: 295px;
     width: 100vw;
+    position: fixed;
+    background-color: #181818;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 footer img{
-    width: 100%;
+    width: 1400px;
+    margin: 0 auto;
+    display: block;
+}
+
+.hidden {
+    opacity: 0; transform: translateY(150px);
+}
+.fade-in {
+    -webkit-animation: fade-in 1.3s .3s both;
+            animation: fade-in 1.3s .3s both;
+}
+@-webkit-keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+
+@media screen and (max-width: 1540px){
+    .visual .visual_reservation .reservation_body{
+        width: 1280px;
+    }
+    .notice .notice_inner{
+        width: 1276px;
+    }
+    .notice .notice_slide_area .notice_slide{
+        width: 300px;
+    }
+    .notice .notice_slide::after{
+        width: 100%;
+        height: 100%;
+    }
+    footer img{
+        width: 1280px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .visual .visual_reservation .reservation_body{
+        width: 1200px;
+    }
+    .notice .notice_inner{
+        width: 1200px;
+    }
+    .notice .notice_slide_area .notice_slide{
+        width: 285.75px;
+    }
+    .notice .notice_slide::after{
+        width: 100%;
+        height: 100%;
+    }
+    .promotions .promotions_title{
+        margin-left: 120px;
+    }
+    .promotions .promotions_slide_area{
+        padding-left: 120px;
+    }
+    footer img{
+        width: 1000px;
+    }
 }

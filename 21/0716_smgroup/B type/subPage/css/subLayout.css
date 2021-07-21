@@ -242,7 +242,8 @@ section.visual .visual-button-prev{
     background: url("../img/arrowL.png") no-repeat center / 100%;
 }
 section.visual .visual-button-prev:hover{
-    animation: prevMove 1.5s infinite;
+    -webkit-animation: prevMove 1.5s infinite;
+            animation: prevMove 1.5s infinite;
 }
 section.visual .visual-button-next{
     right: 10%;
@@ -250,13 +251,25 @@ section.visual .visual-button-next{
     background: url("../img/arrowR.png") no-repeat center / 100%;
 }
 section.visual .visual-button-next:hover{
-    animation: nextMove 1.5s infinite;
+    -webkit-animation: nextMove 1.5s infinite;
+            animation: nextMove 1.5s infinite;
+}
+
+@-webkit-keyframes prevMove{
+    0%{transform: translate(-50%, -50%);}
+    50%{transform: translate(-80%, -50%);}
+    100%{transform: translate(-50%, -50%);}
 }
 
 @keyframes prevMove{
     0%{transform: translate(-50%, -50%);}
     50%{transform: translate(-80%, -50%);}
     100%{transform: translate(-50%, -50%);}
+}
+@-webkit-keyframes nextMove{
+    0%{transform: translate(50%, -50%);}
+    50%{transform: translate(80%, -50%);}
+    100%{transform: translate(50%, -50%);}
 }
 @keyframes nextMove{
     0%{transform: translate(50%, -50%);}

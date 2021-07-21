@@ -1,21 +1,24 @@
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 #wrap{
     /* max-width: 1920px; */
     min-width: 1440px;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100vw;
 }
 .top-banner{
-    width: 100%;
+    width: 100vw;
     height: 79px;
     position: fixed;
     z-index: 999999;
     overflow-y: hidden;
     top: 0;
     left: 0;
-    transition: all .35s;
 }
-.top-banner.bannerUp{
-    top: -79px;
-}
+
 .top-banner img{
     width: 100%;
     min-height: 79px;
@@ -38,7 +41,7 @@
     left: 0;
     z-index: 999999;
     background-color: #fff;
-    width: 100%;
+    width: 100vw;
     transition: border-bottom .35s ;
     box-sizing: border-box;
     transition: all .35s;
@@ -114,20 +117,20 @@ header .user li:nth-child(1) a::after{
 
 /* ---------------------------------------------- visual */
 section.visual{
-    width: 100%;
+    width: 100vw;
     position: relative;
-    height: calc(100vh - 169px);
-    margin-top: 169px;
+    height: calc(100vh - 90px);
+    margin-top: 90px;
     position: fixed;
     z-index: -10;
     transition: all .35s;
 }
 .viualScroll{
-    height: calc(100vh - 79px);
+    height: calc(100vh - 90px);
 }
 section.visual .visual_scroll{
     width: 80px;
-    height: calc(100vh - 169px);
+    height: calc(100vh - 90px);
     display: inline-block;
     position: relative;
     transition: all .35s;
@@ -140,8 +143,14 @@ section.visual .visual_scroll{
     color: #000;
     font-size: 14px;
     display: block;
-    margin-bottom: 20px;
-    animation: scrollMove 1.5s infinite;
+    margin-bottom: 50px;
+    -webkit-animation: scrollMove 1.5s infinite;
+            animation: scrollMove 1.5s infinite;
+}
+@-webkit-keyframes scrollMove{
+    0%{transform: rotate(-90deg) translateX(50%);}
+    50%{transform: rotate(-90deg) translateX(80%);}
+    100%{transform: rotate(-90deg) translateX(50%);}
 }
 @keyframes scrollMove{
     0%{transform: rotate(-90deg) translateX(50%);}
@@ -163,27 +172,31 @@ section.visual .visual_main{
     position: absolute;
     top: 0;
     left: 0;
-    height: calc(100vh - 169px);
+    height: calc(100vh - 90px);
     width: 100%;
     z-index: 10;
     transition: all .35s;
 }
 .visual_main .main_inner{
     margin-left: 80px;
-    height: calc(100vh - 169px);
+    height: calc(100vh - 90px);
     overflow: hidden;
     position: relative;
     transition: all .35s;
 }
 .visual_main .main_inner .visual_mainslide{
     position: relative;
-    height: calc(100vh - 169px);
+    height: calc(100vh - 90px);
     transition: all .35s;
 }
-.visual_main .main_inner .visual_mainslide img{
-    width: 110%;
-    min-height: calc(100vh - 169px);
-    transition: all .35s;
+/* .visual_main .main_inner .visual_mainslide img{
+    width: 120%;
+} */
+.visual_main .main_inner .visual_mainslide.img1{
+    background: url("../img/main-visual-1.jpg")no-repeat center / cover;
+}
+.visual_main .main_inner .visual_mainslide.img2{
+    background: url("../img/main-visual-2.jpg")no-repeat center / cover;
 }
 .visual_main .visual_navigation .navigation_line{
     position: relative;
@@ -201,10 +214,15 @@ section.visual .visual_main{
 }
 .visual_main .visual_navigation .navigation_line span.move{
     background-color: #fff;
-    animation: navigation_line 4.2s infinite;
+    -webkit-animation: navigation_line 4.2s infinite;
+            animation: navigation_line 4.2s infinite;
 }
 .visual_main .visual_navigation .navigation_line span.fix{
     background-color: #cccccc;
+}
+@-webkit-keyframes navigation_line{
+    0%{width: 0px;}
+    100%{width: 100px;}
 }
 @keyframes navigation_line{
     0%{width: 0px;}
@@ -216,10 +234,11 @@ section.visual .visual_main{
 .visual_main .visual_textwrap{
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 0;
     transform: translateY(-50%);
     margin-left: 120px;
+    transition: top .35s;
 }
 .visual_main .visual_textwrap p{
     font-family: 'SourceSansPro-Regular';
@@ -240,10 +259,16 @@ section.visual .visual_main{
     text-shadow: 3px 1px 8px rgba(0, 0, 0, 30%);
 }
 .visual_main .swiper-slide.swiper-slide-active p{
-    animation: visual_main_text 1.5s .2s both;
+    -webkit-animation: visual_main_text 1.5s .2s both;
+            animation: visual_main_text 1.5s .2s both;
 }
 .visual_main .swiper-slide.swiper-slide-active h2{
-    animation: visual_main_text 1.5s .6s both;
+    -webkit-animation: visual_main_text 1.5s .6s both;
+            animation: visual_main_text 1.5s .6s both;
+}
+@-webkit-keyframes visual_main_text{
+    0% {opacity: 0; transform: translateY(30px);}
+    100% {opacity: 1; transform: translateY(0);}
 }
 @keyframes visual_main_text{
     0% {opacity: 0; transform: translateY(30px);}
@@ -284,12 +309,18 @@ section.visual .visual_main{
     top: 50%;
     transform: translateY(-50%);
     z-index: 999999;
-    animation: visual_reservation 1.5s .6s both;
+    -webkit-animation: visual_reservation 1.5s .6s both;
+            animation: visual_reservation 1.5s .6s both;
 }
 .visual_reservation a{
     display: block;
     width: 80px;
     height: 220px;
+}
+
+@-webkit-keyframes visual_reservation{
+    0% {right: -80px;}
+    100% {right: 0;}
 }
 
 @keyframes visual_reservation{
@@ -301,9 +332,14 @@ section.visual .visual_main{
 /* ---------------------------------------------- resort */
 section.resort{
     margin-top: calc(100vh + 140px);
-    padding: 0 240px;
+    /* padding: 0 240px; */
     background-color: #fff;
     padding-top: 140px;
+    width: 100vw;
+}
+section.resort .resort_inner{
+    width: 1440px;
+    margin: 0 auto;
 }
 section.resort .resort_title{
     text-align: center;
@@ -332,8 +368,23 @@ section.resort .resort_content{
     margin-right: 150px;
     overflow-y: hidden;
 }
+.resort_content .resirt_tapimg .resirt_tapimg_inner{
+    width: 100%;
+    height: 840px;
+}
+.resort_content .resirt_tapimg .list1,
+.resort_content .resirt_tapimg .list2,
+.resort_content .resirt_tapimg .list3{
+    position: relative;
+    width: 100%;
+    height: 840px;
+}
 .resort_content .resirt_tapimg img{
-    width: 104%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
 }
 .resort_content .resirt_tapimg .slick-slide{
     transform: translateX(-80px);
@@ -380,16 +431,26 @@ section.resort .resort_content{
     margin-bottom: 60px;
     cursor: pointer;
     height: 50px;
-    animation: resort_click_height-2 1.5s .2s both;
+    -webkit-animation: resort_click_height-2 1.5s .2s both;
+            animation: resort_click_height-2 1.5s .2s both;
     background-color: #fff;
 }
 .resort_taptriger ul.list li.on{
     height: 100px;
-    animation: resort_click_height-1 1.5s .2s both;
+    -webkit-animation: resort_click_height-1 1.5s .2s both;
+            animation: resort_click_height-1 1.5s .2s both;
+}
+@-webkit-keyframes resort_click_height-1{
+    0%{height:50px;}
+    100%{height:100px;}
 }
 @keyframes resort_click_height-1{
     0%{height:50px;}
     100%{height:100px;}
+}
+@-webkit-keyframes resort_click_height-2{
+    0%{height:100px;}
+    100%{height:50px;}
 }
 @keyframes resort_click_height-2{
     0%{height:100px;}
@@ -464,18 +525,28 @@ section.resort .resort_content{
 }
 .resort_taptriger li.on .resort_taptriger_event{
     display: block;
-    animation: resort_click .5s .1s both;
+    -webkit-animation: resort_click .5s .1s both;
+            animation: resort_click .5s .1s both;
     /* transition: all .35s; */
 }
 .resort_taptriger li .resort_taptriger_event{
     display: none;
     opacity: 0;
-    animation: resort_click-off .5s .1s both;
+    -webkit-animation: resort_click-off .5s .1s both;
+            animation: resort_click-off .5s .1s both;
     /* transition: all .35s; */
+}
+@-webkit-keyframes resort_click{
+    0%{ opacity: 0; transform: translateY(50px);}
+    100%{ opacity: 1; transform: translateY(0);}
 }
 @keyframes resort_click{
     0%{ opacity: 0; transform: translateY(50px);}
     100%{ opacity: 1; transform: translateY(0);}
+}
+@-webkit-keyframes resort_click-off{
+    0%{ opacity: 1; transform: translateY(0);}
+    100%{ opacity: 0; transform: translateY(50px);}
 }
 @keyframes resort_click-off{
     0%{ opacity: 1; transform: translateY(0);}
@@ -491,6 +562,7 @@ section.special-offers{
     padding-top: 240px;
     margin-top: -100px;
     padding-bottom: 200px;
+    width: 100vw;
 }
 section.special-offers .special-offers_title{
     padding: 0 240px;
@@ -533,7 +605,7 @@ section.special-offers .special-offers_title h2{
     position: absolute;
     top: 124px;
     z-index: 90;
-    left: 1140px;
+    left: 1135px;
     box-shadow: 7px 5px 18px 0px rgb(0 0 0 / 9%)
 }
 section.special-offers .swiper-container-horizontal > .swiper-pagination-progressbar, .swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
@@ -649,9 +721,8 @@ section.special-offers .special-offers_slide_textwrap span.date{
 /* ---------------------------------------------- hottel-info */
 section.hottel-info{
     height: 785px;
-    background-color: #a98f5e;
     position: relative;
-    min-width: 100vw;
+    width: 100vw;
     overflow-x: hidden;
 }
 section.hottel-info .hottel-info_imgslide{
@@ -875,14 +946,15 @@ section.hottel-tops10{
     padding: 140px 0 140px 0;
     background-color: #fff;
     overflow-x: hidden;
+    width: 100vw;
 }
 section.hottel-tops10 .hottel-tops10_inner{
-    width: 1740px;
     margin: 0 auto;
 }
 section.hottel-tops10 ul{
     display: table;
-    width: 100%;
+    width: 1740px;
+    margin: 0 auto;
 }
 section.hottel-tops10 ul li{
     float: left;
@@ -913,7 +985,7 @@ section.hottel-tops10 ul li:nth-child(4){
 section.hottel-tops10 li a,
 section.hottel-tops10 li a .bg_hover{
     display: block;
-    height: 340px;
+    height: 100%;
 }
 section.hottel-tops10 .hottel-tops1{
     background: url("../img/notice-1.jpg")no-repeat center / cover;
@@ -954,7 +1026,7 @@ section.hottel-tops10 li a .bg_hover::after{
     background-color: #000;
     opacity: .4;
     width: 100%;
-    height: 340px;
+    height: 100%;
     top: 0;
     left: 0;
     z-index: -1;
@@ -1009,6 +1081,8 @@ section.hottel-tops10 li.hottel-tops2 a .textslide_inner h3{
     color: #000;
     margin-bottom: 20px;
     position: relative;
+    width: 306px;
+    margin: 0 auto;
 }
 section.hottel-tops10 li.hottel-tops2 a .textslide_inner h3::after{
     content: "";
@@ -1016,7 +1090,7 @@ section.hottel-tops10 li.hottel-tops2 a .textslide_inner h3::after{
     height: 46px;
     position: absolute;
     display: block;
-    left: 145px;
+    left: -43px;
     top: 46%;
     transform: translateY(-50%);
     z-index: 50;
@@ -1035,11 +1109,11 @@ section.hottel-tops10 li.hottel-tops2 a .textslide_inner p{
 section.notice{
     padding: 140px 0;
     background-color: #f4f4f4;
-    min-width: 100%;
+    width: 100vw;
 }
 section.notice .notice_inner{
-    /* width: 1440px; */
-    margin :0 240px;
+    width: 1440px;
+    margin :0 auto;
 }
 section.notice .notice_title{
     height: 64px;
@@ -1082,7 +1156,7 @@ section.notice ul{
 section.notice ul li{
     float: left;
     width: 32%;
-    min-height: 240px;
+    height: 250px;
     background-color: #fff;
     margin-left: 2%;
     margin-top: 2%;
@@ -1109,7 +1183,7 @@ section.notice ul li a .notice_contect_inner p.cat-date span{
 section.notice ul li a .notice_contect_inner p.cat-date span:nth-child(1){
     font-family: 'SourceSansPro-Regular';
     color: #a98f5e;
-    font-size: 20px;
+    font-size: 19px;
     margin-right: 20px;
     position: relative;
 }
@@ -1132,7 +1206,7 @@ section.notice ul li a .notice_contect_inner p.cat-date span:nth-child(2){
     color: #555555;
     font-size: 18px;
     position: relative;
-    top: 2px;
+    top: 1px;
 }
 section.notice ul li a .notice_contect_inner h2{
     font-size: 24px;
@@ -1149,6 +1223,8 @@ section.notice ul li a .notice_contect_inner p.text{
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
     line-height: 1.6;
+    height: 50px;
+    overflow: hidden;
 }
 section.notice ul li:hover{
     background-color: #a98f5e;
@@ -1161,6 +1237,9 @@ section.notice ul li:hover a .notice_contect_inner p.text{
 }
 /* ---------------------------------------------- notice */
 /* footer */
+footer{
+    width: 100vw;
+}
 footer img{
     width: 100%;
 }
@@ -1182,9 +1261,89 @@ footer img{
     opacity: 0; transform: translateY(150px);
 }
 .fade-in {
-    animation: fade-in 1.3s .3s both;
+    -webkit-animation: fade-in 1.3s .3s both;
+            animation: fade-in 1.3s .3s both;
+}
+@-webkit-keyframes fade-in {
+    from {opacity: 0; transform: translateY(150px);}
+    to {opacity: 1; transform: translateY(0);}
 }
 @keyframes fade-in {
     from {opacity: 0; transform: translateY(150px);}
     to {opacity: 1; transform: translateY(0);}
+}
+
+
+
+@media screen and (max-width: 1780px){
+    section.hottel-tops10 ul{
+        width: 1440px;
+    }
+    section.hottel-tops10 ul li{
+        width: 270px;
+        height: 280px;
+    }
+    section.hottel-tops10 ul li.hottel-tops2, section.hottel-tops10 ul li.hottel-tops3{
+        width: 562.5px;
+    }
+    .special-offers .button_wrap{
+        left: 485px;
+    }
+}
+
+@media screen and (max-width: 1540px){
+    section.hottel-tops10 ul{
+        width: 1280px;
+    }
+    section.hottel-tops10 ul li{
+        width: 238px;
+        height: 258px;
+    }
+    section.hottel-tops10 ul li.hottel-tops2, section.hottel-tops10 ul li.hottel-tops3{
+        width: 498.5px;
+    }
+
+    section.resort .resort_inner{
+        width: 1280px;
+    }
+    section.notice .notice_inner{
+        width: 1280px;
+    }
+
+    .special-offers_slide_wrap{
+        padding-left: 120px;
+    }
+    .special-offers .button_wrap{
+        left: 485px;
+    }
+}
+
+@media screen and (max-width: 1340px){
+    section.hottel-tops10 ul{
+        width: 1280px;
+    }
+    section.hottel-tops10 ul li{
+        width: 238px;
+        height: 258px;
+    }
+    section.hottel-tops10 ul li.hottel-tops2, section.hottel-tops10 ul li.hottel-tops3{
+        width: 498.5px;
+    }
+
+    section.resort .resort_inner{
+        width: 1180px;
+    }
+    section.notice .notice_inner{
+        width: 1180px;
+    }
+
+    .special-offers_slide_wrap{
+        padding-left: 80px;
+    }
+    .special-offers .button_wrap{
+        left: 485px;
+    }
+    section.special-offers .special-offers_title{
+        padding: 0px 80px;
+    }
 }

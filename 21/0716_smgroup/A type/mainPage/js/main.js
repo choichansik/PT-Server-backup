@@ -10,46 +10,26 @@ $(document).ready(function(){
 
     $(".visual_reservation").removeClass("on").addClass("on");
 
-    $(window).on('scroll',function(){
-        if($(window).scrollTop()){
-            $('.header_wrap').addClass('active');
-            $(".top-banner").addClass("bannerUp");
-            $(".visual").css({
-                "height":"calc(100vh - 79px)",
-                "margin-top":"79px"
-            });
-            $(".visual_scroll").css("height","calc(100vh - 79px)");
-            $(".visual_main").css("height","calc(100vh - 79px)");
-            $(".main_inner").css("height","calc(100vh - 79px)");
-            $(".visual_mainslide").css("height","calc(100vh - 79px)");
-            $(".visual_mainslide img").css("min-height","calc(100vh - 79px)");
-        }else{
-            $('.header_wrap').removeClass('active');
-            $(".top-banner").removeClass("bannerUp");
-            $(".visual").css({
-                "height":"calc(100vh - 169px)",
-                "margin-top":"169px"
-            });
-            $(".visual_scroll").css("height","calc(100vh - 169px)");
-            $(".visual_main").css("height","calc(100vh - 169px)");
-            $(".main_inner").css("height","calc(100vh - 169px)");
-            $(".visual_mainslide").css("height","calc(100vh - 169px)");
-            $(".visual_mainslide img").css("min-height","calc(100vh - 169px)");
-        }
+    $(".closeBtn").click(function(){
+        $('.top-banner').remove();
+        $(".header_wrap").css({
+            "top":"0"
+        });
+        $(".visual_textwrap").css({
+            "top":"50%"
+        });
     });
 
-    $(".closeBtn").click(function(){
-        $('.header_wrap').addClass('active');
-        $(".top-banner").addClass("bannerUp");
-        $(".visual").css({
-            "height":"calc(100vh - 79px)",
-            "margin-top":"79px"
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('.top-banner').remove();
+        $(".header_wrap").css({
+            "top":"0"
         });
-        $(".visual_scroll").css("height","calc(100vh - 79px)");
-        $(".visual_main").css("height","calc(100vh - 79px)");
-        $(".main_inner").css("height","calc(100vh - 79px)");
-        $(".visual_mainslide").css("height","calc(100vh - 79px)");
-        $(".visual_mainslide img").css("min-height","calc(100vh - 79px)");
+        $(".visual_textwrap").css({
+            "top":"50%"
+        });
+        }
     });
 
     // .viualScroll_add

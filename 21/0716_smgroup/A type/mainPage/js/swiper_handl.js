@@ -61,8 +61,6 @@ $(document).ready(function(){
                 var special_offers_slide_hiiden = $(".special-offers_slide_hiiden");
                 if(this.realIndex == 1 || this.realIndex == 3){
                     special_offers_slide_hiiden.css("overflow","visible");
-                }if(this.realIndex == 0){
-                    special_offers_slide_hiiden.css("overflow","hidden");
                 }
             }
         }
@@ -77,8 +75,8 @@ $(document).ready(function(){
         speed: 1000,
         loop: true,
         navigation: {
-            nextEl: ".hottel-info-prev",
-            prevEl: ".hottel-info-next",
+            nextEl: ".hottel-info-next",
+            prevEl: ".hottel-info-prev",
         },
         centeredSlides : true
     });
@@ -91,8 +89,8 @@ $(document).ready(function(){
         speed: 1000,
         loop: true,
         navigation: {
-            nextEl: ".hottel-info-prev",
-            prevEl: ".hottel-info-next",
+            nextEl: ".hottel-info-next",
+            prevEl: ".hottel-info-prev",
         },
         centeredSlides : true
     });
