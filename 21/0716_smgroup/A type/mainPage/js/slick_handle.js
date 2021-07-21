@@ -6,7 +6,8 @@ $(document).ready(function(){
         infinite: true,
         speed: 500,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        draggable : false,
     });
 
     $(".resort_taptriger_nav_click").click(function(){
