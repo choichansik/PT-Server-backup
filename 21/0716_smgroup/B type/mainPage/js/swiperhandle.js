@@ -29,9 +29,10 @@ $(document).ready(function(){
             speed:1000,
             loop:true,
             navigation:{
-                nextEl:".swiper-button-next",
-                prevEl:".swiper-button-prev",
+                nextEl:".swiper-button-next-hidden",
+                prevEl:".swiper-button-prev-hidden",
             },
+            centeredSlides:true,
         });
 
         var MainSwiper=new Swiper(".hottel-info_textslide",{
@@ -49,16 +50,18 @@ $(document).ready(function(){
             on:{
                 slideChange:function(){
                     var canvasOverFlow=$(".canvasOverFlow");
-                        canvasOverFlow.removeClass("view");
-                        setTimeout(function(){
-                            canvasOverFlow.addClass("view")
-                        }),2000
-                    }
+                    canvasOverFlow.removeClass("view");
+                    setTimeout(function(){
+                        canvasOverFlow.addClass("view");
+                    }),2000
+
+                    $(".swiper-button-next-hidden").trigger("click");
                 }
+            }
         });
 
-        var MainSwiper=new Swiper('.hottel-info_imgslide',{
-            controller:{control:SubSwiper,},
+        var SubSwiper = new Swiper('.hottel-info_imgslide',{
+            controller:{control:MainSwiper},
         });
 
         var swiper=new Swiper(".notice_slide_area",{

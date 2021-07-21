@@ -72,7 +72,7 @@ $(document).ready(function(){
         visibilityFullFit : true,
         autoResize : false,
         touchRatio: 0,
-        speed: 1000,
+        speed: 800,
         loop: true,
         navigation: {
             nextEl: ".hottel-info-next",
@@ -86,7 +86,7 @@ $(document).ready(function(){
         visibilityFullFit : true,
         autoResize : false,
         touchRatio: 0,
-        speed: 1000,
+        speed: 800,
         loop: true,
         navigation: {
             nextEl: ".hottel-info-next",
@@ -100,9 +100,4 @@ $(document).ready(function(){
             control: SubSwiper,
         },
     });
-    // var SubSwiper = new Swiper('.hottel-info_textslide', {
-    //     controller: {
-    //       control: MainSwiper
-    //     },
-    // });
 });

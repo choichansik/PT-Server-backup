@@ -26,9 +26,15 @@ $(document).ready(function () {
         translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
 
     $('.visual-inner').css({
+        '-ms-transform' : translate,
         '-webit-transform': translate,
         '-moz-transform': translate,
+        '-o-transform' : translate,
         'transform': translate
+
+        // '-webit-transform': translate,
+        // '-moz-transform': translate,
+        // 'transform': translate
     });
 
         window.requestAnimationFrame(moveBackground);

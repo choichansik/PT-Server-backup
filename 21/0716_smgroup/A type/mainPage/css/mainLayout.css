@@ -889,6 +889,7 @@ section.hottel-info .hottel-info-next{
     z-index: 900;
     transform: translate(-30%,-20%);
     transition: all .35s;
+    cursor: pointer;
 }
 section.hottel-info .hottel-info-prev:hover,
 section.hottel-info .hottel-info-next:hover{
@@ -1082,7 +1083,7 @@ section.hottel-tops10 li.hottel-tops2 a .textslide_inner h3{
     color: #000;
     margin-bottom: 20px;
     position: relative;
-    width: 306px;
+    width: 308px;
     margin: 0 auto;
 }
 section.hottel-tops10 li.hottel-tops2 a .textslide_inner h3::after{
