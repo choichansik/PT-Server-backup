@@ -9,15 +9,15 @@ $(document).ready(function(){
             el: ".swiper-pagination",
             type: "progressbar",
         },
-        on: {
-            activeIndexChange: function () {
-                if(this.realIndex == 1){
-                    $(".promotions_slide_hiden").css("overflow", "visible");
-                }if(this.realIndex == 4){
-                    $(".promotions_slide_hiden").css("overflow", "visible");
-                }
-            }
-        }
+        // on: {
+        //     activeIndexChange: function () {
+        //         if(this.realIndex == 1){
+        //             $(".promotions_slide_hiden").css("overflow", "visible");
+        //         }if(this.realIndex == 4){
+        //             $(".promotions_slide_hiden").css("overflow", "visible");
+        //         }
+        //     }
+        // }
     });
 
     var visualSlider = new Swiper(".visual_view_slide", {

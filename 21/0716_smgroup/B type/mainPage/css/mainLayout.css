@@ -629,7 +629,7 @@ section.notice{
 }
 .notice .notice_slide_area{
     height: 350px;
-    overflow-x: clip;
+    overflow: hidden;
 }
 .notice .notice_slide_area .notice_slide{
     width: 338.5px;
@@ -637,13 +637,13 @@ section.notice{
     background-color: #fff;
     margin-right: 19px;
 }
-.notice .notice_slide_area .noticeBtn_wrap{
+.notice .noticeBtn_wrap{
     width: 1400px;
     height: 40px;
     position: absolute;
     bottom: 380px;
 }
-.notice .notice_slide_area .noticeBtn_area{
+.notice .noticeBtn_area{
     height: 40px;
     width: 70px;
     position: relative;

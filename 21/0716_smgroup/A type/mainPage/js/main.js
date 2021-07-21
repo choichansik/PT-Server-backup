@@ -21,14 +21,36 @@ $(document).ready(function(){
     });
 
     $(window).on('scroll',function(){
-        if($(window).scrollTop()){
-            $('.top-banner').remove();
-        $(".header_wrap").css({
-            "top":"0"
-        });
-        $(".visual_textwrap").css({
-            "top":"50%"
-        });
+        if($(window).scrollTop()){ // 스크롤 내렸을 때
+            if($('.top-banner').length){
+                // alert("있습니다.");
+                $('.top-banner').css({
+                    "top":"-79px"
+                });
+                $(".header_wrap").css({
+                    "top":"0"
+                });
+                $(".visual_textwrap").css({
+                    "top":"50%"
+                });
+            }else{
+                // alert("없습니다.");
+            }
+        }else{ //최상단일때
+            if($('.top-banner').length){
+                // alert("있습니다.");
+                $('.top-banner').css({
+                    "top":"0px"
+                });
+                $(".header_wrap").css({
+                    "top":"79px"
+                });
+                $(".visual_textwrap").css({
+                    "top":"55%"
+                });
+            }else{
+                // alert("없습니다.");
+            }
         }
     });
 

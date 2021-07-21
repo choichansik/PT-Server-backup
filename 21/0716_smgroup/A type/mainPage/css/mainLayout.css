@@ -17,6 +17,7 @@ body{
     overflow-y: hidden;
     top: 0;
     left: 0;
+    transition: all .35s;
 }
 
 .top-banner img{
@@ -388,11 +389,11 @@ section.resort .resort_content{
 }
 .resort_content .resirt_tapimg .slick-slide{
     transform: translateX(-80px);
-    transition: all 1s !important;
+    transition: all .8s !important;
 }
 .resort_content .resirt_tapimg .slick-slide.slick-active{
     transform: translateX(0);
-    transition: all 1s !important;
+    transition: all .8s !important;
 }
 .resort_content .resort_taptriger{
     float: left;
@@ -431,14 +432,14 @@ section.resort .resort_content{
     margin-bottom: 60px;
     cursor: pointer;
     height: 50px;
-    -webkit-animation: resort_click_height-2 1.5s .2s both;
-            animation: resort_click_height-2 1.5s .2s both;
+    -webkit-animation: resort_click_height-2 .8s .1s both;
+            animation: resort_click_height-2 .8s .1s both;
     background-color: #fff;
 }
 .resort_taptriger ul.list li.on{
     height: 100px;
-    -webkit-animation: resort_click_height-1 1.5s .2s both;
-            animation: resort_click_height-1 1.5s .2s both;
+    -webkit-animation: resort_click_height-1 .8s .1s both;
+            animation: resort_click_height-1 .8s .1s both;
 }
 @-webkit-keyframes resort_click_height-1{
     0%{height:50px;}
