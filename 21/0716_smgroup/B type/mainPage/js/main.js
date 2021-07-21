@@ -1,17 +1,20 @@
 $(document).ready(function () {
 
-    window.onload = function(){
-        var load_text_show = $(".visual .text_wrap h1 span");
-        var load_textp_show = $(".visual .text_wrap p");
-        var show = load_text_show.hasClass("show");
-        if(!show == true){
-            load_text_show.removeClass("show").addClass("show");
-            load_textp_show.removeClass("show").addClass("show");
+    var reloadE = function(){
+        window.onload = function(){
+            var load_text_show = $(".visual .text_wrap h1 span");
+            var load_textp_show = $(".visual .text_wrap p");
+            var show = load_text_show.hasClass("show");
+            if(!show == true){
+                load_text_show.removeClass("show").addClass("show");
+                load_textp_show.removeClass("show").addClass("show");
+            }
+            $(".header_wrap").removeClass("on").addClass("on");
+            $(".visual .visual_reservation").removeClass("on").addClass("on");
         }
-
-        $(".header_wrap").removeClass("on").addClass("on");
-        $(".visual .visual_reservation").removeClass("on").addClass("on");
     }
+    reloadE();
+
 
     var lFollowX = 0,
         lFollowY = 0,
