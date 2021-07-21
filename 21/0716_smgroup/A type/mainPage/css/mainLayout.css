@@ -389,11 +389,11 @@ section.resort .resort_content{
 }
 .resort_content .resirt_tapimg .slick-slide{
     transform: translateX(-80px);
-    transition: all .8s !important;
+    transition: all .5s !important;
 }
 .resort_content .resirt_tapimg .slick-slide.slick-active{
     transform: translateX(0);
-    transition: all .8s !important;
+    transition: all .5s !important;
 }
 .resort_content .resort_taptriger{
     float: left;
@@ -432,14 +432,14 @@ section.resort .resort_content{
     margin-bottom: 60px;
     cursor: pointer;
     height: 50px;
-    -webkit-animation: resort_click_height-2 .8s .1s both;
-            animation: resort_click_height-2 .8s .1s both;
+    -webkit-animation: resort_click_height-2 .5s .1s both;
+            animation: resort_click_height-2 .5s .1s both;
     background-color: #fff;
 }
 .resort_taptriger ul.list li.on{
     height: 100px;
-    -webkit-animation: resort_click_height-1 .8s .1s both;
-            animation: resort_click_height-1 .8s .1s both;
+    -webkit-animation: resort_click_height-1 .5s .1s both;
+            animation: resort_click_height-1 .5s .1s both;
 }
 @-webkit-keyframes resort_click_height-1{
     0%{height:50px;}
@@ -800,7 +800,7 @@ section.hottel-info .hottel-info_golink a{
     line-height: 50px;
     position: relative;
     z-index: 90;
-    transition: all .35s;
+    transition: all .1s;
 }
 section.hottel-info .hottel-info_golink a::after{
     content: "";
@@ -824,7 +824,7 @@ section.hottel-info .hottel-info_golink a:hover{
 }
 section.hottel-info .textslide_inner{
     position: relative;
-    transition: all .35s .2s;
+    transition: all .1s .2s;
 }
 /* section.hottel-info .textslide_inner .textslide_inner_box{
     transition: all .35s .2s;
@@ -835,7 +835,7 @@ section.hottel-info .swiper-slide.swiper-slide-prev .textslide_inner{
 section.hottel-info .swiper-slide.swiper-slide-prev .textslide_inner span.title,
 section.hottel-info .swiper-slide.swiper-slide-prev .textslide_inner .hottel-info_golink{
     opacity: 0;
-    transition: all .35s;
+    transition: all .1s;
 }
 section.hottel-info .swiper-slide.swiper-slide-next .textslide_inner{
     transform: translateX(50%);
@@ -843,7 +843,7 @@ section.hottel-info .swiper-slide.swiper-slide-next .textslide_inner{
 section.hottel-info .swiper-slide.swiper-slide-next .textslide_inner span.title,
 section.hottel-info .swiper-slide.swiper-slide-next .textslide_inner .hottel-info_golink{
     opacity: 0;
-    transition: all .35s;
+    transition: all .1s;
 }
 section.hottel-info .swiper-slide.swiper-slide-active .textslide_inner{
     transform: translateX(0);
@@ -1260,18 +1260,18 @@ footer img{
 }
 
 .hidden {
-    opacity: 0; transform: translateY(150px);
+    opacity: 0; transform: translateY(100px);
 }
 .fade-in {
-    -webkit-animation: fade-in 1.3s .3s both;
-            animation: fade-in 1.3s .3s both;
+    -webkit-animation: fade-in 1s .1s both;
+            animation: fade-in 1s .1s both;
 }
 @-webkit-keyframes fade-in {
-    from {opacity: 0; transform: translateY(150px);}
+    from {opacity: 0; transform: translateY(100px);}
     to {opacity: 1; transform: translateY(0);}
 }
 @keyframes fade-in {
-    from {opacity: 0; transform: translateY(150px);}
+    from {opacity: 0; transform: translateY(100px);}
     to {opacity: 1; transform: translateY(0);}
 }
 

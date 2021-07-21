@@ -26,7 +26,7 @@ $(document).ready(function(){
             visibilityFullFit:true,
             autoResize:false,
             effect:"fade",
-            speed:1000,
+            speed:400,
             loop:true,
             navigation:{
                 nextEl:".swiper-button-next-hidden",
