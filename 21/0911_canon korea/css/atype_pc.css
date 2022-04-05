@@ -1,0 +1,278 @@
+.header{
+    align-items: flex-end;
+    padding-top: 1vw;
+    padding-bottom: 1.5vw;
+}
+.section-wrap{
+    transition: padding-top 1.6s;
+}
+.mainvisual{
+    transition: height 1.6s;
+}
+.header .service{
+    width: 25.52vw;
+    height: 3.95vw;
+    background: url("../images/Atype/Atype-gnb.png") no-repeat center / 100%;
+}
+.header .nav ul{
+    display: flex;
+}
+.header .nav ul a{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    color: #000;
+    margin: 0 1.56vw;
+    font-size: 0.9375vw !important;
+}
+.header .nav ul li:first-child a{
+    margin-left: 0;
+}
+.header .logo{
+    width: 6.5625vw;
+    height: 1.40625vw;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+.mainvisual-list.A{
+    background: url("../images/Atype/main_visual1.png") no-repeat center / cover;
+}
+.mainvisual-list.B{
+    background: url("../images/Atype/main_visual2.png") no-repeat center / cover;
+}
+.mainvisual-list.B.C{
+    background: url("../images/Atype/Atype-visual-1.png") no-repeat center / cover;
+}
+.mainvisual-list .mainvisual-textwrap{
+    top: 3vw;
+}
+.mainvisual-list.B .mainvisual-textwrap{
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+.mainvisual-list .mainvisual-textwrap .top{
+    margin-bottom: 25px;
+    padding: 12px 16px;
+}
+.mainvisual-list .mainvisual-textwrap .title{
+    margin-bottom: 15px;
+}
+.mainvisual-list.B .mainvisual-textwrap .linkbtn{
+    padding: 20px 56px;
+    margin-top: 45px;
+}
+.mainvisual .swiper-pagination-bullet::after{
+    content: "ddddd";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    transition: all .35s;
+}
+.mainvisual .swiper-pagination-bullet-active::after{
+    color: #cc2727;
+    font-weight: 700;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.mainvisual .swiper-pagination-bullet:nth-child(1):after{
+    content: "출시기념 이벤트";
+}
+.mainvisual .swiper-pagination-bullet:nth-child(2):after{
+    content: "가을 정품등록 이벤트";
+}
+.mainvisual .swiper-pagination-bullet:nth-child(3):after{
+    content: "해피셀피 해피썸머 셀피 이벤트";
+}
+.mainvisual .swiper-pagination-bullet:nth-child(4):after{
+    content: "가을감성 캐논으로 완성";
+}
+.mainvisual .swiper-pagination-bullet:nth-child(5):after{
+    content: "1대1구매 상담 이벤트";
+}
+.mainvisual{
+    margin-bottom: 110px;
+    /* height: 47.91vw; */
+    height: 100vh;
+}
+.con-title-wrap{
+    margin-bottom: 50px;
+}
+
+.con-1-slide-wrap{
+    display: flex;
+}
+.con-1-slide{
+    width: 17.70vw;
+    /* height: 26.04vw; */
+    margin-right: auto;
+}
+.con-1-slide:last-child{
+    margin-right: 0;
+}
+.con-1-slide .box-inner{
+    padding: 1.56vw;
+    /* height: 90%; */
+}
+.star-wrap .star{
+    width: 18px;
+    height: 17px;
+}
+.star-wrap{
+    margin-top: 30px;
+}
+.con-1-explane .middle{
+    margin-top: 10px;
+}
+.con-1-explane .title{
+    margin-top: 10px;
+}
+.con-1-img{
+    height: 14.06vw;
+    margin-bottom: 10px;
+}
+.con-2{
+    overflow: hidden;
+    margin-top: 100px;
+    padding-bottom: 70px;
+}
+.con-2-wrap .con-1-slide .box-inner{
+    flex-direction: row;
+    justify-content: start;
+}
+.con-2-wrap .con-1-slide{
+    width: auto; 
+}
+.con-2-wrap .con-1-slide .box-inner{
+    height: 26.04vw;
+    align-items: center;
+}
+.con-2-wrap {
+    padding-right: 41.3vw;
+    padding-left: 3.125vw;
+    /* overflow-y: hidden; */
+}
+.con-2-wrap .con-1-img{
+    width: 26.04vw;
+    height: 23.43vw;
+    flex-shrink: 0;
+}
+.con-2-wrap .con-1-img img{
+    width: 70%;
+}
+.con-2-wrap .btn-wrap{
+    display: flex;
+}
+.con-2-wrap .con-1-explane .middle{
+    margin: 30px 0;
+}
+.btn.b{
+    margin-left: 30px;
+}
+.btn.b .btn-text{
+    color: #777777;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.btn.b .btn-icon{
+    background: url("../images/Atype/common_next_icon_B.png")no-repeat center / 100%;
+}
+.con-2-wrap .label{
+    color: #fff;
+    font-family: Gotham;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 103px;
+    height: 62px;
+    background-color: #cc2727;
+    line-height: 62px;
+    text-align: center;
+    margin: 20px 0 0 20px;
+}
+
+.con-3 .con-3-content:hover,
+.con-3 .con-3-1line:hover{
+    background-size: 120%;
+}
+.con-3{
+    height: 40vw;
+    margin-top: 170px;
+}
+.con-3 .con-3-1line{
+    width: 28.38vw;
+    height: 100%;
+    flex-grow: 0;
+    background: url("../images/Atype/con3_content1.png") no-repeat center;
+    background-size: 110%;
+    transition: all .35s;
+}
+.con-3-content{
+    width: 50%;
+    cursor: pointer;
+}
+.con-3-label{
+    width: 113px;
+    height: 72px;
+    left: 20px;
+    top: 20px;
+}
+.con-3{
+    display: flex;
+}
+.con4{
+    margin: 160px 0;
+}
+
+.con-5 .con-1-wrap.con-5-wrap{
+    padding-right: 69.79vw;
+    padding-left: 3.125vw;
+}
+.con-5-img{
+    height: 16.14vw;
+    margin-bottom: 30px;
+}
+.con-5{
+    padding-bottom: 90px;
+}
+.con-5 .con-1-title{
+    margin-bottom: 20px;
+}
+.con-5-title-wrap{
+    margin-bottom: 40px;
+}
+.pc.con-5 .swiper-horizontal>.swiper-pagination-bullets,
+.pc.con-5 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.pc.con-5 .swiper-pagination-custom,
+.pc.con-5 .swiper-pagination-fraction{
+    width: 93vw;
+}
+.pc.con-5{
+    margin-bottom: 180px;
+}
+
+.con-2 .swiper-horizontal>.swiper-pagination-bullets, .con-2 .swiper-pagination-bullets.swiper-pagination-horizontal, .con-2 .swiper-pagination-custom, .con-2 .swiper-pagination-fraction,
+.con-5 .swiper-horizontal>.swiper-pagination-bullets, .con-5 .swiper-pagination-bullets.swiper-pagination-horizontal, .con-5 .swiper-pagination-custom, .con-5 .swiper-pagination-fraction{
+    transform: translateX(-50%) !important;
+}
+
+.mainvisual-list.B.C .mainvisual-textwrap .top{
+    padding: 0;
+    border: none;
+    letter-spacing: 0.3em;
+}
+.mainvisual-list.B.C .mainvisual-textwrap .top .color{
+    color: #fff;
+}
+.mainvisual-list.B.C .mainvisual-textwrap{
+    top: 40%;
+}
+.mainvisual-list.B.C .mainvisual-textwrap .title{
+    color: #fff;
+}

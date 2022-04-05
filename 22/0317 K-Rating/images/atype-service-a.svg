@@ -1,0 +1,12 @@
+<svg id="icon_01" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect id="사각형_8250" data-name="사각형 8250" width="40" height="40" fill="none"/>
+  <g id="그룹_16204" data-name="그룹 16204" transform="translate(1.474 2.432)">
+    <path id="패스_3663" data-name="패스 3663" d="M29.034,15.866a23.749,23.749,0,0,0,1.021-6c.116-1.135.277-3.212,1.408-3.717a.729.729,0,0,1,1.022.524,54.655,54.655,0,0,1,.443,12.453,10.438,10.438,0,0,1-.538,2.04l-4.807,6.106a1.078,1.078,0,0,0-.314.76V29.79" transform="translate(3.861 0.629)" fill="none" stroke="#393b4a" stroke-linejoin="round" stroke-width="2"/>
+    <path id="패스_3664" data-name="패스 3664" d="M19.831,28.874l.055-3.305a5.619,5.619,0,0,1,1.887-4.19c.088-.075.172-.143.253-.2.406-.3.832-.63,1.326-.93l.16-.132a25.994,25.994,0,0,0,4.157-4.64h0a1.667,1.667,0,0,1,2.147-.524c.06.031-.055-.04,0,0l.174.105a1.586,1.586,0,0,1,.178,2.17l-2.506,3.615a3.735,3.735,0,0,1-1.676,3.108" transform="translate(3.077 1.543)" fill="none" stroke="#393b4a" stroke-linejoin="round" stroke-width="2"/>
+    <path id="패스_3665" data-name="패스 3665" d="M18.931,31.8V27.529H29.142V31.8" transform="translate(2.982 2.888)" fill="none" stroke="#393b4a" stroke-linejoin="round" stroke-width="2"/>
+    <path id="패스_3666" data-name="패스 3666" d="M4.518,15.866a23.7,23.7,0,0,1-1.021-6c-.117-1.135-.277-3.212-1.408-3.717a.729.729,0,0,0-1.022.524A54.655,54.655,0,0,0,.623,19.126a10.285,10.285,0,0,0,.538,2.04l4.806,6.106a1.078,1.078,0,0,1,.314.76V29.79" transform="translate(0.068 0.629)" fill="none" stroke="#393b4a" stroke-linejoin="round" stroke-width="2"/>
+    <path id="패스_3667" data-name="패스 3667" d="M14.187,28.874l-.055-3.305a5.619,5.619,0,0,0-1.887-4.19c-.088-.075-.174-.143-.254-.2-.4-.3-.831-.63-1.326-.93l-.159-.132a26.043,26.043,0,0,1-4.158-4.64h0A1.665,1.665,0,0,0,4.2,14.951c-.06.031.055-.04,0,0l-.174.105a1.586,1.586,0,0,0-.178,2.17l2.506,3.615a3.735,3.735,0,0,0,1.676,3.108" transform="translate(0.386 1.543)" fill="none" stroke="#393b4a" stroke-linejoin="round" stroke-width="2"/>
+    <path id="패스_3668" data-name="패스 3668" d="M15.042,31.8V27.529H4.831V31.8" transform="translate(0.525 2.888)" fill="none" stroke="#393b4a" stroke-linejoin="round" stroke-width="2"/>
+    <text id="ESG" transform="translate(7.526 11.568)" fill="#1c99b9" font-size="13" font-family="AppleSDGothicNeoEB00" letter-spacing="-0.02em"><tspan x="0" y="0">ESG</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+@font-face {
+    font-family: Gotham;
+    font-weight: 1000;
+    /* Ultra  */
+    src: local(※),
+    url("../font/Gotham-Ultra.ttf") format("ttf");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 900;
+    /* Black  */
+    src: local(※),
+    url("../font/Gotham-Black.ttf") format("ttf");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 700;
+    /* Black  */
+    src: local(※),
+    url("../font/Gotham-Bold.otf") format("otf"),
+    url("../font/Gotham-Bold.ttf") format("ttf");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 500;
+    /* Medium  */
+    src: local(※),
+    url("../font/Gotham-Medium.otf") format("otf"),
+    url("../font/Gotham-Medium.ttf") format("ttf");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 400;
+    /* Book  */
+    src: local(※),
+    url("../font/Gotham-Book.otf") format("otf"),
+    url("../font/Gotham-Book.ttf") format("ttf");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 300;
+    /* Light  */
+    src: local(※),
+    url("../font/Gotham-Light.otf") format("otf"),
+    url("../font/Gotham-Light.ttf") format("ttf");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 200;
+    /* Thin  */
+    src: local(※),
+    url("../font/Gotham-Thin.ttf") format("ttf");
+}
+@font-face {
+    font-family: Gotham;
+    font-weight: 100;
+    /* XLight  */
+    src: local(※),
+    url("../font/Gotham-XLight.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

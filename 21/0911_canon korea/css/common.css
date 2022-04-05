@@ -1,0 +1,147 @@
+html, body *{
+    /* font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.02em; */
+    /* 
+    Thin 100
+    Light 300
+    Regular 400
+    Medium 500
+    Bold 700
+    Black 900
+    */
+}
+img{
+    width: 100%;
+}
+
+.inner_a_pc{
+    margin: 0 3.125vw;
+}
+.inner_a_mo{
+    margin: 0 5.33vw;
+}
+
+.inner_a{
+    margin: 0 60px;
+}
+.inner_b1{
+    margin: 0 6.25vw;
+}
+.inner_b2{
+    margin: 0 11.97vw;
+}
+.inner_b12{
+    margin: 0 5.72vw;
+}
+.bodyfont90{
+    font-size: 90px;
+    line-height: 1.2;
+}
+.bodyfont86{
+    font-size: 86px;
+    line-height: 1.2;
+}
+.bodyfont60{
+    font-size: 60px;
+    line-height: 1.2;
+}
+.bodyfont56{
+    font-size: 56px;
+    line-height: 1.2;
+}
+.bodyfont52{
+    font-size: 52px;
+    line-height: 1.2;
+}
+.bodyfont48{
+    font-size: 48px;
+    line-height: 1.2;
+}
+.bodyfont46{
+    font-size: 46px;
+    line-height: 1.2;
+}
+.bodyfont40{
+    font-size: 40px;
+    line-height: 1.2;
+}
+.bodyfont32{
+    font-size: 32px;
+    line-height: 1.2;
+}
+.bodyfont30{
+    font-size: 30px;
+    line-height: 1.2;
+}
+.bodyfont25{
+    font-size: 25px;
+    line-height: 1.2;
+}
+.bodyfont24{
+    font-size: 24px;
+    line-height: 1.2;
+}
+.bodyfont28{
+    font-size: 28px;
+    line-height: 1.2;
+}
+.bodyfont26{
+    font-size: 26px;
+    line-height: 1.2;
+}
+.bodyfont25{
+    font-size: 25px;
+    line-height: 1.2;
+}
+.bodyfont24{
+    font-size: 24px;
+    line-height: 1.2;
+}
+.bodyfont22{
+    font-size: 22px;
+    line-height: 1.2;
+}
+.bodyfont20{
+    font-size: 20px;
+    line-height: 1.2;
+}
+.bodyfont18{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.bodyfont16{
+    font-size: 16px;
+    line-height: 1.2;
+}
+.bodyfont18{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.bodyfont14{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.bodyfont18{
+    font-size: 18px;
+    line-height: 1.2;
+}
+.bodyfont16{
+    font-size: 16px;
+    line-height: 1.2;
+}
+.bodyfont15{
+    font-size: 16px;
+    line-height: 1.2;
+}
+.bodyfont14{
+    font-size: 14px;
+    line-height: 1.2;
+}
+.bodyfont12{
+    font-size: 12px;
+    line-height: 1.2;
+}
+.bodyfont10{
+    font-size: 10px;
+    line-height: 1.2;
+}

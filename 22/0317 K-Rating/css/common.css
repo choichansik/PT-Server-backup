@@ -1,0 +1,17 @@
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.inner{
+    width: auto;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+}
+.icon{
+    width: 18px;
+    height: 18px;
+}
+
+button{
+    background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer}
