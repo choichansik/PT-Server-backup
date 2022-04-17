@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllCredit Atype pc</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/atype.css">
+</head>
+<body>
+    <!-- //header -->
+    <div class="header">
+        <div class="inner">
+            <div class="header__wrap">
+                <div class="header__top">
+                    <ul class="header__top-leftNav">
+                        <li class="header__top-btn">API센터</li>
+                        <li class="header__top-btn haha">내게 맞는 서비스 찾기</li>
+                    </ul>
+                    <div class="header__top-logo">
+                        <img src="../common/img/allcredit_logo.svg" alt="">
+                    </div>
+                    <ul class="header__top-rightNav">
+                        <li class="header__top-rightNav-con">로그인</li>
+                        <li class="header__top-rightNav-con">회원가입</li>
+                        <li class="header__top-rightNav-con">설정/관리</li>
+                        <li class="header__top-rightNav-con this">고객센터</li>
+                        <li class="header__top-rightNav-menu"></li>
+                    </ul>
+                </div>
+                <div class="header__bottom">
+                    <ul class="header__bottom-nav">
+                        <li class="header__bottom-nav-con">신용관리
+                            <div class="header_navBox">
+                                <div class="inner">
+                                    <ul class="header_navBox_2depth">
+                                        <li class="header_navBox_2depth-line">
+                                            <ul class="header_navBox_2depth-content">
+                                                <li class="header_navBox_depth-title">내 신용 진단</li>
+                                                <li class="header_navBox_3depth-content label a">신용향상 무료진단</li>
+                                                <li class="header_navBox_3depth-content">신용위험도 무료진단</li>
+                                            </ul>
+                                            <ul class="header_navBox_2depth-content">
+                                                <li class="header_navBox_depth-title">신용아카데미</li>
+                                                <li class="header_navBox_3depth-content">전문가 칼럼</li>
+                                                <li class="header_navBox_3depth-content">전문가 Q&A</li>
+                                            </ul>
+                                        </li>
+                                        <li class="header_navBox_2depth-line">
+                                            <ul class="header_navBox_2depth-content">
+                                                <li class="header_navBox_depth-title">신용평가기준</li>
+                                                <li class="header_navBox_3depth-content">주요평가부문</li>
+                                                <li class="header_navBox_3depth-content">KCB 평점 성능지표</li>
+                                                <li class="header_navBox_3depth-content">KCB 평점 이용현황</li>
+                                            </ul>
+                                            <ul class="header_navBox_2depth-content">
+                                                <li class="header_navBox_depth-title">신용관리 체험단</li>
+                                                <li class="header_navBox_3depth-content">체험단 소개</li>
+                                                <li class="header_navBox_3depth-content">체험단 신청</li>
+                                                <li class="header_navBox_3depth-content">체험단 후기</li>
+                                            </ul>
+                                        </li>
+                                        <li class="header_navBox_2depth-line">
+                                            <ul class="header_navBox_2depth-content">
+                                                <li class="header_navBox_depth-title">신용성향설문</li>
+                                                <li class="header_navBox_3depth-content">신용성향설문</li>
+                                                <li class="header_navBox_3depth-content">설문참여 결과</li>
+                                            </ul>
+                                            <ul class="header_navBox_2depth-content">
+                                                <li class="header_navBox_depth-title label b">신용관리 서비스</li>
+                                                <li class="header_navBox_3depth-content">종합신용관리플러스</li>
+                                                <li class="header_navBox_3depth-content">종합신용관리</li>
+                                                <li class="header_navBox_3depth-content label c">소호신용관리</li>
+                                                <li class="header_navBox_3depth-content">가족신용관리</li>
+                                                <li class="header_navBox_3depth-content">제출용신용보고서</li>
+                                                <li class="header_navBox_3depth-content">비회원신용보고서</li>
+                                                <li class="header_navBox_3depth-content">통합패키지</li>
+                                            </ul>
+                                        </li>
+                                        <li class="header_navBox_2depth-line">
+                                            <ul class="header_navBox_2depth-content">
+                                                <li class="header_navBox_depth-title">신용완전정복</li>
+                                                <li class="header_navBox_3depth-content">신용완전정복</li>
+                                                <li class="header_navBox_3depth-content">신용완전정복 도전</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__bottom-nav-con">카드관리</li>
+                        <li class="header__bottom-nav-con">대출관리</li>
+                        <li class="header__bottom-nav-con">명의보호</li>
+                        <li class="header__bottom-nav-con">MyData</li>
+                        <li class="header__bottom-nav-con">아카데미</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <div class="container">
+        <!-- conMain -->
+        <div class="conMain">
+            <div class="inner ab">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="conMain__con-pagenation">
+                    <div class="swiper-pagination"></div>
+                    <div class="conMain__con-stop" data-stop></div>
+                </div>
+            </div>
+            <ul class="conMain__wrap swiper-wrapper">
+                <li class="conMain__con swiper-slide A">
+                    <div class="inner">
+                        <div class="conMain__con-text">
+                            <p class="conMain__con-text-title">
+                                올크레딧에만 있는<br/>
+                                회원 무료 서비스
+                            </p>
+                            <ul class="conMain__con-text-btnWrap">
+                                <li class="content_btn">신용향상진단</li>
+                                <li class="content_btn">신용위험도진단</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="conMain__con swiper-slide B">
+                    <div class="inner">
+                        <div class="conMain__con-text">
+                            <p class="conMain__con-text-title">
+                                신용관리 첫걸음<br/>
+                                올크레딧에서!
+                            </p>
+                            <ul class="conMain__con-text-btnWrap">
+                                <li class="content_btn green">신용관리 서비스 확인</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+        <!-- //conMain -->
+
+        <!-- service -->
+        <div class="service">
+            <div class="inner">
+                <div class="service__content">
+                    <ul class="service__content-top">
+                        <li class="service__content-item not">
+                            <p class="content_title">
+                                <strong>다양한 서비스</strong>를<br/>
+                                이용해 볼까요?
+                            </p>
+                        </li>
+                        <li class="service__content-item A">
+                            <p class="service__content-info">
+                                지출 위험도<br/>
+                                진단하기
+                            </p>
+                            <button type="button"></button>
+                        </li>
+                    </ul>
+                    <ul class="service__content-bottom">
+                        <li class="service__content-item B">
+                            <p class="service__content-info">
+                                비회원 신용보고서<br/>
+                                신청하기
+                            </p>
+                            <button type="button"></button>
+                        </li>
+                        <li class="service__content-item C">
+                            <p class="service__content-info">
+                                부채<br/>
+                                계산기
+                            </p>
+                            <button type="button"></button>
+                        </li>
+                        <li class="service__content-item D">
+                            <p class="service__content-info">
+                                대출 이자율<br/>
+                                계산기
+                            </p>
+                            <button type="button"></button>
+                        </li>
+                        <li class="service__content-item E">
+                            <p class="service__content-info">
+                                지출<br/>
+                                계산기
+                            </p>
+                            <button type="button"></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //service -->
+
+        <!-- moreSerive -->
+        <div class="moreSerive">
+            <div class="inner">
+                <div class="moreSerive__header">
+                    <p class="content_title">
+                        더 많은<br/>
+                        <strong>무료/유료 서비스</strong>가<br/>
+                        기다리고 있어요!
+                    </p>
+                    <div class="content_btn">회원가입 하러가기</div>
+                </div>
+                <ul class="moreSerive__content">
+                    <li class="moreSerive__content-item">
+                        <div class="moreSerive__content-icon"></div>
+                        <p class="moreSerive__content-text">
+                            내 신용현황 분석 기반<br/>
+                            카드발급 및 대출이자 진단
+                        </p>
+                    </li>
+                    <li class="moreSerive__content-item">
+                        <div class="moreSerive__content-icon"></div>
+                        <p class="moreSerive__content-text">
+                            신용 향상 방법<br/>
+                            무료 진단
+                        </p>
+                    </li>
+                    <li class="moreSerive__content-item">
+                        <div class="moreSerive__content-icon"></div>
+                        <p class="moreSerive__content-text">
+                            지출 위험도<br/>
+                            무료 진단
+                        </p>
+                    </li>
+                    <li class="moreSerive__content-item">
+                        <div class="moreSerive__content-icon"></div>
+                        <p class="moreSerive__content-text">
+                            내 소득 대비<br/>
+                            대출 한도 계산
+                        </p>
+                    </li>
+                    <li class="moreSerive__content-item">
+                        <div class="moreSerive__content-icon"></div>
+                        <p class="moreSerive__content-text">
+                            마이데이터 등록하고<br/>
+                            신용 점수 올리기
+                        </p>
+                    </li>
+                    <li class="moreSerive__content-item">
+                        <div class="moreSerive__content-icon"></div>
+                        <p class="moreSerive__content-text">
+                            전문가와 1:1<br/>
+                            신용 향상 코칭
+                        </p>
+                    </li>
+                    <li class="moreSerive__content-item">
+                        <div class="moreSerive__content-icon"></div>
+                        <p class="moreSerive__content-text">
+                            직접 변경, 예측하는<br/>
+                            신용 시뮬레이터
+                        </p>
+                    </li>
+                    <li class="moreSerive__content-item">
+                        <div class="moreSerive__content-icon"></div>
+                        <p class="moreSerive__content-text">
+                            국내 유일 서비스<br/>
+                            신용 스마트 리포트
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //moreSerive -->
+
+        <!-- insight -->
+        <div class="insight">
+            <div class="inner">
+                <div class="insight__header">
+                    <p class="content_title">
+                        <strong>전문가들의 인사이트,</strong><br/>
+                        신용 공부하러 가볼까요?
+                    </p>
+                </div>
+            </div>
+            <div class="insight__slider">
+                <ul class="insight__content swiper-wrapper">
+                    <li class="insight__content-item swiper-slide">
+                        <div class="insight__content-img">
+                            <img src="../img/atype/last2.png" alt="">
+                        </div>
+                        <div class="insight__content-info">
+                            <p class="insight__content-text">
+                                취준생·사회초년생 신용점수 올릴<br/>
+                                혁신 금융서비스 나온다
+                            </p>
+                            <div class="insight__content-btn"></div>
+                        </div>
+                    </li>
+                    <li class="insight__content-item swiper-slide down">
+                        <div class="insight__content-img">
+                            <img src="../img/atype/last3.png" alt="">
+                        </div>
+                        <div class="insight__content-info">
+                            <p class="insight__content-text">
+                                “대출 조이더니 금리까지 올리네”<br/>
+                                …은행 가계빚 석달째↓
+                            </p>
+                            <div class="insight__content-btn"></div>
+                        </div>
+                    </li>
+                    <li class="insight__content-item swiper-slide">
+                        <div class="insight__content-img">
+                            <img src="../img/atype/last4.png" alt="">
+                        </div>
+                        <div class="insight__content-info">
+                            <p class="insight__content-text">
+                                밀려드는 대출 이자 버겁다면?<br/>
+                                대환대출 궁금증 총정리!
+                            </p>
+                            <div class="insight__content-btn"></div>
+                        </div>
+                    </li>
+                    <li class="insight__content-item swiper-slide down">
+                        <div class="insight__content-img">
+                            <img src="../img/atype/last5.png" alt="">
+                        </div>
+                        <div class="insight__content-info">
+                            <p class="insight__content-text">
+                                신용점수를 떨어뜨리는<br/>
+                                카드 사용습관 5가지!
+                            </p>
+                            <div class="insight__content-btn"></div>
+                        </div>
+                    </li>
+                    <li class="insight__content-item swiper-slide down">
+                        <div class="insight__content-img">
+                            <img src="../img/atype/last1.png" alt="">
+                        </div>
+                        <div class="insight__content-info">
+                            <p class="insight__content-text">
+                                금리인상시대, 달라진 금리인하<br/>
+                                요구권에 주목해야 하는 이유
+                            </p>
+                            <div class="insight__content-btn"></div>
+                        </div>
+                    </li>
+                    <li class="insight__content-item swiper-slide down">
+                        <div class="insight__content-img">
+                            <img src="../img/atype/last1.png" alt="">
+                        </div>
+                        <div class="insight__content-info">
+                            <p class="insight__content-text">
+                                금리인상시대, 달라진 금리인하<br/>
+                                요구권에 주목해야 하는 이유
+                            </p>
+                            <div class="insight__content-btn"></div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="insight__nav">
+                    <div class="insight__nav-btn">
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="insight__nav-mid">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="insight__nav-btn">
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //insight -->
+
+        <footer>
+            <div class="inner">
+                <div class="topbtn"></div>
+                <img class="dddd" src="../img/atype/footer.png" alt="">
+            </div>
+        </footer>
+    </div>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/swiper-bundle.min.js"></script>
+
+<script>
+    var mainswiper = new Swiper(".conMain", {
+        slidesPerView: 1,
+        loop:true,
+        loopAdditionalSlides: 1,
+        speed: 1000,
+        autoplay: {
+            delay: 5000,
+        },
+        navigation: {
+            nextEl: ".conMain .swiper-button-next",
+            prevEl: ".conMain .swiper-button-prev",
+        },
+        pagination: {
+            el: ".conMain .swiper-pagination",
+            clickable : true,
+        },
+    });
+    const stop = $("[data-stop]");
+    stop.click(function(){
+        stop.toggleClass("on");
+
+        if(stop.hasClass("on") == true){
+            mainswiper.autoplay.stop();
+        }else{
+            mainswiper.autoplay.start()
+        }
+    });
+
+    const listOn = function(){
+        const list = $(".moreSerive__content-item");
+        const allListItem = list.find(".moreSerive__content-icon");
+        let index = 0;
+        setInterval(function(){
+            
+            const item = list.eq(index).find(".moreSerive__content-icon");
+            
+            allListItem.removeClass("on");
+            item.addClass("on");
+
+            index++;
+            if(list.length <= index){
+                index = 0;
+            }
+        }, 3000);
+    }
+    listOn();
+
+    $('.topbtn').click( function() {
+        $('html, body').animate({scrollTop : 0}, 400);
+        return false;
+    });
+
+
+    var subbswiper = new Swiper(".insight__slider", {
+        slidesPerView: 3,
+        loop:true,
+        loopAdditionalSlides: 1,
+        spaceBetween: 40,
+        speed: 1000,
+        autoplay: {
+            delay: 5000,
+        },
+        navigation: {
+            nextEl: ".insight .swiper-button-next",
+            prevEl: ".insight .swiper-button-prev",
+        },
+        pagination: {
+            el: ".insight .swiper-pagination",
+            clickable : true,
+        },
+    });
+
+    const nav_fun = function(){
+        const onedepth = $(".header__bottom-nav-con");
+        onedepth.each(function(){
+            const _this = $(this);
+            const navbox = _this.find(".header_navBox");
+
+            _this.hover(function(){
+                navbox.stop().slideDown()
+            },function(){
+                navbox.stop().slideUp()
+            });
+        });
+    }
+    nav_fun();
+</script>
+</body>
+</html>

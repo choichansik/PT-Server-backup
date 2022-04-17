@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="640" height="660" viewBox="0 0 640 660">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.398" y1="0.284" x2="0.754" y2="0.669" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#82adff"/>
+      <stop offset="1" stop-color="#3275f4"/>
+    </linearGradient>
+    <filter id="합치기_9" x="63" y="33" width="79.581" height="145.738" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#0d398b" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.064" y1="0.555" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffc8ce"/>
+      <stop offset="1" stop-color="#fda6af"/>
+    </linearGradient>
+    <filter id="합치기_11" x="59" y="276" width="88.002" height="120.001" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-2"/>
+      <feFlood flood-color="#972c37" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" y1="0.447" x2="1" y2="0.465" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#74e2d4"/>
+      <stop offset="1" stop-color="#3ec1b5"/>
+    </linearGradient>
+    <filter id="합치기_8" x="47" y="512" width="112.189" height="107.792" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-color="#006d61" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="그룹_176" data-name="그룹 176" transform="translate(-40 -5221)">
+    <g id="그룹_175" data-name="그룹 175" transform="translate(0 -19)">
+      <rect id="사각형_78" data-name="사각형 78" width="640" height="200" rx="20" transform="translate(40 5240)" fill="#f8f8f8"/>
+      <rect id="사각형_79" data-name="사각형 79" width="640" height="200" rx="20" transform="translate(40 5470)" fill="#f8f8f8"/>
+      <rect id="사각형_80" data-name="사각형 80" width="640" height="200" rx="20" transform="translate(40 5700)" fill="#f8f8f8"/>
+      <g id="그룹_50" data-name="그룹 50" transform="translate(15717 5804)">
+        <text id="신용_인플레이션_시대_신용점수_상승폭_높이려면_" data-name="신용 인플레이션 시대,
+신용점수 상승폭 높이려면?" transform="translate(-15477 -451)" fill="#222" font-size="30" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.04em"><tspan x="0" y="0">신용 인플레이션 시대,</tspan><tspan font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700"><tspan x="0" y="40">신용점수 상승폭</tspan><tspan y="40" xml:space="preserve" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-weight="400"> 높이려면?</tspan></tspan></text>
+        <text id="전문가의_Pick" data-name="전문가의 Pick" transform="translate(-15477 -498)" fill="#3275f4" font-size="24" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">전문가의 </tspan><tspan y="0">Pick</tspan></text>
+      </g>
+      <g id="그룹_51" data-name="그룹 51" transform="translate(15717 6034)">
+        <text id="취준생_사회_초년생_신용점수_올릴_혁신_금융서비스_나온다" data-name="취준생 사회 초년생 신용점수 올릴 
+혁신 금융서비스 나온다" transform="translate(-15477 -451)" fill="#222" font-size="30" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.04em"><tspan x="0" y="0">취준생 사회 초년생 신용점수 올릴 </tspan><tspan font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700"><tspan x="0" y="40">혁신 금융서비스</tspan><tspan y="40" xml:space="preserve" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-weight="400"> 나온다</tspan></tspan></text>
+        <text id="전문가의_Pick-2" data-name="전문가의 Pick" transform="translate(-15477 -498)" fill="#3275f4" font-size="24" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">전문가의 </tspan><tspan y="0">Pick</tspan></text>
+      </g>
+      <g id="그룹_52" data-name="그룹 52" transform="translate(15717 6264)">
+        <text id="밀려드는_대출이자_버겁다면_대환_대출_궁금증_총정리" data-name="밀려드는 대출이자 버겁다면,
+대환 대출 궁금증 총정리" transform="translate(-15477 -451)" fill="#222" font-size="30" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" letter-spacing="-0.04em"><tspan x="0" y="0">밀려드는 대출이자 버겁다면,</tspan><tspan font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700"><tspan x="0" y="40">대환 대출</tspan><tspan y="40" xml:space="preserve" font-family="NotoSansCJKkr-Regular, Noto Sans CJK KR" font-weight="400"> 궁금증 총정리</tspan></tspan></text>
+        <text id="신용상승_One_Point_레슨" data-name="신용상승 One Point 레슨" transform="translate(-15477 -498)" fill="#3275f4" font-size="24" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-weight="700" letter-spacing="-0.04em"><tspan x="0" y="0">신용상승 </tspan><tspan y="0">One Point </tspan><tspan y="0">레슨</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 40, 5240)" filter="url(#합치기_9)">
+        <path id="합치기_9-2" data-name="합치기 9" d="M16.771,125.146,4.7,119.95a3.645,3.645,0,0,1-1.9-4.756l7.92-18.917L1.941,92.5a3.645,3.645,0,0,1-1.9-4.756L5.171,75.5q.019-.045.039-.09L20.795,38.186,14.136,35.32a2.433,2.433,0,0,1-.5-4.16l27.6-20.977a2.378,2.378,0,0,1,3.8,1.634l4.288,34.7a2.392,2.392,0,0,1-3.3,2.526l-6.57-2.827L25.228,80.194l8.782,3.779A3.646,3.646,0,0,1,35.9,88.728l-14.442,34.5a3.578,3.578,0,0,1-3.295,2.21A3.521,3.521,0,0,1,16.771,125.146Z" transform="translate(75.24 32.3)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="그룹_35" data-name="그룹 35" transform="translate(2.365 -7.001)">
+        <g transform="matrix(1, 0, 0, 1, 37.63, 5247)" filter="url(#합치기_11)">
+          <path id="합치기_11-2" data-name="합치기 11" d="M16858.912,5887a2.732,2.732,0,0,1-2.732-2.728l-.775-17.09h-.586a2.681,2.681,0,0,1-2.729-2.63l-2.729-27.616a2.683,2.683,0,0,1,2.729-2.63h1.822l-.379-8.307h-3.9a2,2,0,0,1-2-2v-12h.365l5.455-12.27a2.729,2.729,0,0,1,2.725-2.728h40.912a2.725,2.725,0,0,1,2.725,2.728l5.457,12.27h.363v12a2,2,0,0,1-2,2h-3.9l-.377,8.307h1.82a2.682,2.682,0,0,1,2.729,2.63l-2.729,27.616a2.681,2.681,0,0,1-2.727,2.63h-.586l-.777,17.09a2.727,2.727,0,0,1-2.727,2.728Z" transform="translate(-16776.63 -5512)" fill="url(#linear-gradient-2)"/>
+        </g>
+        <circle id="타원_10" data-name="타원 10" cx="11.5" cy="11.5" r="11.5" transform="translate(126.637 5574)" fill="#fff"/>
+      </g>
+      <g id="그룹_34" data-name="그룹 34" transform="translate(4.76 24.949)">
+        <g transform="matrix(1, 0, 0, 1, 35.24, 5215.05)" filter="url(#합치기_8)">
+          <path id="합치기_8-2" data-name="합치기 8" d="M18646.338,5853a6,6,0,0,1-6-6v-33.073h-5.43a1,1,0,0,1-.672-1.738l40.092-36.723a1,1,0,0,1,1.348,0l40.1,36.723a1,1,0,0,1-.678,1.738h-5.424V5847a6,6,0,0,1-6,6Z" transform="translate(-18574.9 -5254.21)" fill="url(#linear-gradient-3)"/>
+        </g>
+        <g id="Icon" transform="translate(115.609 5762.61)">
+          <rect id="Area" width="38" height="38" transform="translate(0.39 0.39)" fill="#fcfcfc" opacity="0"/>
+          <g id="Icon-2" data-name="Icon" transform="translate(8.816 0)">
+            <line id="cc75238a-0d62-4d1b-83f5-69c5abb887d0" y2="38" transform="translate(10.574 0.39)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            <path id="_434055f3-0dde-4346-be63-e888ac3afa19" data-name="434055f3-0dde-4346-be63-e888ac3afa19" d="M24.845,4.545H11.623a6.17,6.17,0,0,0,0,12.34h8.815a6.17,6.17,0,1,1,0,12.34H5.455" transform="translate(-5.455 2.505)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
