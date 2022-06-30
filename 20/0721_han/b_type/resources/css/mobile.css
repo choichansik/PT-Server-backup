@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*
+    Layout.css
+*/
+
+/***** layout *****/
+body {width:100%; background:#fff;color:#000;font-family:'GothamNarrow','Malgun Gothic','맑은 고딕',Apple Gothic,arial,helvetica,sans-serif;font-size:13px;font-weight:600;line-height:20px;-webkit-text-size-adjust:none;}
+#wrap {position:relative;margin:0 auto;width:100%; height:100%;text-align:center;overflow:hidden;min-width: 360px;}
+#wrap section {-webkit-overflow-scrolling:touch}
+.sec_com {position:relative}
+.pos_unit {position:absolute}
+.sec_com img {width:100%}
+
+
+
+.gnb:after, .slider_wrap:after {content:""; display:block; clear:both;}
+.gnb {position:fixed; z-index:999;top:0; left:-150%; padding-top:0px; background:#fff; overflow-x: auto; overflow-y: hidden; height: 100%; box-sizing: border-box;}
+
+.close_nav {overflow:hidden; position:absolute; right:0; top:0; width:100px; height:100px; text-indent:-99999px; z-index:1}
+.close_nav.off {display:block;}
+.lnb {position:fixed; z-index:2; clear:both; overflow:hidden}
+.test:hover {transform:scale( 1.2 );}
+
+.sec_01:after {content:""; clear:both; display:block}
+.sec_01 {position:fixed; top:0; left:0; z-index:99; width: 360px; height: 60px; background:#fff; z-index:200;}
+.sec_01 h1 { position: absolute; top: 18px; left: 20px; }
+.sec_01 h1 img{width:82px;}
+.sec_01 a.btn_search { display: inline-block; position: absolute; top: 43px; right: 101px; }
+.sec_01 a.nav { display: inline-block; position: absolute; top: 18px; right: 20px; }
+.sec_01 .pos_unit {position:fixed; bottom:30px; left:50px}
+
+.swiper-container1{margin-top:100px;overflow-x:inherit;}
+.swiper-container1 .swiper-slide{width:290px;}
+.swiper-container1 .swiper-slide img{width:290px;}
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>한화건설</title>
+<link rel="shortcut icon" href="../gate/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./resources/css/m_style.css">
+<script src="./resources/js/jquery-2.2.4.min.js"></script>
+<script src="./resources/js/swiper.min.js"></script>
+<script src="./resources/js/mobile.js"></script>
+</head>
+<body>
+<!-- wrap -->
+<div id="wrap">
+    
+    <div class="sec_com sec_01">
+        <h1><a href="m_main.html"><img src="resources/images/ico_header_01.png" alt=""></a></h1>
+        <a href="#none" class="nav"><img src="resources/images/ico_header_03.png" alt=""></a>
+    </div>  
+
+    <div class="gnb">
+        <div class="pr">
+           <a href="#" class="close_nav">close</a>
+           <a href="#"><img src="resources/images/mobile/gnb_menu.jpg" alt=""></a>
+        </div>
+
+        <div class="swiper-container1">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="m_sub.html"><img src="resources/images/mobile/m_m_c03_01.jpg" alt=""></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="m_sub.html"><img src="resources/images/mobile/m_m_c03_02.jpg" alt=""></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="m_sub.html"><img src="resources/images/mobile/m_m_c03_03.jpg" alt=""></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="m_sub.html"><img src="resources/images/mobile/m_m_c03_04.jpg" alt=""></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="m_sub.html"><img src="resources/images/mobile/m_m_c03_05.jpg" alt=""></a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="m_sub.html"><img src="resources/images/mobile/m_m_c03_06.jpg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <script>
+             var swiper1 = new Swiper('.swiper-container1', {
+                slidesPerView: 'auto',
+                spaceBetween: 0,
+                centeredSlides: true,
+            });
+        </script>
+    </div>
+   
+    <div class="main_cont">
+        <div class="m_c00 m_visual">
+            <img src="./resources/images/mobile/m_m_c00_bg.jpg" alt="">
+        </div>
+
+        <div class="m_c01 section">
+            <div class="left_bg"></div>
+            <div class="inner">
+                <div class="imgBox">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide s1">
+                                <p class="img"><img src="./resources/images/mobile/m_m_c01_bg01.jpg" alt=""></p>
+                            </li>
+                            <li class="swiper-slide s2">
+                                <p class="img"><img src="./resources/images/mobile/m_m_c01_bg02.jpg" alt=""></p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="btn_area">
+                        <div class="pn_btn">
+                            <div class="prev"></div>
+                            <div class="next"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <script>
+                 var swiper = new Swiper('.swiper-container', {
+
+                  speed: 1000,
+                  loop: true,
+                  centeredSlides: true,
+                  autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    waitForTransition:true,
+                  },
+                  pagination: {
+                    el: '.s_num',
+                    type: 'fraction',
+                  },
+                  navigation: {
+                    nextEl: '.next',
+                    prevEl: '.prev',
+                  },
+                });
+            </script>
+        </div>
+
+
+        <div class="m_c002 section">
+           <img src="./resources/images/mobile/m_m_c02.jpg" alt="">
+        </div>
+
+
+        <div class="footer">
+            <img src="./resources/images/mobile/m_main_footer.jpg" alt=""/>
+        </div>
+
+    </div>
+	
+</div>
+
+</body>
+</html>

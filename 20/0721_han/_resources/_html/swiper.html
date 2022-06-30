@@ -1,0 +1,250 @@
+<!-- 
+	* SWiper API
+	https://idangero.us/swiper/api/
+	* SWiper Demos
+	https://idangero.us/swiper/demos/
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+<title>Template_Swiper</title>
+<link rel="stylesheet" type="text/css" href="../_style/reset.css">
+<link rel="stylesheet" type="text/css" href="../packages/swiper-4.5.0/swiper.min.css">
+<script src="../packages/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="../packages/swiper-4.5.0/swiper.min.js"></script>
+<style type="text/css">
+	#wrap { max-width: 1000px; margin: 0 auto; }
+	section { border: 1px solid #ccc; }
+</style>
+</head>
+<body>
+
+	<div id="wrap">
+
+		<!-- swiper01 : basic -->
+		<section class="swiper01_wrp">
+
+			<!-- *** copy *** -->
+			<div class="swiper01 swiper-container">
+				<!-- wrapper -->
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slide_inr">slide1</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide2</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide3</div>
+					</div>
+				</div>
+				<!-- pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- navigation -->
+			   <div class="swiper-button-prev"></div>
+			   <div class="swiper-button-next"></div>
+			</div>
+			<style>
+				.swiper01 .slide_inr { height: 200px; line-height: 200px; text-align: center; border-right: 1px solid #ccc; }
+			</style>
+			<script>
+				var swiper01 = new Swiper('.swiper01', {
+					loop: true,
+					speed: 1000,
+					grabCursor: true,
+					autoplay: {
+						delay: 2000,
+						disableOnInteraction: false,
+					},
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: true,
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+			</script>
+			<!-- //*** copy *** -->
+
+		</section>
+		<!-- //swiper01 -->
+
+		<!-- swiper02 : menu -->
+		<section class="swiper02_wrp">
+
+			<!-- *** copy *** -->
+			<div class="swiper02 swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slide_inr">slide1</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide2</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide3</div>
+					</div>
+				</div>
+			</div>
+			<ul class="menu">
+				<li>menu1</li>
+				<li>menu2</li>
+				<li>menu3</li>
+			</ul>
+			<style>
+				.swiper02 .slide_inr { height: 200px; line-height: 200px; text-align: center; border-right: 1px solid #ccc; }
+				.swiper02_wrp .menu li { display: inline-block; cursor: pointer; }
+				.swiper02_wrp .menu li.on { color: orange; }
+			</style>
+			<script>
+				var swiper02 = new Swiper('.swiper02', {
+					loop: true,
+					speed: 1000,
+					grabCursor: true,
+					autoplay: {
+						delay: 3000,
+						disableOnInteraction: false,
+					},
+					on: {
+						slideChange: function() {
+							$('.menu').find('li').eq(this.realIndex).addClass('on').siblings().removeClass('on');
+						},
+					},
+				});
+				$('.menu').find('li').on('click', function() {
+					var thisIndex = $(this).index();
+					swiper02.slideToLoop(thisIndex);
+				});
+			</script>
+			<!-- //*** copy *** -->
+
+		</section>
+		<!-- //swiper02 -->
+
+		<!-- swiper03 : fix width -->
+		<section class="swiper03_wrp">
+
+			<!-- *** copy *** -->
+			<div class="swiper03 swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slide_inr">slide1</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide2</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide3</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide4</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide5</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr">slide6</div>
+					</div>
+				</div>
+				<!-- navigation -->
+			   <div class="swiper-button-prev"></div>
+			   <div class="swiper-button-next"></div>
+			</div>
+			<style>
+				.swiper03 .swiper-slide { width: 300px; }
+				.swiper03 .slide_inr { height: 200px; line-height: 200px; text-align: center; border-right: 1px solid #ccc; }
+			</style>
+			<script>
+				var swiper03 = new Swiper('.swiper03', {
+					loop: true,
+					speed: 500,
+					grabCursor: true,
+					slidesPerView: 'auto',
+					autoplay: {
+						delay: 2000,
+						disableOnInteraction: false,
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+				});
+			</script>
+			<!-- //*** copy *** -->
+
+		</section>
+		<!-- //swiper03 -->
+
+		<!-- swiper04 : parallax -->
+		<section class="swiper04_wrp">
+
+			<!-- *** copy *** -->
+			<div class="swiper04 swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="slide_inr" style="background-image: url('../_images/img_sample_01.jpg');">slide1</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr" style="background-image: url('../_images/img_sample_02.jpg');">slide2</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide_inr" style="background-image: url('../_images/img_sample_03.jpg');">slide3</div>
+					</div>
+				</div>
+				<!-- navigation -->
+			   <div class="swiper-button-prev"></div>
+			   <div class="swiper-button-next"></div>
+			</div>
+			<style>
+				.swiper04 .swiper-slide { height: 200px; overflow: hidden; }
+				.swiper04 .swiper-slide .slide_inr { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; line-height: 200px; text-align: center; border-right: 1px solid #ccc }
+			</style>
+			<script>
+				var swiper04 = new Swiper('.swiper04', {
+					loop: true,
+					speed: 500,
+					grabCursor: true,
+					slidesPerView: 'auto',
+					watchSlidesProgress: true,
+					autoplay: {
+						delay: 1500,
+						disableOnInteraction: false,
+					},
+					navigation: {
+						nextEl: '.swiper-button-next',
+						prevEl: '.swiper-button-prev',
+					},
+					on: {
+						progress: function() {
+							var swiper = this;
+							for (var i = 0; i < swiper.slides.length; i++) {
+								var parallaxAmount = 0.95;
+								var slideProgress = swiper.slides[i].progress;
+								var innerOffset = swiper.width * parallaxAmount;
+								var innerTranslate = slideProgress * innerOffset;
+								swiper.slides[i].querySelector('.slide_inr').style.transform = 'translateX(' + innerTranslate + 'px)';
+							}
+						},
+						setTransition: function(speed) {
+							var swiper = this;
+							for (var i = 0; i < swiper.slides.length; i++) {
+								swiper.slides[i].style.transition = speed + 'ms';
+								swiper.slides[i].querySelector('.slide_inr').style.transition = speed + 'ms';
+							}
+						}
+					}
+				});
+			</script>
+			<!-- //*** copy *** -->
+			
+		</section>
+		<!-- //swiper04 -->
+
+	</div>
+
+</body>
+</html>

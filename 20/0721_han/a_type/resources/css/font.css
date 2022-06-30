@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+	font-family: 'YouandiModernTR';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../font/YouandiModernTR.eot');
+	src: url('../font/YouandiModernTR.eot?#iefix') format('embedded-opentype'),
+		url('../font/YouandiModernTR.woff') format('woff');
+}
+
+
+@font-face {font-family: "HelveticaB";
+  src: url("../font/Helvetica Neue 73 Bold Extended.eot"); /* IE9*/
+  src: url("../font/Helvetica Neue 73 Bold Extended.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../font/Helvetica Neue 73 Bold Extended.woff2") format("woff2"), /* chrome、firefox */
+  url("../font/Helvetica Neue 73 Bold Extended.woff") format("woff"), /* chrome、firefox */
+  url("../font/Helvetica Neue 73 Bold Extended.ttf") format("truetype"); /* chrome、firefox、opera、Safari, */
+}
+
+
+@font-face {
+    font-family:'notokr-thin';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url(../font/NotoSansKR-Thin-Hestia.eot),
+    url(../font/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-Thin-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-Thin-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family:'notokr-light';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url(../font/NotoSansKR-Light-Hestia.eot),
+    url(../font/NotoSansKR-Light-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-Light-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-Light-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family:'notokr-demilight';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url(../font/NotoSansKR-DemiLight-Hestia.eot),
+    url(../font/NotoSansKR-DemiLight-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-DemiLight-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-DemiLight-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family:'notokr-regular';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url(../font/NotoSansKR-Regular-Hestia.eot),
+    url(../font/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-Regular-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-Regular-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family:'notokr-medium';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url(../font/NotoSansKR-Medium-Hestia.eot),
+    url(../font/NotoSansKR-Medium-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-Medium-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-Medium-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family:'notokr-bold';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url(../font/NotoSansKR-Bold-Hestia.eot),
+    url(../font/NotoSansKR-Bold-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-Bold-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-Bold-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    font-family:'notokr-black';
+    font-style: normal;
+    font-weight: normal;
+    src:
+    url(../font/NotoSansKR-Black-Hestia.eot),
+    url(../font/NotoSansKR-Black-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-Black-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-Black-Hestia.otf) format('opentype');
+}
+
+.notokr-thin {font-family:notokr-thin !important;}
+.notokr-regular {font-family:notokr-regular !important;}
+.notokr-medium {font-family:notokr-medium !important;}
+.notokr-light {font-family:notokr-light !important;}
+.notokr-demilight {font-family:notokr-demilight !important;}
+.notokr-bold {font-family:notokr-bold !important;}
+.notokr-black {font-family:notokr-black !important;}

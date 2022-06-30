@@ -1,0 +1,43 @@
+<!-- 
+	* Mousewheel API
+	https://github.com/jquery/jquery-mousewheel
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+<title>Template_Mousewheel</title>
+<link rel="stylesheet" type="text/css" href="../_style/reset.css">
+<script src="../packages/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script src="../packages/mousewheel-3.1.13/jquery.mousewheel.min.js"></script>
+<style type="text/css">
+	#wrap { max-width: 1000px; margin: 0 auto; }
+	.section { border: 1px solid #ccc; overflow-y: hidden; overflow-x: auto; }
+	.txt { width: 3000px; height: 300px; }
+</style>
+<script>
+	$(function() {
+
+		// *** copy ***
+		$(".section").on('mousewheel', function(event, delta) {
+		   this.scrollLeft -= (delta * 50);
+		   event.preventDefault();
+		});
+		// //*** copy ***
+
+	});
+</script>
+</head>
+<body>
+
+	<div id="wrap">
+		
+		<section class="section">
+			<p class="txt">Lorem ipsum dolore ad dolor consectetur do qui magna dolore in aliqua sit dolore deserunt sit deserunt quis duis deserunt proident duis nisi et eiusmod exercitation magna ullamco veniam id mollit labore aliquip eu laboris cupidatat ut laboris sed consectetur tempor sit enim nulla ex id adipisicing pariatur eu nostrud et eiusmod dolore consectetur proident do est veniam in incididunt sed in cillum nulla id ex ea dolor pariatur amet voluptate nulla cupidatat pariatur mollit eiusmod commodo dolore ut velit nisi dolor laborum aliquip ut laboris ea incididunt enim consectetur non est in sed nisi in commodo aliquip voluptate est cupidatat eiusmod deserunt qui excepteur proident sit et dolore do anim incididunt ullamco magna laborum magna ex in pariatur dolor proident nostrud non id do deserunt incididunt in dolor consequat et ea voluptate et et voluptate nisi laborum ut esse labore consequat eiusmod nostrud proident sint eiusmod ut consequat sunt est minim proident sed eiusmod in mollit aliquip laboris nulla est aliqua nisi minim culpa labore dolor sunt dolore ut dolor nulla eu sit in duis in sit in enim in dolore ad in magna officia culpa mollit dolor velit incididunt magna qui officia dolor mollit aute dolore in laboris cupidatat est quis consequat velit occaecat culpa magna laboris magna nisi nulla commodo reprehenderit mollit ullamco consectetur enim do fugiat voluptate nostrud excepteur non sint do consequat laborum aute est id mollit aute in minim dolore ut est laborum nostrud cupidatat incididunt magna est in qui mollit labore eiusmod sint labore consectetur duis do dolor adipisicing.</p>
+		</section>
+
+	</div>
+
+</body>
+</html>

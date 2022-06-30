@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1900, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<title>한화건설</title>
+<link rel="shortcut icon" type="image/x-icon" href="./resources/images/favicon.ico">
+<script src="./resources/js/jquery-1.12.4.min.js"></script>
+<script src="./resources/js/swiper.min.js"></script>
+<script src="./resources/js/m_script.js"></script>
+<link rel="stylesheet" type="text/css" href="./resources/import.css">
+<link rel="stylesheet" type="text/css" href="./resources/css/m_style.css">
+<link rel="stylesheet" type="text/css" href="./resources/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="./resources/css/normalize.min.css" media="screen">
+</head>
+<body>
+    <div id="wrap" class="sub">
+        <div class="main_header">
+            <a href="m_main.html"><img src="./resources/mobile/logo02.png" alt=""></a>
+			<div class="gnb">
+				<a class="btn_gnb" href="#none">
+					<img src="./resources/mobile/gnb02.png" alt="">
+				</a>
+				<div class="gnb_on">
+					<a href="#none" class="gnb_close"></a>
+					<img src="./resources/mobile/gnb_on.png" alt="">
+					<!-- <a href="m_sub01.html" class="btn_sub01"></a> -->
+					<a href="m_sub01.html" class="btn_sub02"></a>
+				</div>
+			</div>
+			<div class="dim"></div>
+        </div>
+		<section id="container">
+			<img src="./resources/mobile/bg_sub02.jpg" alt="">
+		</section>
+    </div>
+<script>
+$('.btn_gnb').on('click', function(){
+	$(this).next('.gnb_on').css('display','block');
+	$('.dim').css('display','block')
+});
+$('.gnb_close').on('click', function(){
+	$('.gnb_on').css('display','none');
+	$('.dim').css('display','none')
+});
+
+var slide01 = new Swiper('.swiper-container.slide01', {
+	loop:true,
+  pagination: {
+	el: '.swiper-pagination.slide01',
+	clickable: true,
+  },
+});
+
+var slide02 = new Swiper('.swiper-container.slide02', {
+	loop:true,
+  pagination: {
+	el: '.swiper-pagination.slide02',
+	clickable: true,
+  },
+});
+
+var slide03 = new Swiper('.swiper-container.slide03', {
+	loop:true,
+  pagination: {
+	el: '.swiper-pagination.slide03',
+	clickable: true,
+  },
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+@charset "utf-8";
+body { background: #fff; color: #000; line-height: 1 }
+#wrap { position: relative }
+#wrap img { width: 100% }
+
+header {position: fixed;top: 0;left: 0;width: 100%;}
